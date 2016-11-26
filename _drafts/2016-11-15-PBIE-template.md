@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Add title with customer name here"
-author: "Martin Bald"
+author: "Malgosia Mazany"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-05-19
-categories: [IoT]
+date:   2016-11-15
+categories: [Power BI Embedded]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Add a short description of what this article is about.
@@ -17,12 +17,13 @@ Begin with an intro statement with the following details:
 
 - Solution overview
  
-- Key technologies used
+- Key technologies used (ie. Power BI Embedded, Azure Resource Manager, etc.)
  
 - Core Team: Names, roles and Twitter handles 
 
-
+ 
 ## Customer profile ##
+
 This section will contain general information about the customer, including the following:
 
 - Company name and URL
@@ -33,30 +34,38 @@ This section will contain general information about the customer, including the 
 
 - What are their product/service offerings?
 
-
-
  
 ## Problem statement ##
 
+This section will define the problem(s)/challenges that the customer wants to address with a Power BI Embedded solution. Include things like costs, customer experience, etc.
 
-This section will define the problem(s)/challenges that the customer wants to address with an IoT solution. Include things like costs, customer experience, etc.
+Describe the consumer (end user) of the dashboard. 
  
 *If you’d really like to make your write-up pop, include a customer quote that highlights the customer’s problem(s)/challenges.*
 
-
  
-## Solution and steps ##
+## Solution, steps, and delivery ##
 
 
-The majority of your win artifacts will be included in this section, including (but not limited to) the following: Pictures, drawings, architectural diagrams, value stream mappings and demo videos.
+The majority of your win artifacts will be included in this section, including (but not limited to) the following: Source code snippets, pictures, drawings, architectural diagrams, value stream mappings and demo videos.
 
 This section should include the following details:
 
 - What was worked on and what problem it helped solve.
+ 
+- The data pipeline architecture, details, challenges/workarounds, origin of the data and the overall architecture.
+
+- Technical details of how this was implemented.
+
+- Pointers to references or documentation.
+ 
+- Learnings from the Microsoft team and the customer team.
 
 - Architecture diagram/s (**required**). Example below:
 
- ![IoT Architecture Diagram](/images/templates/iotarchitecture.png)
+  ![Power BI Embedded Architecture Diagram](/images/templates/powerbiearchitecture.png)
+
+*If you’d really like to make your write-up pop, include a customer quote that highlights the solution.*
 
 **Directions for adding images:**
 
@@ -65,33 +74,12 @@ This section should include the following details:
 2. Add links to your images using the following absolute path:
 
   `![Description of the image]({{site.baseurl}}/images/projectname/myimage.png)`
-    
+
   Here’s an example: 
 
   `![Value Stream Mapping]({{site.baseurl}}/images/orckestra/orckestra2.jpg)`
 
- Note that capitalization of the file name and the file extension must match exactly for the images to render properly.
-
-*If you’d really like to make your write-up pop, include a customer quote that highlights the solution.*
-
-
-## Technical delivery ##
-This section will include the following details of how the solution was implemented:
-
-- Security details
-
-- Device used (be specific, details if PLC, microcontroller, etc.)
-
-- Device messages sent (packet size, frequency of send/day/device, number of messages)
-
-- SDKs used, languages, etc.
-
-- Code artifacts
-
-- Pointers to references or documentation
-
-- Learnings from the Microsoft team and the customer team
-
+3. Note that capitalization of the file name and the file extension must match exactly for the images to render properly.
 
  
 ## Conclusion ##
@@ -114,6 +102,7 @@ This section will briefly summarize the technical story with the following detai
 
 
 ## Additional resources ##
+
 In this section, include a list of links to resources that complement your story, including (but not limited to) the following:
 
 - Documentation
@@ -123,3 +112,4 @@ In this section, include a list of links to resources that complement your story
 - GitHub repos
 
 - Etc…
+

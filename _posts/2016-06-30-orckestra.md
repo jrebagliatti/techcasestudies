@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Learnings from a DevOps Hackfest with Orckestra"
+title:  "Learnings from a DevOps hackfest with Orckestra"
 author: "William Buchwalter & Julien Stroheker"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -12,8 +12,6 @@ excerpt:  This article is aimed at sharing the learnings from the DevOps Hackfes
 verticals: Retail, Consumer Products & Services
 language: English
 ---
-
-# Learnings from a DevOps Hackfest with Orckestra #
 
 Orckestra teamed up with Microsoft for a week-long Hackfest. 
 During this event we discussed different DevOps practices that could improve their software delivery processes, such as:
@@ -98,7 +96,9 @@ We also decided to explore ways for the platform to deliver smaller updates that
 
 Once the mapping was complete, we moved it to a place where everyone could see and discuss it.
 
-![Value Stream Mapping]({{ site.baseurl }}/images/orckestra3.jpg)
+
+![Value Stream Mapping]({{site.baseurl}}/images/orckestra3.jpg)
+
 
 *Check the resources section if you want to see the VSM in HD.*
 
@@ -116,11 +116,14 @@ During our Hackfest, the QA team took the time to set up some scenarios in their
 
 So we started [this project on GitHub called loadimpact-vsts-extension](https://github.com/julienstroheker/loadimpact-vsts-extension).
 
-The idea is simple: Reach the [LoadImpact.com API](http://developers.loadimpact.com/api/index.html) and start some scenarios already set up whenever they want thanks to a Build or Release step :
+The idea is simple: Reach the [LoadImpact.com API](http://developers.loadimpact.com/api/index.html) and start some scenarios already set up whenever they want thanks to a Build or Release step:
 
-![Load Impact VSTS Extension]({{ site.baseurl }}/images/OrckestraLoadImpactExt.png)
+
+![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraLoadImpactExt.png)
+
 
 For now, this extension is really straightforward but it helps Orckestra to launch some recursive tests such as:
+
 * Basic API Calls to check if the important parts of the application are responding with the correct SLA defined.
 * Basic Web Calls to check if all the components of the application are responding.
 
@@ -128,15 +131,33 @@ Behind the scenes, we used (TypeScript, Gulp, NPM...).
 
 The fact that the load tests are now being directly integrated in their pipeline helps Orckestra have more efficient testing, and makes sure the tests are run every time and not manually triggered.
 
-![Load Impact VSTS Extension]({{ site.baseurl }}/images/OrckestraRelease.png)
+
+![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraRelease.png)
+
 
 Here is an example of the test "GetGuestCart" launched from VSTS:
 
-![Load Impact VSTS Extension]({{ site.baseurl }}/images/OrckestraLoadImpact.png)
+
+![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraLoadImpact.png)
+
 
 When the test is done on Load Impact, Orckestra receives a slack notification:
 
+
+![Load Impact VSTS Extension]({{site.baseurl}}/images/OrckestraSlack.png)
+
+
+Here is an example of the test "GetGuestCart" launched from VSTS:
+
+
+![Load Impact VSTS Extension]({{ site.baseurl }}/images/OrckestraLoadImpact.png)
+
+
+When the test is done on Load Impact, Orckestra receives a slack notification:
+
+
 ![Load Impact VSTS Extension]({{ site.baseurl }}/images/OrckestraSlack.png)
+
 
 We also started to implement the Application Insights feature inside OCC to track user interactions (see the next sections). In the future, Orckestra will correlate the load test data with the user telemetry one to obtain deeper results and adapt their load scenarios to anticipate the scale.
 
@@ -212,8 +233,10 @@ To mark an `action` as of interest, we simply have to append the object:
 
 We can see that our `actions` are correctly received by Application Insights.
 
-![Application Insight Image]({{ site.baseurl }}/images/orckestra1.png)
- 
+
+![Application Insight Image]({{site.baseurl}}/images/orckestra1.png)
+
+
 A good practice could be to define our expectation before rolling out a new feature. For example: "We expect 10% of our users to post a comment (our new feature) once a day."
 With Application Insights Analytics, we can then create custom queries such as the percentage of sessions where the event `'ADD_COMMENT'` occurred.
 Comparing our expectations with the reality, we could then decide which direction to take next.
@@ -230,7 +253,7 @@ As of today, the application is built following a single value stream. In the fu
 
 As the current OCC platform has grown to support many use cases over time, Microservices are the right next step to break out the complexity into a set of smaller deployable pieces.  Orckestra is now delivering new services as Microservices and over time will convert some of their existing services to microservices that they can ship separately as well.  We also spent some time investigating containerization of those independent components. Indeed, this would further reduce the lead time by addressing several pain points:
 
-* Ensuring integration tests are running in a production-like environment. Also, a significant cause of scrap rate for integration tests is due to heterogeneous environments.
+* Ensuring integration tests are running in a production-like environment.
 * Faster deployments. Only the image of the component that was updated needs to be redeployed.
 * Easier scaling in production. With tools such as Docker Swarm, scaling becomes almost painless (for stateless components). 
 * Greater flexibility of integration and QA environments deployment. Provisioning and de-provisioning of environments become an extremely fast process.
@@ -247,13 +270,7 @@ The Value Stream Mapping was a challenging activity considering the complexity o
 
 A lot of very interesting ideas on how to improve the process were discussed during this Hackfest, some more doable than others. Most importantly, though, the whole team realizes the value of continuous improvement and they are committed and willing to put a lot of effort into this.  Already since the hackfest, the team has made significant load testing automation improvements, and are near completion of their first Microservices-based service, with more to come.
 
-## General lessons ##
-Some key points to consider:  
 
-* Automated testing needs to always be a top priority, from unit tests to integration and load tests. Being confident in the quality of the code is a prerequisite in order to release it.
-* Monolithic applications work, and can be optimized to a certain extent, but continuous delivery and small batch size can be obtained only by having smaller components with well-defined boundaries.
-
-While we discussed a specific implementation of microservices (containers), there is no simple solution, and many other solutions such as [Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/) exist to achieve a comparable result.
 
 
 ## Resources ##
