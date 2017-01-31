@@ -1,10 +1,10 @@
-﻿---
+---
 layout: post
 title: "Finding missing kids by harnessing Azure Functions"
 author: "Anthony Bartolo"
-author-link: "[https://twitter.com/WirelessLife](https://twitter.com/WirelessLife)"
+author-link: "https://twitter.com/WirelessLife"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date: 2017-01-30
+date: 2017-01-31
 categories: [DevOps, Azure App Service, Mobile Application Development with Xamarin]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
@@ -63,7 +63,7 @@ The first half day was spent establishing mapping of the current delivery of inf
 The plan established was as follows:
 
 1. Enable parents and/or children to register their social-media accounts with MCSC.
-2. When a registered child is reported missing, the child or parent could invoke the Child Finder solution (enabled via Azure Functions) to capture the last-known whereabouts of the child, who the child was in contact with, and the sentiment of the conversation by including the hashtag #hfm (“help Ffind me”) on their social-media feed.
+2. When a registered child is reported missing, the child or parent could invoke the Child Finder solution (enabled via Azure Functions) to capture the last-known whereabouts of the child, who the child was in contact with, and the sentiment of the conversation by including the hashtag #hfm (“help find me”) on their social-media feed.
 3. The Child Finder solution would capture the required information directly from the API of the social-media provider.
 4. The Azure Function would send the captured information directly to law enforcement, notifying them that a child had been reported missing in their area and providing additional information acquired via social media.
 5. Law enforcement would log in to the application via Azure Active Directory Authentication to ensure all data captured was accessible only by those who had been assigned access.
@@ -126,7 +126,7 @@ For the finders/police officers, a Xamarin mobile app connects to the REST API a
 
 The following technologies were used:
 
-**GitHub** to storeall source code, which is released under the Apache license. By making the source code publicly available, we can actively take contributions and enable the wider community to use a system like this to aid in the finding of missing persons or in other areas where people need to self-identify and be tracked.
+**GitHub** to store all source code, which is released under the Apache license. By making the source code publicly available, we can actively take contributions and enable the wider community to use a system like this to aid in the finding of missing persons or in other areas where people need to self-identify and be tracked.
 
 **Visual Studio Team Services** to support continuous integration builds and the deployment pipeline. With the project team in both Toronto and Calgary, utilization of VSTS also enabled teams to share code and track work from either city.
 
@@ -146,7 +146,7 @@ The pipeline from there is built with a set of robust Azure Functions and queues
 
 **Facebook/Instagram Logic App**: The system is built to enable multiple channels from social networks. These networks would feed the same pipeline and have their own characteristics.
 
-**Twitter Logic App**: Currently, the Logic App is using the JefKingTweets account as its point of contact;it will be moved to the MCSC account for production.
+**Twitter Logic App**: Currently, the Logic App is using the JefKingTweets account as its point of contact; it will be moved to the MCSC account for production.
  
 **Logic App tweet-processing interval**: The interval is currently set to 30+ seconds to streamline data capture; it can be increased or decreased as required.
 
@@ -158,7 +158,7 @@ The pipeline from there is built with a set of robust Azure Functions and queues
 
 The following sections highlight the DevOps practices implemented during this project.
 
-#### Value stream Mapping ####
+#### Value stream mapping ####
 This exercise is typically conducted against an existing set of processes and activities tied to the development of a specific solution. In this case, we examined current process and received suggestions from MCSC, Calgary Police, and the City of Calgary about what could be improved. As seen earlier, both the Azure Functions and the client application were mapped and vetted by the team. Improvements were identified, implemented by the assigned team of developers, and then introduced to streamline the development of the solution while providing a strong automation component. The following two suggestions were added to this project as a result of the value stream mapping exercise:
 
 - Mobile app authentication: Enabled to provide police secure access to the missing-child reports provided by the prescribed Azure Function as captured from Twitter
