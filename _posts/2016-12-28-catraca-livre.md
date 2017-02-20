@@ -45,13 +45,13 @@ The value stream mapping (VSM) exercise and ensuing hackfest, described in the r
 
 ### Site architecture ###
 
-After a partnership nurtured from Microsoft’s Developer Experience (DX) Brazil team, Catraca Livre migrated their website, previously hosted on AWS, to Azure with the assistance of Rivendel. The following figure shows an overview of their current architecture:
+After a partnership nurtured from Microsoft’s Developer Experience (DX) Brazil team, Catraca Livre migrated their website, previously hosted on AWS, to Azure with the assistance of Rivendel. Figure 1 shows an overview of their current architecture.
 
 *Figure 1 – Catraca Livre site architecture*
 
 ![Figure 1 – Catraca Livre site architecture]({{ site.baseurl }}/images/2016-12-28-catraca-livre/Figure_1_Site_Architecture.png)
 
-All VMs run Linux CentOS 6.8. The main components of the site as seen in figure 1 are:
+All VMs run Linux CentOS 6.8. The main components of the site as seen in figure 1 are as follows:
 
 - 2 VMs with Varnish for caching the website content
 - 4 VMs with WordPress, PHP-FPM, and nginx for the website itself
@@ -61,7 +61,7 @@ All VMs run Linux CentOS 6.8. The main components of the site as seen in figure 
 
 ### Development and release lifecycle ###
 
-The following diagram shows a simplified view of the overall code flow at Catraca Livre, beginning with the definition of tasks (new features, backlog items) to be addressed in the next sprint, and ending with the release into production:
+Figure 2 shows a simplified view of the overall code flow at Catraca Livre, beginning with the definition of tasks (new features, backlog items) to be addressed in the next sprint, and ending with the release into production.
 
 *Figure 2 – Catraca Livre development process (simplified)*
 
@@ -121,11 +121,11 @@ The plan assembled by the team consisted of the following tasks:
     1. Provide an easy way for Catraca’s dev team to publish different versions of their website to each production environment, using Jenkins and Ansible
     2. Map the required changes to their current development process to accommodate A/B tests
 
-The following diagram shows the new site architecture designed by the joint team (machines in orange are new additions):
+Figure 5 shows the new site architecture designed by the joint team (machines in orange are new additions).
 
-*Figure 5 – New Site Architecture*
+*Figure 5 – New site architecture*
 
-![Figure 5 – New Site Architecture]({{ site.baseurl }}/images/2016-12-28-catraca-livre/Figure_5_New_Site_Architecture.png)
+![Figure 5 – New site architecture]({{ site.baseurl }}/images/2016-12-28-catraca-livre/Figure_5_New_Site_Architecture.png)
 
 In summary:
 
@@ -141,8 +141,8 @@ The following sections describe the details of each part of the plan.
 
 As shown in figure 1, the current architecture uses Azure Load Balancing in two instances:
 
--   Externally – to load balance web traffic between two Varnish Servers
--   Internally – to load balance traffic coming from the Varnish Servers to the Web Servers themselves
+- Externally—to load balance web traffic between two Varnish Servers
+- Internally—to load balance traffic coming from the Varnish Servers to the Web Servers themselves
 
 To enable Catraca Livre to perform A/B tests effectively, it is necessary to provide a means to control how much traffic is directed to the A and B versions of their website. In other words, we need to implement weighted load balancing.
 
@@ -173,9 +173,9 @@ backend catracalivre-ambientes
 
 We had to configure the following settings to get HAProxy to behave as needed:
 
-- The IP addresses for each production environment (A and B)
-- The different weights for each production environment (50/50 in this case)
-- Ensure HAProxy handles client affinity so that once a reader is in a given site (A or B) he remains there for a certain period (for example, one week if that is the duration of the A/B test). That is accomplished by the `balance source` and `hash-type consistent` lines
+- The IP addresses for each production environment (A and B).
+- The different weights for each production environment (50/50 in this case).
+- Ensure HAProxy handles client affinity so that once a reader is in a given site (A or B) he remains there for a certain period (for example, one week if that is the duration of the A/B test). That is accomplished by the `balance source` and `hash-type consistent` lines.
 
 We also created a simple shell script to facilitate changing the weights whenever desired:
 
@@ -230,17 +230,17 @@ Finally, the HAProxy servers were added to the Zabbix monitoring platform.
 
 ### Second production environment on Azure ###
 
-The second production environment is shown in orange in figure 5. These VMs were created using two Azure Resource Manager (ARM) templates:
+The second production environment is shown in orange in figure 5. These VMs were created by using two Azure Resource Manager (ARM) templates:
 
 - One for the 2 HAProxy VMs (which have public IP addresses)
 - One for the Varnish and WordPress/PHP VMs (which have internal IP addresses)
 
-The ARM templates do all the work needed to provision the VMs in Azure, including the configuration of:
+The ARM templates do all the work needed to provision the VMs in Azure, including the configuration of the following:
 
 - Storage accounts
 - Virtual networks
 - Subnets
-- Load Balancing parameters (External and Internal)
+- Load balancing parameters (external and internal)
 
 The Varnish VMs were quite straightforward to configure: The team only had to reproduce the same settings used for the production environment, by simply changing IP addresses.
 
@@ -268,19 +268,19 @@ When the VHD was ready, the team followed the steps described in link (1) refere
 
 As mentioned before, Ansible is used for server provisioning and configuration, and Jenkins is used as the orchestration tool for code promotion. It was very important to ensure these tools could continue to be used to manage the new A/B testing process.
 
-The main action here was configuring Jenkins to target the second production environment. The following screen image shows the Jenkins view of both environments:
+The main action here was configuring Jenkins to target the second production environment. Figure 7 shows the Jenkins view of both environments.
 
 *Figure 7 – Jenkins view of two production environments*
 
 ![Figure 7 – Jenkins view of two production environments]({{ site.baseurl }}/images/2016-12-28-catraca-livre/Figure_7_Jenkins_1.png)
 
-In the Jenkins dashboard shown in figure 7:
+In the Jenkins dashboard shown in figure 7,
 
 - **Deploy** targets the first (regular) production environment
 - **Deploy testeAB** targets the second production environment
 - **Rollback** targets the first production environment and deploys the (n-1) version
 
-When clicking the Deploy testeAB link the users sees the following view:
+When clicking the Deploy testeAB link the users see the following view:
 
 *Figure 8 – Jenkins view of the second production environment*
 
@@ -296,7 +296,7 @@ When a build is performed, Jenkins shows the following output:
 
 The deployment code for both production environments is the same. Jenkins runs a shell script that activates Ansible to do the actual deployment, using a .YML file for configuration. Here is the code:
 
-*Code example 4 – Build Shell Script*
+*Code example 4 – Build shell script*
 
 ```shell-script
 #!/usr/bin/env bash
@@ -369,15 +369,15 @@ As can be seen, this is a pretty straightfoward file—it simply sets some param
 The joint team extensively discussed different approaches to implementing A/B testing from a development process perspective. Considering that there is no CI and no Automated Testing, generating the “B” version of the site while simultaneously conducting regular development work did not seem viable. Therefore, the proposed process is:
 
 1. At the beginning of each sprint, Catraca Livre decides if they will work on site features and bug fixes or if they will prepare the site for an A/B test
-    i. In the first case, nothing changes and the development process is the one shown in figure 2
-    ii. In the second case, the team follows steps 2–6
+    1. In the first case, nothing changes and the development process is the one shown in figure 2
+    2. In the second case, the team follows steps 2–6
 2. The team creates a branch in git to work on the “B” version of the site
 3. When work on the “B” site is done it is tested and any issues are addressed
 4. The second production environment is provisioned using Jenkins and Ansible
 5. The “B” site is deployed to this production environment
 6. Data is collected and analyzed to assess which version performed better:
-    i. If “A” performs better, changes made to “B” are ignored
-    ii. If “B” performs better, the “B” site is merged into the main git branch
+    1. If “A” performs better, changes made to “B” are ignored
+    2. If “B” performs better, the “B” site is merged into the main git branch
 
 ## Conclusion ##
 
