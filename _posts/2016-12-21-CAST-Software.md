@@ -194,13 +194,13 @@ The CAST system is written in Java and uses PostgreSQL, so for successful migrat
 
 The CAST Highlight solution is now available as a service deployed in Microsoft Azure.
 
-![CastHighlight-Logon]({{ site.baseurl }}/images/CAST-Software/CastHighlight-Logon.PNG)
+![CAST Highlight login]({{ site.baseurl }}/images/CAST-Software/CastHighlight-Logon.PNG)
 
 The resulting CloudReady-ness assessment from CAST Highlight enables customers to classify and priorize applications before their migration to the cloud.
 
 The code analysis contains detailed key information on what needs to be changed.
 
-![CastHighlight-Patterns]({{ site.baseurl }}/images/CAST-Software/CastHighlight-Patterns.PNG)
+![CAST Highlight patterns]({{ site.baseurl }}/images/CAST-Software/CastHighlight-Patterns.PNG)
 
 CAST Highlight should be of great help for any company that needs to migrating its apps portfolio to the cloud.
 
@@ -210,4 +210,4 @@ CAST Highlight should be of great help for any company that needs to migrating i
 
 The following video demonstrates the CAST Highlight solution.
 
-[![Project demo video]({{ site.baseurl }}/images/CAST-Software/CastHighlight-CloudReady.PNG)](https://www.youtube.com/watch?v=h_na7OoMOUc&feature=youtu.be "CAST Highlight Demo")
+[![Project demo video]({{ site.baseurl }}/images/CAST-Software/CastHighlight-CloudReady.PNG)](https://www.youtube.com/watch?v=h_na7OoMOUc&feature=youtu.be)
