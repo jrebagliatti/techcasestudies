@@ -4,7 +4,7 @@ title: "Partnering with CAST to extend and migrate CAST Highlight from AWS to Mi
 author: "Stéphane Goudeau"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date: 2016-02-20
+date: 2017-02-20
 categories: [Azure App Service]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
