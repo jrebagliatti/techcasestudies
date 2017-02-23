@@ -13,6 +13,8 @@ language: English
 verticals: "Retail, Consumer Products & Services"
 ---
 
+<img alt="Tofugear logo" src="{{ site.baseurl }}/images/TofugearImages/tofugear-logo.jpg" width="221">
+
 Tofugear wanted to offload processing from its API gateway and deliver better dashboard viewing to their clients through their Omnitech retail platform. Microsoft Azure IoT Hub, Azure Stream Analytics, Azure Functions, and Power BI offered that opportunity.
 
 This is the team that was involved with the project:
@@ -45,7 +47,7 @@ In our first meeting, we discussed the solution architecture and decided to offl
 
 To minimize code changes in the Ruby worker process that processes the customer-analytics data from PostgreSQL, we needed to allow the Ruby worker to pull the client data from IoT Hub instead of PostgreSQL.
 
-### Data Ingestion ###
+### Data ingestion ###
 
 To unify all web and mobile client connections to IoT Hub, we decided to use an HTTP REST interface. We spent some time to figure out how to use JavaScript to generate the SAS token, which then needs to be set in the HTTP authorization header to connect to IoT Hub. (See "Security tokens" in [Understand Azure IoT Hub security](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security#security-tokens).)
 
@@ -177,7 +179,7 @@ var connectCallback = function (err) {
 client.open(connectCallback);
 ```
 
-### Data Processing ###
+### Data processing ###
 
 We then used Stream Analytics to combine the data from IoT Hub and the product-reference data from Blob storage for richer Power BI output.
 
