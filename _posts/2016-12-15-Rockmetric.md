@@ -123,19 +123,19 @@ sudo apt-get install firefox
   * PHPUnit setup: PHPUnit was set up by following the steps described at [https://phpunit.de/manual/current/en/installation.html](https://phpunit.de/manual/current/en/installation.html). We installed PHPUnit 5.5.4 using the following script.
 
     ```shell
-sudo apt-get install php php-xml php-curl
-wget https://phar.phpunit.de/phpunit-5.5.4.phar
-chmod +x phpunit-5.5.4.phar
-sudo mv phpunit-5.5.4.phar /usr/bin/phpunit
+    sudo apt-get install php php-xml php-curl
+    wget https://phar.phpunit.de/phpunit-5.5.4.phar
+    chmod +x phpunit-5.5.4.phar
+    sudo mv phpunit-5.5.4.phar /usr/bin/phpunit
 
-sudo curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/bin/composer
+    sudo curl -sS https://getcomposer.org/installer | php
+    sudo mv composer.phar /usr/bin/composer
 
-mkdir -p ~/php-webdriver && cd ~/php-webdriver
-echo '{ "require-dev": { "phpunit/phpunit": "*", "facebook/webdriver": "dev-master" } }' > composer.json
-composer install
-sudo cp -R vendor/ /usr/lib/selenium/
-```
+    mkdir -p ~/php-webdriver && cd ~/php-webdriver
+    echo '{ "require-dev": { "phpunit/phpunit": "*", "facebook/webdriver": "dev-master" } }' > composer.json
+    composer install
+    sudo cp -R vendor/ /usr/lib/selenium/
+    ```
   
 - **Step 2. Build configuration: Build was configured to publish all files and folders in the repository.**
 
