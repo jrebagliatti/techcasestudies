@@ -35,7 +35,7 @@ WeChat is the center of digital marketing strategy in China. More than half of i
 
 ## Customer profile ##
 
-[AnRuiZhuoYue](http://www.anruichina.com/) is the leading end-to-end marketing services provider in China. Its services include content marketing, digital marketing, and online to offline (O2O) marketing. It won the **Microsoft Global MSP Excellence Awards for Supplier of the Year 2016**, and is also a content and marketing supplier for Apple, Oracle, Lenovo, and China Telecom.
+[AnRuiZhuoYue](http://www.anruichina.com/) is the leading end-to-end marketing services provider in China. Its services include content marketing, digital marketing, and online to offline (O2O) marketing. It won the *Microsoft Global MSP Excellence Awards for Supplier of the Year 2016*, and is also a content and marketing supplier for Apple, Oracle, Lenovo, and China Telecom.
  
 ## Problem statement ##
 
@@ -64,19 +64,19 @@ AnRuiZhuoYue plans to develop this system with Cognitive Services Face API, and 
 AnRuiZhuoYue and Microsoft worked together to deliver an end-to-end WeChat conference management solution, including a WeChat app for offline events, a management portal that also works as a back-end server, a Universal Windows Platform (UWP) and auto-deployment Azure Resource Manager template. 
 
 * The WeChat app includes:
-    * **Basic features:** Users can follow this app in WeChat to sign up for the event, upload personal information, and get notifications from the organizers.
-    * **Face registration and check-in features:** Users can upload photos of faces to the WeChat facial database and test to see if they can be identified.
+    * *Basic features:* Users can follow this app in WeChat to sign up for the event, upload personal information, and get notifications from the organizers.
+    * *Face registration and check-in features:* Users can upload photos of faces to the WeChat facial database and test to see if they can be identified.
 
 * The management portal includes:
-    *	**Management features:** The operator can monitor all users through this portal. 
-    *	**Back-end service:** It provides a check-in API for the mobile app.
+    *	*Management features:* The operator can monitor all users through this portal. 
+    *	*Back-end service:* It provides a check-in API for the mobile app.
 
 * The UWP mobile app includes:
-    *	**Onsite check-in feature:** Attendees can check in using a mobile device onsite provided by the organizer. 
+    *	*Onsite check-in feature:* Attendees can check in using a mobile device onsite provided by the organizer. 
 
 * The auto-deploy template includes:
-    *	**Azure Resource Manager template:** This template is for Azure App Service, Storage, SQL Database creation, and code package deployment.
-    *	**Deployment project:** This is used to sign in and trigger the deployment process for users.
+    *	*Azure Resource Manager template:* This template is for Azure App Service, Storage, SQL Database creation, and code package deployment.
+    *	*Deployment project:* This is used to sign in and trigger the deployment process for users.
 
 *Figure 1. Face uploaded in WeChat*
 
