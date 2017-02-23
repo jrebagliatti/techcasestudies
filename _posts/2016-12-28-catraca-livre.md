@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Implementing A/B testing for Catraca Livre using OSS technologies on Azure"
+title: "Implementing A/B testing for Catraca Livre using open-source technologies on Azure"
 author: "Caio Chaves Garcez"
 author-link: "https://twitter.com/Caio_garcez"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
