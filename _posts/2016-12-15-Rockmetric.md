@@ -103,39 +103,39 @@ sudo mv packer /usr/bin/packer
 
   * Selenium and Xvfb setup: Xvfb and Selenium standalone were installed as services on the VSTS agent by following the steps described at [https://www.namekdev.net/2016/08/selenium-server-without-x-window-system-xvfb/](https://www.namekdev.net/2016/08/selenium-server-without-x-window-system-xvfb/). Before following these steps, Java and Selenium standalone 2.5.3 were installed on the agent using the following script.
 
-        ```shell
-        sudo add-apt-repository ppa:openjdk-r/ppa
-        sudo apt-get update
-        sudo apt-get install openjdk-8-jdk
-        wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar
-        sudo mkdir -p /usr/lib/selenium
-        sudo mv selenium-server-standalone-2.53.1.jar /usr/lib/selenium/
-        ```
+    ```shell
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar
+sudo mkdir -p /usr/lib/selenium
+sudo mv selenium-server-standalone-2.53.1.jar /usr/lib/selenium/
+```
 
   * Firefox headless setup: Firefox headless was set up on the VSTS agent by following the steps described at [https://medium.com/@griggheo/running-selenium-webdriver-tests-using-firefox-headless-mode-on-ubuntu-d32500bb6af2#.6a3ma9zcg](https://medium.com/@griggheo/running-selenium-webdriver-tests-using-firefox-headless-mode-on-ubuntu-d32500bb6af2#.6a3ma9zcg).
 
-        ```shell
-        sudo apt-add-repository ppa:mozillateam/firefox-next
-        sudo apt-get update
-        sudo apt-get install firefox
-        ```
+    ```shell
+sudo apt-add-repository ppa:mozillateam/firefox-next
+sudo apt-get update
+sudo apt-get install firefox
+```
 
   * PHPUnit setup: PHPUnit was set up by following the steps described at [https://phpunit.de/manual/current/en/installation.html](https://phpunit.de/manual/current/en/installation.html). We installed PHPUnit 5.5.4 using the following script.
 
-        ```shell
-        sudo apt-get install php php-xml php-curl
-        wget https://phar.phpunit.de/phpunit-5.5.4.phar
-        chmod +x phpunit-5.5.4.phar
-        sudo mv phpunit-5.5.4.phar /usr/bin/phpunit
+    ```shell
+sudo apt-get install php php-xml php-curl
+wget https://phar.phpunit.de/phpunit-5.5.4.phar
+chmod +x phpunit-5.5.4.phar
+sudo mv phpunit-5.5.4.phar /usr/bin/phpunit
 
-        sudo curl -sS https://getcomposer.org/installer | php
-        sudo mv composer.phar /usr/bin/composer
+sudo curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/bin/composer
 
-        mkdir -p ~/php-webdriver && cd ~/php-webdriver
-        echo '{ "require-dev": { "phpunit/phpunit": "*", "facebook/webdriver": "dev-master" } }' > composer.json
-        composer install
-        sudo cp -R vendor/ /usr/lib/selenium/
-        ```
+mkdir -p ~/php-webdriver && cd ~/php-webdriver
+echo '{ "require-dev": { "phpunit/phpunit": "*", "facebook/webdriver": "dev-master" } }' > composer.json
+composer install
+sudo cp -R vendor/ /usr/lib/selenium/
+```
   
 - **Step 2. Build configuration: Build was configured to publish all files and folders in the repository.**
 
