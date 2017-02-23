@@ -94,12 +94,12 @@ The [GitHub repository](https://github.com/maniSbindra/vsts-packer-vmss-php-weba
   * The custom VSTS agent was set up by following the steps mentioned in the post [Deploy an agent on Linux](https://www.visualstudio.com/es-es/docs/build/admin/agents/v2-linux). 
   * Packer setup: Packer downloads are available at [https://www.packer.io/downloads.html](https://www.packer.io/downloads.html). The following script was used to configure Packer version 0.12.0 on the VSTS agent. 
 
-        ```shell
-        sudo apt-get install unzip
-        wget https://releases.hashicorp.com/packer/0.12.0/packer_0.12.0_linux_amd64.zip
-        unzip packer_0.12.0_linux_amd64.zip
-        sudo mv packer /usr/bin/packer
-        ```
+    ```shell
+sudo apt-get install unzip
+wget https://releases.hashicorp.com/packer/0.12.0/packer_0.12.0_linux_amd64.zip
+unzip packer_0.12.0_linux_amd64.zip
+sudo mv packer /usr/bin/packer
+```
 
   * Selenium and Xvfb setup: Xvfb and Selenium standalone were installed as services on the VSTS agent by following the steps described at [https://www.namekdev.net/2016/08/selenium-server-without-x-window-system-xvfb/](https://www.namekdev.net/2016/08/selenium-server-without-x-window-system-xvfb/). Before following these steps, Java and Selenium standalone 2.5.3 were installed on the agent using the following script.
 
