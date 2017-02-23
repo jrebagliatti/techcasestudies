@@ -90,8 +90,8 @@ The [GitHub repository](https://github.com/maniSbindra/vsts-packer-vmss-php-weba
 
 ### Implementation details ###
 
-- Step 1. Custom VSTS Linux agent configuration:
-  * The custom VSTS agent was set up by following the steps mentioned in the post [Deploy an Agent on Linux](https://www.visualstudio.com/es-es/docs/build/admin/agents/v2-linux). 
+- **Step 1. Custom VSTS Linux agent configuration:**
+  * The custom VSTS agent was set up by following the steps mentioned in the post [Deploy an agent on Linux](https://www.visualstudio.com/es-es/docs/build/admin/agents/v2-linux). 
   * Packer setup: Packer downloads are available at [https://www.packer.io/downloads.html](https://www.packer.io/downloads.html). The following script was used to configure Packer version 0.12.0 on the VSTS agent. 
 
         ```shell
@@ -137,12 +137,12 @@ The [GitHub repository](https://github.com/maniSbindra/vsts-packer-vmss-php-weba
         sudo cp -R vendor/ /usr/lib/selenium/
         ```
   
-- Step 2. Build configuration: Build was configured to publish all files and folders in the repository.
+- **Step 2. Build configuration: Build was configured to publish all files and folders in the repository.**
 
     ![Build configuration]({{ site.baseurl }}/images/rockmetric/vsts-build.PNG)
     
 
-- Step 3. Release configuration:
+- **Step 3. Release configuration:**
     * A new release was configured to be created on each successful build.
 
         ![VSTS Release Triggers]({{ site.baseurl }}/images/rockmetric/vsts-release-triggers.PNG)
@@ -157,7 +157,7 @@ The [GitHub repository](https://github.com/maniSbindra/vsts-packer-vmss-php-weba
       ![Release Environment Variables]({{ site.baseurl }}/images/rockmetric/environment-variables-for-release.PNG)
         
 
-    * Bake virtual machine image with latest application updates baked in, using Packer: The execute shell script task invokes the `build-vm-image.sh` file and passes it the parameters required by Packer to create the virtual machine image in the configured Azure Storage account. The following image shows configuration of this shell script step:
+    * Bake virtual machine image with latest application updates baked in, using Packer: The execute shell script task invokes the build-vm-image.sh file and passes it the parameters required by Packer to create the virtual machine image in the configured Azure Storage account. The following image shows configuration of this shell script step:
 
         ![Bake VM Image using Packer]({{ site.baseurl }}/images/rockmetric/release-bake-vm-image-packer.PNG)
         
@@ -176,7 +176,7 @@ The [GitHub repository](https://github.com/maniSbindra/vsts-packer-vmss-php-weba
         packer build ./packer-files/phpapp-packer.json 2&gt;&amp;1 | tee packer-build-output.log
         ```
 
-       The Packer build configuration `file php-packer.json` has all the configuration to enable Packer to package the latest application code and bake the virtual machine image (including the base virtual machine image and Azure region). The following configuration section from the Packer configuration file demonstrates how the application dist folder is copied into the baked image using the file provisioner:
+       The Packer build configuration file php-packer.json has all the configuration to enable Packer to package the latest application code and bake the virtual machine image (including the base virtual machine image and Azure region). The following configuration section from the Packer configuration file demonstrates how the application dist folder is copied into the baked image using the file provisioner:
 
         ```json
         "provisioners": [
@@ -193,20 +193,20 @@ The [GitHub repository](https://github.com/maniSbindra/vsts-packer-vmss-php-weba
         ]
         ```
         
-       Other than file and shell script provisioners, we used the Ansible provisioner, but Packer supports several other provisioners such as Chef, Puppet, PowerShell, and more. The output of the Packer build command is written to the file `packer-build-command-output.log`. Packer writes the image URI of the newly created VHD in the format:
+       Other than file and shell script provisioners, we used the Ansible provisioner, but Packer supports several other provisioners such as Chef, Puppet, PowerShell, and more. The output of the Packer build command is written to the file packer-build-command-output.log. Packer writes the image URI of the newly created VHD in the format:
 
         ```
         OSDiskUri: https://*********/system/Microsoft.Compute/Images/images/packer-osDisk.5a892bb0-*********-410f-8198-92c8b140390e.vhd
         ```
 
-       The file `packer-build-output.log` contains the complete output of the Packer build command.
+       The file packer-build-output.log contains the complete output of the Packer build command.
 
     * Replace the image URI in the Resource Manager template deployment parameters file with the URI of the VHD generated by Packer in the preceding step.
         
         ![Overwrite Image Uri Parameter value]({{ site.baseurl }}/images/rockmetric/overwrite-group-deployment-parameters.PNG)
         
 
-        The shell script `overwrite-azure-deployment-parameters.sh` is invoked, which parses the Packer out log file to retrieve the URI of the newly created VHD. It then replaces the parameter value `azuredeploy.parameters.json` file. A code extract of the file is shown here:
+        The shell script overwrite-azure-deployment-parameters.sh is invoked, which parses the Packer out log file to retrieve the URI of the newly created VHD. It then replaces the parameter value azuredeploy.parameters.json file. A code extract of the file is shown here:
 
          ```shell
          export imageodisk=$(cat packer-build-output.log | grep OSDiskUri: | awk '{print $2}')
@@ -216,7 +216,7 @@ The [GitHub repository](https://github.com/maniSbindra/vsts-packer-vmss-php-weba
         sed -i 's|@@IMAGEURI@@|'"$imageodisk"'|g' azuredeploy.parameters.json
          ```
         
-    * Push the updated virtual machine image to a virtual machine scale set using Azure CLI group deployment task. This task calls the `deploy-vm-image.sh` file and passes the resource group where the virtual machine scale set is deployed as a parameter.
+    * Push the updated virtual machine image to a virtual machine scale set using Azure CLI group deployment task. This task calls the deploy-vm-image.sh file and passes the resource group where the virtual machine scale set is deployed as a parameter.
         
          ![Push new vm image to vm scale set]({{ site.baseurl }}/images/rockmetric/push-new-vm-image-to-vmscaleset.PNG)
          
@@ -227,7 +227,7 @@ The [GitHub repository](https://github.com/maniSbindra/vsts-packer-vmss-php-weba
          azure group deployment create -f azuredeploy.json -e azuredeploy.parameters.json -g $1 -n rocdashdeploy$2
          ```
 
-    * Execute a Selenium-based smoke test on the application: The `execute-site-smoke-tesh.sh` script then executes the PHPUnit site smoke tests.
+    * Execute a Selenium-based smoke test on the application: The execute-site-smoke-tesh.sh script then executes the PHPUnit site smoke tests.
 
         ![Execute UI Smoke tests]({{ site.baseurl }}/images/rockmetric/execute-phpunit-selenium-unit-tests.PNG)
         
@@ -236,7 +236,7 @@ The [GitHub repository](https://github.com/maniSbindra/vsts-packer-vmss-php-weba
         phpunit $1site-smoke-test.php $2
         ```
 
-    * Execute load tests on the application: The JMeter load test execution task then fires JMeter load tests against the site using the JMX file `site-load-test.jmx` (which has duration assertions).
+    * Execute load tests on the application: The JMeter load test execution task then fires JMeter load tests against the site using the JMX file site-load-test.jmx (which has duration assertions).
 
         ![Execute JMeter Load tests]({{ site.baseurl }}/images/rockmetric/execute-jmeter-load-tests.PNG)
         
