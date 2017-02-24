@@ -20,7 +20,7 @@ Rockmetric, an India-based business-to-business startup, implemented DevOps prac
 
 ## Customer profile
 
-[Rockmetric](http://www.rockmetric.com) is a modern customer data analytics platform powered by cognitive intelligence. The platform has a revolutionary digital analyst, *Alfred*. Alfred creates an intelligence layer driven by natural language processing (NLP) to deliver data and insights through a conversational question-and-answer format.
+[Rockmetric](http://www.rockmetric.com) is a modern customer data analytics platform powered by cognitive intelligence. The platform has a revolutionary digital analyst, *Alfred*. Alfred creates an intelligence layer driven by natural language processing (NLP) to deliver data and insights through a natural language Q&A interface.
 
 The core platform allows unification of customer data and metrics from multiple sources such as transaction data, support tools (call, email, chat, social), internal databases, CRM, marketing campaign operations, email analytics, and so on. Teams can get visualizations, automate reports, create segments, and drive action across existing tools. Teams also can create custom alerts and notifications for important metrics. Rockmetric services receive a million hits a day.
 
@@ -256,4 +256,4 @@ Since the hackfest, the Rockmetric team has started creating similar release pip
 
 A quote from the Rockmetric team:
 
-> "Running IT systems at high scale is always challenging. With help from senior members of team Microsoft, we were able to automate a big, critical, and time-consuming process of product deployment and testing. Microsoft VSTS tools are highly integrated with other Microsoft services like Azure; the Microsoft team helped us achieve an optimal solution that makes life easy for our IT team so that we can focus on our core product."
+> "Running IT systems at high scale is always challenging. With help from senior members of team Microsoft, we were able to automate a big, critical, and time-consuming process of product deployment and testing. Microsoft VSTS tools are highly integrated with other Microsoft services like Azure; the Microsoft team helped us achieve an optimal solution that makes life easy for our IT team so that we can focus on our core platform."
