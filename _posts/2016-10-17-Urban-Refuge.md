@@ -13,6 +13,7 @@ language: English
 verticals: [Public Safety, Transportation & Logistics, Smart Cities]
 ---
 
+
 Microsoft teamed up with [Urban Refuge](http://www.urbanrefuge.org/) to bring urban refugees in Amman, Jordan, access to local assistance opportunities via a Xamarin cross-platform mobile application. Urban refugees make up 78% of the 655,000 registered Syrian refugees in Jordan and 66% of refugees worldwide. Evidence from the field shows this population has access to mobile devices, yet largely share information via word of mouth. Urban Refuge's mission is to enable access to aid by leveraging technology to address information asymmetries in the urban refugee experience.
 
 Core team:
@@ -27,7 +28,7 @@ Core team:
 
 To solve the problem of access to aid and circumvent social stigma facing urban refugees in Jordan, a solution was developed to create a mobile application that provides information on assistance opportunities, with the listings made available in English and Arabic. A management portal allows the Urban Refuge team the ability to update assistance opportunities as they become available.
 
-The mobile application is a Xamarin Forms cross-platform mobile application for Android and iOS that communicates with an ASP.NET Core API and management portal hosted in the Web Apps feature of Azure App Service. Azure B2C was chosen for authentication, which enables the Urban Refuge team to focus on providing assistance opportunities while alleviating concerns around security. HockeyApp is integrated into the mobile application so custom events can be collected, informing the Urban Refuge team which assistance opportunities are most used.  
+The mobile application is a Xamarin Forms cross-platform mobile application for Android and iOS that communicates with an ASP.NET Core API and management portal hosted in the Web Apps feature of [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/). [Azure B2C](https://azure.microsoft.com/en-us/services/active-directory-b2c/) was chosen for authentication, which enables the Urban Refuge team to focus on providing assistance opportunities while alleviating concerns around security. [HockeyApp](https://azure.microsoft.com/en-us/services/hockeyapp/) is integrated into the mobile application so custom events can be collected, informing the Urban Refuge team which assistance opportunities are most used.  
 
 Using the DevOps practice of Automated Deployment, the Urban Refuge team uses Visual Studio Team Services (VSTS) to deploy to their beta testers on demand via the HockeyApp integration. The testers can then submit bug reports directly back to the Urban Refuge team, shortening the feedback cycle.
 
@@ -121,7 +122,7 @@ The team could then add images (including high-res images) to each platform-spec
 ![adding images to each platform]({{ site.baseurl }}/images/urbanrefuge/ur-images-platform.png)
 
 
-### 2. Create ASP.NET Application for API and Management ###
+### 2. Create ASP.NET Application for API and Management 
 
 To make it easier to add and update assistance opportunities, an ASP.NET Core application was created using MVC:
 
@@ -138,7 +139,7 @@ The database schema was designed to allow for the expansion of the application a
 ![web database schema]({{ site.baseurl }}/images/urbanrefuge/web-database-schema.png)
 
 
-### 3. Integrate Azure B2C for Authentication ###
+### 3. Integrate Azure B2C for Authentication 
 
 The solution is being secured using [Azure B2C](https://azure.microsoft.com/en-us/services/active-directory-b2c/). The team at Urban Refuge is planning to enable customization features to the application that will enable the users to save preferences and custom maps per user. We used the social logon features of Azure B2C to allow users to sign up with existing accounts. 
 
@@ -407,7 +408,7 @@ namespace UrbanRefuge.Web.Controllers
 
 The API is now configured to use both bearer token and cookie authentication. When a request is made to the API, the ASP.NET Core Middleware will check for the existence of the bearer token. When a request is made to the MVC portal, the ASP.NET Core Middleware will check for the existence of a cookie.  
 
-### 4. Localization of resources ###
+### 4. Localization of resources 
 
 The application will be deployed in Amman, Jordan, where Arabic is the most commonly spoken language. Although the application was designed with minimal text, there are a few resources that need to be localized such as the app name when on the phone home screen and any messages that might be displayed to the user.
 
@@ -461,7 +462,7 @@ public static class Translator
 string message = Translator.GetTranslation("AuthenticationErrorMessage");
 ```
 
-### 5. Usage metrics via HockeyApp integration ###
+### 5. Usage metrics via HockeyApp integration 
 
 One of the important components for the Urban Refuge team was getting feedback about which assistance opportunities refugees are using.  To accomplish this, the team used HockeyApp to collect user metrics every time a filter was chosen in the app. The usage data is anonymous and the Urban Refuge team can use this data to make sure there are enough opportunities available for a given type and can adjust as usage data flows in. This creates a valuable feedback loop from the Urban Refuge app users to the team, allowing the team to utilize the limited business resources they have to maintain the most relevant opportunities for their users. 
 
@@ -492,7 +493,7 @@ HockeyApp metrics view:
 ![language specific resource files]({{ site.baseurl }}/images/urbanrefuge/ur-hockeyapp-metrics.png)
 
 
-### 6. Automated Deployment via VSTS and HockeyApp ###
+### 6. Automated Deployment via VSTS and HockeyApp 
 
 As a new and small team, the Urban Refuge team did not have any DevOps practices in place before the project began. During conversations, it was identified they were a distributed team with beta testers actively testing in Amman and needed to be able to quickly make updates to the application and deliver them to the testers in a timely and automated fashion. This led to the team choosing the DevOps practice of Automated Deployment to deploy to beta testers using HockeyApp.
 
@@ -539,3 +540,6 @@ Because the Urban Refuge team will be open-sourcing the entire project, one of t
 [Registered Syrian refugees (UNHCR)](http://data.unhcr.org/syrianrefugees/country.php?id=107)
 
 [Refugee cell phone coverage](http://news.psu.edu/story/350156/2015/03/26/research/ist-researchers-explore-technology-use-syrian-refugee-camp) 
+
+[Behind the Scenes of Other Technical Case Studies](https://channel9.msdn.com/Blogs/DevRadio/)
+
