@@ -4,7 +4,7 @@ title:  "Building a Xamarin app with Urban Refuge"
 author: "James Sturtevant"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-02-27
+date:   2016-12-12
 categories: [Mobile Application Development with Xamarin, Mobile DevOps, Azure App Service]
 color: "blue"
 #image: "{{ site.baseurl }}/images/urbanrefuge/urbanrefuge.png" #should be ~350px tall
@@ -13,7 +13,7 @@ language: English
 verticals: [Public Safety, Transportation & Logistics, Smart Cities]
 ---
 
-*This report has been updated with additional resource URLs. It was originally published on Dec. 12, 2016.*
+*This report was updated with additional resource URLs on February 27, 2017.*
 
 Microsoft teamed up with [Urban Refuge](http://www.urbanrefuge.org/) to bring urban refugees in Amman, Jordan, access to local assistance opportunities via a Xamarin cross-platform mobile application. Urban refugees make up 78% of the 655,000 registered Syrian refugees in Jordan and 66% of refugees worldwide. Evidence from the field shows this population has access to mobile devices, yet largely share information via word of mouth. Urban Refuge's mission is to enable access to aid by leveraging technology to address information asymmetries in the urban refugee experience.
 
