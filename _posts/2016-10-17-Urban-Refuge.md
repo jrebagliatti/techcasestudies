@@ -59,12 +59,12 @@ As the Urban Refuge team began to look at possible technical solutions, they wan
 
 The solution has several components to it. The most important components are:
 
-1. [Create Xamarin Forms application using iconography](#create-xamarin-forms-application-using-iconography)
-2. [Create ASP.NET Application API and Management Portal](#create-aspnet-application-for-api-and-management)
-3. [Integrate Azure B2C for Authentication](#integrate-azure-b2c-for-authentication)
-4. [Localization of resources](#localization-of-resources)
-5. [Usage metrics via HockeyApp Integration](#usage-metrics-via-hockeyapp-integration)
-6. [Automated Deployment via VSTS and HockeyApp](#automated-deployment-via-vsts-and-hockeyapp)
+1. [Create Xamarin Forms application using iconography](#1-create-xamarin-forms-application-using-iconography)
+2. [Create ASP.NET Application API and Management Portal](#2-create-aspnet-application-for-api-and-management)
+3. [Integrate Azure B2C for Authentication](#3-integrate-azure-b2c-for-authentication)
+4. [Localization of resources](#4-localization-of-resources)
+5. [Usage metrics via HockeyApp Integration](#5-usage-metrics-via-hockeyapp-integration)
+6. [Automated Deployment via VSTS and HockeyApp](#6-automated-deployment-via-vsts-and-hockeyapp)
 
 A high-level view of the architecture is as follows:
 
