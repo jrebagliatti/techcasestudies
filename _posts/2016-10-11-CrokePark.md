@@ -260,7 +260,6 @@ The purpose of this project was primarily research and some decisions made were 
     ![]({{ site.baseurl }}/images/croke19.png)
         
 
-      
     “Black out” periods were also experienced at the half-time break, where the Azure platform received no data from the sound monitoring system. In addition to the causes discussed above, we have theorized that people initiating connections with their mobile devices to the Croke Park free Wi-Fi network at the start of half-time generate a huge network traffic at the half time break (as seen in the graph above). This may jam the data transmission between the gateway and Azure, which further increases the data lost. A solution to this will also be tested in the project under way as described above.
     
 - **Payload frequency.** The edge microphones aggregated data and sent pay loads to the gateways every minute. This frequency was perfectly fine for the sound pollution use case when data is aggregated over 15-minute periods; however, this could mean missing a spike at a match. As this solution proved very successful for fan engagement, the team will be investigating opportunities to increase the data frequency.
