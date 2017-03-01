@@ -26,7 +26,7 @@ Researchers at DCU are using the Azure IoT Suite to analyze that data, in the pr
 
 Laura Clifford, Commercial Development and Engagement, Research & Enterprise Hub, Dublin City University, led the effort to help interested companies learn about and participate in the project. “We’ve had more than 30 companies actively involved with us in understanding how they could potentially deploy their pre-commercial IoT technologies here at Croke Park,” she said.
 
-**Authors:**
+Authors:
 
 - Niall Moran – Principal Technical Evangelist, Microsoft Ireland
 - David Prendergast – Senior Researcher, Intel Ireland
@@ -91,16 +91,16 @@ Bringing all of these resources together and successfully managing the delivery 
 
 The technical solution was designed based on the above business, functional, and non-functional requirements. The following table details the components along with the partner responsible for the deployment and operation and notes on how these components satisfied requirements:
 
- 
 
 | Component                  | Provider        | Details/Links                                                                    | Notes                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------------------------|-----------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Sound monitoring equipment | Sonitus Systems | [*EM2010 sound level monitor*](http://www.sonitussystems.com/products/EM2010)    | 4 sound monitoring microphones positioned around the stadium, 2 internal and 2 external as per stadium map.                                                                                                                                                                                                                                                                            |
-| Gateway Devices            | Intel           |                                                                                  | 4 Intel Quark™ gateways positioned strategically around the stadium. The key criteria for determining location was based on the networking access and line of sight between sensors and gateways within optimal transmission distances for the RFBee radios used in the devices.                                                                                                       |
+| Gateway Devices            | Intel           |                                                                                  | 4 Intel Quark™ gateways positioned strategically around the stadium. The key criteria for determining location was based on the networking access and line of sight between sensors and gateways within optimal transmission distances for the RFBee radios used in the devices.                                                                                                       |
 | Master Gateway             | DCU             | Central Dell machine running Ubuntu 14.4 LTS                                     | This machine aggregates and collates all data from the gateways to be pushed to the cloud. This removes the need to have internet connectivity for each gateway and gives us a certain amount of resilience as data can be collected and stored. This device and the processes that run on it have recently been migrated to a virtual machine running Ubuntu 16.04 LTS.               |
-| Azure Cloud                | Microsoft       | [*Microsoft Azure IoT Services*](https://azure.microsoft.com/en-us/develop/iot/) | The Azure cloud is used to provide all back-end and business-intelligence functions, including device registration, security, data ingestion, real-time analytics, storage, and display.                                                                                                                                                                                                |
-| Cognitive Models           | DCU             |                                                                                  | DCU work with all of the data collected to analyze quality and help direct the overall architecture, including position of microphones as well as how to deal with interference. DCU is also working on developing machine learning models that can be used to predict outcomes based on data feeds. For example, the likelihood of the Skyline tour being cancelled at certain times. |
- 
+| Azure Cloud                | Microsoft       | [*Microsoft Azure IoT Services*](https://azure.microsoft.com/en-us/develop/iot/) | The Azure cloud is used to provide all back end and business intelligence functions including, device registration, security, data ingestion, real time analytics, storage and display.                                                                                                                                                                                                |
+| Cognitive Models           | DCU             |                                                                                  | DCU work with all of the data collected to analyse quality and help direct the overall architecture including position of microphones as well as how to deal with interference. DCU are also working on developing machine learning models that can be used to predict outcomes based on data feeds. For example, the likelihood of the Skyline tour being cancelled at certain times. |
+
+
 
 ### Security 
 
