@@ -26,7 +26,7 @@ Researchers at DCU are using the Azure IoT Suite to analyze that data, in the pr
 
 Laura Clifford, Commercial Development and Engagement, Research & Enterprise Hub, Dublin City University, led the effort to help interested companies learn about and participate in the project. “We’ve had more than 30 companies actively involved with us in understanding how they could potentially deploy their pre-commercial IoT technologies here at Croke Park,” she said.
 
-Authors:
+**Authors:**
 
 - Niall Moran – Principal Technical Evangelist, Microsoft Ireland
 - David Prendergast – Senior Researcher, Intel Ireland
@@ -250,16 +250,16 @@ The purpose of this project was primarily research and some decisions made were 
     - JSON format. The Azure back-end setup relies on data being sent in valid JSON format before being analyzed and aggregated in real time. Any invalid value or changes to the format resulted in dropped packets by Azure. New functionality in Stream Analytics makes it very easy to test real-time analytics scripts against sample data, but there seems to be no real way of dealing with invalid formats. To resolve this, all data was pushed to BLOB storage so that we could analyze all packets to understand where formats were changing. This helped greatly in agreeing on a strict format and sticking with it as well as making the Stream Analytics jobs flexible enough to handle new data sent within the packets. Invalid JSON was much more difficult to deal with and is simply dropped at the moment. It is worth considering using routines on the gateways or master gateway to validate JSON formats before sending to Azure and alerting or logging results. In addition, a two-way communication mechanism may be applied so that Azure can request the gateway to re-send the missing/damaged data at quieter times.
     - The current setup may suffer from radio signal interference in the high-dynamic and high-density environment. The motion from human bodies and the signals from their mobile devices along with wireless signals from TV broadcast crews, Garda officers, and security teams may all interfere the wireless data communication between the microphone and the gateway. This can be confirmed from the following graph, showing that the number of packets lost starts decreasing when the game is over and almost no packets were lost as soon as all the fans exited the stadium. This issue is well recognized and a project is under way to build more resilience into to the system.
     
-    *A sample of sound data packets lost at a match day (2016 Gaelic Football final replay, over 82,000 fans in attendance)*
+*A sample of sound data packets lost at a match day (2016 Gaelic Football final replay, over 82,000 fans in attendance)*
       
-    ![]({{ site.baseurl }}/images/croke18.png)
+![]({{ site.baseurl }}/images/croke18.png)
         
       
-    *The network traffic at Croke Park during a game day. A huge network traffic increase occurred during the half-time break (red: incoming traffic; blue: outgoing traffic).*
+*The network traffic at Croke Park during a game day. A huge network traffic increase occurred during the half-time break (red: incoming traffic; blue: outgoing traffic).*
 
-    ![]({{ site.baseurl }}/images/croke19.png)
+![]({{ site.baseurl }}/images/croke19.png)
         
 
-    “Black out” periods were also experienced at the half-time break, where the Azure platform received no data from the sound monitoring system. In addition to the causes discussed above, we have theorized that people initiating connections with their mobile devices to the Croke Park free Wi-Fi network at the start of half-time generate a huge network traffic at the half time break (as seen in the graph above). This may jam the data transmission between the gateway and Azure, which further increases the data lost. A solution to this will also be tested in the project under way as described above.
+  “Black out” periods were also experienced at the half-time break, where the Azure platform received no data from the sound monitoring system. In addition to the causes discussed above, we have theorized that people initiating connections with their mobile devices to the Croke Park free Wi-Fi network at the start of half-time generate a huge network traffic at the half time break (as seen in the graph above). This may jam the data transmission between the gateway and Azure, which further increases the data lost. A solution to this will also be tested in the project under way as described above.
     
 - **Payload frequency.** The edge microphones aggregated data and sent pay loads to the gateways every minute. This frequency was perfectly fine for the sound pollution use case when data is aggregated over 15-minute periods; however, this could mean missing a spike at a match. As this solution proved very successful for fan engagement, the team will be investigating opportunities to increase the data frequency.
