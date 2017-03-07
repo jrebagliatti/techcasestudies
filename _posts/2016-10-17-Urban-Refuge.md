@@ -24,6 +24,8 @@ Core team:
 - James Sturtevant ([@aspenwilder](https://twitter.com/aspenwilder)) – Senior Technical Evangelist, Microsoft
 - Gavin Bauman ([@gavination2](https://twitter.com/gavination2)) – Technical Evangelist, Microsoft
 
+![code2](/images/urbanrefuge/Code2.PNG)
+
 
 ## Solution overview ##
 
@@ -46,6 +48,9 @@ The Urban Refuge application will be piloted in Amman, Jordan, with the aim of s
  
 ## Problem statement ##
 
+![Ruin](/images/urbanrefuge/Ruin.PNG)
+
+
 Urban refugees make up 78% of the 655,000 registered Syrian refugees in Jordan. Although evidence from the field suggests the majority of urban Syrian refugees have access to mobile phones in Jordan, the way refugees currently discover assistance opportunities is largely through word of mouth due to a dearth of accessible online resources and social stigma. During their research, the team at Urban Refuge found that putting the aid on the map in the form of a mobile application enables urban refugees to gain access to vital aid, without the stigma that comes with being a refugee in Jordan. Currently, the Urban Refuge team has a database of more than 160 organizations tagged by geo-coordinates to help refugees find aid.
 
 As the Urban Refuge team began to look at possible technical solutions, they wanted to address several concerns around implementation, feedback, and testing:
@@ -66,6 +71,9 @@ The solution has several components to it. The most important components are:
 4. [Localization of resources](#4-localization-of-resources)
 5. [Usage metrics via HockeyApp Integration](#5-usage-metrics-via-hockeyapp-integration)
 6. [Automated Deployment via VSTS and HockeyApp](#6-automated-deployment-via-vsts-and-hockeyapp)
+
+![working](/images/urbanrefuge/Working.PNG)
+
 
 A high-level view of the architecture is as follows:
 
@@ -513,6 +521,9 @@ By choosing to implement Automated Deployment, the development team located in B
 The Xamarin cross-platform implementation will allow the Urban Refuge team to begin beta testing with a team in Amman in January 2017, with the official launch date planned for summer of 2017. Ensuring the accuracy of the information being provided via the app is paramount for success and it requires time on the ground in Amman. The team will be using the DevOps practice of Automated Deployment to deploy to the beta testers in Amman in January. The beta testers will be testing the app's functionality in the field along with the accuracy of the location information. The launch is expected to enable refugees to gain access to much needed aid without the stigma they might normally endure.
 
 Beyond the initial launch in Amman, the Xamarin application has future impact potential on communities across the globe and in research.
+
+![cellphone](/images/urbanrefuge/Cellphone.PNG)
+
 
 ### Expansion ###
 
