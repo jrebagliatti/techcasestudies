@@ -24,7 +24,7 @@ Core team:
 - James Sturtevant ([@aspenwilder](https://twitter.com/aspenwilder)) – Senior Technical Evangelist, Microsoft
 - Gavin Bauman ([@gavination2](https://twitter.com/gavination2)) – Technical Evangelist, Microsoft
 
-![code2](/images/urbanrefuge/Code2.PNG)
+![code2]({{ site.baseurl }}/images/urbanrefuge/Code2.PNG)
 
 
 ## Solution overview ##
@@ -48,7 +48,7 @@ The Urban Refuge application will be piloted in Amman, Jordan, with the aim of s
  
 ## Problem statement ##
 
-![Ruin](/images/urbanrefuge/Ruin.PNG)
+![Ruin]({{ site.baseurl }}/images/urbanrefuge/Ruin.PNG)
 
 
 Urban refugees make up 78% of the 655,000 registered Syrian refugees in Jordan. Although evidence from the field suggests the majority of urban Syrian refugees have access to mobile phones in Jordan, the way refugees currently discover assistance opportunities is largely through word of mouth due to a dearth of accessible online resources and social stigma. During their research, the team at Urban Refuge found that putting the aid on the map in the form of a mobile application enables urban refugees to gain access to vital aid, without the stigma that comes with being a refugee in Jordan. Currently, the Urban Refuge team has a database of more than 160 organizations tagged by geo-coordinates to help refugees find aid.
@@ -72,7 +72,7 @@ The solution has several components to it. The most important components are:
 5. [Usage metrics via HockeyApp Integration](#5-usage-metrics-via-hockeyapp-integration)
 6. [Automated Deployment via VSTS and HockeyApp](#6-automated-deployment-via-vsts-and-hockeyapp)
 
-![working](/images/urbanrefuge/Working.PNG)
+![working]({{ site.baseurl }}/images/urbanrefuge/Working.PNG)
 
 
 A high-level view of the architecture is as follows:
@@ -522,7 +522,7 @@ The Xamarin cross-platform implementation will allow the Urban Refuge team to be
 
 Beyond the initial launch in Amman, the Xamarin application has future impact potential on communities across the globe and in research.
 
-![cellphone](/images/urbanrefuge/Cellphone.PNG)
+![cellphone]({{ site.baseurl }}/images/urbanrefuge/Cellphone.PNG)
 
 
 ### Expansion ###
