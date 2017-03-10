@@ -4,7 +4,7 @@ title:  "Building an interactive tutorial player with MakersKit using Azure App 
 author: "David Washington"
 author-link: "http://dwcares.com"
 #author-image: "{{ site.baseurl }}/images/authors/dwashin.png"
-date:   2017-01-19
+date:   2017-03-09
 categories: [Azure App Service]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
