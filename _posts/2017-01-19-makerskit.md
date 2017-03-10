@@ -172,7 +172,7 @@ Mike wanted the tutorial player to contain time stamp markers on the video timel
 ![Timestamps]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-markers.gif)
 
 
-Rather than building this part ourselves, we used the Azure Media Player's Timeline Markers Plugin. It lets us access timeline time stamp markers for free. 
+Rather than building this part ourselves, we used Azure Media Player's [Timeline Markers Plugin](https://github.com/Azure-Samples/media-services-javascript-azure-media-player-timeline-markers-plugin). It lets us access timeline time stamp markers for free. 
 
 After adding the plugin's files to our project, we added the ``timelineMarker`` property that points to all the video timestamps to the plugins property of our AMP initialization. 
 
