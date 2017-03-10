@@ -51,13 +51,13 @@ MakersKit was born from the founders doing in-person DIY tutorials in Los Angele
 
 I first met Mike Stone during Mentor Days at the Techstars Retail Accelerator in Minneapolis. We discussed many ways to meet their online subscription model goal, but we decided to focus on two main opportunities:
 
-1. **Richer, more interactive, tutorial video playback**  
-MakersKit currently hosts all its tutorial content on YouTube. When someone buys a kit, they watch the video to see how to build it. These videos are a key part of the MakersKit value proposition as they are fun to watch and easy to learn from. 
+- **Richer, more interactive, tutorial video playback**  
+  MakersKit currently hosts all its tutorial content on YouTube. When someone buys a kit, they watch the video to see how to build it. These videos are a key part of the MakersKit value proposition as they are fun to watch and easy to learn from. 
 
   The YouTube videos are designed to contain both instruction and marketing content. Creating a successful video is difficult because it can end up being either too long to be a marketing video or too short to truly be instructional. The videos lack any tools to help guide the viewer from step to step, to easily repeat steps, and to view the instructions as they watch the video. 
 
-2. **Real-time contextual chat**  
-Since MakersKit workshops are known for their great social experience, we wanted to play with the idea of bringing that social conversation to people building kits on their own at home. Would it be possible to recreate the social feel of the DIY workshops that Mike and his co-founder led in Los Angeles in a way that scales to online users?
+- **Real-time contextual chat**  
+  Since MakersKit workshops are known for their great social experience, we wanted to play with the idea of bringing that social conversation to people building kits on their own at home. Would it be possible to recreate the social feel of the DIY workshops that Mike and his co-founder led in Los Angeles in a way that scales to online users?
   
 > "Our dream is to have this player + social sharing photos, videos and comments right on the video page."
 >
@@ -237,9 +237,6 @@ app.get('/', function(req, res) {
 
 
 The MakersKit team wanted a real-time social experience for people to interact, share, and get help with each other while they watch the tutorial videos. We created a real-time chat client integrated into the tutorial player so people simultaneously watching videos could ask each other questions and share best practices. 
-
-![Socket.io Logo](/images/2017-01-19-makerskit/logo.svg)
-
 
 We built our server in Node.js, so to build real-time chat we used the Node.js real-time framework, [Socket.io](http://socket.io). Socket.io is great for real-time applications like chat because it's built on top of the WebSocket Protocol supported by most modern browsers. The persistent TCP connection reduces the latency in messages between client and server. Also, Socket.io has a consistent API between client and server since they both are JavaScript. The approach that we used for building chat using Socket.io closely followed the [Building Real-time Chat in Socket.io (MSDN)](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-nodejs-chat-app-socketio) example.
 
