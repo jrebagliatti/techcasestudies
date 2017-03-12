@@ -16,7 +16,7 @@ language: English
 
 ![CGI Federal Logo]({{ site.baseurl }}/images/cgifederal/logo.png)
 
-In five short days, CGI Federal and Microsoft worked together to find ways to help streamline their software lifecycle by applying a DevOps mindset to their traditional processes. They collaborated to map the process and identify multiple opportunities to improve the process by introducing approaches like:
+In five short days, CGI Federal and Microsoft worked together to find ways to help streamline CGI's software lifecycle by applying a DevOps mindset to its traditional processes. A joint team collaborated to map the process and identify multiple opportunities to improve the process by introducing approaches like:
 
 -  Automated cloud resource provisioning
 -  Database versioning and publication
@@ -26,7 +26,7 @@ In five short days, CGI Federal and Microsoft worked together to find ways to he
 
 The team brought together technical leads from across CGI Federal, joined by Technical Evangelists from Microsoft. 
 
-#### CGI Federal’s profiles
+**CGI Federal’s profiles:**
 
 -	Product manager
 -	Test lead
@@ -34,7 +34,7 @@ The team brought together technical leads from across CGI Federal, joined by Tec
 -	3 Developers
 -	Database administrator
 
-#### Microsoft team
+**Microsoft team:**
 
 -	William Buchwalter
 -	Jessica Deen
