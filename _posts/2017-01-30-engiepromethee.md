@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "A hackfest helps ENGIE GEM begin to migrate its applications to Azure"
-author: "Julien Corioland, Sébastien Pertus"
+author: "Julien Corioland and Sébastien Pertus"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2017-03-15
 categories: [Azure App Service, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
-excerpt: Microsoft France and ENGIE Global Energy Markets partnered to migrate the first of its applications to Azure. Leveraging Azure App Services and Azure Functions, the hackfest team also addressed topics such as security, scheduled execution, and monitoring. 
+excerpt: Microsoft France and ENGIE Global Energy Markets partnered to migrate the first of its applications to Azure. Leveraging Azure App Service and Azure Functions, the hackfest team also addressed topics such as security, scheduled execution, and monitoring. 
 language: [English]
 verticals: [Energy, Financial Services]
 ---
@@ -83,7 +83,7 @@ The application architecture is composed of three parts:
 ![Prométhée Authentication Overview]({{ site.baseurl }}/images/2017-01-30-engiepromethee/azuread-architecture.png)
 
 
-#### Angular workflow ####
+**Angular workflow**
 
 The Angular services, such as [Http](https://angular.io/docs/ts/latest/api/http/index/Http-class.html), provide a simple way to get the credentials from the current user, using the **withCredentials** option contained in the [RequestOptions](https://angular.io/docs/ts/latest/api/http/index/RequestOptions-class.html#!#withCredentials-anchor) object.
 
@@ -97,7 +97,7 @@ getSingle(controllerName: string, id: Number) {
 }
 ```
 
-#### Prométhée daemon workflow ####
+**Prométhée daemon workflow**
 
 On the other side, the Prométhée back end is configured as a **daemon** and is authenticated to access the **HR Service** web API.
 We used [Active Directory authentication library (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet) to be able to authenticate the Prométhée back end to HR Service, using the **AuthenticationContext** class.
@@ -136,7 +136,7 @@ public async Task<string> Get(string api, object parm)
 }
 ```
 
-#### HR Service workflow ####
+**HR Service workflow**
 
 At the end, the **HR Service** web API is secured using the **JWT bearer authentication** through **Azure Active Directory**.  
 During the initialization process, the application builder is configured to use the JWT bearer authentication:
@@ -196,7 +196,7 @@ public class DefaultPolicy : AuthorizationHandler<DefaultPolicy>, IAuthorization
 
 ```
 
-#### Documentation ####
+**Documentation**
 
 This scenario is described in the official Azure Active Directory documentation website:
 
@@ -259,7 +259,7 @@ public static void Run(out Mail message, string myQueueItem, TraceWriter log)
 
 ``` 
 
-#### Azure function and Visual Studio integration
+**Azure function and Visual Studio integration**
 
 We used the [Visual Studio tools for Azure Functions](https://blogs.msdn.microsoft.com/webdev/2016/12/01/visual-studio-tools-for-azure-functions/) to be able to track and integrate the function development process within Visual Studio Team Services.
 
