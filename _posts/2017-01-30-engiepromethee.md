@@ -366,4 +366,4 @@ Last but not least, here are some pointers to additional resources that will hel
 - [Set up staging environments in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-staged-publishing)
 - [Microsoft Azure Build and Release Task for VSTS](https://marketplace.visualstudio.com/items?itemName=geeklearningio.gl-vsts-tasks-azure)
 - [Try Functions](https://functions.azure.com/try)
-- [TODO URL DX France GitHub Repo](https://github.com/DXFrance)
+
