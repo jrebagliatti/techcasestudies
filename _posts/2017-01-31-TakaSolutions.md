@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using IoT in building management to bring energy savings to Taka Solution customers"
+title:  "Using IoT in building management to bring energy savings to Taka Solutions customers"
 author: "Mert Unan"
 author-link: "# Include twitter link here"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
