@@ -30,13 +30,13 @@ This section contains general information about the customer, including the foll
 
 ## Problem statement ##
 
-This section defines the problem(s)/challenge(s) that the customer wants to address with a Desktop Bridge solution. Include things suich as costs and customer experience.
+This section defines the problem(s)/challenge(s) that the customer wants to address with a Desktop Bridge solution. Include things such as costs and customer experience.
 
 > If you'd really like to make your write-up pop, include a customer quote that highlights the customer's problem(s)/challenges. Remember to attribute the quote. Include name, title, and company.
 
 ## Solution, steps, and delivery ##
 
-The majority of your win artifacts are included in this section, including (but not limited to) the following: source-code excerpts, pictures, drawings, architectural diagrams, value stream mappings, and demo videos.
+The majority of your win artifacts are included in this section, including (but not limited to) the following: source-code snippets, pictures, drawings, architectural diagrams, value stream mappings, and demo videos.
 
 This section should include the following details:
 
