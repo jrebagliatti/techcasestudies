@@ -399,7 +399,7 @@ In a loop (max 10,000 runs), a number of jobs, defined by the variable nrJobs, a
 
 We want to retrieve 1 signal for 16,500 (the number of cars driven on a peak moment) every second. However, because the system is not able to add a message to the queue, pick it up at the job worker, get the data, and put it into the data retriever, we set the pullingTimeSpan to 10 seconds. Every call will then retrieve data for 10 seconds.
 
-#**Pull scenario using Azure Functions**
+**Pull scenario using Azure Functions**
 
 The pull scenario using Azure Functions implements the job worker function from the architecture. In this architecture we have used dynamic Azure Functions that do not have their own hosting plan but share a hosting plan and the owner pays per execution and used memory (see [Functions Pricing](https://azure.microsoft.com/en-us/pricing/details/functions/ "Azure Functions Pricing") for more details).
 
@@ -776,7 +776,7 @@ This section describes the cost of the different scenarios. The cost will be def
 
 ### Cost of pull scenario using Azure Functions ###
 
-In order to define the cost for Azure Functions, we did a test with the software described in the section [Pull scenario using Azure Functions](#pull-scenario-using-azure-functions). We have taken some constants to do the cost calculation, as shown in Figure 13. More details on the costs can be found in the [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator). We assume Azure Functions needs the maximum memory of 1,536 MB.
+In order to define the cost for Azure Functions, we did a test with the software described in the section "Pull scenario using Azure Functions." We have taken some constants to do the cost calculation, as shown in Figure 13. More details on the costs can be found in the [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator). We assume Azure Functions needs the maximum memory of 1,536 MB.
 
 *Figure 13. Azure Functions constants*
 
