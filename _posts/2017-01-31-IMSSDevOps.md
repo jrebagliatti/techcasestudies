@@ -2,7 +2,7 @@
 layout: post
 title:  "Enhancing the software development process by implementing DevOps at IMSS"
 author: "José Raúl Guerrero Carreón"
-author-link: "www.superneurona.com"
+author-link: "http://www.superneurona.com"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2017-03-27
 categories: [DevOps]
@@ -141,7 +141,7 @@ In the continuous delivery scenario, the first step was to create the developmen
 The following steps were required in this process:
 
 - Use Maven to execute the pom.xml file and get the build outputs.
-- Copy only the \**/*.war files to $(build.artifactstagingdirectory).
+- Copy only the \*\*/\*.war files to $(build.artifactstagingdirectory).
 - Use a PowerShell inline script to set the cURL path inside the agent.
 
   ```
