@@ -246,13 +246,13 @@ The base view models have many nice helpers such as:
 - **IsBusy** – Used to display spinners when the view is busy gathering data. Our implementation allows for multiple concurrent requests with AddBusy/ReleaseBusy.
 - **IsOnline** – Toggles as NetworkStatus changes.
 - **IsActive** – Used to determine if the view is visible.
-- **UpdateCollection\\\<T>(oldCollection, newList)** – Updates an observable collection by only modifying updated items. This is to avoid flicker in lists or grids. 
-- **SaveAsync\\\<T>(string name, T data)** – Stores data in cache.
-- **\\\<T> LoadAsync\\\<T>(string name)** – Loads data from cache.
+- **UpdateCollection\<T>(oldCollection, newList)** – Updates an observable collection by only modifying updated items. This is to avoid flicker in lists or grids. 
+- **SaveAsync\<T>(string name, T data)** – Stores data in cache.
+- **\<T>LoadAsync\<T>(string name)** – Loads data from cache.
 
 A ViewModel for a view (for example *SearchViewModel*) can derive from one of two classes: 
 
-- *AppViewModelBaseWithParameter\\\<T>*
+- *AppViewModelBaseWithParameter\<T>*
 - *AppViewModelBaseWithoutParameter*
 
 It depends on whether the view has parameters or not.
@@ -495,7 +495,7 @@ If you use the Presidents sample, you can toggle the TV-safe area on and off to 
 
 LiveArena needs to produce white-labeled apps for all the platforms. Today, all this work is done manually and locally on a developer's computer. This is cumbersome and very error-prone. To enhance this process, we performed a value stream mapping exercise and concluded that:
 
--	We need a separate branch for each white-labeled app. Naming convention will be release-\\\<brand>. (More on branching strategy below.)
+-	We need a separate branch for each white-labeled app. Naming convention will be release-\<brand>. (More on branching strategy below.)
 -	We identified all the files that we had to change to build each white-labeled app. This list was different for each platform.
 -	We integrate with HockeyApp to automatically provide apps to stakeholders and beta testers. This will require us to have three HockeyApp apps per white-labeled app.
 -	We use Xamarin Test Cloud to get basic testing done after each build. Xamarin Test Cloud supports only iOS and Android at this time.
@@ -512,8 +512,8 @@ We knew we needed a separate branch for each white-labeled app, but we considere
 The branching strategy is as follows:
 
 1. Implement new features and/or bug fixes in the developer branch.
-2.	Create a release-\\\<version> branch and start testing against the internal test environment.
-3.	Merge the release-\\\<version> branch into each of the white-labeled app release-\\\<brand> branches to trigger a continuous build and distribution to external testers and stakeholders.
+2.	Create a release-\<version> branch and start testing against the internal test environment.
+3.	Merge the release-\<version> branch into each of the white-labeled app release-\<brand> branches to trigger a continuous build and distribution to external testers and stakeholders.
 
 ### Identification of white-label-specific details ###
 
@@ -583,12 +583,12 @@ When you add an app to HockeyApp, you need to add one app per platform, so in ou
 
     ![Create App]({{ site.baseurl }}/images/LiveArena/17-Hockey2.png)
 
-3.	Clicking **Save** shows the final screen contains the \_\*\*app id\*\*\_ (which is very important). Here you can manage your HockeyApp. We’ll discuss shortly exactly how you integrate HockeyApp with your Xamarin project.
+3.	Clicking **Save** shows the final screen contains the _**app id**_ (which is very important). Here you can manage your HockeyApp. We’ll discuss shortly exactly how you integrate HockeyApp with your Xamarin project.
 
     ![Options and instructions]({{ site.baseurl }}/images/LiveArena/18-Hockey3.png)
     
 
-4. In Visual Studio, we reference the NuGet package \_\*\*HockeySDK.Xamarin\*\*\_. 
+4. In Visual Studio, we reference the NuGet package _**HockeySDK.Xamarin**_. 
 
     ![HockeySDK.Xamarin]({{ site.baseurl }}/images/LiveArena/19-VSNuget.png)
     
@@ -625,7 +625,7 @@ For Android, create a new HockeyApp and include the same NuGet package. Instead 
 
 That's where we supply the app ID for the HockeyApp Android, of course. 
 
-For UWP, create another HockeyApp app (and target Windows). Since it’s Windows (UWP), we shouldn’t target the Xamarin version but instead reference \_\*\*HockeySDK.UWP\*\*\_ package. Here we modify the *app.xaml.cs* file.
+For UWP, create another HockeyApp app (and target Windows). Since it’s Windows (UWP), we shouldn’t target the Xamarin version but instead reference _**HockeySDK.UWP**_ package. Here we modify the *app.xaml.cs* file.
 
         using Microsoft.HockeyApp;
         …
