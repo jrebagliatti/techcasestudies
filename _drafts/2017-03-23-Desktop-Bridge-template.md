@@ -16,7 +16,6 @@ verticals: The vertical markets this article has focus on (such as [Energy, Manu
 Begin with an intro statement with the following details:
 
 - Solution overview
-- Key technologies used
 - Core team: names, roles, and Twitter handles 
  
 ## Customer profile ##
@@ -26,30 +25,31 @@ This section contains general information about the customer, including the foll
 - Company name and URL
 - Company description
 - Company location
-- Product/service offerings
+- Details of the functionality of the Desktop Application that was converted to UWP and submitted to the store.
+- Numeric details (if available) that demonstrate the brand strength of the partner and/or noteworthy customer reach: Number of downloads of the desktop application (before the conversion), the revenue that the company obtains from this application, the average evaluations it has (if any) from the users (e.g. from the Steam platform), ranking/awards that the app has won (at least 1 numeric detail is mandatory in order to ask for Revenue Share and/or Merchandising offers)
+- Non-numeric details (if any) that demonstrate brand strength of the partner and/or noteworthy customer reach: e.g. "This application is mandatory in [Country] to calculate and pay your taxes every year" (at least 1 non-numeric detail is mandatory in order to ask for Revenue Share and/or Merchandising offers)
+- (Highly desirable) Link to the partner's web page where the Store badge with the link to download the app from the store is visible
 
 ## Problem statement ##
 
-This section defines the problem(s)/challenge(s) that the customer wants to address with a Desktop Bridge solution. Include things such as costs and customer experience.
+This section will define the problem(s)/challenges that the customer wants to address through Desktop Bridge, enhancement of the application with UWP-only features and publication of the app in the Windows Store. Include things like more downloads, global discovery/monetization potential, simplified distribution, trusted deployment, easy first steps towards UWP, customer experience (easy updates, easy install/uninstall, etc.), UWP-only features added to the application (e.g. Cortana, Live Tiles, Notifications, etc.)
 
-> If you'd really like to make your write-up pop, include a customer quote that highlights the customer's problem(s)/challenges. Remember to attribute the quote. Include name, title, and company.
+Include a 3 minute video on the customer's problem, the work done with the Customer and/or the customer's impressions.
 
 ## Solution, steps, and delivery ##
 
-The majority of your win artifacts are included in this section, including (but not limited to) the following: source-code snippets, pictures, drawings, architectural diagrams, value stream mappings, and demo videos.
+The majority of your win artifacts will be included in this section, including (but not limited to) the following: Source code snippets (if any), pictures, drawings, architectural diagrams and demo videos.
 
 This section should include the following details:
 
-- What was worked on and what problem it helped solve.
-- Description of the app you converted to UWP and submitted in the Windows Store. If the app was enhanced with UWP-only features such as Cortana, notifications, or live tiles, include those details here.
-- Technical details of how this was implemented.
+- What was worked on and what problem it helped solve. 
+- Description of the app you converted to UWP and submitted in the Windows Store. If the app was enhanced with UWP-only features such as Cortana, notifications, live tiles, etc., include those details here.
+- Technical details of how this was implemented: A detailed step-by-step guide of the tasks performed in order to convert the app to UWP, specially in the cases where manual conversion was used). The sample Code (if any) that leverages the results of joint work.
 - Pointers to references or documentation.
 - Learnings from the Microsoft team and the customer team.
-- Architecture diagram(s) (**required**). For example:
+- Architecture diagram/s (if any). Example below:
 
   ![Desktop Bridge architecture diagram](/images/templates/desktopbridgearchitecture.png)
-
-> If you'd really like to make your write-up pop, include a customer quote that highlights the solution. Remember to attribute the quote. Include name, title, and company.
 
 **Directions for adding images**
 
@@ -66,16 +66,21 @@ Note that capitalization of the file name and the file extension must match *exa
  
 ## Conclusion ##
 
-This section briefly summarizes the technical story with the following details included:
+This section will briefly summarize the technical story with the following details included:
 
-- Measurable impact/benefits resulting from the implementation of the solution
-- General lessons
-  - Insights the team came away with
-  - What can be applied or reused for other environments or customers
-- Opportunities going forward
-  - Details on how the customer plans to proceed or what more they hope to accomplish
+- Graphic showing the increase in downloads of the application since it was published in the Windows Store (if available)
+- Measurable impact/benefits resulting from the implementation of the solution. e.g. How was the user experience enhanced through the addition of UWP-only features to the app? Which ones? What are the main benefits the customer sees in publishing his app into the store? Etc.
+- General lessons/learnings:
+  - Insights the team came away with.
+  - What can be applied or reused for other environments or customers?
+- Opportunities going forward:
+  - Details on how the customer plans to proceed or what else they hope to accomplish. E.g. Are they planning to move their app to UWP fully? Are they planning to move their other apps to UWP and to the store through Desktop Bridge? Etc.
 
-> If you'd really like to make your write-up pop, include a customer quote highlighting impact, benefits, general lessons, and/or opportunities. Remember to attribute the quote. Include name, title, and company.
+- Include a customer quote that highlights the customer’s problem(s)/challenges. Remember to attribute the quote. Include Name, Title, Company. Ideally, this customer quote should be a public mention from the customer (e.g. a quote on the customer website, social media post, press release, blog, etc. Email is accepted however it is less desirable). 
+For example:
+> “[…]The Desktop Bridge vastly simplifies our installer and uninstaller. It also opens up UWP APIs that we’ve taken advantage of, including the live tiles and notifications. And having the full-featured Evernote app in the Windows Store means future improvements will reach users faster.“ - Seth Hitchings, VP Engineering, Evernote.
+
+- Include a publicly shared case study (consumable outside of GitHub, e.g. customer.microsoft.com; published by the partner; etc.). Aligned with strategic scenarios containing all details of the partner/customer story (if any).
 
 ## Additional resources ##
 
