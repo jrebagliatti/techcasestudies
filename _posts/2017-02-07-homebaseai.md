@@ -13,7 +13,7 @@ verticals: [Property Management, Real Estate]
 language: English
 ---
 
-<img src="{{ site.baseurl }}/images/homebase/homebaseai-logo.png" width="400">
+<img alt="Logo of Homebase" src="{{ site.baseurl }}/images/homebase/homebaseai-logo.png" width="400">
 
 Microsoft teamed up with Chris Piggott, the CTO of Homebase, to develop the next stage of the Homebase product roadmap that demonstrates how Homebase could leverage Azure IoT Hub, Azure Stream Analytics, and Power BI Embedded to support the need to store, analyze, report, and act on IoT data.
 
