@@ -3,7 +3,7 @@ layout: post
 title: "How Azure IoT Hub helped Homebase quickly motor down its product roadmap"
 author: "Martin Schray, Jordan Svancara, and Gabrielle Crevecoeur"
 author-link: "#"
-#author-image: "{{ site.baseurl }}images/homebase/AuthorsPhoto350.png"
+#author-image: "{{ site.baseurl }}/images/homebase/AuthorsPhoto350.png"
 date: 2017-04-05
 categories: [IoT, Azure Functions, Embedded Power BI]
 color: "blue"
@@ -13,7 +13,7 @@ verticals: [Property Management, Real Estate]
 language: English
 ---
 
-<img src="/images/homebase/homebaseai-logo.png" width="400">
+<img src="{{ site.baseurl }}/images/homebase/homebaseai-logo.png" width="400">
 
 Microsoft teamed up with Chris Piggott, the CTO of Homebase, to develop the next stage of the Homebase product roadmap that demonstrates how Homebase could leverage Azure IoT Hub, Azure Stream Analytics, and Power BI Embedded to support the need to store, analyze, report, and act on IoT data.
 
