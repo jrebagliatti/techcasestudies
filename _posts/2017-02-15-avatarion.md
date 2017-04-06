@@ -420,7 +420,7 @@ Here is a first example of a call to QnA Maker:
 		//Add the question as part of the body
 		var postBody = $"{% raw %}{{\"question\": \"{query}\"}}{% endraw %}";
 		//Set the encoding to UTF8
-		var content = new StringContent(postBody, Encoding.UTF8, "application/json");
+		var content = new StringContent(postBody, Encoding.UTF8, "application/json");		
 		//Send the POST request
 		HttpClient client = new HttpClient();
 		client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", qnamakerSubscriptionKey);
