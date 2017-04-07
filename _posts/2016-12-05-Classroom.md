@@ -4,7 +4,7 @@ title: "How Azure and DevOps enabled a major US research university to deploy ba
 author: "Dan Stolts, Heather Shapiro, Ian Philpot, and Jessica Deen"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/2016-12-05-classroom/authors/authors.png"
-date: 2017-04/07
+date: 2017-04-07
 categories: DevOps
 color: "blue"
 #image: "{{ site.baseurl }}/images/2016-12-05-classroom/imagename.png" #should be ~350px tall
