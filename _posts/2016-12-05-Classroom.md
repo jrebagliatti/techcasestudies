@@ -230,7 +230,7 @@ For the PowerShell scripts, there are four main scripts to build the lab and exe
 
   The script also creates a custom gold VM parameters file:
 
-  <img alt="Using CustomGoldVM.Parameters.json" src="{{ site.baseurl }}/images/2016-12-05-classroom/classroom35-ps-CustGoldVM.parameters_example" width="900">
+  <img alt="Using CustomGoldVM.Parameters.json" src="{{ site.baseurl }}/images/2016-12-05-classroom/classroom35-ps-CustGoldVM.parameters_example.png" width="900">
 
 ## Automated deployment, testing, monitoring, automated destruction, and CI/CD ##
 
