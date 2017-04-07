@@ -287,4 +287,4 @@ All source code is available in [dstolts/Azure_Classroom](http:/github.com/dstol
 - [PuTTY](http://www.putty.org/)
 - [Azure SDK for Python](http://azure-sdk-for-python.readthedocs.io/en/latest/)
 - [Download Python](https://www.python.org/downloads/)
-- [Azure Key Vault] (https://azure.microsoft.com/en-us/services/key-vault/)
+- [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
