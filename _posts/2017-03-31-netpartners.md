@@ -4,7 +4,7 @@ title:  "Netpartners adopts Power BI Embedded to easily deliver customized sales
 author: "Caio Chaves Garcez"
 author-link: "https://twitter.com/Caio_garcez"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date: 2017-04-21
+date: 2017-04-19
 categories: [Power BI Embedded]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
