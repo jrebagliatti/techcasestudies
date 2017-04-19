@@ -64,6 +64,7 @@ The current process has two major drawbacks:
 Netpartners would like to have a better way to provide custom reports to its customers, ideally without sacrificing the rich data visualization that tools like Excel can offer. They also wanted to explore different ways to enable user interaction with reports, mainly through Bots powered by a Natural Language interpreter and Text-to-Speech functionality. The following diagram shows the proposed architecture for the new **Sales Assistant** solution.
 
 *Figure 2 – Netpartners Sales Assistant solution architecture*
+
 ![Figure 2 – Netpartners Sales Assistant solution architecture]({{ site.baseurl }}/images/2017-03-31-netpartners/Figure_2_Architecture.png)
 
 A joint effort was conducted by Microsoft and Netpartners to integrate Power BI Embedded with Sales Assistant. The steps taken to accomplish this integration are described in the following section.
@@ -302,7 +303,8 @@ Netpartners is planning a launch event in May for Sales Assistant, and they will
 
 ### Partner feedback
 
-- Fabio Ito, Director: *“This partnership with Microsoft is strategic for our business. The expectation is to leverage our solutions based on sales performance and planning to another level by using the Microsoft technology stack, such as Office 365. This will maximize Power BI and Skype for Business usability, providing a new user experience for customers in terms of Cognitive Services (machine learning, natural language processing, speech, human–computer interaction, etc.) and Azure Cloud Services, which will host these solutions and provide a robust and easy infrastructure management to support our solutions, driving the business solutions from sales performance and planning to managing results. In terms of a commercial approach, this partnership will amplify the visibility of our solutions, generating new commercial opportunities for both sides considering Microsoft capillarity and market penetration in Brazil and the adherence of our solutions for the consumer goods industry.”*
+Fabio Ito, Director: *“This partnership with Microsoft is strategic for our business. The expectation is to leverage our solutions based on sales performance and planning to another level by using the Microsoft technology stack, such as Office 365. This will maximize Power BI and Skype for Business usability, providing a new user experience for customers in terms of Cognitive Services (machine learning, natural language processing, speech, human–computer interaction, etc.) and Azure Cloud Services, which will host these solutions and provide a robust and easy infrastructure management to support our solutions, driving the business solutions from sales performance and planning to managing results. In terms of a commercial approach, this partnership will amplify the visibility of our solutions, generating new commercial opportunities for both sides considering Microsoft capillarity and market penetration in Brazil and the adherence of our solutions for the consumer goods industry.”*
+
 
 *Figure 4 – Part of the joint Netpartners and Microsoft team who worked on the POC*
 ![Figure 4 – Part of the joint Netpartners and Microsoft team who worked on the POC]({{ site.baseurl }}/images/2017-03-31-netpartners/Figure_4_Team_Picture.jpeg)
