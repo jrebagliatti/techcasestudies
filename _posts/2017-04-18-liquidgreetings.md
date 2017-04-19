@@ -36,11 +36,11 @@ We chose to write the client application in Xamarin because we wanted a mobile a
 
 ## Customer profile
 
-Liquid Greetings was founded in 2016 by Thad Bennett to create the Liquid Greetings application. Thad, the owner and only employee, has spent much of his career writing custom software for customers. His specialties include web applications, C#, and databases. 
+[Liquid Greetings](http://liquidgreetings.com/) was founded in 2016 by Thad Bennett to create the Liquid Greetings application. Thad, the owner and only employee, has spent much of his career writing custom software for customers. His specialties include web applications, C#, and databases. 
 
 The company is based in Chicago, IL.
 
-# Problem statement
+## Problem statement
 
 We set out to build a minimum viable product (MVP) to showcase the features of the Liquid Greetings application. 
 
@@ -53,7 +53,7 @@ Requirements of the MVP were:
 * Create a unique QR code for each subscriber that can be read by other app subscribers and then display the associated subscriber profile and wish list.
 * After scanning the QR code and displaying the subscriber's profile, a button should be provided to request being added to the buddy list of the scanned subscriber. The scanned subscriber should receive a buddy list request to approve or deny.
 
-# Solution, steps, and delivery
+## Solution, steps, and delivery
 
 ![Application architecture]({{ site.baseurl }}/images/liquidgreetings/liquidgreetingsarchitecture.png "Application architecture")
 
