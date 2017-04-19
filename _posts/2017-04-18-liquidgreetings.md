@@ -14,7 +14,7 @@ verticals: ["Retail, Consumer Products & Services", Social Media]
 ---
 
 
-<img src="/images/liquidgreetings/liquidgreetingslogo1.png" width="300">
+<img src="{{ site.baseurl }}/images/liquidgreetings/liquidgreetingslogo1.png" width="300">
 
 
 The Liquid Greetings app for Android and iOS will enable subscribers to create and share wish lists of their favorite beverages, discover what beverages their friends like, and to send and receive beverages. 
@@ -27,7 +27,7 @@ We chose to write the client application in Xamarin because we wanted a mobile a
 
 ### Core team
 
-![Development team](/images/liquidgreetings/lgteam.jpg "Development team")
+![Development team]({{ site.baseurl }}/images/liquidgreetings/lgteam.jpg "Development team")
 
 
 - Thad Bennett – Owner, Liquid Greetings
@@ -55,7 +55,7 @@ Requirements of the MVP were:
 
 # Solution, steps, and delivery
 
-![Application architecture](/images/liquidgreetings/liquidgreetingsarchitecture.png "Application architecture")
+![Application architecture]({{ site.baseurl }}/images/liquidgreetings/liquidgreetingsarchitecture.png "Application architecture")
 
 
 We split into two separate work streams: one to create the back end (Azure SQL Database and the Mobile Apps feature of Azure App Service) and one to create the front end (Android and iOS app in Xamarin).
@@ -78,12 +78,12 @@ Data access code and business logic code was stored in an Azure mobile app. We u
 
 *Login screen*
 
-<img src="/images/liquidgreetings/screen-login.PNG" width="400">
+<img src="{{ site.baseurl }}/images/liquidgreetings/screen-login.PNG" width="400">
 
 
 *Twitter login screen*
 
-<img src="/images/liquidgreetings/screen-twitterlogin.PNG" width="400">
+<img src="{{ site.baseurl }}/images/liquidgreetings/screen-twitterlogin.PNG" width="400">
 
 
 The MobileServiceAuthenticationProvider object provided access to the authentication providers supported by Mobile Apps.
@@ -92,7 +92,7 @@ The MobileServiceAuthenticationProvider object provided access to the authentica
 
 *Barcode screen*
 
-<img src="/images/liquidgreetings/screen-addfriend.PNG" width="400">
+<img src="{{ site.baseurl }}/images/liquidgreetings/screen-addfriend.PNG" width="400">
 
 
 We used the [ZXing library](https://github.com/Redth/ZXing.Net.Mobile) to generate barcodes. 
@@ -134,7 +134,7 @@ We enabled use of the camera to read another user's barcode. To make this work, 
 
 *Drink list*
 
-<img src="/images/liquidgreetings/screen-drinklist.PNG" width="400">
+<img src="{{ site.baseurl }}/images/liquidgreetings/screen-drinklist.PNG" width="400">
 
 
 No back-end service is yet exposed to retrieve a subscriber's favorite drinks. We created a mock service with hard-coded drinks and a page to display those drinks by category. 
@@ -174,7 +174,7 @@ With one screen's functionality complete from the database to the front end, we 
 
 *Chris demonstrating the app features*
 
-![Chris](/images/liquidgreetings/chrisrisner.jpg "Chris showing off the app features")
+![Chris]({{ site.baseurl }}/images/liquidgreetings/chrisrisner.jpg "Chris showing off the app features")
 
 
 ### Lessons learned
@@ -183,7 +183,7 @@ This was the first time most of the team had used Entity Framework Code-First wi
 
 ### Partner response
 
-![Thad](/images/liquidgreetings/thad.jpg "Thad Bennett")
+![Thad]({{ site.baseurl }}/images/liquidgreetings/thad.jpg "Thad Bennett")
 
 
 Thad Bennett, the partner with whom we were working, was very excited about the result. He has reviewed and modified the code we wrote and he plans to add more screens to the application based on the patterns used in the screens we created.
