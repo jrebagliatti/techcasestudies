@@ -60,19 +60,21 @@ An Extract, Transform, and Load (ETL) process was used to move a subset of the d
 
 The new portal was based on their existing codebase that has an AngularJS front-end and an ASP.NET MVC back-end. The .NET SDKs were used to create a JWT token, and then the token was passed via REST APIs to the AngularJS front-end. The next step was to get the embed URL by using the [Power BI Angular client](https://github.com/Microsoft/PowerBI-Angular) and the generated token. The report was then embedded into the UI using the embed URL, and it displayed reports when the app token was signed and the .pbix file returned.
 
+<br/>
 ![Architecture implemented during hackfest to address part 1 of the project]({{ site.baseurl }}/images/2017-01-27-FinancialExpressPBIE/architecture1.png)  
-  
+<br/>  
 
+<br/>
 ![Embedded Row Level security reports]({{ site.baseurl }}/images/2017-01-27-FinancialExpressPBIE/reports.png)  
-
+<br/>
  
 ### Exploring the limitations of their current data store and connecting it to Power BI Embedded 
  
 One of the more interesting aspects of this project was the large volumes of data needed to drive the new insights dashboard. One of the key requirements was the need to examine large volumes of telemetry data that was acquired from the users' interaction with the website, from reports such as the following.
 
-
+<br/>
 ![Telemetry data from user interaction with website]({{ site.baseurl }}/images/2017-01-27-FinancialExpressPBIE/userinteractiondata.png)  
-
+<br/>
  
 FE is looking for trends for every type of report, fund, financial instrument, and KPI referenced. This very quickly amounts to very large volumes of data, each entry amounting to one web view that a customer or fund manager might choose to examine. 
 
@@ -86,32 +88,33 @@ During the lab, working with such large volumes of data and remodeling was too t
  
 Following were the core tables we worked with during the hackfest.
 
-
+<br/>
 ![Data tables within reporting database]({{ site.baseurl }}/images/2017-01-27-FinancialExpressPBIE/datatables.png)  
-
+<br/>
  
 #### Ensure the integrity of the data and performance
 
 Performance was a critical aspect of the design work undertaken, and a set of test harness queries were developed to ensure the integrity of the data and benchmark performance.
 
-
+<br/>
 ![Test queries and benchmarking for performance]({{ site.baseurl }}/images/2017-01-27-FinancialExpressPBIE/testqueries.png)  
+<br/>
 
-
+<br/>
 ![Current SQL Server Database on Azure]({{ site.baseurl }}/images/2017-01-27-FinancialExpressPBIE/sqlserverinfo.png)
-
+<br/>
   
 One interesting piece of work undertaken, originally unplanned, was the use of [Azure Analysis Services (preview)](https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-overview) to drive Power BI. This was to meet the need for the less than 3-second query speeds needed against tens of millions of rows of data, which FE's P series SQL Database was not able to support. A tabular data model project was set up to model the data and import it into an S1 from SQL Database.
 
-
+<br/>
 ![Create an Analysis Services project]({{ site.baseurl }}/images/2017-01-27-FinancialExpressPBIE/analysisservices.png)  
-
+<br/>
 
 This new architecture performed very well, and with five million rows of test data, led to Power BI being fast and responsive. 
 
-
+<br/>
 ![New architecture]({{ site.baseurl }}/images/2017-01-27-FinancialExpressPBIE/new-architecture.png)  
-
+<br/>
 
 The ideal solution for Financial Express is to use Azure Analysis Services on top of their on-premises SQL Server database to drive their Power BI Embedded reports. At the time of the hackfest, there was no support for Azure Analysis Services in Power BI Embedded, so we set up a standard Power BI (non-embedded) dashboard as a temporary solution to be used until this functionality is added to the service.
  
@@ -120,6 +123,8 @@ The ideal solution for Financial Express is to use Azure Analysis Services on to
 We created a Power BI Embedded Workspace Collection in Azure and used [PowerBI-Cli](https://github.com/Microsoft/PowerBI-Cli) to create a new workspace and import the .pbix file into this workspace.
 
 We then used the .NET SDK to create the JWT (JSON web token) as shown in the following code.
+
+<br/>
 
 ```c#
 namespace ServerSide.Controllers
@@ -184,6 +189,8 @@ namespace ServerSide.Controllers
 
 We next fetched embed data from the server (MVC application) as shown in the following code.
 
+<br/>
+
 ```javascript
 (function () {
     "use strict";
@@ -220,6 +227,8 @@ We next fetched embed data from the server (MVC application) as shown in the fol
 <br/>
 
 Finally, we inserted the Power BI Embedded component in the UI.
+
+<br/>
 
 ```html
 <md-content flex layout="column">
