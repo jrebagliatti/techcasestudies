@@ -22,7 +22,7 @@ Core team members:
 - Jimmy Huang – Senior Engineer, Data Systems Consulting
 - Tom Lee – Technical Evangelist, Microsoft Taiwan
 
-<img alt="Hackathon team" src="{{ site.baseurl }}/2017-03-04-DSC-Digiwin/DSC-hackathon.JPG" width="600">
+<img alt="Hackathon team" src="{{ site.baseurl }}/images/2017-03-04-DSC-Digiwin/DSC-hackathon.JPG" width="600">
 
 During this hackathon, we proved that using Azure Functions is more cost-effective than using Azure Cloud Services worker roles. And it was the first step for the A1 development team to experience the benefit of serverless architecture.
 
@@ -93,7 +93,7 @@ public override void Run()
 
 The core team created an Azure function with queue trigger inputs. The following diagram shows the new architecture.
 
-<img alt="Architecture diagram" src="{{ site.baseurl }}/2017-03-04-DSC-Digiwin/architecture.png" width="845">
+<img alt="Architecture diagram" src="{{ site.baseurl }}/images/2017-03-04-DSC-Digiwin/architecture.png" width="845">
 
 We created an Azure Function call named A8OpenOrder for processing new customer orders and provisioning. Because Azure Functions supports the C\# language, migrating legacy worker-role code is easy. The structure of run.csx looks like this:
 
@@ -127,23 +127,23 @@ public static void Run(string myQueueItem, TraceWriter log)
 
 All of the source code is stored in Visual Studio Team Services; to practice continuous deployment, core team members follow the document [Continuous deployment for Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-continuous-deployment). The A8OpenOrder function has three files: Major function code is in run.csx; Azure Queue storage data flows into our C\# function via method arguments. Argument names are specified in function.json, and Library.csx provides some helper classes to encapsulate the Slack Webhooks API and SendGrid API.
 
-<img alt="Source-code structure" src="{{ site.baseurl }}/2017-03-04-DSC-Digiwin/VSTS.png" width="820">
+<img alt="Source-code structure" src="{{ site.baseurl }}/images/2017-03-04-DSC-Digiwin/VSTS.png" width="820">
 
 ### Outcome
 
 The DSC A1 development team is excited about monitoring the capabilities of Azure Functions. The Monitor tab in Azure portal can display each function and its execution status without any code. In the past, the development team needed to put a lot of effort into making the Azure worker role emit telemetry data by using the .NET EventSource class and Azure Diagnostics API.
 
-<img alt="Monitoring Azure Functions in Azure portal" src="{{ site.baseurl }}/2017-03-04-DSC-Digiwin/AzureFun.png" width="820">
+<img alt="Monitoring Azure Functions in Azure portal" src="{{ site.baseurl }}/images/2017-03-04-DSC-Digiwin/AzureFun.png" width="820">
 
 After a day of core team effort and prior planning, Slack successfully received messages from Azure Functions. During the next few days, the core team fully integrated the Azure Functions code into the production release, and the system is running well.
 
-![Messages from Azure Functions displayed in Slack]({{site.baseurl}}/images/2017-03-04-DSC-Digiwin/SLACK.png)
+![Messages from Azure Functions displayed in Slack]({{ site.baseurl }}/images/2017-03-04-DSC-Digiwin/SLACK.png)
 
 According to James Fu, Technical Director of DSC, Azure Functions is a relatively simple alternative to the Azure Cloud Services worker role:
 
 >"This is a significant step forward for Azure users. Using Azure Functions, I can save 70 percent of cloud costs in new-customer provisioning workload. Serverless and event-driven cloud infrastructure will fundamentally change how we build SaaS. I can expect more applications will adopt Azure Functions!"
 
-<img alt="Bar chart comparing costs" src="{{ site.baseurl }}/2017-03-04-DSC-Digiwin/cost.png" width="704">
+<img alt="Bar chart comparing costs" src="{{ site.baseurl }}/images/2017-03-04-DSC-Digiwin/cost.png" width="704">
 
 ## Conclusion
 
