@@ -68,7 +68,7 @@ Going forward, with users’ feedback, they’re still looking to provide the sa
     ```
 <br/>
 
-> [!NOTE] 
+> NOTE:  
 > BaseImage-12345.wim should use the physical path, such as c:\..\desktop\BaseImage-12345.wim.
 
 #### Run the Desktop App Converter
