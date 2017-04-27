@@ -114,18 +114,23 @@ Run `DesktopAppConverter.exe` as administrator.
 Microsoft helped Youdao Dictionary solve the following issues:
 
 - If we didn't set the `InstallerValidExitCodes` to 0, an `E_BAD_INSTALLER_EXIT_CODE` error message that resembles the following string appears.
+    
     <br/>
+    
     *Figure 3. E_BAD_INSTALLER_EXIT_CODE*
     
     ![E_BAD_INSTALLER_EXIT_CODE]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/bad-exit-code.png)
+    
     <br/>
 
 - If we didn't set the `AppId`, the Desktop App Converter used the `PackageName` for `AppId`, but the `AppId` can't include a dot symbol, so an `E_MANIFEST_USE_DEFAULT_VALUE_FAILED` error message that resembles the following string appears.
 
     <br/>
+    
     *Figure 4. E_MANIFEST_USE_DEFAULT_VALUE_FAILED*
     
     ![E_MANIFEST_USE_DEFAULT_VALUE_FAILED]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/error-appid-value.jpg) 
+    
     <br/>
 
 #### Deploy the app on a local device
@@ -156,6 +161,7 @@ Add the certificate to a local device:
     *Figure 7. Certificate Import Wizard Certificate Store page*
     
     ![Certificate Import Wizard Certificate Store page]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/certificate2.png)
+    
     <br/>
 
 2. Double-click the .appx file, and in the message that appears, click **Run anyway**.
@@ -165,6 +171,7 @@ Add the certificate to a local device:
     *Figure 8. "Windows protected your PC" message*
     
     ![Windows protected your PC" message]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/deploy1.png)
+    
     <br/>
 
 #### Replace the file in the .appx file
