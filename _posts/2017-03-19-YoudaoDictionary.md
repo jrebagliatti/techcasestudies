@@ -48,34 +48,40 @@ Going forward, with users’ feedback, they’re still looking to provide the sa
 - Second Level Address Translation (SLAT)
 
 #### Set up the Desktop App Converter
-1. Download and install the Desktop App Converter (DAC) from the [Windows Store](https://www.microsoft.com/store/apps/9nblggh4skzw).
-2. Download the [wim file](https://www.microsoft.com/en-us/download/details.aspx?id=54852) that matches your system (`BaseImage-14393.wim`). Make sure that the file is the same version as your system, or you will get an error:
 
-```html
-    error 'E_NO_COMPATIBLE_EXPANDED_BASE_IMAGE'
-```
+1. Download and install the Desktop App Converter (DAC) from the [Windows Store](https://www.microsoft.com/store/apps/9nblggh4skzw).
+
+2. Download the [wim file](https://www.microsoft.com/en-us/download/details.aspx?id=54852) that matches your system (`BaseImage-14393.wim`). Make sure that the file is the same version as your system, or you will get an error: `error 'E_NO_COMPATIBLE_EXPANDED_BASE_IMAGE'`
+
 3. Run the Desktop App Converter as an administrator. You can do this from the Start menu by right-clicking the app icon and selecting **Run as administrator** from under **More**, or from the taskbar by right-clicking the app icon, right-clicking a second time on the app name that pops up, and then selecting **Run as administrator**.
 
 4. From the app console window, run `Set-ExecutionPolicy bypass`.
 
     *Figure 1. Set-ExecutionPolicy bypass*
+    
     ![Set-ExecutionPolicy bypass]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/set-exepolicy.png)
 
 5. Install the wim file. 
 
-```ps
-    PS C:\> .\DesktopAppConverter.ps1 -Setup -BaseImage BaseImage-12345.wim Verbose
-```
+    ```ps
+        PS C:\> .\DesktopAppConverter.ps1 -Setup -BaseImage BaseImage-12345.wim Verbose
+    ```
+<br/>
 
->> ***Note**: BaseImage-12345.wim should use the physical path, such as c:\..\desktop\BaseImage-12345.wim.*
+> [!NOTE] 
+> BaseImage-12345.wim should use the physical path, such as c:\..\desktop\BaseImage-12345.wim.
 
 #### Run the Desktop App Converter
+
 After setting up the Desktop App Converter, you can convert the desktop app.
 
 Run `DesktopAppConverter.exe` as administrator.
 
   *Figure 2. Run DesktopAppConverter.exe as administrator*
+  
   ![Run the Desktop App Converter]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/run-convertor.png)
+
+<br/>
 
 ```ps
     PS C:\WINDOWS\System32> DesktopAppConverter.exe -Installer D:\Installer\YoudaoDictplaysound.exe -InstallerArguments "/S" -Destination D:\Output\MyApp -PackageName "NeteaseYoudao.18692F27B7C6F" -AppId "YoudaoDict" -Publisher "CN=32BFB0D9-A91E-42AA-822C-E041AFDECC36" Version 0.0.0.0 -MakeAppx -Verbose -InstallerValidExitCodes -0 –Sign
@@ -103,58 +109,82 @@ Run `DesktopAppConverter.exe` as administrator.
     [-LogFile <String>]
     [<CommonParameters>]
 ```
+<br/>
 
 Microsoft helped Youdao Dictionary solve the following issues:
 
 - If we didn't set the `InstallerValidExitCodes` to 0, an `E_BAD_INSTALLER_EXIT_CODE` error message that resembles the following string appears.
-
+    <br/>
     *Figure 3. E_BAD_INSTALLER_EXIT_CODE*
+    
     ![E_BAD_INSTALLER_EXIT_CODE]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/bad-exit-code.png)
+    <br/>
 
 - If we didn't set the `AppId`, the Desktop App Converter used the `PackageName` for `AppId`, but the `AppId` can't include a dot symbol, so an `E_MANIFEST_USE_DEFAULT_VALUE_FAILED` error message that resembles the following string appears.
 
+    <br/>
     *Figure 4. E_MANIFEST_USE_DEFAULT_VALUE_FAILED*
+    
     ![E_MANIFEST_USE_DEFAULT_VALUE_FAILED]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/error-appid-value.jpg) 
+    <br/>
 
 #### Deploy the app on a local device
 
 After converting the app, you will see the following file directory.
 
+<br/>
+  
   *Figure 5. FILE DIRECTORY*
+  
   ![FILE DIRECTORY]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/file-directory.png)
+
+<br/>
 
 The file `NeteaseYoudao.18692F27B7C6F.appx` is exactly the UWP app that you want.
 
 Add the certificate to a local device:
 1. Double-click the .pfx file, and the Certificate Import Wizard opens. Add your .pfx file to **Trusted Root Certification Authorities**. 
-
+    
+    <br/>
+    
     *Figure 6. Certificate Import Wizard Welcome page*
+    
     ![Certificate Import Wizard Welcome page]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/certificate.png)
-
+    
+    <br/>
+    
     *Figure 7. Certificate Import Wizard Certificate Store page*
+    
     ![Certificate Import Wizard Certificate Store page]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/certificate2.png)
+    <br/>
 
 2. Double-click the .appx file, and in the message that appears, click **Run anyway**.
-
+    
+    <br/>
+    
     *Figure 8. "Windows protected your PC" message*
+    
     ![Windows protected your PC" message]({{ site.baseurl }}/images/2017-03-19-YoudaoDictionary/deploy1.png)
+    <br/>
 
 #### Replace the file in the .appx file
+
 If you make any changes to your converted app, you don't need to run the converter again; you can manually repackage your app by using the MakeAppx tool and the appxmanifest.xml file that the DAC generates for your app.
 
 1. Replace the file, such as you would replace the icon for the app. Replace any graphics (such as AppMedTile310150.png or Square44x44Logo) in the Assets folder. 
 
 2. Repackage the app.
 
-```ps
+    ```ps
     C:\Program Files (x86)\Windows Kits\10\bin\x86 MakeAppx pack /d "D:\Output\MyApp\MyApp\PackageFiles" /p youdaodict.appx 
-```
+    ```
 
 3. Sign your app.
 
-```ps
-signtool sign /a /v /fd SHA256 /p 123456 /f D:\Output\MyApp\MyApp\autogenerated.pfx "C:\Program Files (x86)\Windows Kits\10\bin\x86\youdaodict.appx" 
-```
+    ```ps
+    signtool sign /a /v /fd SHA256 /p 123456 /f D:\Output\MyApp\MyApp\autogenerated.pfx "C:\Program Files (x86)\Windows Kits\10\bin\x86\youdaodict.appx" 
+    ```
+<br/>
 
 Now you can find the new app at `C:\Program Files (x86)\Windows Kits\10\bin\x86\youdaodict.appx`.
 
@@ -182,7 +212,8 @@ Microsoft worked with NetEase Youdao to solve the following issues:
   </body>
   </html>
 ```
- 
+<br/> 
+
 - The converted UWP app couldn't support capturing words from other app UI with a mouse.
 
     *Reason:* Desktop App Convertor doesn't currently support UIAccess.
