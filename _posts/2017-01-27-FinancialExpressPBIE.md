@@ -2,8 +2,8 @@
 layout: post
 title:  "Financial Express uses Power BI Embedded to help customers explore large volumes of financial information quickly and easily"
 author: "Bianca Furtuna and David Gristwood"
-author-link: "#"
-author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
+#author-link: "#"
+#author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date: 2017-04-25
 categories: [Power BI Embedded]
 color: "blue"
