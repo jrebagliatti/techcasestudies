@@ -265,6 +265,6 @@ We will continue to work with the ECPL team on the following requirements:
 
 The LogiCloud team achieved their goal of embedding a Power BI report into their application. The Power BI Embedded integration with the LogiCloud application is now live. The ECPL team had an opportunity to work with the Microsoft team to achieve this during the two-day hackfest.
 
-Here is a quote from the customer:
-
 >“Power BI Embedded is a natural analytics tool for Azure-born cloud applications such as LogiCloud. (Power BI Embedded) helps to quickly deploy new analytics and helps end users slice and dice their data. (Power BI Embedded) is an essential tool to make sense of the jungle of data eaten up by LogiCloud.”
+>
+>— Apurva Mankad, CEO, LogiCloud
