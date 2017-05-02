@@ -5,7 +5,7 @@ author: "Martin Schray, Jordan Svancara, and Gabrielle Crevecoeur"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/homebase/AuthorsPhoto350.png"
 date: 2017-04-05
-categories: [IoT, Azure Functions, Embedded Power BI]
+categories: [IoT, Azure Functions, Power BI Embedded]
 color: "blue"
 #image: "{{ site.baseurl }}/images/homebase/homebaselogo.png"
 excerpt: "In a joint development effort, Microsoft worked with Homebase to develop the next stage of its product roadmap, demonstrating how Homebase could leverage Azure IoT Hub and Azure Stream Analytics to store, analyze, and act on IoT data."
