@@ -945,6 +945,7 @@ There wasn’t enough time left in the project to build a fully functional clien
 
 	- The following event handler reads all the messages from the bot and displays them one by one. Ensure that the collection with messages contains all messages (users and bots), including old messages.
 
+
 	```
 	    async Task ReadBotMessagesAsync(DirectLineClient client, string
 	    conversationId)
@@ -1032,6 +1033,7 @@ There wasn’t enough time left in the project to build a fully functional clien
 	<br/>
 
 	- Finally, the following code shows how to send messages to a user.
+
 
 	```
 	    async Task sendMessageToBot(string text)
@@ -1129,7 +1131,8 @@ version.
 
 Using the references listed earlier, it is possible to implement some methods to work with the workspace collection and workspaces inside. Following are some of these methods.
 
-```    static async Task&lt;PowerBIClient&gt; CreateClient()
+```    
+    static async Task&lt;PowerBIClient&gt; CreateClient()
     
     {
     
@@ -1157,7 +1160,8 @@ This method may be used to create a client reference to the Power BI Embedded se
 
 The next few methods make it possible to create a new workspace if needed and get a list of all available workspaces inside the collection.
 
-``` static async Task&lt;Workspace&gt; CreateWorkspace(string
+``` 
+    static async Task&lt;Workspace&gt; CreateWorkspace(string
     workspaceCollectionName, string workspaceName)
     
     {
@@ -1197,7 +1201,8 @@ The next few methods make it possible to create a new workspace if needed and ge
 
 These methods are used to check if internal and external workspaces exist. If they do not, they should be created by using the following code.
 
-``` var workspaces = await GetWorkspaces(workspaceCollectionName);
+``` 
+    var workspaces = await GetWorkspaces(workspaceCollectionName);
     
     var internalWorkspace = (from a in workspaces where
     a.DisplayName.Equals(workspaceNameInternal) select a).FirstOrDefault();
@@ -1230,7 +1235,8 @@ To upload new reports to the collection, the existing one must first be deleted.
 
 To delete existing datasets in a workspace, it is possible to use the following method.
 
-```    static async Task DeleteAllDatasets(string workspaceCollectionName,
+```    
+    static async Task DeleteAllDatasets(string workspaceCollectionName,
     string workspaceId)
     
     {
@@ -1308,7 +1314,8 @@ In the previous code, it is clear that the `ImportPbix` method accepts a dataset
 
 **Learning:** The dataset name can be any string, so if the goal is to create a “universal” web application that will show all available reports, it is better to use a custom name from a configuration file that generates report names automatically. To accomplish this, a configuration file was added that is passed to the application as a command-line parameter. To simplify the format for the partner, this was formatted as a list of strings, `ReportDescription.txt`.
 
-``` external
+``` 
+    external
     
     C:\\Users\\sbaydach\\Source\\Repos\\Power BI
     Analytics\\ProvisionPowerBIWorkspaces\\ProvisionPowerBIWorkspaces\\Reports\\External\\basicReport.pbix
@@ -1330,7 +1337,8 @@ The first string is a type of report (external or internal). The second string i
 
 Following are two methods that upload a new report and update a connection string:
 
-``` static async Task&lt;Import&gt; ImportPbix(string
+``` 
+    static async Task&lt;Import&gt; ImportPbix(string
     workspaceCollectionName, string workspaceId, string datasetName, string
     filePath)
     
@@ -1385,7 +1393,8 @@ Following are two methods that upload a new report and update a connection strin
 
 <br/>
 
-``` static async Task UpdateConnection(string workspaceCollectionName,
+``` 
+    static async Task UpdateConnection(string workspaceCollectionName,
     string workspaceId, string datasetId, string login, string password)
     
     {
@@ -1473,7 +1482,8 @@ Following is a description of the tables:
 
 Implementing telemetry is not a challenging task. Because C# and Entity Framework were used, it was as simple as updating the entity framework model and implementing a method that saves telemetry data to the database based on parameters.
 
-``` public static void UpdateAnalyticDatabase(
+```
+    public static void UpdateAnalyticDatabase(
     
     string intentName=null,
     
@@ -1527,7 +1537,8 @@ Four different method calls inside update the database based on the type of quer
 
 Following is the code of the most complex method from the list.
 
-``` private static void AddIntentEntitiesReferencesQuery(string intentName,
+``` 
+    private static void AddIntentEntitiesReferencesQuery(string intentName,
     float intentScore, Dictionary&lt;string, EntityRecommendation&gt;
     entities,
     
@@ -1636,7 +1647,8 @@ The reports were designed for both DirectQuery (live) and Import mode. Once in p
 
 **Learning:** It is possible to create new columns based on expressions for both types of reports, but expressions will be different. DirectQuery mode has some limitations that are related to measurement fields, and the `DateTime` field requires an additional expression to be used. For example:
 
-```    UtcDate =
+```
+    UtcDate =
     DATE(YEAR(Query\[UtcDateTime\]),MONTH(Query\[UtcDateTime\]),DAY(Query\[UtcDateTime\]))
 ```
 
