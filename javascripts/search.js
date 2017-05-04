@@ -47,6 +47,7 @@ var customFilter = (function($){
 
         });
 
+        return false;
     }
 
     var searchByFilter = function(post, filter) {
@@ -302,10 +303,14 @@ var customSearch = (function($){
     function getQueryString() {
 
         var query_string = {};
-        var query = window.location.search.substring(1);
-        if (!query) { 
-            if (window.location.hash) 
-                query = window.location.hash.replace("#", ""); 
+        var query;
+
+        if (window.location.hash) {
+            query = window.location.hash.replace("#", "");
+        } 
+        
+        if (!query) {
+            query = window.location.search.substring(1); 
         }
 
         if (!query) 
