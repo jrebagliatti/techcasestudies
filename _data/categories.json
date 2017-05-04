@@ -2,16 +2,25 @@
     {
         "name":"technology",
         "showAs":"Technology",
-        "metadataField":"categories"
+        "metadataField":"categories",
+        "sorted": true
     },
     {
         "name":"verticals",
-        "showAs":"Verticals",
-        "metadataField":"verticals"
+        "showAs":"Industry associated with solution",
+        "metadataField":"verticals",
+        "sorted": true
     },
     {
         "name":"language",
         "showAs":"Language",
-        "metadataField":"language"
+        "metadataField":"language",
+        "sorted": true
+    },
+    {
+        "name":"geolocation",
+        "showAs":"Geolocation",
+        "metadataField":"geolocation",
+        "sorted": true
     }
 ]
