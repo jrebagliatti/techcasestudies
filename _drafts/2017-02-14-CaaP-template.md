@@ -5,12 +5,14 @@ author: "Add author name here"
 author-link: "Add URL for author's Twitter account here"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date:   2017-02-14
-categories: [Conversations as a Platform]
+categories: [Bot Framework]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Add a short description of what this article is about, helping a fellow developer understand why they would want to read it. What value will they get out of reading it? Focus on the problem or technologies and let that be the guiding light.
 language: The language of the article (e.g.: [English])
 verticals: The vertical markets this article has focus on (e.g.: [Energy, Manufacturing & Resources, Financial Services, Public Sector, “Retail, Consumer Products & Services”, Environmental, Communications/Media, Transportation & Logistics, Smart Cities, Agricultural, Environmental, Healthcare, Other])
+geolocation: The geolocation of the article
+permalink: /<page-title>.html Use this section to set a custom URL for your page. The value set in this setting will be added to the base URL. For example if you set "/mycustomurl.html", your URL will be "https://microsoft.github.io/techcasestudies/mycustomurl.html"
 ---
 
 Begin with an intro statement with the following details:
