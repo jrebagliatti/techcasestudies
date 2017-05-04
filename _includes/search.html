@@ -46,7 +46,7 @@
             Use the filter and keyword search below to find stories that matter to you.
         </div>
 
-        <form id="AdvancedSearch" class="form-horizontal">
+        <form id="AdvancedSearch" class="form-horizontal" onsubmit="return customSearch.applyFilters(true);">
             <div class="pad-bottom">
                 <h2>Refine results by:</h2>
                 <div class="treeview">
@@ -63,7 +63,14 @@
                                 {{ category.showAs }} <label class="items-selected"></label>
                             </label>
                             <ul>
-                                {% assign items = categories[i] %}
+                                {% comment %} Determine if the category should be sorted or not. {% endcomment %}
+                                
+                                {% if category.sorted == true %}
+                                    {% assign items = categories[i] | sort %}
+                                {% else %}
+                                    {% assign items = categories[i] %}
+                                {% endif %}
+                                
                                 {% for item in items %}
                                 <li>
                                     <input type="checkbox" id="item-{{ category.name }}-{{ item.name }}">
