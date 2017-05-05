@@ -73,9 +73,9 @@ To develop the system, we agreed to use the architecture shown in the following 
 
 2. Azure Stream Analytics processes data from Azure IoT Hub in real time and routes the data to the following:
 
-    - **Azure Blob storage** archives all the data collected for future on-demand processing.
-    - **Azure SQL Database** stores the vehicle trip information for one month. Customers can query the information via the mobile app.
-    - **Azure DocumentDB** stores the latest status of a vehicle. The key data is the device ID that can be instantly inserted or updated. The status data can also be queried from the mobile app.
+    - Azure Blob storage archives all the data collected for future on-demand processing.
+    - Azure SQL Database stores the vehicle trip information for one month. Customers can query the information via the mobile app.
+    - Azure DocumentDB stores the latest status of a vehicle. The key data is the device ID that can be instantly inserted or updated. The status data can also be queried from the mobile app.
 
 3. If Stream Analytics processes data that indicates an abnormal status for a vehicle, it instantly generates an item to the Azure Service Bus topic. Next, Azure Functions is triggered by the new topic in the Service Bus and sends a reconfiguration command (for adjusting the data collection interval) back to the vehicle through Azure IoT Hub. The abnormal message in Service Bus can also be subscribed to by other applications (for extension).
 
