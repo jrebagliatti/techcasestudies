@@ -60,7 +60,7 @@ It was clear to the team that a new architecture had to be defined to gain simpl
 
 Lastly, another constraint we had to respect: being able to deploy the open-source software technologies that Content Avenue is using, such as Drupal, PHP, and MySQL.
 
-<img alt="Logos of PHP, Drupal, and MySQL" src="{{ site.baseurl }}/images/2017-03-15-contentavenue/technologies.jpg" width="341">
+<img alt="Logos of PHP, Drupal, and MySQL" src="{{ site.baseurl }}/images/2017-03-15-contentavenue/technologies.png" width="341">
 
 ## Solution, steps, and delivery ##
 
