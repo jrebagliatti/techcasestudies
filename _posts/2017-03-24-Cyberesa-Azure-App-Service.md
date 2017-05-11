@@ -39,7 +39,7 @@ The Microsoft Tunisia DX team worked with Cyberesa to put in place a highly avai
 ![Cyberesa Logo]({{ site.baseurl }}/images/Cyberesa/logo_cyberesa.png)
 
 
-[CYBERESA](http://www.cyberesa.net) is a Tunisian independent software vendor (ISV) with offices in Tunisia and Morocco and customers throughout the Middle East/North Africa region. The Cyberesa.net solution is a web-based, fully integrated platform for hotels/riads/apartments, hotel chains, travel agencies, and car rental agencies. Cyberesa is an Amadeus-certified application developer, and its solution provides online, real-time bookings with secure payment for: 
+[Cyberesa](http://www.cyberesa.net) is a Tunisian independent software vendor (ISV) with offices in Tunisia and Morocco and customers throughout the Middle East/North Africa region. The Cyberesa.net solution is a web-based, fully integrated platform for hotels/riads/apartments, hotel chains, travel agencies, and car rental agencies. Cyberesa is an Amadeus-certified application developer, and its solution provides online, real-time bookings with secure payment for: 
 
 - End-customers (B2C and individuals) 
 - Tourism professionals (B2B: tour operators, wholesalers, travel agencies, corporations)
