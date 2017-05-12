@@ -495,7 +495,6 @@ We configured the following steps to deploy GeoServer into the test environment:
         net use X: \\$(DevDataDirPath) /u:$(DevDataDirUsername) $(DevDataDirPassword)
         ```
 
-        <br/>
 
 2. Remove the existing contents of the test configuration share. Because GeoServer does not actively access the data directory, only during startup or if configuration is carried out, we can work on it while the service is running.
 
@@ -504,7 +503,6 @@ We configured the following steps to deploy GeoServer into the test environment:
         Get-ChildItem T:\ -Recurse | Remove-Item -Force   -Recurse
         ```
 
-        <br/>
 
 3. Copy the dev configuration into the test share.
 
@@ -519,7 +517,6 @@ We configured the following steps to deploy GeoServer into the test environment:
 
             `ENV GEOSERVER_LOG_LOCATION=/var/log/geoserver.log`
 
-        <br/>
 
 4. Update database connections. Updating the database connections is a little more complex. GeoServer stores the PostgreSQL database connection details within an XML file associated with each data store.
 
@@ -538,7 +535,6 @@ We configured the following steps to deploy GeoServer into the test environment:
 
     `<script src="https://gist.github.com/marrobi/806f464c47b81bddc297442d5d1d8e72.js"></script>`
     
-        <br/>
 
 5. Reload the GeoServer configuration by using REST API. GeoServer has a REST API; by using this, the configuration can be reloaded.
 
