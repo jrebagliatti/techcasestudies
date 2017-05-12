@@ -8,7 +8,7 @@ date: 2017-05-12
 categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
-excerpt: "Somerset County Council wanted to migrate their on-premises mapping solution to Azure. We did this by using Visual Studio Team Services, Azure App Service, Azure Database for PostgreSQL, and Docker."
+excerpt: "Somerset County Council wanted to migrate their on-premises mapping solution to Azure. We did this by using Azure Database for PostgreSQL, Visual Studio Team Services, Azure App Service, and Docker."
 language: [English]
 verticals: [Public Sector]
 ---
@@ -44,6 +44,8 @@ While most of the IT management was outsourced, the development team at Somerset
 The system relies heavily on mapping data that is a combination of image-based mapping tiles and vectors that are displayed on top of the tiles. The current setup is virtual machine-based and uses open source mapping software called [GeoServer](http://geoserver.org/), along with PostGIS for the back-end database. The Somerset CC development team is very keen to use platform as a service (PaaS) wherever possible to improve the performance of ROAM, and is very welcome to new ideas and ways of working. 
 
 ROAM is known publicly as [Explore Somerset](http://roam.somerset.gov.uk/roam).
+
+<br/>
 
 <img alt="Explore Somerset" src="{{ site.baseurl }}/images/somersetcc/roamss.png" width="700"/> 
 
@@ -87,17 +89,23 @@ Prior to the hackfest, we visited Somerset CC to carry out a value stream mappin
 
 Value stream mapping enables value to be tracked throughout the software development process. The initial stage of the value stream mapping exercise involved discussing the existing development process. This resulted in a list of steps, grouped into stages.
 
+<br/>
+
 <img alt="Value stream mapping steps" src="{{ site.baseurl }}/images/somersetcc/steps.jpg" width="700"/>
 
 <br/>
 
 We then mapped out these stages detailing the people involved, the time it would take for the stage to complete, and any lead time needed into the stage.
 
+<br/>
+
 <img alt="Value stream mapping stages" src="{{ site.baseurl }}/images/somersetcc/vsm_in_progress.jpg" width="700"/>
 
 <br/>
 
 After this process was completed, we identified areas of inefficiency, including waste, manual processes, and heroics.
+
+<br/>
 
 <img alt="Value stream mapping inefficiencies" src="{{ site.baseurl }}/images/somersetcc/vsmchart.jpg" width="700"  />
 
@@ -157,6 +165,7 @@ When planning the migration to Azure, we considered three potential solutions:
 
 Option 1 does not offer much of a challenge because multiple servers still have to be managed, and there are no improvements with regards to scalability. Option 3 goes 100% PaaS; however, we could foresee a number of issues with regards to storage trying to deploy GeoServer to Web App on Linux, a major requirement being the development of a Blob storage plug-in as a prerequisite. Given the limited time allocated for the hackfest, we decided to go with Option 2, leaving GeoServer on IaaS, but would look at Option 3 should time allow and the Blob storage plug-in be ready. For more information about Option 3, see the section [Migrating GeoServer to Web App on Linux using an Azure Blob storage plug-in](#migrating-geoserver-to-web-app-on-linux-using-an-azure-blob-storage-plug-in) later in this article.
 
+
 #### Migrate the source control to Visual Studio Team Services
 
 One of the standout areas during the value stream mapping was the application lifecycle management. Visual SourceSafe (VSS) was still being used and developers would often check in unfinished code so that their colleagues could work on the same file. There was no branching strategy, and it soon became apparent that not all the dependencies were in source control. 
@@ -168,6 +177,8 @@ We created a team project for the department and then created a team with an are
 The final step was to get the source control and add it into Team Foundation Version Control via Visual Studio. We did debate for 30 minutes whether to use Git; however, we settled on Team Foundation Version Control because the Somerset CC staff were familiar with Visual SourceSafe, so a centralized source control was a natural step for them rather than teaching them Git. A good reference article for making the decision is [Choosing the right version control for your project](https://www.visualstudio.com/en-gb/docs/tfvc/comparison-git-tfvc).
 
 The .NET projects had to be rebound to a new source control provider that was straightforward enough from within Visual Studio and resulted in changing the `sln` and `csproj` as follows.
+
+<br/>
 
 <img alt="Binding source control" src="{{ site.baseurl }}/images/somersetcc/BindingSourceControl.png" width="700" />
 
@@ -185,6 +196,8 @@ We asked one of the Somerset CC developers to create a [personal access token](h
 
 While building the solution, it quickly became apparent that the development workflow was to output libraries onto shared drives so that other solutions could make use of them. We decided to use [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) as a more manageable solution to host these class libraries so that we could have an end-to-end dependency solution. Although you get five free users, we still had to purchase one license for it to install, which was tiresome as we had to go back to the Azure Admin and get permission to do this. A simple build definition to create your own packages is shown in the following diagram; it consists of `Restore -> Compile -> Package -> Publish`. These tasks were written by colleague [Lawrence Gripper](https://twitter.com/lawrencegripper).
 
+<br/>
+
 <img alt="NuGet Packager" src="{{ site.baseurl }}/images/somersetcc/NugetPackager.png" width="700" />
 
 <br/> 
@@ -195,11 +208,15 @@ A few things to call out on the previous screenshot:
 
 2. We were referencing a pre-release version of an Entity Framework library, which means that we should mark our package as alpha. This was achieved by updating the version field as shown in the previous screenshot. 
 
+    <br/>
+
     <img alt="Pre-release dependency" src="{{ site.baseurl }}/images/somersetcc/PreReleaseDependency.PNG" width="700" />
 
     <br/> 
 
 The publisher task was simply configured with the URL supplied when we created Package Management in Visual Studio Team Services. We repeated this for all of the dependencies, and could then remove all references to network shares. The final private feed looked like this.
+
+<br/>
 
 <img alt="Package Management" src="{{ site.baseurl }}/images/somersetcc/PackageManager.PNG" width="700" />
 
@@ -209,6 +226,8 @@ The publisher task was simply configured with the URL supplied when we created P
 
 After we had packages, we could create the main build that would use the public and new private Package Management as its source as shown in the following image. A better solution would have been achieved by using a nuget.config file, but the customer did not have one already set up. Using the config file would mean that all developers would automatically read from the private feed from within Visual Studio.
 
+<br/>
+
 <img alt="ROAM build" src="{{ site.baseurl }}/images/somersetcc/RoamBuild.PNG" width="700" />
 
 <br/>
@@ -216,6 +235,8 @@ After we had packages, we could create the main build that would use the public 
 While this build was non-trivial, a few small details to note are as follows:
 
 1. I always use the `PackageLocation` parameter within the Visual Studio/MSBuild task to change the output to `ArtifactStagingDirectory` because that saves an extra copy on the build server.
+
+    <br/>
 
     <img alt="PackageLocation parameter" src="{{ site.baseurl }}/images/somersetcc/PackageLocation.PNG" width="700" />
 
@@ -239,6 +260,8 @@ When we swapped, the app would then use different services. Designing the ARM te
 
 In the following screenshot, section 1 lists all of the app settings required for the production slot. Section 2 tells the App Service that two of those app settings should remain in the production slot when it is swapped. Section 3 defines the variables for the staging slot, which means that we will not override configuration during a swap.
 
+<br/>
+
 <img alt="ARM slots" src="{{ site.baseurl }}/images/somersetcc/ARMSlots.PNG" width="700"/>
 
 <br/>
@@ -247,9 +270,15 @@ In the following screenshot, section 1 lists all of the app settings required fo
 
 With repeatable Infrastructure as Code defined in an ARM template, we could now spin up a resource group in Azure with all of the necessary app services and have configuration pre-loaded into these app services on how they would communicate with each other. Now we just had to add this into a release pipeline. During the deployment of the ARM template, we need to override settings in the app settings with parameters that were stored for each environment. Here you can see that `GeoBackdropServer`, `GeoVectorServer`, `SecurityEntitiesUri`, and `SysAdminEntitiesUri` are stored for the test environment.
 
+<br/>
+
 <img alt="Test environment variables" src="{{ site.baseurl }}/images/somersetcc/TestEnvironmentVariables.PNG" width="700" />
 
+<br/>
+
 The release pipeline for the web tier is typical; we had a step in the dev environment that would delete the entire resource group, but due to time constraints in the hackfest, we disabled this. We then created or updated the resources and deployed three app services by using the out-of-the-box Azure App Service Deploy. Always ensure that you select **Take App Offline** because this will prevent the process from being locked when you deploy. We were deploying to the staging slot on every check-in to the source repository. The test environment could be thought of as a nightly build; in this stage we did a slot swap from staging to production. As you can see, we had great success with the new preview task.
+
+<br/>
 
 <img alt="ROAM release" src="{{ site.baseurl }}/images/somersetcc/RoamRelease.PNG" width="700"/>
 
@@ -257,7 +286,11 @@ The release pipeline for the web tier is typical; we had a step in the dev envir
 
 To provide governance and ensure that Ed could control releases into UAT, we set him up as an Approver before the release moved into UAT. This was called out specifically in the value stream mapping of an area that they required. 
 
+<br/>
+
 <img alt="Approvers" src="{{ site.baseurl }}/images/somersetcc/Approvers.PNG" width="700"/>
+
+<br/>
 
 ### Migrating PostgreSQL to Azure Database for PostgreSQL
 
@@ -454,39 +487,39 @@ We configured the following steps to deploy GeoServer into the test environment:
 
 1. Map `DevDataDir` and `TestDataDir`.
 
-    ```
-    # map test share
-    net use T: \\$(TestDataDirPath) /u:$(TestDataDirUsername) $(TestDataDirPassword) 
+        ```
+        # map test share
+        net use T: \\$(TestDataDirPath) /u:$(TestDataDirUsername) $(TestDataDirPassword) 
 
-    # map dev share 
-    net use X: \\$(DevDataDirPath) /u:$(DevDataDirUsername) $(DevDataDirPassword)
-    ```
+        # map dev share 
+        net use X: \\$(DevDataDirPath) /u:$(DevDataDirUsername) $(DevDataDirPassword)
+        ```
 
-<br/>
+        <br/>
 
 2. Remove the existing contents of the test configuration share. Because GeoServer does not actively access the data directory, only during startup or if configuration is carried out, we can work on it while the service is running.
 
-    ```
-    # empty test share
-    Get-ChildItem T:\ -Recurse | Remove-Item -Force   -Recurse
-    ```
+        ```
+        # empty test share
+        Get-ChildItem T:\ -Recurse | Remove-Item -Force   -Recurse
+        ```
 
-<br/>
+        <br/>
 
 3. Copy the dev configuration into the test share.
 
-    ```
-    # copy from dev share to test share
-    Copy-Item -Path X:\* -Destination T:\ -Recurse -Force
-    ```
+        ```
+        # copy from dev share to test share
+        Copy-Item -Path X:\* -Destination T:\ -Recurse -Force
+        ```
 
-    Some scripts that will synchronize two directories may be more efficient. This process takes around 20 minutes, which is far from ideal. But for the purposes of the hackfest, a clean out and copy works and does not lead to any additional downtime.
+        Some scripts that will synchronize two directories may be more efficient. This process takes around 20 minutes, which is far from ideal. But for the purposes of the hackfest, a clean out and copy works and does not lead to any additional downtime.
 
-    During this stage it became apparent that GeoServer stores its log file in the data directory. Because the file is in use, it cannot be removed or moved. To resolve this, we specified the path to the log file as an environment variable within the Dockerfile and created a new image.
+        During this stage it became apparent that GeoServer stores its log file in the data directory. Because the file is in use, it cannot be removed or moved. To resolve this, we specified the path to the log file as an environment variable within the Dockerfile and created a new image.
 
-        `ENV GEOSERVER_LOG_LOCATION=/var/log/geoserver.log`
+            `ENV GEOSERVER_LOG_LOCATION=/var/log/geoserver.log`
 
-<br/>
+        <br/>
 
 4. Update database connections. Updating the database connections is a little more complex. GeoServer stores the PostgreSQL database connection details within an XML file associated with each data store.
 
@@ -504,6 +537,8 @@ We configured the following steps to deploy GeoServer into the test environment:
     We created the following PowerShell script to carry out the update.
 
     `<script src="https://gist.github.com/marrobi/806f464c47b81bddc297442d5d1d8e72.js"></script>`
+    
+        <br/>
 
 5. Reload the GeoServer configuration by using REST API. GeoServer has a REST API; by using this, the configuration can be reloaded.
 
@@ -526,6 +561,8 @@ else
 fi
 ```
 
+<br/>
+
 ### Migrating GeoServer to Web App on Linux using an Azure Blob storage plug-in
 
 Both GeoServer and GeoWebCache are actively maintained Java and [Maven](https://maven.apache.org/)-based open source projects. To write a new caching layer that supported Azure Blob storage, I needed to contribute to both projects.
@@ -538,7 +575,7 @@ Because GeoServer has a dependency on GeoWebCache, I began by writing the [GeoWe
 
 GeoWebCache exposed a number of interfaces that needed to be implemented in our plug-in:
 
-- **BlobStoreConfig** – This is a very small interface, but assumes that you will extend it to support all the configuration settings required by your provided blob store. For the sake of Azure Blob storage, I kept this very simple and simply stored the following properties.
+- `BlobStoreConfig` – This is a very small interface, but assumes that you will extend it to support all the configuration settings required by your provided blob store. For the sake of Azure Blob storage, I kept this very simple and simply stored the following properties.
 
     ```
     blobContainer // Azure Blob Storage container name
@@ -547,23 +584,25 @@ GeoWebCache exposed a number of interfaces that needed to be implemented in our 
     azureAccountKey // Azure Blob Storage primary key
     ```
 
-- **XMLConfigurationProvider** – This interface is required because GeoServer is going to gather the user's blob settings from an HTML form and then use the implementation of this interface to create a `BlobStoreConfig`.
+- `XMLConfigurationProvider` – This interface is required because GeoServer is going to gather the user's blob settings from an HTML form and then use the implementation of this interface to create a `BlobStoreConfig`.
 
-- **BlobStore** – This is the main interface that provides CRUD (create, read, update, delete) methods to your desired blob storage, in this case Azure Blob storage. The `BlobStoreConfig` will be injected into this class so that it is configured as requested by the user in GeoServer. GeoWebCache stores both blobs and metadata and exposes more complex CRUD methods such as the following.
+- `BlobStore` – This is the main interface that provides CRUD (create, read, update, delete) methods to your desired blob storage, in this case Azure Blob storage. The `BlobStoreConfig` will be injected into this class so that it is configured as requested by the user in GeoServer. GeoWebCache stores both blobs and metadata and exposes more complex CRUD methods such as the following.
 
     ```
     public boolean delete(final TileRange tileRange) {...} // delete all tiles in a given range
     public boolean deleteByGridsetId(final String layerName, final String gridSetId) {...} // delete all tiles within a given gridset
     ```
 
+<br/>
+
 I decided to isolate as much of the `com.microsoft.azure.storage.blob` dependent code as possible into its own class called `AzureOps`.
 This class abstracted the *actual* Azure-specific CRUD operations for blobs, properties, and metadata.
 
-##### Test the plug-in
+**Test the plug-in**
 
 I have provided a basic set of [integration tests (GeoWebCache and Azure Blob storage)](https://github.com/jjcollinge/geowebcache/tree/jjcollinge/gwc-azure-blob/geowebcache/azurestorage/src/test/java/org/geowebcache/azure)  that cover *most* methods.
 
-##### Build the plug-in
+**Build the plug-in**
 
 GeoWebCache uses Maven as its project management tool. The structure of the project is as follows.
 
@@ -578,14 +617,24 @@ geowebcache/
             src/
 ```
 
+<br/>
+
 I created a simple build definition on Visual Studio Team Services to build and package the project.
 
+<br/>
+
 <img alt="GeoWebCache build 1" src="{{ site.baseurl }}/images/somersetcc/gwc_build_1.PNG" />
+
+<br/>
 
 The Maven build task was configured to point to the project pom.xml with the default X64 Java version set.
 I added the `-DskipTests` option to speed up development, because tests usually do run on the build.
 
+<br/>
+
 <img alt="GeoWebCache build 2" src="{{ site.baseurl }}/images/somersetcc/gwc_build_2.PNG" />
+
+<br/>
 
 After GeoWebCache had successfully been built, I copied the `gwc-azure-blob-1.11-SNAPSHOT.jar` file to the `$(Build.ArtifactStagingDirectory)`.
 
@@ -595,11 +644,11 @@ An additional community module needed to be added to GeoServer so that it could 
 
 The additions included a `gwc-azure` folder, an associated pom.xml, and the required HTML and Java source files. The community, src, app, and release pom.xml files then had to be updated to include the correct `gwc-azure` artifacts along with their dependencies.
 
-##### Test the module
+**Test the module**
 
 I added some basic [automated UI tests and unit tests](https://github.com/jjcollinge/geoserver/tree/jjcollinge/gwc-azure/src/community/gwc-azure/src/test/java/org/geoserver/gwc/web/blob) on GitHub.
 
-##### Build the module
+**Build the module**
 
 My forked GeoServer requires that the build artifacts from the forked GeoWebCache build be available in an in-scope Maven repository.
 When building locally, I installed the output of the GeoWebCache build in my local Maven repository and then built GeoServer in Bash on Windows.
@@ -608,17 +657,23 @@ However, this initially threw the exception `error=12, Cannot allocate memory`. 
 
 When moving to a hosted build, due to time limitations, I just decided to extend the existing build definition and install the JAR file and WAR files into the local Maven repository of the hosted Linux build agent. Ideally these would be split into two distinct build definitions.
 
+<br/>
+
 <img alt="GeoServer build 1" src="{{ site.baseurl }}/images/somersetcc/gs_build_1.PNG" />
 
 <br/>
 
 The **Install GeoWebCache in local Maven repository** task simply uses the MVN command-line tool to copy the JAR file from the `$(Build.ArtifactStagingDirectory)` and put them in the local `~/.pm2` folder with some additional metadata.
 
+<br/>
+
 <img alt="GeoServer build 2" src="{{ site.baseurl }}/images/somersetcc/gs_build_2.PNG" />
 
 <br/>
 
 To build GeoServer with the Azure extension and with the correct config file, I needed to add a few extra options.
+
+<br/>
 
 <img alt="GeoServer build 3" src="{{ site.baseurl }}/images/somersetcc/gs_build_3.PNG" />
 
@@ -630,17 +685,19 @@ I also wanted to make the artifacts available publicly so that I could easily do
 
 To make this simpler in the future, I also wrote a simple cross-platform [AzureCopy Visual Studio Team Services task in Typescript](https://github.com/jjcollinge/xplat-copytoazure-task). I haven't published the task to Marketplace, but it is available on GitHub.
 
-##### Deploy the module
+**Deploy the module**
 
 Now that I have access to the artifacts of both the GeoServer extensions and GeoWebCache, I needed to test that they were functioning correctly. I therefore needed to spin up a new GeoServer; the way we had been doing this up until now was to use the latest `winsent/geoserver` Docker image that installed Java 7.
 
 However, as the Visual Studio Team Services hosted build agent was targeting Java 8, the GeoServer extension and GeoWebCache artifacts required Java 8. At this point, we considered forking the Dockerfile to add Java 8 support; luckily, on inspection, it turned out that the maintainer had already published a newer version 2.10.1 with Java 8 support but hadn't tagged it latest. After we targeted this specific version `winsent/geoserver:2.10.1`, I could install the additional JAR files and see `AzureBlobStore` functioning in GeoServer.
 
-##### Add the module into the Docker image
+**Add the module into the Docker image**
 
 To include the new extension into the GeoServer installation, the JAR files created by the build process needed to be copied into the `/opt/geoserver/webapps/geoserver/WEB-INF/lib/` folder. We did this my adding the following line to the Dockerfile.
 
 `COPY ./azure_extension/ /opt/geoserver/webapps/geoserver/WEB-INF/lib/`
+
+<br/>
 
 #### Configure GeoServer on Web App on Linux
 
@@ -648,26 +705,38 @@ It proved relatively easy to get GeoServer up and running on the Web App on Linu
 
 The Docker container needed to be set to our custom GeoServer container as follows.
 
+<br/>
+
 <img alt="App Service Docker container" src="{{ site.baseurl }}/images/somersetcc/appservicedockercontainer.png" />
+
+<br/>
 
 Because GeoServer is served on port 8080, we needed to redirect port 80 on the web app to 8080 on the container image. To do this we added the application setting `PORT` as follows.
 
+<br/>
+
 <img alt="App Service port" src="{{ site.baseurl }}/images/somersetcc/appserviceport.png" />
+
+<br/>
 
 Our custom GeoServer (with the Azure plug-in) can be seen running on Azure App Service for Linux here (note the *.azurewebsites.net* URL denoting Azure App Service):
 
+<br/>
+
 <img alt="GeoServer on App Service" src="{{ site.baseurl }}/images/somersetcc/geoserveronappservice.png" />
+
+<br/>
 
 In the IaaS model, we are presenting the GeoServer configuration and raster data as Docker volumes. We were also using local storage for the GeoWebCache, but with the Blob storage plug-in this is no longer needed. Because we cannot mount custom volumes in Web App on Linux, we need to find ways to handle the configuration and raster data. 
 
-##### Manage GeoServer configuration
+**Manage GeoServer configuration**
 
 When a web app scales, all server instances need to be accessing the same configuration. We discussed potential solutions for managing the GeoServer configuration data. Linux web apps all share the same directory `/home/`, which is mounted into the custom Docker container. The GeoServer configuration could be stored in a subfolder of this directory, such as `/home/geoserver_data_dir/`. This would leave us with two options:
 
 1. Modify the `GEOSERVER_DATA_DIR` to point to this location.
 2. Synchronize the contents of this folder to the default GeoServer data directory location.
 
-##### Manage raster data
+**Manage raster data**
 
 The possibility of splitting out raster and vector data into separate GeoServer instances was discussed. The GeoServer that uses raster data, which cannot be mounted into the App Service, would remain on IaaS, whereas the vector data servers could use Web App on Linux. The benefit of this would be that a common raster GeoServer could be used for all deployment because background mapping is consistent across deployments. Each vector-based GeoServer could be customized to particular deployment requirements. Longer term, the raster data is likely to be supplied via a third-party mapping service, and in this case the requirement for the IaaS element would be removed.
 
