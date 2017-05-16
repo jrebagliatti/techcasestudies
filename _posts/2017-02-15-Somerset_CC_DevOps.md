@@ -483,6 +483,8 @@ Prior to deploying to the test environment, two things needed to happen:
 1. The GeoServer dev configuration needed to replace the existing test configuration.
 2. Database connection strings needed to be updated to point to a different PostgreSQL server.
 
+<br/>
+
 We configured the following steps to deploy GeoServer into the test environment:
 
 1. Map `DevDataDir` and `TestDataDir`.
@@ -539,11 +541,11 @@ We configured the following steps to deploy GeoServer into the test environment:
 
 5. Reload the GeoServer configuration by using REST API. GeoServer has a REST API; by using this, the configuration can be reloaded.
 
-6. Unmount the shares. Each environment after the dev environment will follow this format.
+6. Unmount the shares. 
 
-    ***
+Each environment after the dev environment will follow this format.
 
-    ***
+<br/>
 
 #### Make Azure Files mounts persistent
 
