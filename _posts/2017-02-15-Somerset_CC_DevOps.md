@@ -300,9 +300,9 @@ During the hackfest, we were fortunate to have access to the private preview of 
 
 The first step was to automate the deployment of a server by using an ARM template. The ARM template was created by using [Azure Resource Explorer](http://resources.azure.com) to identify the required JSON. Because it was a hackfest, the data has no personal information, so for ease of use we opened up the service to all IP addresses.
 
-    `<script src="https://gist.github.com/marrobi/bb8a1c08b4154992f1838dc61e76eab4.js"></script>`
+`<script src="https://gist.github.com/marrobi/bb8a1c08b4154992f1838dc61e76eab4.js"></script>`
 
-   <br/>
+<br/>
 
 #### Connect to Azure Database for PostgreSQL
 
@@ -310,7 +310,7 @@ The next step after the service was deployed was to connect to Azure Database fo
 
 To work around this, we deployed a Docker container running pgAdmin 4 on an Azure virtual machine (actually for hackfest purposes, on GeoServer), which enabled us to connect to Azure Database for PostgreSQL.
 
-  `docker run --name my-pgadmin4  -p 5050:5050   -d fenglc/pgadmin4`
+`docker run --name my-pgadmin4  -p 5050:5050   -d fenglc/pgadmin4`
 
 <br/>
 
@@ -346,7 +346,7 @@ For the files created by using `pb_dump`, we used `pg_restore`. One import took 
 
 The final step was to enable the [PostGIS extensions](http://www.postgis.net). Because a number of the databases are used to store location and mapping data, the PostGIS extensions are required. Azure Database for PostgreSQL supports these extensions, so it was simply a case of enabling the extensions on the databases after creation and prior to data import by using the following command.
 
-    `CREATE EXTENSION postgis`
+`CREATE EXTENSION postgis`
 
 <br/>
 
@@ -487,36 +487,37 @@ We configured the following steps to deploy GeoServer into the test environment:
 
 1. Map `DevDataDir` and `TestDataDir`.
 
-        ```
-        # map test share
-        net use T: \\$(TestDataDirPath) /u:$(TestDataDirUsername) $(TestDataDirPassword) 
+    ```
+    # map test share
+    net use T: \\$(TestDataDirPath) /u:$(TestDataDirUsername) $(TestDataDirPassword) 
 
-        # map dev share 
-        net use X: \\$(DevDataDirPath) /u:$(DevDataDirUsername) $(DevDataDirPassword)
-        ```
+    # map dev share 
+    net use X: \\$(DevDataDirPath) /u:$(DevDataDirUsername) $(DevDataDirPassword)
+    ```
 
 
 2. Remove the existing contents of the test configuration share. Because GeoServer does not actively access the data directory, only during startup or if configuration is carried out, we can work on it while the service is running.
 
-        ```
-        # empty test share
-        Get-ChildItem T:\ -Recurse | Remove-Item -Force   -Recurse
-        ```
+    ```
+    # empty test share
+    Get-ChildItem T:\ -Recurse | Remove-Item -Force   -Recurse
+    ```
 
 
 3. Copy the dev configuration into the test share.
 
-        ```
-        # copy from dev share to test share
-        Copy-Item -Path X:\* -Destination T:\ -Recurse -Force
-        ```
+    ```
+    # copy from dev share to test share
+    Copy-Item -Path X:\* -Destination T:\ -Recurse -Force
+    ```
 
-        Some scripts that will synchronize two directories may be more efficient. This process takes around 20 minutes, which is far from ideal. But for the purposes of the hackfest, a clean out and copy works and does not lead to any additional downtime.
+    Some scripts that will synchronize two directories may be more efficient. This process takes around 20 minutes, which is far from ideal. But for the purposes of the hackfest, a clean out and copy works and does not lead to any additional downtime.
 
-        During this stage it became apparent that GeoServer stores its log file in the data directory. Because the file is in use, it cannot be removed or moved. To resolve this, we specified the path to the log file as an environment variable within the Dockerfile and created a new image.
+    During this stage it became apparent that GeoServer stores its log file in the data directory. Because the file is in use, it cannot be removed or moved. To resolve this, we specified the path to the log file as an environment variable within the Dockerfile and created a new image.
 
-            `ENV GEOSERVER_LOG_LOCATION=/var/log/geoserver.log`
-
+    ```
+    ENV GEOSERVER_LOG_LOCATION=/var/log/geoserver.log
+    ```
 
 4. Update database connections. Updating the database connections is a little more complex. GeoServer stores the PostgreSQL database connection details within an XML file associated with each data store.
 
