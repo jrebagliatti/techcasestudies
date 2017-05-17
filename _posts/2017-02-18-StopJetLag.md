@@ -47,7 +47,7 @@ The app has been featured on Katie Couric's talk show.
 
 The video segment can be viewed here: 
 
-<iframe width="1140" height="641" src="https://www.youtube.com/embed/5PS9jn5z64c" frameborder="0" allowfullscreen></iframe>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/5PS9jn5z64c" frameborder="0" allowfullscreen></iframe>
 
 ## Problem statement ##
 
@@ -87,11 +87,13 @@ The team implemented a web app to enable rapid development and deployment of the
 
 ![StopJetLag 3Platforms HomePage]({{ site.baseurl }}/images/stopjetlag/StopJetLag-3Platforms-HomePage.jpg)
 
+<br/>
 
 *StopJetLag Mobile app using Xamarin.Forms - major jet lag influences*
 
 ![StopJetLag 3Platforms Influences]({{ site.baseurl }}/images/stopjetlag/StopJetLag-3Platforms-Influences.jpg)
 
+<br/>
 
 ### Architecture diagrams – before and after migration to Azure
 
@@ -99,6 +101,7 @@ The team implemented a web app to enable rapid development and deployment of the
 
 ![StopJetLag Before Azure Migration Architecture]({{ site.baseurl }}/images/stopjetlag/StopJetLag-Before-Azure-Migration-Architecture.jpg)
 
+<br/>
 
 The architectural diagram above shows the components used to deliver a traveler’s StopJetLag plan prior to using Azure.
 
@@ -114,6 +117,7 @@ A StopJetLag plan proprietary formatted jet lag advice data file was generated f
 
 ![StopJetLag Azure Architecture]({{ site.baseurl }}/images/stopjetlag/StopJetLag-Azure-Architecture.jpg)
 
+<br/>
 
 While designing how to add the StopJetLag trip notes to the StopJetLag Mobile app, we addressed the above issues in our old architecture by moving to a significantly refined architecture based on Azure App Service, Azure SQL Database, and .NET Core.
 
@@ -131,6 +135,7 @@ Xamarin.Forms was selected for the cross-platform UI technology because it is av
 
 ![Visual Studio StopJetLag XamarinForms Structure]({{ site.baseurl }}/images/stopjetlag/VisualStudio-StopJetLag-XamarinForms_Structure.jpg)
 
+<br/>
 
 The newly developed UI layer for the StopJetLag app is composed of these four StopJetLagForms projects:
 	
@@ -175,6 +180,8 @@ public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsAppli
 }
 ```
 
+<br/>
+
 ***StopJetLag for Android SQLite file location setup***
 
 In an Android app, you can determine the platform-specific folder using the following code, which was placed in the MainActivity class of the Android project and then passed into the core PCL.
@@ -203,6 +210,8 @@ public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompa
     }
 ```
 
+<br/>
+
 ***StopJetLag for UWP SQLite file location setup***
 
 In a UWP app, you can determine the platform-specific folder using the following code, which was placed in the MainPage class of the UWP project and then passed into the core PCL.
@@ -227,12 +236,15 @@ public sealed partial class MainPage
     }
 ```
 
+<br/>
+
 **Use of plug-ins compatible with Xamarin**
 
 *StopJetLag forms references*
 
 <img alt="StopJetLag Forms References" src="{{ site.baseurl }}/images/stopjetlag/StopJetLagForms-References.jpg" width="400">
 
+<br/>
 
 To avoid reinventing the wheel, these plug-ins were added to the projects using NuGet:
 
@@ -251,6 +263,7 @@ Because Xamarin.Forms is primarily a XAML technology, the StopJetLag app made ex
 
 <img alt="StopJetLagForms Directory Organization" src="{{ site.baseurl }}/images/stopjetlag/StopJetLagForms-DirectoryOrganization.jpg" width="400">
 
+<br/>
 
 **Deployment and debugging**
 
@@ -265,11 +278,13 @@ There are two major reasons for using actual mobile devices to confirm what the 
 
 ![Microsoft Visual Studio Emulator For Android]({{ site.baseurl }}/images/stopjetlag/MicrosoftVisualStudioEmulatorForAndroid.jpg)
 
- 
+ <br/>
+ 
 *Jet lag advice information using Xamarin.Forms (retrieved from Azure REST call)*
 
 ![StopJetLag 3Platforms JetLagAdvice]({{ site.baseurl }}/images/stopjetlag/StopJetLag-3Platforms-JetLagAdvice.jpg)
 
+<br/>
 
 The above screen shows the jet lag advice recommendations for the traveler to follow. The “Most Recent Jet Lag Advice” and the “Upcoming Jet Lag Advice” now have enhanced visibility for the traveler.
 
@@ -295,10 +310,13 @@ public async Task<int> RetrieveAdviceAsync(string id)
 } 
 ```
 
+<br/>
+
 *Trip notes using Xamarin.Forms (retrieved from Azure REST call)*
 
 ![StopJetLag 3Platforms Trip Notes]({{ site.baseurl }}/images/stopjetlag/StopJetLag-3Platforms-TripNotes.jpg) 
 
+<br/>
 
 This screen shows the StopJetLag trip notes that were added after taking advantage of the migration of the StopJetLag infrastructure to Azure. 
 
@@ -420,9 +438,11 @@ namespace StopJetLag.UWP.ViewModel
 }
 ```
 
+<br/>
+
 ### Azure App Service
 
-**#Azure API Apps**
+#### Azure API Apps
 
 The goal of the StopJetLag API layer is to provide a REST interface for the StopJetLag Mobile app to retrieve jet lag advice activity data as well as the created trip notes from the Azure SQL database using stored procedures for data retrieval. The need to scale automatically as well as the ease of development and integration with Azure based on .NET Core made the use of an Azure API app the obvious choice for the infrastructure development.
 
@@ -434,8 +454,9 @@ The layout for the API layer is a typical .NET Core MVC pattern that calls store
 
 <img alt="Mobile Data Azure WebApp MoreInfo" src="{{ site.baseurl }}/images/stopjetlag/Mobile_Data_AzureWebApp-MoreInfo.jpg" width="400"> 
 
+<br/>
 
-**#Azure Web Apps**
+#### Azure Web Apps
 
 ***StopJetLag trip notes admin portal***
 
@@ -451,6 +472,7 @@ The following screen shows the trip-related information that the StopJetLag Expe
 
 ![Stop Jet Lag Trips Example]({{ site.baseurl }}/images/stopjetlag/StopJetLag_Trips_Example.jpg)
 
+<br/>
 
 The next screen shows the trip leg notes-related information that is also prepopulated in the Azure SQL database to improve the speed of preparing a StopJetLag plan.
 
@@ -458,6 +480,7 @@ The next screen shows the trip leg notes-related information that is also prepop
 
 ![StopJetLag Trip Leg Notes Empty Example]({{ site.baseurl }}/images/stopjetlag/StopJetLag_TripLeg_Notes_Empty_Example.jpg)
 
+<br/>
 
 ***Trip notes after editing by Azure web app in SQL***
 
@@ -467,6 +490,7 @@ This screen shows a summary of all the trip notes for each leg of the traveler�
 
 ![StopJetLag Trip Leg Notes Example]({{ site.baseurl }}/images/stopjetlag/StopJetLag_TripLeg_Notes_Example.jpg)
 
+<br/>
 
 ***Trip notes detail editing by Azure web app in SQL***
 
@@ -476,6 +500,7 @@ This screen shows where the individual trip leg note is edited.
 
 ![StopJetLag Trip Leg Note Edit]({{ site.baseurl }}/images/stopjetlag/StopJetLag_TripLeg_Notes_Example_Edit.jpg)
 
+<br/>
 
 Here is the Visual Studio structure for the .NET Core MVC app that was used to create the screens shown above that are part of the trip notes admin portal.
 
@@ -483,6 +508,7 @@ Here is the Visual Studio structure for the .NET Core MVC app that was used to c
 
 <img alt="TripNotes Azure WebApp MoreInfo" src="{{ site.baseurl }}/images/stopjetlag/TripNotes-AzureWebApp-MoreInfo.jpg" width="400">
 
+<br/>
 
 ### Azure SQL database
 
@@ -498,6 +524,7 @@ Two databases were created in Azure SQL Database. Using only two Azure SQL datab
 
 ![StopJetLag Azure SQL Architecture]({{ site.baseurl }}/images/stopjetlag/StopJetLag-Azure_SQL-Architecture.jpg)
 
+<br/>
 
 Here is an overview of what is found in these two proprietary Azure SQL databases:
 
@@ -535,6 +562,7 @@ Because StopJetLag has been using Visual Studio Team Services for source control
 
 ![StopJetLag Deployment Source Fig1]({{ site.baseurl }}/images/stopjetlag/StopJetLag_DeploymentSourceFig1.jpg)
 
+<br/>
 
 After choosing the repository source, the next step was to choose the desired project from the repository. Then we selected the desired source code branch and approved the continuous deployment options. After that confirmation, the project is built and deployed each time source code is checked into the repository.
 
@@ -542,7 +570,8 @@ After choosing the repository source, the next step was to choose the desired pr
 
 <img alt="StopJetLag Deployment Fig2" src="{{ site.baseurl }}/images/stopjetlag/StopJetLag_DeploymentFig2.jpg" width="400">
 
- 
+<br/>
+
 ***GitHub***
 
 We also implemented a partial project with GitHub and configured continuous deployment under “deployment options”.
@@ -551,6 +580,7 @@ We also implemented a partial project with GitHub and configured continuous depl
 
 ![StopJetLag GitHub Source]({{ site.baseurl }}/images/stopjetlag/StopJetLag_GitHubSourceFig1.jpg)
 
+<br/>
 
 Once continuous deployment is set up, a new build will be created and deployed to the desired App Service slot after each code check-in to the repository. 
 
@@ -558,6 +588,7 @@ Once continuous deployment is set up, a new build will be created and deployed t
 
 ![StopJetLag GitHub Deployment Options]({{ site.baseurl }}/images/stopjetlag/StopJetLag_GitHubDeploymentOptionsFig.jpg)
 
+<br/>
 
 **Autoscaling and App Service environment**
 
@@ -589,6 +620,7 @@ By changing this value to **Always On**, the StopJetLag plan is usually returned
 
 ![StopJetLag Application Settings AlwaysOn]({{ site.baseurl }}/images/stopjetlag/ApplicationSettings-AlwaysOn.jpg)
 
+<br/>
 
 **Use of deployment slots**
 
@@ -604,7 +636,9 @@ Deploying an application to a development slot before swapping to a production s
 *StopJetLag deployment slots*
 
 ![StopJetLag Deployment Slots And Swapping to Scale]({{ site.baseurl }}/images/stopjetlag/DeploymentSlotsAndSwappingtoScale.jpg)
- 
+
+<br/>
+
 ## Conclusion ##
 
 >“I am pleased with the improvements in the day-to-day operations at StopJetLag.com that resulted from this project. First, the creation of the StopJetLag app with Xamarin.Forms will certainly make enhancements to the StopJetLag Mobile UI easier in the future. 
@@ -632,6 +666,7 @@ _Linda Wells - New York Magazine: The CUT_
 
 ![StopJetLag All Natural NY Mag The CUT]({{ site.baseurl }}/images/stopjetlag/StopJetLag-AllNatural-NYMagTheCUT.jpg)
 
+<br/>
 
 Here is what the media and world travelers say about StopJetLag: [http://www.stopjetlag.com/saying/what-others-are-saying.html](http://www.stopjetlag.com/saying/what-others-are-saying.html)
 
