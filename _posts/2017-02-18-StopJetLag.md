@@ -47,7 +47,7 @@ The app has been featured on Katie Couric's talk show.
 
 The video segment can be viewed here: 
 
-<iframe width="960" height="540" src="https://www.youtube.com/embed/5PS9jn5z64c" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" src="https://www.youtube.com/embed/5PS9jn5z64c" frameborder="0" allowfullscreen></iframe>
 
 ## Problem statement ##
 
@@ -101,7 +101,6 @@ The team implemented a web app to enable rapid development and deployment of the
 
 ![StopJetLag Before Azure Migration Architecture]({{ site.baseurl }}/images/stopjetlag/StopJetLag-Before-Azure-Migration-Architecture.jpg)
 
-<br/>
 
 The architectural diagram above shows the components used to deliver a traveler’s StopJetLag plan prior to using Azure.
 
@@ -454,7 +453,6 @@ The layout for the API layer is a typical .NET Core MVC pattern that calls store
 
 <img alt="Mobile Data Azure WebApp MoreInfo" src="{{ site.baseurl }}/images/stopjetlag/Mobile_Data_AzureWebApp-MoreInfo.jpg" width="400"> 
 
-<br/>
 
 #### Azure Web Apps
 
@@ -524,7 +522,6 @@ Two databases were created in Azure SQL Database. Using only two Azure SQL datab
 
 ![StopJetLag Azure SQL Architecture]({{ site.baseurl }}/images/stopjetlag/StopJetLag-Azure_SQL-Architecture.jpg)
 
-<br/>
 
 Here is an overview of what is found in these two proprietary Azure SQL databases:
 
@@ -637,7 +634,6 @@ Deploying an application to a development slot before swapping to a production s
 
 ![StopJetLag Deployment Slots And Swapping to Scale]({{ site.baseurl }}/images/stopjetlag/DeploymentSlotsAndSwappingtoScale.jpg)
 
-<br/>
 
 ## Conclusion ##
 
@@ -666,7 +662,6 @@ _Linda Wells - New York Magazine: The CUT_
 
 ![StopJetLag All Natural NY Mag The CUT]({{ site.baseurl }}/images/stopjetlag/StopJetLag-AllNatural-NYMagTheCUT.jpg)
 
-<br/>
 
 Here is what the media and world travelers say about StopJetLag: [http://www.stopjetlag.com/saying/what-others-are-saying.html](http://www.stopjetlag.com/saying/what-others-are-saying.html)
 
