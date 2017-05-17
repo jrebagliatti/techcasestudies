@@ -305,7 +305,7 @@ The solution is due for deployment at the Emirates Air Line Cable Car in March 2
 
 - The LoRaWAN range is huge, and the hardware construction is simple and easily achievable, making it a valuable part of the TBS Mobility IoT strategies for FM going forward.
 - The world of RTMP is not well-supported, and direct engagement with IP camera manufacturers will be required to obtain quality commercial devices.
-- In comparison to the alternatives, the complexity of the Azure IoT service offerings is significantly harder.
+- In comparison to the alternatives, the complexity of the Azure IoT service offerings is significantly easier.
 
 ### Opportunities going forward
 
