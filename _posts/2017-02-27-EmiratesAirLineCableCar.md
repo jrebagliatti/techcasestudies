@@ -161,7 +161,7 @@ With a delay in the purchasing of the MultiTech LoRaWAN equipment, an interim im
 
 #### LoRaWAN gateway construction
 
-A LoRaWAN gateway was constructed based on the instructions offered by The Things Network (TTN). This uses an iC880A frequency concentrator board coupled with a Rasperry Pi via SPI. For the codebase, see [iC880A gateway](https://github.com/ttn-zh/ic880a-gateway/tree/spi). Assembly is easy, and after the installation is running, it automatically registers the device with TTN. From there it was easy to bridge the TTN application handler into Azure IoT Hub by using the [C# bridge](https://github.com/JeeWeetje/TtnAzureBridge), although the bridge had to be recently upgraded to match the new production TTN environment.
+A LoRaWAN gateway was constructed based on the instructions offered by The Things Network (TTN). This uses an iC880A frequency concentrator board coupled with a Raspberry Pi via SPI. For the codebase, see [iC880A gateway](https://github.com/ttn-zh/ic880a-gateway/tree/spi). Assembly is easy, and after the installation is running, it automatically registers the device with TTN. From there it was easy to bridge the TTN application handler into Azure IoT Hub by using the [C# bridge](https://github.com/JeeWeetje/TtnAzureBridge), although the bridge had to be recently upgraded to match the new production TTN environment.
 
 ![Working on Raspberry Pi LoRaWAN gateway]({{ site.baseurl }}/images/emiratesairline/workingonhub.jpeg)
 
@@ -231,7 +231,7 @@ Range testing for the LoRaWAN gateway and sensor was conducted at the Microsoft 
 
 <br/>
 
-The results show that externally from the buildings, the range is terrific. Internally, the range covered three of the five Microsoft buildings but did not extend into Buildings 4 and 5. Building 1 is 20 meters from Building 2, Building 3 is 25 meters from Building 2, Building 4 is 45 meters from Building 3. The road beyond the boundary of the campus, at the top of the eclipse is 250 meters from Building 2. Even with a duplicate gateway to cover these buildings, the LoRaWAN gateway to sensor ratio is significantly higher than that of the current TBS encumbent gateway/sensor hardware, which is based on Bluetooth Low Energy (BLE). LoRaWAN presents a significant improvement in capabilities for servicing the FM industry.
+The results show that externally from the buildings, the range is terrific. Internally, the range covered three of the five Microsoft buildings but did not extend into Buildings 4 and 5. Building 1 is 20 meters from Building 2, Building 3 is 25 meters from Building 2, and Building 4 is 45 meters from Building 3. The road beyond the boundary of the campus, at the top of the eclipse is 250 meters from Building 2. Even with a duplicate gateway to cover these buildings, the LoRaWAN gateway to sensor ratio is significantly higher than that of the current TBS incumbent gateway/sensor hardware, which is based on Bluetooth Low Energy (BLE). LoRaWAN presents a significant improvement in capabilities for servicing the FM industry.
 
 ### TV White Spaces Quality of Service solution
 
@@ -245,7 +245,7 @@ A UWP wrapper for the iPerf tool was located on GitHub, and this codebase was mo
 
 ### Remote monitoring solution
 
-To simplfy testing and progress of the project, a temporary customization of the IoT Suite remote monitoring solution was made to present both simulated and real datasets from the different sensors. The remote monitoring solution is more sophosticated than is required; in the final customer interface, it will be presented by using Power BI. For more information, see [Modification of the Microsoft Azure Remote Monitoring Solution for Emirates Air Line Cable Cars](https://github.com/GregRivo/emiratesairline/tree/develop).
+To simplify testing and progress of the project, a temporary customization of the IoT Suite remote monitoring solution was made to present both simulated and real datasets from the different sensors. The remote monitoring solution is more sophisticated than is required; in the final customer interface, it will be presented by using Power BI. For more information, see [Modification of the Microsoft Azure Remote Monitoring Solution for Emirates Air Line Cable Cars](https://github.com/GregRivo/emiratesairline/tree/develop).
 
 
 ## Technical delivery ##
