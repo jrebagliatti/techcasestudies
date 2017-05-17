@@ -252,7 +252,7 @@ While this build was non-trivial, a few small details to note are as follows:
 
 The ROAM web app was dependent on two other services for it to be able to run, and these services did not change as often as the main website. I decided that each should have its own separate build so that we only deployed the areas that changed. All were source artifacts to the ROAM release definition, and WebDeploy would only deploy artifacts that had changed, so it was safe to do this. I set up the dev and test environments to use the same App Service and use slots. This way we could test the slot behavior before we went to production. For the sake of the hackfest, we then mirrored this with UAT and production being a shared App Service too. We would deploy into the staging slot and when we were happy, we could swap the slots. This meant that we had to use slot configurations so that the staging ROAM web app was configured to depend on the staging services. We created variables in the ARM template to represent the staging and production URIs that we would depend on.
 
-`<script src="https://gist.github.com/ross-p-smith/c927cd249b9751937f9c363933ef22d0.js"></script>`
+    <script src="https://gist.github.com/ross-p-smith/c927cd249b9751937f9c363933ef22d0.js"></script>
 
 <br/>
 
@@ -300,7 +300,7 @@ During the hackfest, we were fortunate to have access to the private preview of 
 
 The first step was to automate the deployment of a server by using an ARM template. The ARM template was created by using [Azure Resource Explorer](http://resources.azure.com) to identify the required JSON. Because it was a hackfest, the data has no personal information, so for ease of use we opened up the service to all IP addresses.
 
-`<script src="https://gist.github.com/marrobi/bb8a1c08b4154992f1838dc61e76eab4.js"></script>`
+    <script src="https://gist.github.com/marrobi/bb8a1c08b4154992f1838dc61e76eab4.js"></script>
 
 <br/>
 
@@ -322,7 +322,7 @@ Because we wanted to be able to repeat this procedure, we decided to script the 
 
 Initially we attempted this by using the [PostgreSQL ODBC driver](https://odbc.postgresql.org). When running `CREATE DATABASE` commands, we encountered a timeout. After trying various workarounds, we contacted the product team who suggested an [alternative ODBC driver](http://www.npgsql.org) ([download](https://github.com/npgsql/Npgsql/releases)). This driver allowed us to specify connection timeout settings within the connection string. We created a simple script that resolved the majority of issues with some inspiration from [this PowerShell module](https://github.com/palpha/Simple-PostgreSQL-module-for-PowerShell). 
 
-`<script src="https://gist.github.com/marrobi/a28256e43edc2f137bc2ff95a68afe13.js"></script>`
+    <script src="https://gist.github.com/marrobi/a28256e43edc2f137bc2ff95a68afe13.js"></script>
 
 <br/>
 
@@ -362,7 +362,7 @@ To enable the automated provisioning of the GeoServer image onto Azure, we creat
 
 The configured extension looked as follows.
 
-`<script src="https://gist.github.com/marrobi/23b11e7ac7eefa00b1a5a6e838eccdcf.js"></script>`
+    <script src="https://gist.github.com/marrobi/23b11e7ac7eefa00b1a5a6e838eccdcf.js"></script>
 
 <br/>
 
@@ -380,17 +380,17 @@ We created three Azure Files shares:
 
 A script was executed by using a `CustomScript` extension to mount the shares.
 
-`<script src="https://gist.github.com/marrobi/f4beff75476543d038e318d01403b923.js"></script>`
+    <script src="https://gist.github.com/marrobi/f4beff75476543d038e318d01403b923.js"></script>
 
 <br/>
 
-`<script src="https://gist.github.com/marrobi/c9cf92ebb718f53f4f64888d7270be20.js"></script>`
+    <script src="https://gist.github.com/marrobi/c9cf92ebb718f53f4f64888d7270be20.js"></script>
 
 <br/>
 
 The Docker extension was updated to mount the data directory into the default data directory location within the GeoServer container.
 
-`<script src="https://gist.github.com/marrobi/e5152e05829150f0b0b3c2532b62c6ba.js"></script>`
+    <script src="https://gist.github.com/marrobi/e5152e05829150f0b0b3c2532b62c6ba.js"></script>
 
 <br/>
 
@@ -404,7 +404,7 @@ The raster data is made up of many gigabytes of GeoTIFF files. This data does no
 
 GeoServer utilizes a caching component called [GeoWebCache (GWC)](http://geowebcache.org/), which can be run as an integrated component of GeoServer or independently. Although an Azure Blob storage extension for GeoWebCache was under development as part of the hackfest, we needed to use GeoWebCache prior to the development being completed. GeoWebCache requires a large amount of local storage, so we provisioned a new data disk to the virtual machine and mounted this as a volume into the container.
 
-`<script src="https://gist.github.com/marrobi/a3c25fa8b881945cbafdecde65517436.js"></script>`
+    <script src="https://gist.github.com/marrobi/a3c25fa8b881945cbafdecde65517436.js"></script>
 
 <br/>
 
@@ -412,13 +412,13 @@ The disk needs initializing, partitioning, and formatting prior to being present
 
 We saved the following script.
 
-`<script src="https://gist.github.com/trentmswanson/9c22bb71182e982bd36f.js"></script>`
+    <script src="https://gist.github.com/trentmswanson/9c22bb71182e982bd36f.js"></script>
 
 <br/>
 
 We then added it to our `CustomScript` extension.
 
-`<script src="https://gist.github.com/marrobi/4ebeb7814dd8f13789d98aeddfae7eec.js"></script>`
+    <script src="https://gist.github.com/marrobi/4ebeb7814dd8f13789d98aeddfae7eec.js"></script>
 
 <br/>
 
@@ -432,7 +432,7 @@ The following describes the steps we took to create a custom Docker image:
 
 1. We created a custom Dockerfile:
 
-    `<script src="https://gist.github.com/marrobi/697710c74e3ffc943b07693ccd625ec2.js"></script>`
+        <script src="https://gist.github.com/marrobi/697710c74e3ffc943b07693ccd625ec2.js"></script>
 
     <br/>
 
@@ -464,7 +464,7 @@ The following describes the steps we took to create a custom Docker image:
 
 7. To enable Docker on the provisioned virtual machine to access the registry, we also added registry credentials to the extension:
 
-    `<script src="https://gist.github.com/marrobi/2f84928824c7c4d0c545e3c1bd04efc2.js"></script>`
+        <script src="https://gist.github.com/marrobi/2f84928824c7c4d0c545e3c1bd04efc2.js"></script>
 
     <br/>
 
@@ -536,7 +536,7 @@ We configured the following steps to deploy GeoServer into the test environment:
 
     We created the following PowerShell script to carry out the update.
 
-    `<script src="https://gist.github.com/marrobi/806f464c47b81bddc297442d5d1d8e72.js"></script>`
+        <script src="https://gist.github.com/marrobi/806f464c47b81bddc297442d5d1d8e72.js"></script>
     
 
 5. Reload the GeoServer configuration by using REST API. GeoServer has a REST API; by using this, the configuration can be reloaded.
