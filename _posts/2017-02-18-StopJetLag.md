@@ -45,9 +45,7 @@ The app has been featured on Katie Couric's talk show.
 
 (Courtesy of Katie's Travel Toolkit.)
 
-The video segment can be viewed here: 
-
-<iframe width="500" src="https://www.youtube.com/embed/5PS9jn5z64c" frameborder="0" allowfullscreen></iframe>
+The video segment can be viewed here: [http://www.stopjetlag.com/saying/katie-couric-stop-jet-lag.html](http://www.stopjetlag.com/saying/katie-couric-stop-jet-lag.html)
 
 ## Problem statement ##
 
