@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Azure IoT optimize port operations with Kongsberg"
+title: "Using Azure IoT to optimize port operations with Kongsberg"
 author: "Olav Tollefsen"
 author-link: "https://www.linkedin.com/in/olavtollefsen/"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -39,15 +39,15 @@ During the hackfest, the following technologies were used:
 
 ### Hackfest members
 
-The roles that took part in the hackfest were as follows:
+The roles that participated in the hackfest were as follows:
 
-| Company    | Role                             | Name |
-| -------    | ----                             | ---- |
-| Kongsberg  | Project Manager                  | —    |  
-|            | Principal Architect              | —    |
-|            | Manager, Disruptive Technologies | —    |
-| Microsoft  | Technical Evangelist             | Olav Tollefsen ([@olavtollefsen](https://www.linkedin.com/in/olavtollefsen/)) |
-|            | Technical Evangelist             | Mike Myers (LinkedIn: [mike-myers-b51a664](https://www.linkedin.com/in/mike-myers-b51a664/)) |
+- Kongsberg
+  - Project Manager
+  - Principal Architect
+  - Manager, Disruptive Technologies
+- Microsoft
+  - Olav Tollefsen ([@olavtollefsen](https://www.linkedin.com/in/olavtollefsen/)), Technical Evangelist
+  - Mike Myers (LinkedIn: [mike-myers-b51a664](https://www.linkedin.com/in/mike-myers-b51a664/)), Technical Evangelist
 
 ## Customer profile ##
 
@@ -282,7 +282,7 @@ In just three days of working with the proof-of-concept code, we successfully me
 
 The focus for the hackfest was to validate the core IoT functionality. The next steps will be to work more on the processing of the data ingested, complete the whole architecture, and move it into a production platform for other sensor-data scenarios. In the near future, the platform will also contain advanced analytics and machine-learning capabilities integrated with the data ingested by IoT devices combined with other data sources.
 
-This video describes the platform:
+This video describes the platform.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6rWtTa5hpGQ" frameborder="0" allowfullscreen></iframe>
 
