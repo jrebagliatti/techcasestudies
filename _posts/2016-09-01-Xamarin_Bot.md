@@ -64,7 +64,10 @@ We worked on the Xamarin app integration using a Direct Line channel provided by
  
 A major challenge was that the Powerupcloud dev team had no experience with Xamarin development prior to this engagement. The following details helped them implement their bot integration with a Xamarin mobile app.
 
-Following are the technical details of creating a bot using the Bot Framework, integrating it with a cross-platform Xamarin app, and adding Cognitive Services to make the app smart.
+Following are the technical details for:
+- Creating a bot using the Bot Framework
+- Integrating the bot with a cross-platform Xamarin app
+- Adding Cognitive Services to make the app smart
 
 ### Creating a bot using the Bot Framework
 The following two NuGet packages were added to the Xamarin.Forms shared project:
@@ -76,7 +79,7 @@ These NuGet packages allow communication with the bot by using pre-defined metho
 
 The bot was published online by using Web Apps. It was also registered on the [Bot Framework developer portal](https://dev.botframework.com/bots/new).
 
-### Integrating the bot with a Xamarin app
+### Integrating the bot with a cross-platform Xamarin app
 To integrate the bot with a Xamarin app, we had to use a Direct Line channel. The Direct Line NuGet package published by Microsoft was used to abstract the REST API calls. The Xamarin application for bot scenarios is required to communicate with the bot by sending and receiving messages. We needed to use methods to send messages to the bot and receive messages from the bot; the Direct Line NuGet package we installed earlier allowed us to easily implement this within the application without having to write any HTTP calls manually.
 
 #### To integrate the bot with a Xamarin app
@@ -178,6 +181,7 @@ To integrate the bot with a Xamarin app, we had to use a Direct Line channel. Th
    }
    ```
 
+<br/>
 
 #### To create an interface to interact with the bot
 
@@ -235,6 +239,8 @@ To integrate the bot with a Xamarin app, we had to use a Direct Line channel. Th
             </ListView.ItemTemplate>
     </ListView>
     ```
+    
+<br/>
 
 #### To connect the bot to the XAML page of the Xamarin app
 
@@ -330,19 +336,19 @@ To integrate the bot with a Xamarin app, we had to use a Direct Line channel. Th
    }
    ```
 
-  It will help with the following:
+   It will help with the following:
 
-  - Getting the user's message
-  - Clearing the `Entry` box
-  - Adding messages into the collection for display
-  - Sending messages to the bot
+   - Getting the user's message
+   - Clearing the `Entry` box
+   - Adding messages into the collection for display
+   - Sending messages to the bot
 
-  We tried asking it a few questions to test it:
+   We tried asking it a few questions to test it:
 
-  - Is there a cafe?
-  - Do you have guest Wi-Fi?
-  - Where can I find the restroom?
-  - Is there parking?
+   - Is there a cafe?
+   - Do you have guest Wi-Fi?
+   - Where can I find the restroom?
+   - Is there parking?
 
 
 8. We noticed that there was an issue with the UI when we ran this test on Android. The message was cut short when it was too long and the cells didn't seem to be suitable for messages. The issue was with the default `TextCell` in the `ListView`; it cuts off text that is too long by default.
@@ -448,6 +454,8 @@ We needed to do two things to the code:
        }
    }
    ```
+
+<br/>
 
 #### To send the captured image to the Computer Vision API and get a result
 
