@@ -10,7 +10,7 @@ color: "blue"
 #image: "{{site.baseurl}}/images/XamarinReceptionist.png" 
 excerpt: This article and project is about building a Xamarin-based cross-platform app and integrating it with Cognitive Services and a bot developed by using the Direct Line API from the Microsoft Bot Framework.
 language: [English]
-verticals: [Public Sector, Retail-Consumer Products-Services, Smart Cities]
+verticals: [Public Sector, Retail & Consumer Goods, Smart Cities]
 ---
 
 In this solution we focused on building a Xamarin-based Universal Windows Platform (UWP) receptionist bot for identity, authentication, and response by using the Microsoft Bot Framework, custom NLP (IRA.AI), and Cognitive Services Computer Vision API. This article showcases the creation and integration of this solution with an existing bot.
