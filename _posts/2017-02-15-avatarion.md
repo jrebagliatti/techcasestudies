@@ -1,27 +1,27 @@
 ---
 layout: post
-title:  "Using robots and an IoT solution, Avatarion helps sick children stay connected"
+title: "Using robots and an IoT solution, Avatarion helps sick children stay connected"
 author: "Ronnie Saurenmann, Ken Casada"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-04-04
+date: 2017-04-04
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Avatarion Technology is running a pilot project that helps hospitalized children stay in touch with home and school through the use of robots. It needed a way to collect telemetry data from the robots and interact with them remotely. Working with Microsoft, they turned to an IoT solution using IoT Hub, Stream Analytics, and Power BI.  
 language: [English]
-verticals: Healthcare
+verticals: [Health]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 ![Logo]({{ site.baseurl }}/images/avatarion/avatarion_logo.png)
-
 
 Avatarion Technology creates custom solutions for robots. It develops applications for humanoid robots by providing customers with a complete infrastructure to work and interact with these robots. Its most successful solution is Avatar Kids, a unique, worldwide project that enables children and teens to remain in contact with their home and school environments during long-term hospital stays.
 
 On the technical side, the solution consists of an Azure IoT Hub acting as a telemetry data collector, remote control, and assets management tool. Azure Stream Analytics is also part of the solution, used as a real-time error-management and alarm system. It also generates statistical data about robot usage, location, hours of function, robot behavior, charging cycles, and successful and failed interactions. Cloud storage in the form of Azure SQL Database is used to save all telemetry data for further analysis. Microsoft Power BI provides the cockpit dashboard for both Avatarion and its customers and helps them to gain key insights into what works well and what needs to be improved in the product. 
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/avatarkids.jpg)
-
 
 **Key technologies used**
 
@@ -51,7 +51,6 @@ Microsoft Switzerland:
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/peppergroup.jpg)
 
-
 ## Customer profile ##
 
 [Avatarion Technology AG](http://www.avatarion.ch) is a Swiss startup that specializes in creating humanoid robots based on vertically complete solutions that provide customers with a new and innovative way to work and interact with their robots. Its areas of expertise are healthcare, education, retail, and events. It works with two types of robots from SoftBank Robotics: Nao and Pepper.
@@ -65,14 +64,12 @@ Right now Avatarion does not have any telemetry data from the robots and is not 
 That's why the company needs a cockpit solution that displays data in near real time about the robot usage, eventual interaction errors, battery status, location, and more. The IoT solution must provide the key missing piece that proves how effective these robots are for sick children.
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/problem.jpg)
-
  
 ## Solution and steps ##
 
 During our hackfest with Avatarion, we came up with an architecture and a first implementation from data ingestion to data analysis in the cloud. Our goal was to have secure, bidirectional communication with the robots that allows for the collection of telemetry data but also for remotely sending commands to the robots in an easy and efficient way.
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/architecture.jpg)
-
 
 ## Technical delivery ##
 
@@ -88,13 +85,11 @@ The key security requirement consists of making sure that robots receive message
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/sending.png)
 
-
 ### Device used 
 
 **Nao**
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/nao.jpg)
-
 
 Nao is small with pleasantly rounded features. It is friendly, cute, 58 centimeters tall, and can help with the development and progress of science and technology education. From primary school and special education to research, Nao assists school children, university students, and researchers.
 
@@ -103,7 +98,6 @@ Nao has numerous sensors in its robotic head, hands, and feet, as well as its so
 **Pepper**
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/pepper.jpg)
-
 
 Pepper is the first personal and emotional humanoid robot designed by SoftBank Robotics that is capable of recognizing principal human emotions and adapting its behavior to the mood of its interlocutor. Pepper is a social robot able to converse, recognize faces and react to emotions, and move autonomously.
 
@@ -120,7 +114,6 @@ IoT Hub allows us to easily decouple the message ingestion process from the stor
 *IoT Hub receiving the first messages*
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/iothub.png)
-
 
 For the first implementation, we decided to use three different types of message. A first one containing error information will be sent by the robot every time an issue arises. 
 
@@ -317,7 +310,6 @@ We decided to use Azure Stream Analytics to quickly parse the JSON messages and 
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/stream.png)
 
-
 In the following example, you can see how we extract the device ID from the additional payload retrieved from the IoT Hub message and how we determine the message type:
 
     SELECT
@@ -359,12 +351,9 @@ In the following example, you can see how we extract the device ID from the addi
     [RobotIOTHub]
     WHERE msg_type = 'qna';
 
-
-
 To quickly generate reports for Avatarion and the customers, we decided to employ Power BI. Thanks to this easy-to-use tool, we can generate comprehensive interactive dashboards showing the key vital data of the robots. Through the "Publish to Web" feature we are also able to easily integrate this dashboard within customers' portals.
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/final.png)
-
 
 ## Learnings from the Microsoft and customer team
 
@@ -375,7 +364,6 @@ One point that has to be implemented is the message lock ID (represented by an e
 The following shows the Python code being transmitted to the robot:
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/robotsdk.png)
-
 
 ## Conclusion ##
 
@@ -395,19 +383,15 @@ This is a first draft of a possible machine learning model:
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/ml.png) 
 
-
 During the hackfest, we explored the possibility of increasing the robot functionality through Cognitive Services, Language Understanding, and BOTs. For example, in the case of a robot being used for retail scenarios, the humanoid needs to be able to answer typical frequently asked questions. Using the robot speech-to-text and text-to-speech, we were able to capture the end-user questions running through QnA Maker to get the possible best answers.
 
 *QnA Maker loaded with FAQ jokes*
 
 ![Description of the image]({{ site.baseurl }}/images/avatarion/qna.png)
 
-
 Here is a first example of a call to QnA Maker:
 
 ```cs
-
-
 	protected async Task<QnAMakerResult> PostQNAQueryAsync(string customerquery)
 	{
 		string responseString;

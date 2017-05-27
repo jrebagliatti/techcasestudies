@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Using IoT in building management to bring energy savings to Taka Solutions customers"
+title: "Using IoT in building management to bring energy savings to Taka Solutions customers"
 author: "Mert Unan"
 author-link: "# Include twitter link here"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-03-17
-categories: IoT
+date: 2017-03-17
+categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Taka Solutions implemented a building energy-management IoT solution that uses Azure IoT Hub and Stream Analytics to centralize telemetry from multiple buildings for visualization and analytics. Its ultimate goal is to reduce the world's energy consumption.
-language: English
-verticals: [Energy, Environmental, Smart Cities]
+language: [English]
+verticals: [Power & Utilities]
+geolocation: [Middle East]
+#permalink: /<page-title>.html
 ---
-
 
 Microsoft and Taka Solutions joined forces to implement a proof of concept that integrates Tridium Niagara deployments for building management with Azure IoT services for centralization of the telemetry. This would enable Taka Solutions to do advanced energy consumption analysis, reporting, and visualization.
 

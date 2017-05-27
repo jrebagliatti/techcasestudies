@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Using Azure Functions to create an attendance-taking app for Illinois Tech"
+title: "Using Azure Functions to create an attendance-taking app for Illinois Tech"
 author: "Martin Schray"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-11-21
+date: 2016-11-21
 categories: [Azure App Service, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/IllinoisTech/IllinoisTech.png"
 excerpt: This article provides an overview and learnings from the Illinois Tech hackfest using Azure Functions, WPF, ClickOnce, and Azure Web Apps to build an RFID-reading student attendance app.
-language: English
-verticals: Education
+language: [English]
+verticals: [Education]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
 <img src="{{ site.baseurl }}/images/IllinoisTech/IllonoisTech.png" width="600">

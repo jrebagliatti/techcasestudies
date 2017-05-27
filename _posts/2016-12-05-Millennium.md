@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "A DevOps hackfest helps Millennium move to a Resource Manager model, including access control"
+title: "A DevOps hackfest helps Millennium move to a Resource Manager model, including access control"
 author: "Miroslav Kubovcik, Marek Lani, and Stanislav Harvan"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-12-23
+date: 2016-12-23
 categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: In this DevOps hackfest, Microsoft worked with Millennium to integrate an Azure Resource Manager model into an existing custom Azure services provisioning system that was based on an Azure Service Management model. 
-language: English
-verticals: Other
+language: [English]
+verticals: [Professional Services]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
-
 
 In this DevOps hackfest, Microsoft worked with Millennium to integrate an Azure Resource Manager model into an existing custom Azure services provisioning system that was based on an Azure Service Management (ASM) model. The hackfest included implementation of Role-Based Access Control (RBAC) for Azure resources provisioning submitted by technical team members (developers, IT operations). The close cooperation between the Microsoft and Millennium teams also led to new ideas, which have been validated in proofs of concept and in starting pilots. This report describes the scope of the cooperative effort:
 

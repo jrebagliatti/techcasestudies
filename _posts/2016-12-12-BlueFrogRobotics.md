@@ -1,23 +1,21 @@
 ---
 layout: post
-title:  "Designing a scalable, affordable cloud solution for Blue Frog's Buddy, the companion robot"
+title: "Designing a scalable, affordable cloud solution for Blue Frog's Buddy, the companion robot"
 author: "Benoit Le Pichon"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-01-06
+date: 2017-01-06
 categories: [IoT, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: As Blue Frog Robotics prepares to deploy Buddy, the companion robot, it staged a hackfest with Microsoft DX France to design and build a cloud solution that is economical while providing the optimum level of services. 
 language: [English]
-verticals: [Consumer Robotics]
+verticals: [Retail & Consumer Goods]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
-
-
 ![N Solid]({{ site.baseurl }}/images/2016-12-12-BlueFrogRobotics/Logo_RGBA.png)
-
-
 
 [Blue Frog Robotics](http://www.bluefrogrobotics.com/en/home/) is a 2-year-old startup based in Paris that designs and develops Buddy, which its creators call the first affordable companion robot for the family. They say Buddy is a social robot that connects, protects, and interacts with each family member.
 

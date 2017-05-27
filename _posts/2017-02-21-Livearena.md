@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Building white-labeled LiveArena video-streaming apps for mobile and Xbox"
+title: "Building white-labeled LiveArena video-streaming apps for mobile and Xbox"
 author: "Tess Ferrandez"
 author-link: "https://twitter.com/TessFerrandez"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-03-28
+date: 2017-03-28
 categories: [Mobile Application Development with Xamarin, Mobile DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: LiveArena delivers a video recording product that makes it easy, efficient, and affordable for companies to produce their own TV channels and provide on-demand videos. Microsoft partnered with LiveArena and Triona to write mobile front ends and Xbox apps using Xamarin.  
 language: [English]
-verticals: [Communications/Media]
+verticals: [Media & Cable]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 LiveArena delivers a video-recording product that makes it incredibly easy and affordable for a company, sports club, or hotel to produce their own TV channels and provide an elegant way to deliver on-demand videos. Microsoft teamed up with LiveArena and Triona to write mobile front ends to consume client-generated video content.

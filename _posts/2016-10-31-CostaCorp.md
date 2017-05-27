@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  "IoT pH flow controls and automation with Costa Farms"
+title: "IoT pH flow controls and automation with Costa Farms"
 author: "Blain Barton"
 author-link: "#"
-date:   2016-11-03
-categories: IoT
+date: 2016-11-03
+categories: [IoT]
 color: "blue"
 excerpt: This article showcases IoT setup for Costa Farms using the Atlas Scientific pH Sensor and Adafruit Feather M0 Wifi with the Arduino IDE, sending pH messages to Microsoft Azure.
-language: English
-verticals: Agricultural
+language: [English]
+verticals: [Agriculture, Forestry & Fishing]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
 <img src="{{ site.baseurl }}/images/Costalogo.png" width="200">

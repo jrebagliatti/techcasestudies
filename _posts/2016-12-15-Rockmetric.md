@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Implementing continuous deployment for Rockmetric using VSTS and Packer"
+title: "Implementing continuous deployment for Rockmetric using VSTS and Packer"
 author: "Maninderjit Bindra"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-02-23
-categories: DevOps
+date: 2017-02-23
+categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/rockmetric/rockmetric.jpg" #should be ~350px tall
 excerpt: DevOps practices help B2B startup Rockmetric reduce deployment time from days to minutes using VSTS and Packer. This report details the implementation and the business impact of establishing key DevOps practices for Rockmetric. 
-language: English
-verticals: [Financial Services, Marketing]
+language: [English]
+verticals: [Professional Services]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
-
 
 <img src="{{ site.baseurl }}/images/rockmetric/rockmetric.jpg" width="400">
 

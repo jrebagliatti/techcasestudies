@@ -10,7 +10,7 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Content Avenue partnered with Microsoft to work on a modern cloud architecture for their collaborative content platform, thanks to open-source technologies and managed application services on Microsoft Azure.
 language: [English]
-verticals: [Consumer Products & Services]
+verticals: [Retail & Consumer Goods]
 geolocation: [Europe]
 #permalink: /<page-title>.html
 ---

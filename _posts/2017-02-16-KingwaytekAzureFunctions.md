@@ -9,8 +9,10 @@ categories: [Azure App Service, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: "KingwayTek, the top navigation and map-service provider in Taiwan, is developing a personalized driving-experiences system. With Microsoft, they identified the appropriate Azure services to enhance data flow."
-language: English
-verticals: [Transportation & Logistics]
+language: [English]
+verticals: [Logistics]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 With the popularity of 4G/LTE technology, getting data from connected things becomes easier and more efficient. As we collect huge amounts of data, we not only gain more insights but also help make future decisions on services and development. KingwayTek was looking for the appropriate platform to build a connected-vehicle system to provide more personal driving experiences to the public.

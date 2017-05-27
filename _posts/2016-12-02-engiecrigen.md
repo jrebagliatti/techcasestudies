@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Mise en place d'une plateforme d'hébergement web automatisée basée sur Docker, pour ENGIE LAB CRIGEN"
+title: "Mise en place d'une plateforme d'hébergement web automatisée basée sur Docker, pour ENGIE LAB CRIGEN"
 author: "Julien Corioland, Benjamin Guinebertière, Pascal Sauliere"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-01-06
+date: 2017-01-06
 categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Pour les besoins du centre de recherche ENGIE LAB CRIGEN, Microsoft les a accompagné dans la mise en place d'une plateforme d'hébergement d'application totalement automatisée et basée sur des conteneurs Docker, dans Microsoft Azure.
 language: [French]
-verticals: [Energy]
+verticals: [Power & Utilities]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
-
 
 ENGIE LAB CRIGEN a récemment été accompagné par Microsoft et Docker lors d'un _hackfest_ ayant pour objectif d'améliorer la manière dont ils mettent à disposition des applications dans l'entreprise.
 

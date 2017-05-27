@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "With its analytic dashboard, SnapBizz helps shopkeepers track their sales"
+title: "With its analytic dashboard, SnapBizz helps shopkeepers track their sales"
 author: "Sudhir Rawat"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-05-02
+date: 2017-05-02
 categories: [Power BI Embedded]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Microsoft worked with SnapBizz to design, deploy, and render Power BI Embedded reports, reducing management time and enabling future cross-platform integration. 
-language: English
-verticals:  ["Retail, Consumer Products & Services"]
+language: [English]
+verticals:  [Retail & Consumer Goods]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
-
 
 As a result of its hackfest with Microsoft, SnapBizz can integrate Microsoft Power BI Embedded into its solution and easily author interactive data reports without writing any code by using Power BI Desktop. The team can choose modern data visualizations out of the box or can customize visualizations without building them from scratch. It reduces their development efforts and offers a lot of flexibility. It also helps SnapBizz customers to have consistent, high-fidelity, interactive data visualization experiences, rendered on an Android tablet.
 

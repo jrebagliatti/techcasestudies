@@ -1,17 +1,18 @@
 ---
 layout: post
-title:  "CGI Federal improves efficiency and quality of its ProperPay offering through DevOps"
+title: "CGI Federal improves efficiency and quality of its ProperPay offering through DevOps"
 author: "Kevin Remde"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-03-12 
+date: 2017-03-12 
 categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/cgifederal/logo.png" #should be ~350px tall
 excerpt: As it moves to embrace Microsoft Azure, CGI Federal seized upon the opportunity to leverage new tools and approaches to optimize the software lifecycle for its products, both in the cloud and on-premises.
-verticals: [Public Sector, Financial Services]
-language: English
-
+verticals: [Professional Services]
+language: [English]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
 ![CGI Federal Logo]({{ site.baseurl }}/images/cgifederal/logo.png)

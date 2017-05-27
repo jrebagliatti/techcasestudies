@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Using Azure App Service to develop a conference-management system for AnRuiZhuoYue"
+title: "Using Azure App Service to develop a conference-management system for AnRuiZhuoYue"
 author: "Shijun Liu"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-02-23
+date: 2017-02-23
 categories: [Azure App Service]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Digital marketing provider AnRuiZhuoYue worked with Microsoft to develop an intelligent conference-management system with facial registration and check-in functions, based on a WeChat app and using Azure App Service features.   
 language: [English]
-verticals: [Digital Marketing, Communications/Media]
+verticals: [Media & Cable; Logistics; Professional Services]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
-
 
 Digital marketing provider AnRuiZhuoYue worked with Microsoft to develop an intelligent conference-management system with facial registration and check-in functions. This system's front end is based on the widely used WeChat app. Its back end is hosted on the Web Apps feature of Azure App Service and powered by Microsoft Cognitive Services. The project team also helped migrate AnRuiZhuoYue's digital marketing WeChat solution to Azure.
 

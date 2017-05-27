@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Financial Express uses Power BI Embedded to help customers explore large volumes of financial information quickly and easily"
+title: "Financial Express uses Power BI Embedded to help customers explore large volumes of financial information quickly and easily"
 author: "Bianca Furtuna and David Gristwood"
 #author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -9,7 +9,9 @@ categories: [Power BI Embedded]
 color: "blue"
 excerpt: Microsoft teamed up with ISV Financial Express to help them use Power BI Embedded to encourage customers to explore large volumes of financial information quickly and easily.
 language: [English]
-verticals: [Financial Services]
+verticals: [Professional Services]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 Financial Express wanted to expand their current offering by providing a new set of interactive reports aimed at making more information available to their B2B customers, who currently receive one-off reports that are manual and time-consuming. They wanted to improve not only the reporting process, but also the user experience of their product by using interactive reports and a dashboard. As part of a hackfest with Financial Express, Microsoft prototyped a new portal that contains an embedded set of reports, enabling their customer to have faster and better access to information. We explored different architectures and settled on a DirectQuery approach from Power BI Embedded to an Azure SQL Database.

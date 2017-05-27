@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Building a tire monitoring solution with Tyre Express"
+title: "Building a tire monitoring solution with Tyre Express"
 author: "Gandhali Samant"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-11-02
-categories: IoT
+date: 2016-11-02
+categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: In this IoT hackfest, Microsoft teamed up with Tyre Express to connect their tire monitoring solution to the Azure cloud. 
-language: English
-verticals:  Transportation & Logistics
+language: [English]
+verticals: [Logistics]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 Tyre Express is a startup that is pioneering tire lifecycle management for fleet operators. Its IoT platform enables fleet operators to track tires and monitor their performance (pressure, temperature, and so on) on a real-time basis. This will enable them to carry out preventive maintenance and detect any abnormalities in the system. This will also enable fleet operators to control their tire inventory and build operational efficiency by reducing tire wear and increasing mileage. Tyre Express has interest from several clients and prominent fleet operators in the logistics space to test this solution.

@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Building a sustainable, scalable solution with Geratriz to measure utility use at shopping malls"
+title: "Building a sustainable, scalable solution with Geratriz to measure utility use at shopping malls"
 author: "João Almeida"
 author-link: "http://github.com/joalmeid"
 #author-image: "{{ site.baseurl }}/images/edp/edp01.png"
-date:   2017-01-05
-categories: IoT
+date: 2017-01-05
+categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/edp/edp02.png" #should be ~350px tall
-excerpt:  Geratriz offers a platform to measure water and energy consumption at shopping malls. The company worked with Microsoft and ComOn to improve the platform's reliability and resilience while reducing operational costs. 
-language: English
-verticals: [Energy, Smart Cities, Facility Management, Smart Building]
+excerpt: Geratriz offers a platform to measure water and energy consumption at shopping malls. The company worked with Microsoft and ComOn to improve the platform's reliability and resilience while reducing operational costs. 
+language: [English]
+verticals: [Power & Utilities]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
-
-
 
 Geratriz offers a platform to measure utility consumption at shopping malls, information that is important to facility managers. The company worked with Microsoft and ComOn to improve the platform's reliability and resilience while reducing operational costs. This in turn will help Geratriz offer a viable platform internationally.
 
@@ -21,13 +21,11 @@ Geratriz offers a platform to measure utility consumption at shopping malls, inf
 
 <img src="{{ site.baseurl }}/images/geratriz/geratriz02.png" width="300">
 
-
 [*Geratriz*](https://geratriz.pt/) has extensive experience and a large business presence in the water and energy sectors. With offices in Portugal, Turkey, and Peru, it offers technical engineering services that provide innovative and efficient solutions. 
 
 Research and development are at the root of its work. It has a multidisciplinary team of engineers (chemical, environment, electrical, and mechanical) that coordinates several other teams composed of electromechanics, electricians, welders, locksmiths, mechanics, analysts, and others who complement all areas covered in the industries they serve.
 
 <img src="{{ site.baseurl }}/images/geratriz/geratriz03.png" width="300">
-
 
 [*ComOn*](http://www.comon.pt/) is a partner focused on user marketing, with technical expertise gained through key engagements with top companies in Portugal and abroad. More than a full-service agency, ComOn has invested in key segments with a startup spirit. It has an engineering team focused on cloud projects but also on Internet Of Things (IoT). 
 
@@ -41,7 +39,6 @@ Research and development are at the root of its work. It has a multidisciplinary
 
 ![The team]({{ site.baseurl }}/images/geratriz/geratriz05.jpg)
 
-
 ## Energy and water data monitoring within shopping malls ##
 
 Large shopping centers operate in a competitive market where they must manage multiple physical facilities. Utility consumption at these facilities has become a massive operational variable. Usage is impacted by evolving consumer habits, changes in climate, and the emergence of open energy markets.
@@ -51,7 +48,6 @@ Each shopping mall needs to collect and analyze consumption metrics, always seek
 Predicting consumption for every utility also allows planning for peak needs, reducing consumption penalties and enhancing the ability to negotiate with suppliers. It is important to achieve near-real-time capabilities in reporting because it provides temporal and financial comparison capabilities.
 
 ![Energy Reader]({{ site.baseurl }}/images/geratriz/geratriz04.jpg)
-
 
 ## WeMeter ##
 
@@ -138,7 +134,6 @@ The WeMeter device was designed to reduce costs and meet the requirements in dat
 
 ![WeMeter Device]({{ site.baseurl }}/images/geratriz/geratriz15.png)
 
-
 A special note on security is mandatory. After evaluating several possibilities, the main focus was on the WeMeter device and cloud connection. Geratriz decided not to rely on its customers' Wi-Fi, even if available. All energy counters will be connected to their own Wi-Fi dongles. 
 
 - Deployment analysis and planning will require a GPRS mapping to all devices.
@@ -207,7 +202,6 @@ Finally, it is important to describe how the entire WeMeter device configuration
 The cloud back-end architecture, within WeMeter's platform, aims to achieve high levels of scalability and agility in extensibility for any international market. As such, an implementation was followed in accordance with the [*Azure IoT Reference Architecture*](http://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf). In this architecture, requirements like near-real time and time-based sliding-window aggregations were key factors, while segmenting data between types of utilities and the areas/buildings in a customer facility. Data ingestion was prioritized in the project and [*Azure IoT Hub*](https://azure.microsoft.com/en-us/services/iot-hub/) was used and identified as a key piece.
 
 ![WeMeter Cloud Backend]({{ site.baseurl }}/images/geratriz/geratriz14.png)
-
 
 **IoT Hub**
 
@@ -283,29 +277,23 @@ In the UI perspective, WeMeter allows a given customer to have a holistic view o
 
 ![WeMeter - Consumption by utility type]({{ site.baseurl }}/images/geratriz/geratriz08.png)
 
-
 For each utility, it is possible to see the respective consumption over time, for all devices individually or by building area. Crossing with utilities types it became possible to have very detailed insights of the consumption patterns, helping to understand them. This was considered the most important achievement toward anomaly detection and predictive maintenance scenarios.
 
 ![WeMeter - Energy Total Consumption]({{ site.baseurl }}/images/geratriz/geratriz09.png)
 
-
 ![WeMeter - Water Total Consumption]({{ site.baseurl }}/images/geratriz/geratriz10.png)
-
 
 Given that each facility is usually managed by large teams, it is possible to do analysis per area of consumption. The consumption is classified by utility type, distinguishing, for example, between lighting or HVACs.
 
 ![WeMeter - Consumption by building areas]({{ site.baseurl }}/images/geratriz/geratriz11.png)
 
-
 ![WeMeter - Energy consumption]({{ site.baseurl }}/images/geratriz/geratriz12.png)
-
 
 ## Conclusions ##
 
 The main goal of the WeMeter project was to define a solution for the data ingestion and device architecture, considering the pre-identified requirements.
 
 ![WeMeter blackboard]({{ site.baseurl }}/images/geratriz/geratriz13.png)
-
 
 The initial phase began with procurement work around devices already available on the market. Connectivity requirements allowed exploration of IoT [*star*](https://en.wikipedia.org/wiki/Star_network) and [*mesh*](https://en.wikipedia.org/wiki/Mesh_networking) architectures, described exhaustively on the Internet, especially around IoT reference architectures. Protocols such as Wi-Fi, Bluetooth (BLE), ZigBee, Z-Wave, SigFox or LoRaWan were considered. The need to achieve a near-real-time solution and the volume of data ruled out SigFox or LoRa. The low cost and flexibility of a Wi-Fi 3G router were the main reasons for the option taken. Keeping internationalization in mind, the fact that Wi-Fi 3G routers are mature commercial solutions in most countries was also a determinant.
 
@@ -334,4 +322,3 @@ Taking into account the project's results, Geratriz determined an action plan ba
 - We identified the need to create a WeMeter back office run and managed by Geratriz. This back office will facilitate and guide the deployment and operational tasks at a given facility. It will give Geratriz operators the ability to obtain device information and perform remote tasks such as configuration changes, device rebooting, and bulk provisioning.
 
 - Geratriz has been working with an international partner, [*SenseWaves*](http://www.sensewaves.io/). This partner's product, Adaptix, automates key aspects of building energy management, extracting building intelligence from regular electricity, water, and gas meters. This product makes available real-time forecasting, anomaly detection, and pattern analysis to detect irregularities within milliseconds. Geratriz is set to integrate Adaptix with WeMeter. From initial briefings, we understood that SenseWaves' technical architecture for Adaptix is implemented with Docker containers and Kubernetes. Azure supports Kubernetes 1.4 and has recently released a preview for native support: [*Kubernetes on Azure Container Service (preview)*](https://azure.microsoft.com/en-us/blog/azure-container-service-the-cloud-s-most-open-option-for-containers/). This will ease integration efforts with Azure and WeMeter.
-

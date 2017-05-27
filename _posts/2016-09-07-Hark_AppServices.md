@@ -1,15 +1,17 @@
 ---
 layout: post
-title:  "How Hark replaced IaaS with Azure App Service"
+title: "How Hark replaced IaaS with Azure App Service"
 author: "Marcus Robinson"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-01-07
-categories:  [Azure App Service]
+date: 2017-01-07
+categories: [Azure App Service]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Hark is an IoT startup that moved from using traditional IaaS to Azure PaaS, enabling it to concentrate on its application rather than the infrastructure.
-verticals: [Pharmaceutics, Technology]
+verticals: [Health, Professional Services]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 Hark is an IoT startup that had carried out prototyping of its monitoring platform on IaaS. Microsoft worked with Hark to assist with the migration of services to Azure App Service to enable it to focus on its application and hence accelerate the time taken to get the service into production.

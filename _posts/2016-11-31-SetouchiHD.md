@@ -9,8 +9,10 @@ categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Setouchi Holdings needed to improve the scalability of their pipeline. CI&T, Creationline, and Microsoft used the Web Apps and API Apps features of Azure and Visual Studio Team Services to quickly solve pain points.
-language: English
-verticals: [Manufacturing, Transportation & Logistics]
+language: [English]
+verticals: [Discrete Manufacturing, Logistics]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 Setouchi Holdings provides several services related to small-airplane manufacturing. They are developing a new reservation system for aerial sightseeing in the Setouchi area. They work with [CI&T](http://www.ciandt.com/home) and [Creationline](http://www.creationline.com/en/): CI&T is a software-development company, skilled in Agile development; Creationline is a Microsoft partner, with strength in DevOps-related technologies.

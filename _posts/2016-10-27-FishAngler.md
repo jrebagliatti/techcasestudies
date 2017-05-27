@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "How FishAngler extended their mobile application using Azure Functions"
+title: "How FishAngler extended their mobile application using Azure Functions"
 author: "Joe Raio"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-11-28
+date: 2016-11-28
 categories: [Azure App Service, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: In this App Service hackfest, Microsoft teamed up with FishAngler to replace existing worker roles and extend functionality of their mobile app using Azure Functions. 
-language: English
-verticals:  [Social Media, Outdoors]
+language: [English]
+verticals: [Media & Cable]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
 [FishAngler](http://www.fishangler.com) is a startup based in South Florida that has a cross-platform mobile app for fishermen to log and share their catches.

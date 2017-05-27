@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Learnings from a DevOps Hackfest with Karadamedica"
+title: "Learnings from a DevOps Hackfest with Karadamedica"
 author: "Tsuyoshi Ushio"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-05-24
-categories: DevOps
+date: 2016-05-24
+categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Microsoft teamed up with Karadamedica to hack integrated Microsoft DevOps technologies on Azure.
-verticals: Healthcare
-language: English
+verticals: [Health]
+language: [English]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
-
-## Learnings from a DevOps Hackfest with Karadamedica ##
 
 Microsoft teamed up with Karadamedica to hack integrated Microsoft DevOps technologies on Azure. The DevOps practices that were implemented during this process were:
 

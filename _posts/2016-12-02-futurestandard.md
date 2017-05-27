@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Future Standard changing image analytics with serverless platform"
+title: "Future Standard changing image analytics with serverless platform"
 author: "Masayuki Ota"
 author-link: "https://twitter.com/masota0517"
 #author-image: "{{ site.baseurl }}/images/authors/masota.jpg"
-date:   2017-02-04
+date: 2017-02-04
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/futurestandard/logo.png" #should be ~350px tall
 excerpt: Future Standard offers a one-stop IoT solution for collecting, analyzing, viewing, and acting on data with ease. To offer customers an Azure-based solution, Future Standard and Microsoft created a prototype during a two-day hackfest.
-language: English
-verticals: [Manufacturing, "Retail, Consumer Products & Services", Infrastructure]
+language: [English]
+verticals: [Discrete Manufacturing]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
-
 
 Future Standard offers a one-stop IoT solution for cross-industry uses to enable collecting, analyzing, viewing, and acting on data with ease. In order to offer customers an Azure-based solution, Future Standard teamed up with Microsoft to create a prototype during a two-day hackfest.
 
@@ -25,7 +26,6 @@ Future Standard offers a one-stop IoT solution for cross-industry uses to enable
 - Hiroshi Ota – Technical Evangelist, Microsoft
 - Kazuyuki Nomura – Technical Evangelist, Microsoft
 - [Masayuki Ota](https://twitter.com/masota0517) – Technical Evangelist, Microsoft
-
 
 ![hack image]({{ site.baseurl }}/images/futurestandard/hack1.jpg)
 <!--

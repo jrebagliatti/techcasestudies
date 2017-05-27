@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Using DevOps practices with ADAM Software to accelerate developer ramp-up"
+title: "Using DevOps practices with ADAM Software to accelerate developer ramp-up"
 author: "Nick Trogh"
 author-link: "https://twitter.com/nicktrog"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-02-15
+date: 2017-02-15
 categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: ADAM Software and Microsoft worked together to optimize ADAM Software's build and release pipeline. This report details the DevOps practices that were implemented for a complex Smart Content Hub marketing solution.
-language: English
-verticals: ["Retail, Consumer Products & Services"]
+language: [English]
+verticals: [Retail & Consumer Goods]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 Microsoft and ADAM Software teamed up to optimize ADAM Software's build and release pipeline. Initially we performed a value stream mapping (VSM) exercise to clearly outline the current state of the DevOps lifecycle and to agree on the optimal future state. As a result of the VSM, we identified the key areas of focus for a hackfest, where we implemented the following DevOps practices:

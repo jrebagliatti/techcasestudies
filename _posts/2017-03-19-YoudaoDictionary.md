@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Youdao Dictionary uses Desktop Bridge to bring their Win32 application to the Windows Store"
+title: "Youdao Dictionary uses Desktop Bridge to bring their Win32 application to the Windows Store"
 author: "Zepeng She"
 author-link: "https://twitter.com/shezepeng"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -10,12 +10,15 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Microsoft teamed up with NetEase Youdao to bring the popular dictionary app, Youdao Dictionary, to the Universal Windows Platform (UWP) by using Desktop Bridge. 
 language: [English]
-verticals: [Communications/Media]
+verticals: [Media & Cable]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 Microsoft teamed up with NetEase Youdao to bring the popular dictionary app, Youdao Dictionary, to the Universal Windows Platform (UWP) by using Desktop Bridge. The dictionary has over 600 million users on several platforms.
 
 ### Core team
+
 * Lanfang Chen – Marketing Director, NetEase Youdao
 * Yazhi Zhao – Product Manager, NetEase Youdao
 * Jun Xu – Senior Engineer, NetEase Youdao
@@ -25,6 +28,7 @@ Microsoft teamed up with NetEase Youdao to bring the popular dictionary app, You
 * Zepeng She – Technical Evangelist, Microsoft DX
 
 ## Customer profile
+
 [NetEase Youdao](http://youdao.com/) is a subsidiary of NetEase, and develops mobile applications by using big data technology. Youdao has launched products such as Youdao Dictionary, Youdao Cloud Notes, and Hui Hui (Affordable) Assistant. Youdao was originally a search engine, and now is using their search engine technology (such as page ranking, relevant analysis, and big data analysis) to provide a better dictionary experience, going further in the areas of large-scale data storage. 
 
 Youdao Dictionary is currently the number one dictionary software in China and has the biggest market share. As of the end of September 2016, the Youdao Dictionary had more than 600 million users globally, 60 million monthly active users (MAU), and 10+ million daily active users (DAU). Over 400 million words are checked per day.
@@ -40,9 +44,11 @@ Going forward, with users’ feedback, they’re still looking to provide the sa
 ## Solution, steps, and delivery
 
 #### System requirements
+
 - Operating system：Windows 10 Pro or Windows 10 Enterprise Anniversary Update (10.0.14393.0 and later)
 
 #### Hardware configuration
+
 - 64-bit (x64) processor
 - Hardware-assisted virtualization
 - Second Level Address Translation (SLAT)

@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Building a sustainable, scalable solution with Geratriz to measure utility use at shopping malls"
+title: "Building a sustainable, scalable solution with Geratriz to measure utility use at shopping malls"
 author: "João Almeida"
 author-link: "http://github.com/joalmeid"
 #author-image: "{{ site.baseurl }}/images/geratriz/geratriz01.png"
-date:   2017-01-05
-categories: IoT
+date: 2017-01-05
+categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/geratiz/geratriz02.png" #should be ~350px tall
 excerpt: O projeto WeMeter da Geratriz tem como objetivo fornecer uma clara ideia de consumo de Utilities como energia, gás, agua e diesel. Depois de uma primeira implementação, os resultados não foram os esperados, tendo sido criada uma nova abordagem baseada em cloud. Este projeto visava reduzir drasticamente custos de provisionamento, manutenção dos dispositivos físicos e atingir um nivel de escalabilidade que permitisse executar  esforços de internacionalização já planeados. Adicionalmente foram definidos outros objectivos como a integração com parceiros da Geratriz (SenseWaves), para a análise de dados especializada no consumo energético.  
-language: Portuguese
-verticals: [Energy, Smart Cities, Facility Management, Smart Building]
+language: [Portuguese]
+verticals: [Power & Utilities]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 ## Geratriz e ComOn - Uma parceria forte ##

@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Creating an automated build pipeline with Azure for GoodbyeWorld Games"
+title: "Creating an automated build pipeline with Azure for GoodbyeWorld Games"
 author: "Tobiah Zarlez"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-03-14 
+date: 2017-03-14 
 categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: With help from Microsoft, GoodbyeWorld Games implemented a DevOps solution that automated its build process, speeding up and improving its development pipeline. 
-verticals: ["Retail, Consumer Products & Services"]
-language: English
+verticals: [Retail & Consumer Goods]
+language: [English]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
 Microsoft helped GoodbyeWorld Games create a new, automated build and release pipeline. What used to take five hours of work with a seven-day lead time now happens automatically in minutes through DevOps practices.

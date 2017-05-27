@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Building an innovative car-tracking system with Things Expert"
+title: "Building an innovative car-tracking system with Things Expert"
 author: "Allan Targino"
 author-link: "#"
-date:   2016-11-21
-categories: IoT
+date: 2016-11-21
+categories: [IoT]
 color: "blue"
 excerpt: Microsoft teamed up with Things Expert to develop a car-tracking solution for use by car rental companies. This article describes the general execution and the results. 
-language: English
-verticals: Telecommunications
+language: [English]
+verticals: [Telecommunications]
+geolocation: [South America]
+#permalink: /<page-title>.html
 ---
 
-
 ![Figure 1 - Things Expert Logo]({{ site.baseurl }}/images/ThingsExpert1.png)
-
 
 Things Expert wanted to create a car-tracking solution that was more efficient than the ones already on the market. The target market for the solution would be car rental companies, which implement car tracking devices to obtain significant discounts from insurance companies. Microsoft worked with a team at Things Expert to devise such a solution. 
 

@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Tajfun uses Azure IoT services to enhance its forestry products business"
+title: "Tajfun uses Azure IoT services to enhance its forestry products business"
 author: "Bojan Vrhovnik"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/BojanVrhovnik.jpg"
-date:   2017-03-08
-categories: IoT
+date: 2017-03-08
+categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/tajfun-logo.png" #should be ~350px tall
 excerpt: Microsoft worked with Tajfun in Slovenia to develop a multitenant Azure-based solution for its machines that can help lumberjacks and forest owners increase productivity and returns while reducing maintenance and operations costs.  
-verticals: Forestry
-language: English
+verticals: ["Agriculture, Forestry & Fishing"]
+language: [English]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 Microsoft joined forestry products company Tajfun in Slovenia to develop a multitenant solution that can help lumberjacks and forest owners improve their productivity, seasonality, and expenses with its line of products. By optimizing its machines, sensors, and client applications, customers can also cut maintenance and operations costs and increase their returns.

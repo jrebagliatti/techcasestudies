@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  "Buy your friends a drink with this Liquid Greetings app built with Xamarin and Azure"
+title: "Buy your friends a drink with this Liquid Greetings app built with Xamarin and Azure"
 author: "David Giard"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-04-19
+date: 2017-04-19
 categories: [Mobile Application Development with Xamarin]
 color: "blue"
 #image: "{{ site.baseurl }}/images/authors/davidgiard.jpg" #should be ~350px tall
 excerpt: Liquid Greetings and Microsoft built a mobile app using Xamarin and Azure that will allow subscribers to treat their friends to their favorite beverages.
-language: English
-verticals: ["Retail, Consumer Products & Services", Social Media]
+language: [English]
+verticals: [Retail & Consumer Goods; Media & Cable]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
-
 <img src="{{ site.baseurl }}/images/liquidgreetings/liquidgreetingslogo1.png" width="300">
-
 
 The Liquid Greetings app for Android and iOS will enable subscribers to create and share wish lists of their favorite beverages, discover what beverages their friends like, and to send and receive beverages. 
 

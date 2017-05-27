@@ -10,7 +10,9 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Microsoft partnered with a leader in the automotive industry to work on improving the way they are releasing their Master Data Management application by using Visual Studio Team Services and Jenkins through a DevOps practice implementation.
 language: [English]
-verticals: [Manufacturing]
+verticals: [Discrete Manufacturing]
+#geolocation: []
+#permalink: /<page-title>.html
 ---
 
 In this article you will discover how Microsoft partnered with a leader in the automotive industry (who wishes to remain anonymous) to work on improving the way they are releasing their Master Data Management (MDM) application by using Microsoft Visual Studio Team Services and Jenkins through a DevOps practice implementation. 

@@ -1,25 +1,25 @@
 ---
 layout: post
-title:  "Enhancing a molding process using IoT solutions with Fagor Ederlan"
+title: "Enhancing a molding process using IoT solutions with Fagor Ederlan"
 author: "Juan Manuel Servera"
 author-link: "http://twitter.com/jmservera"
 #author-image: "{{ site.baseurl }}/images/authors/jmservera.jpg"
-date:   2016-12-19
-categories: IoT
+date: 2016-12-19
+categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Fagor Ederlan is looking to improve its aluminum injection molding process to detect defective pieces earlier and enhance the overall quality. This project demonstrates that it's not complex to send data to the cloud using secure and reliable services, analyze the data, and build maching learning models to extract knowledge from it. 
-language: English
-verticals: Manufacturing
+language: [English]
+verticals: [Discrete Manufacturing]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
-
 
 In the third wave of industrial evolution, we had automation that produced large amounts of data. This data had high potential for analytic applications, but it was not easy to analyze because it was siloed in the machines where it was generated. With this project, we demonstrate that it's not complex to send the data to the cloud using secure and reliable services that allow us to analyze the data in near-real time and build maching learning models to extract knowledge from it. 
 
 The project is based on a molding machine that takes measurements each millisecond during its process.
 
 ![Robot and Mold]({{ site.baseurl }}/images/fagorederlan/robotAndMold.jpg)
-
 
 The data captured during the molding process is useful to build a machine learning model that will warn us when the quality of the product may be lower than the defined standard.
 

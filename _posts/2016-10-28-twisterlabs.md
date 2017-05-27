@@ -9,11 +9,11 @@ categories: [Azure App Service, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/twisterlabs/twisterlabs-hackathonsmall.png" #should be ~350px tall
 excerpt: At a recent hackathon in San Francisco, Microsoft teamed up with Twister Labs—a San Francisco-based startup—to migrate their stack from Parse.com to Azure and to leverage Azure's platform-as-a-service features for their core workloads.  Over the course of the two days, we migrated their stack to Azure App Service and built two Azure Functions to power an interpersonal communication feature in their app, Dostt. 
-verticals: Social Media
-language: English
+verticals: [Media & Cable]
+language: [English]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
-
-## Using Azure Functions to facilitate human connections with Twister Labs ##
 
 At a recent, two-day hackathon in San Francisco, Microsoft teamed up with Twister Labs—a San Francisco-based startup—to migrate their stack from Parse.com to Azure and to leverage Azure's platform-as-a-service features for their core workloads.  
 
@@ -29,7 +29,6 @@ Core team:
 Over the course of the two days, we migrated their stack to Azure App Service and built two Azure Functions to power an interpersonal communication feature in their app, Dostt, formerly known as Stumblr. Our solution took advantage of Azure Functions and MongoDB's aggregation pipeline to make their existing solution more scalable, instead of using Parse APIs.
 
 ![Twister Labs and Microsoft]({{ site.baseurl }}/images/twisterlabs/twisterlabs-hackteam.png?raw=true "Twister Labs and Microsoft")
-
 
 ## Customer profile ##
 

@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "A hackfest helps ENGIE GEM begin to migrate its applications to Azure"
+title: "A hackfest helps ENGIE GEM begin to migrate its applications to Azure"
 author: "Julien Corioland and Sébastien Pertus"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-03-15
+date: 2017-03-15
 categories: [Azure App Service, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Microsoft France and ENGIE Global Energy Markets partnered to migrate the first of its applications to Azure. Leveraging Azure App Service and Azure Functions, the hackfest team also addressed topics such as security, scheduled execution, and monitoring. 
 language: [English]
-verticals: [Energy, Financial Services]
+verticals: [Professional Services]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 As part of its project to move applications to Microsoft Azure platform as a service (PaaS), ENGIE Global Energy Markets (GEM) has selected one of its internal projects—*Prométhée*—as a first candidate for the migration. This project is the tool it uses to handle human resources (HR) workloads such as requests for days off and reporting of work hours. 

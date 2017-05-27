@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "An IoT solution for Blue Dynamic to gauge customer visits to brick-and-mortar stores"
+title: "An IoT solution for Blue Dynamic to gauge customer visits to brick-and-mortar stores"
 author: "Filip Rehorik, Martin Simecek, and Jan Pospisil"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-12-23
+date: 2016-12-23
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Microsoft and Blue Dynamic conducted a hackfest to create a proof of concept for a new product. The scope was to capture customer faces with a camera, do real-time counting and analysis of the faces, and provide outputs for other systems and UI.
-language: English
-verticals: Retail, Consumer Products & Services
+language: [English]
+verticals: [Retail & Consumer Goods]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 Microsoft and Blue Dynamic joined forces at a hackfest to create a proof of concept for a new product. The scope was to capture customer faces from a camera, do real-time counting and advanced analysis of the captured faces, and provide outputs for other systems and UI.

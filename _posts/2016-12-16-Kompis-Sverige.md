@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Accelerating and scaling social integration of newcomers to Sweden with Kompis Sverige"
+title: "Accelerating and scaling social integration of newcomers to Sweden with Kompis Sverige"
 author: "Simon Jäger"
 author-link: "https://twitter.com/simonjaegr"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-01-09
+date: 2017-01-09
 categories: [Azure App Service, Power BI Embedded]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Learn how the Bestie app allows Kompis Sverige to accelerate and scale its work to integrate people who have found safety in Sweden. This solution is powered by components such as Azure App Service and Power BI Embedded.
 language: [English]
-verticals: [Social]
+verticals: [Nonprofit]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 Today in Europe, millions of people are on the move, displaced by war and persecution. They are individuals, families, even children on their own. At the start of the century, only about 30 children came to Sweden with no parents or relatives. Last year, the number was 30,000.

@@ -10,7 +10,9 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: KingwayTek, the number one navigation and map service provider in Taiwan, teamed up with Microsoft to develop a new personalized driving experience service. 
 language: [English]
-verticals: [Transportation & Logistics]
+verticals: [Logistics]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 With the popularity of 4G/LTE technology, getting data from the Internet has become easier and more efficient. KingwayTek was looking for an appropriate platform to build a vehicle-connected system to provide a more personal driving experience service to a broad range of drivers. They chose to work with Microsoft to build the system and used Azure IoT services to improve their development productivity and enable the system to handle a large number of requests.

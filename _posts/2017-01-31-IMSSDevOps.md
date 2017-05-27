@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Enhancing the software development process by implementing DevOps at IMSS"
+title: "Enhancing the software development process by implementing DevOps at IMSS"
 author: "José Raúl Guerrero Carreón"
 author-link: "http://www.superneurona.com"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-03-27
+date: 2017-03-27
 categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Mexico's IMSS agency is implementing processes to manage its complex systems and comply with government requirements. In this project, Microsoft worked with an IMSS team to adopt DevOps practices for Java projects.
 language: [English]
-verticals: [Public Sector, Healthcare]
+verticals: [Health]
+geolocation: [Central America and the Caribbean]
+#permalink: /<page-title>.html
 ---
-
 
 The Instituto Mexicano del Seguro Social (IMSS) has been working to define a process to help it manage the complex systems that administer all information around the healthcare services it provides. All of this must comply with MAAGTICSI (the Administrative Manual of General Application in Information Technology and Communications and Information Security), which extracts a common framework from CMMI, COBIT, ITIL, and others. This framework regulates how government agencies operate their IT organizations.
 

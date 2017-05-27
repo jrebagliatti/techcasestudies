@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Developing the next generation of smart monitoring solutions for chicken farming"
+title: "Developing the next generation of smart monitoring solutions for chicken farming"
 author: "Qixiao Wang"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-02-17
+date: 2017-02-17
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: New Hope Liuhe, a leading Chinese agricultural company, reached out to Ye Fan Technology and Microsoft for an IoT solution that could provide automatic, real-time remote monitoring and environmental control of chicken farming facilities.  
 language: [English]
-verticals: [Agricultural]
+verticals: ["Agriculture, Forestry & Fishing"]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 Microsoft joined up with Ye Fan Technology, a startup company that focuses on industrial IoT system integration and development, to help Microsoft customer New Hope Liuhe design and develop its next-generation smart-farming IoT solution based on Windows 10 IoT Core and Azure.

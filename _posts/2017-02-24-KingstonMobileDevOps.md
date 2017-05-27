@@ -9,7 +9,10 @@ categories: [Mobile DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: "Kingston Technology wants to ensure the quality of their Xamarin apps and efficiently deliver the apps to their employees. Visual Studio Team Services enhances their process and easily integrates with MacinCloud, Xamarin Test Cloud, and HockeyApp."
-verticals: [Manufacturing]
+verticals: [Discrete Manufacturing]
+language: [English]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 Best practices for building high-quality mobile apps include native or high-performance user experiences, fewer crashes, and fast responses to user feedback. Kingston Technology engineers have used Xamarin to develop their enterprise line-of-business (LOB) applications. They're also looking for good UI testing solutions and better ways to distribute LOB apps to the employees in the company. Furthermore, they're interested in the mobile DevOps practices that Microsoft recently announced at many developer events to shorten their development cycle and automate the whole process.

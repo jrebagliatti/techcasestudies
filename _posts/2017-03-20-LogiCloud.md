@@ -9,8 +9,10 @@ categories: [Power BI Embedded]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: LogiCloud and Microsoft worked together to bring an interactive dashboard to its supply-chain collaboration platform with the use of Power BI Embedded. 
-language: English
-verticals:  [Transportation & Logistics]
+language: [English]
+verticals: [Logistics]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 The biggest problem with managing multiple logistics service providers is the effort of piecing together a clear picture of the operations. It becomes difficult to extract relevant information from the huge amount of data coming from across varied partners. The LogiCloud platform helps shippers and third-party logistics (3PL) companies to track and predict deliveries of shipments across hundreds of partners and modes of transport. 

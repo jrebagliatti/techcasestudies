@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Cyberesa moves to the cloud to improve availability while scaling to meet demand"
+title: "Cyberesa moves to the cloud to improve availability while scaling to meet demand"
 author: "Fares Zekri"
 author-link: "https://twitter.com/fareszekri"
 #author-image: "{{ site.baseurl }}/images/authors/FaresZekri.jpg"
-date:   2017-05-11
+date: 2017-05-11
 categories: [Azure App Service, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Microsoft worked with Cyberesa to implement a highly available online booking solution that automatically scales to adapt to all load spikes while providing a faster, more reliable release management cycle. 
 language: [English]
-verticals: Hospitality & Travel
+verticals: [Hospitality & Travel]
+geolocation: [Middle East]
+#permalink: /<page-title>.html
 ---
 
 The Microsoft Tunisia DX team worked with Cyberesa to put in place a highly available online booking solution that automatically scales to adapt to all load spikes while providing a faster and more reliable release management cycle. 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Migrating an on-premises solution to Azure PaaS services with automated deployment"
+title: "Migrating an on-premises solution to Azure PaaS services with automated deployment"
 author: "Marcus Robinson, Ross Smith, Joni Collinge"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -10,7 +10,9 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: "Somerset County Council wanted to migrate their on-premises mapping solution to Azure. We did this by using Azure Database for PostgreSQL, Visual Studio Team Services, Azure App Service, and Docker."
 language: [English]
-verticals: [Public Sector]
+verticals: [Government]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 Somerset County Council wanted to migrate their on-premises mapping solution to Azure. We did this by taking advantage of Visual Studio Team Services, Azure App Service, Azure Database for PostgreSQL, and Docker.

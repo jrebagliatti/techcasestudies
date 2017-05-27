@@ -10,7 +10,9 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Microsoft and Rivendel joined efforts to provide Brazilian news website Catraca Livre with the means to perform A/B tests for ad placement optimization using OSS technologies on Azure.
 language: [English]
-verticals: [Communications/Media]
+verticals: [Media & Cable]
+geolocation: [South America]
+#permalink: /<page-title>.html
 ---
 
 ![Figure 0 – Catraca Livre Logo]({{ site.baseurl }}/images/2016-12-28-catraca-livre/Figure_0_Catraca_Livre_Logo.png)

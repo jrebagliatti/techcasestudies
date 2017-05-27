@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Beijer and Microsoft explore ingestion of massive amounts of car-sensor data into Azure"
+title: "Beijer and Microsoft explore ingestion of massive amounts of car-sensor data into Azure"
 author: "Valery Jacobs, Sander van den Hoven, and Eric Maino"
-author-link: "# Add Twitter link here"
+#author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-03-24
+date: 2017-03-24
 categories: [IoT, Azure Functions]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Beijer Automotive and Microsoft conducted a hackfest to determine whether it is possible to send very large amounts of data to Azure and to receive and process that data. Beijer needed a solution for ingesting car-sensor data into Azure in order to turn the data into useful information and alerts.
-language: English
-verticals: 
+language: [English]
+verticals: [Logistics]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 Beijer Automotive and Microsoft conducted a hackfest to determine whether it is possible to send very large amounts of data to Azure and to receive and process that data. Beijer needed a technically and economically feasible solution for ingesting car-sensor data into Azure in order to turn the data into useful information and alerts. This report outlines the numbers that the project team was aiming for and how the team calculated other metrics and performance targets.

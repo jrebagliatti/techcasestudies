@@ -1,20 +1,21 @@
 ---
 layout: post
-title:  "Building an interactive tutorial player with MakersKit using Azure App Service and Azure Media Services"
+title: "Building an interactive tutorial player with MakersKit using Azure App Service and Azure Media Services"
 author: "David Washington"
 author-link: "http://dwcares.com"
 #author-image: "{{ site.baseurl }}/images/authors/dwashin.png"
-date:   2017-03-09
+date: 2017-03-09
 categories: [Azure App Service]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: MakersKit, a do-it-yourself project kit startup, joined with Microsoft to build a custom tutorial player using Node.js and Socket.io hosted on Azure App Service and Azure Media Services.
 language: [English]
-verticals: [Communications/Media, Education, "Retail, Consumer Products & Services"]
+verticals: [Media & Cable, Education, Retail & Consumer Goods]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
-![MakersKit Logo]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-logo.png)
-
+![MakersKit logo]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-logo.png)
 
 [MakersKit](http://makerskit.com) is a startup that sells do-it-yourself project kits online by subscription and in retailers around the world. I worked with the team at MakersKit to build a custom tutorial video player while they participated in the [Techstars Retail Accelerator](http://www.techstars.com/programs/retail-program/) in Minneapolis.
 
@@ -22,7 +23,7 @@ Working together, we designed and built a new way for their users to watch and i
 
 > "Teaming up with Microsoft has been a game changer. We used Azure to take our idea of creating an interactive video player and ended up with a beautiful solution that engages our users like never before."
 >
-> - Mike Stone, MakersKit Co-founder
+> —Mike Stone, MakersKit Co-founder
 
 ### Development team ###
 
@@ -32,20 +33,17 @@ Working together, we designed and built a new way for their users to watch and i
 
 ![MakersKit]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-techstars-team.jpg)
 
-
 ## Customer profile ##
 
 Founded in 2014 in Los Angeles and now based in Portland, Oregon, [MakersKit](http://makerskit.com) delivers boxes full of creative projects and ideas inspired by the best of Pinterest and YouTube. A recent graduate of the [Techstars Retail Accelerator](http://www.techstars.com/programs/retail-program/) in Minneapolis, MN, MakersKit has shipped 250,000 kits worldwide and its products are available in thousands of stores, including *Macy's*, *Urban Outfitters*, *West Elm*, and *Williams-Sonoma*. The company has been showcased in *The New York Times* and *RealSimple Magazine*, and featured on *Good Morning America*.
 
 ![MakersKit Product Image]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-box-contents.png)
-
     
 ## Problem statement ##
 
 MakersKit was born from the founders doing in-person DIY tutorials in Los Angeles and teaching people how to make beautiful, creative crafts. As the company evolved to focus more on an online subscription model rather than doing most sales in retail stores, the team wanted to find a way to retain the quality of education and the social interaction of these in-person tutorials for people who purchased online kits through subscription. 
 
 ![Whiteboard concept session]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-design-sketch.png)
-
   
 ### Opportunities ###
 
@@ -61,7 +59,7 @@ I first met Mike Stone during Mentor Days at the Techstars Retail Accelerator in
   
 > "Our dream is to have this player + social sharing photos, videos and comments right on the video page."
 >
-> - Mike Stone, MakersKit Co-founder
+> —Mike Stone, MakersKit Co-founder
     
 ## Solution ##
 
@@ -74,11 +72,9 @@ We built an interactive tutorial player that included the following pieces:
   
 ![Architecture]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-arch.png)
 
-
 ## Hosting video on Azure Media Services  
 
 ![Azure Media Services Publish]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-mediaservices-publish.png)
-
 
 We decided to host our video content on [Azure Media Services](https://azure.microsoft.com/en-us/services/media-services/) because we wanted more control over how the video was published and served. Azure Media Services handles some of the fundamentals like scaling to match user views dynamically and transcoding to different browsers and devices. It enables future scenarios like live streaming video for live tutorial events and digital rights management (DRM) if MakersKit decides to make its tutorial videos a premium offering for people who purchased kits.   
 
@@ -93,13 +89,11 @@ For this project, that was enough to get MakersKit up and running. However, Azur
 
 ![Azure Media Services Architecture]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-mediaservices.png)  
 
-
 ## Building the interactive tutorial player ##
 
 We built an interactive player that shows the instructions for the video, detailed descriptions of each step in the video, and links and contextual information relevant to each step of the tutorial video as it is played. This custom player allows the person watching the video to skip between major steps and read detailed information as they watch the video. 
 
 ![Tutorial Player]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-player.png)
-
 
 ### Azure Media Player (AMP) ##
 
@@ -266,8 +260,7 @@ We used GitHub for source control during the initial development, so we wanted t
 
 ![Chat]({{ site.baseurl }}/images/2017-01-19-makerskit/makerskit-azure-github.gif)
 
- 
-## Conclusion ##
+ ## Conclusion ##
 
 We went into this collaboration looking at two main opportunities. We successfully implemented and learned from both of them.
 
@@ -279,7 +272,7 @@ We built a social experience beyond a basic comment section by enabling real-tim
 
 > "We're known for hands-on DIY workshops, and our goal is to scale that experience digitally and make it accessible to anyone. By teaming up with Microsoft, we created an interactive video playback experience that keeps pace with each user, all while offering complimentary tips, resources, buyable supply lists, and PDF downloads."  
 > 
-> - Mike Stone, MakersKit Co-founder
+> —Mike Stone, MakersKit Co-founder
 
 ### Future opportunities ###
 

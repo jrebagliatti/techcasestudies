@@ -9,10 +9,11 @@ categories: [Mobile Application Development with Xamarin]
 color: "blue"
 #image: "{{ site.baseurl }}/images/ChefsForSeniors/HackTeamSmall.png" #should be ~350px tall
 excerpt: Microsoft and Chefs For Seniors teamed up to build a Xamarin app and website that would facilitate chef operations. The Xamarin app shows chefs the menus they need to prepare for their clients and provides them grocery lists with the ability to mark items as purchased. 
-verticals: Service
-language: English
+verticals: [Professional Services]
+language: [English]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
-
 
 Microsoft and [Chefs For Seniors](http://chefsforseniors.com/) teamed up to build a Xamarin app and website that would facilitate chef operations behind the scenes at Chefs For Seniors.
 

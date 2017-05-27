@@ -1,22 +1,24 @@
 ---
 layout: post
-title:  "An IoT solution to improve and expand the SkyAlert seismic warning system"
+title: "An IoT solution to improve and expand the SkyAlert seismic warning system"
 author: "Amin Espinoza"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-11-23
-categories: IoT
+date: 2016-11-23
+categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: The most important action for a seismic warning system is to send alerts as quickly and accurately as possible. Microsoft worked with SkyAlert to devise an IoT solution for improving and expanding their earthquake alert system.
-language: English
-verticals: Public Sector
+language: [English]
+verticals: [Public Safety]
+geolocation: [Central America and the Caribbean]
+#permalink: /<page-title>.html
 ---
 
 The most important action for a seismic warning system is to alert users as quickly as possible. An added value is to be able to alert with some precision on the intensity of the coming earthquake and to withhold alerts from areas where it will not be felt. Microsoft teamed up with SkyAlert to help them improve and expand their alert system using an IoT solution. 
-
  
-## Customer ##
+## Customer profile ##
+
 The SkyAlert platform is the only one in the world that will alert you and advise you on what to do before, during, and after an earthquake. It specializes in real-time reporting on seismic and volcanic issues. It detects, processes, and sends earthquake alert notifications through its own devices.
  
 ## Pain point ##

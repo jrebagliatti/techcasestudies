@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "DevOps practices help startup Alterbooth focus on the essentials for an upcoming launch"
+title: "DevOps practices help startup Alterbooth focus on the essentials for an upcoming launch"
 author: "Junichi Anno"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/junichia.png"
-date:   2017-02-13
+date: 2017-02-13
 categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/alterbooth/logo.png" #should be ~350px tall
 excerpt: Microsoft and Alterbooth conducted a joint hackfest to introduce DevOps practices into Alterbooth's new sauce-ordering and customizing service.
 language: [English]
-verticals: [Technology, "Retail, Consumer Products & Services"]
+verticals: [Professional Services]
 ---
 
 Microsoft and Alterbooth conducted a joint hackfest to introduce DevOps practices into Alterbooth's new service, "MySauce Factory." The DevOps practices we implemented are:

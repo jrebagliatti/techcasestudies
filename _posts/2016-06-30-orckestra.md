@@ -1,20 +1,21 @@
 ---
 layout: post
-title:  "Learnings from a DevOps hackfest with Orckestra"
+title: "Learnings from a DevOps hackfest with Orckestra"
 author: "William Buchwalter & Julien Stroheker"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-06-30
-categories: DevOps
+date: 2016-06-30
+categories: [DevOps]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
-excerpt:  This article is aimed at sharing the learnings from the DevOps Hackfest with Orckestra.
-verticals: Retail, Consumer Products & Services
-language: English
+excerpt: This article is aimed at sharing the learnings from the DevOps Hackfest with Orckestra.
+verticals: [Retail & Consumer Goods]
+language: [English]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
-Orckestra teamed up with Microsoft for a week-long Hackfest. 
-During this event we discussed different DevOps practices that could improve their software delivery processes, such as:
+Orckestra teamed up with Microsoft for a week-long Hackfest. During this event we discussed different DevOps practices that could improve their software delivery processes, such as:
   
 * Automated load tests
 * Automated functional tests as part of Continuous Integration

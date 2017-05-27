@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Netpartners adopts Power BI Embedded to easily deliver customized sales reports to its customers"
+title: "Netpartners adopts Power BI Embedded to easily deliver customized sales reports to its customers"
 author: "Caio Chaves Garcez"
 author-link: "https://twitter.com/Caio_garcez"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -10,7 +10,9 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Netpartners leveraged Power BI Embedded for its new Sales Assistant solution, which will deliver customized sales reports to hundreds of customers.
 language: [English]
-verticals: [Cross-Industry]
+verticals: [Telecommunications, Discrete Manufacturing, Process Mfg & Resources]
+geolocation: [South America]
+#permalink: /<page-title>.html
 ---
 
 ![Figure 0 - Netpartners Logo]({{ site.baseurl }}/images/2017-03-31-netpartners/Figure_0_Netpartners_Logo.png)

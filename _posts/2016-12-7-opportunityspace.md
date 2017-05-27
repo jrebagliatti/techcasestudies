@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "How OpportunitySpace is boosting the effort to restore neighborhoods with a Xamarin.Forms mobile app"
+title: "How OpportunitySpace is boosting the effort to restore neighborhoods with a Xamarin.Forms mobile app"
 author: "Gavin Bauman"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-02-09
+date: 2017-02-09
 categories: [Mobile Application Development with Xamarin]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: This article details the implementation of a cross-platform mobile application built in Xamarin that takes vector map data from an API and renders it using Xamarin.Forms.
-language: English
-verticals: "Retail, Consumer Products & Services"
+language: [English]
+verticals: [Retail & Consumer Goods]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
-
-
 
 OpportunitySpace is a Boston-based startup focused on providing contextual neighborhood data to code enforcement and government officials. Until now, it had a web application that allowed users to research before heading out of the office. But the company needed a mobile app to provide that data wherever the users may be. Resizing the web application for a phone's mobile browser did not provide the smooth experience that OpportunitySpace wanted, so it started to look at building a native mobile app.  
 

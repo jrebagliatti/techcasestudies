@@ -1,18 +1,19 @@
 ---
 layout: post
-title:  "Migrating the We Carpool platform PHP back end to Azure"
+title: "Migrating the We Carpool platform PHP back end to Azure"
 author: "Mostafa Elzoghbi"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-03-20
+date: 2017-03-20
 categories: [Azure App Service]
 color: "blue"
 #image: "{{ site.baseurl }}/images/WeCarPool/IntuPower-Profile.PNG" #should be ~350px tall
 excerpt:   When We Carpool wanted to migrate its platform PHP back end to Azure, Microsoft helped with the solution. The platform now has continuous delivery from Visual Studio Team Services to Azure.
-language: English
-verticals: ["Retail, Consumer Products & Services"]
+language: [English]
+verticals: [Retail & Consumer Goods]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
-
 
 Microsoft teamed up with We Carpool to migrate its platform back end to Microsoft Azure. The platform has been set up to have continuous delivery deployment from Visual Studio Team Services into Azure.
 
