@@ -10,7 +10,7 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/authors/davidgiard.jpg" #should be ~350px tall
 excerpt: Liquid Greetings and Microsoft built a mobile app using Xamarin and Azure that will allow subscribers to treat their friends to their favorite beverages.
 language: [English]
-verticals: [Retail & Consumer Goods; Media & Cable]
+verticals: [Retail & Consumer Goods, Media & Cable]
 geolocation: [North America]
 #permalink: /<page-title>.html
 ---
