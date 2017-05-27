@@ -10,7 +10,7 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/urbanrefuge/urbanrefuge.png" #should be ~350px tall
 excerpt: Microsoft teamed up with Urban Refuge to give urban refugees in Amman, Jordan, access to local assistance opportunities via a Xamarin cross-platform mobile application.
 language: [English]
-verticals: [Public Safety; Logistics]
+verticals: [Public Safety, Logistics]
 geolocation: [North America]
 #permalink: /<page-title>.html
 ---
