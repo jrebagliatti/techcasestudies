@@ -10,7 +10,7 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Digital marketing provider AnRuiZhuoYue worked with Microsoft to develop an intelligent conference-management system with facial registration and check-in functions, based on a WeChat app and using Azure App Service features.   
 language: [English]
-verticals: [Media & Cable; Logistics; Professional Services]
+verticals: [Media & Cable, Logistics, Professional Services]
 geolocation: [Asia]
 #permalink: /<page-title>.html
 ---
