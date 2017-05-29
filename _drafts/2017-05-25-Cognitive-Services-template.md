@@ -4,8 +4,8 @@ title: "Add title with customer name here"
 author: "Add author name here"
 author-link: "Add URL for author's Twitter account here"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date: 2017-05-24
-categories: [Bot Framework]
+date: 2017-05-25
+categories: [Cognitive Services]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Add a short description of what this article is about, helping fellow developers understand why they would want to read it. What value will they get out of reading it? Focus on the problem or technologies and let that be the guiding light.
@@ -71,7 +71,7 @@ This solution implements a web-embedded knowledge search and human-handoff custo
 
 *Architecture diagram*
 
-![CaaP architecture diagram]({{ site.baseurl }}/images/templates/caaparchitecture.png)
+![Cognitive Services architecture diagram]({{ site.baseurl }}/images/templates/cognitiveservicesarchitecture.png)
 
 *Provide a brief description of the solution they will execute below by walking through the diagram.*
 
