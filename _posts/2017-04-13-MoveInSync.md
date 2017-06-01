@@ -4,7 +4,7 @@ title:  "Building a real time vehicle tracking system with MoveInSync"
 author: "Sudhir Rawat"
 author-link: "https://github.com/rawatsudhir"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-05-31
+date:   2017-06-01
 categories: [IoT]
 color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
