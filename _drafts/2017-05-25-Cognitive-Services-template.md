@@ -12,7 +12,6 @@ excerpt: Add a short description of what this article is about, helping fellow d
 language: The language of the article; e.g., [English]
 verticals: The industry on which this article focuses; choose from the following: ["Agriculture, Forestry & Fishing"], [Banking & Capital Markets], [Discrete Manufacturing], [Education], [Government], [Health], [Hospitality & Travel], [Insurance], [Logistics], [Media & Cable], [Nonprofit], [Power & Utilities], [Process Mfg & Resources], [Professional Services], [Public Safety], [Retail & Consumer Goods], [Telecommunications]
 geolocation: The geolocation of the article; choose one of the following: [Africa], [Asia], [Central America and the Caribbean], [Europe], [Middle East], [North America], [Oceania], [South America]
-#permalink: /<page-title>.html Use this section to set a custom URL for your page. The value set in this setting will be added to the base URL. For example if you set "/mycustomurl.html", your URL will be "https://microsoft.github.io/techcasestudies/mycustomurl.html"
 ---
 
 ***PLEASE READ:** The goal of this write-up is to allow IT pros, developers, or BDMs to immediately identify the problem being solved, and for developers to be able to follow your steps to recreate the solution. Be as concise as possible, but be clear how you get to each step.*
@@ -71,23 +70,22 @@ This solution implements a web-embedded knowledge search and human-handoff custo
 
 *Architecture diagram*
 
-![Cognitive Services architecture diagram]({{ site.baseurl }}/images/templates/cognitiveservicesarchitecture.png)
+![Cognitive Services architecture diagram](/images/templates/cognitiveservicesarchitecture.png)
 
-*Provide a brief description of the solution they will execute below by walking through the diagram.*
+*A brief description of the solution they will execute below by walking through the diagram*
 
 ***Directions for adding images***
 
-*1. Create a folder for your project images in the "images" folder in the GitHub repo. This is where you will add all images associated with your write-up.*
- 
+*1. Create a folder for your project images in the "images" folder in the GitHub repo. This is where you will add all images associated with your write-up.* 
 *2. Add links to your images using the following absolute path:*
 
-   `![Description of the image]({{ site.baseurl }}/images/projectname/myimage.png)`
+    `![Description of the image]({{ site.baseurl }}/images/projectname/myimage.png)`
   
-   *Here's an example:*
+    *Here's an example:*
 
-   `![Value stream mapping]({{ site.baseurl }}/images/orckestra/orckestra2.jpg)`
+    `![Value stream mapping]({{ site.baseurl }}/images/orckestra/orckestra2.jpg)`
 
-   *Note that capitalization of the folder name, file name, and file extension must match *exactly* for the images to render properly.*
+*Note that capitalization of the folder name, file name, and file extension must match *exactly* for the images to render properly.*
 
 ## Technical delivery ##
 
