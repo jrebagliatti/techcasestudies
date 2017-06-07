@@ -57,11 +57,12 @@ Sunburned Games worked with Microsoft through the conversion process of *The Gre
 
 When performing manual conversion, the files need to be packaged into a Windows Store format called an AppX. Without touching the original codebase, developers used `MakeAppx.exe` provided in the Windows 10 SDK. This required putting the program's associated files and assets into a single directory and creating an `AppxManifest.xml` describing their relationships, or use the one built by the Desktop App Converter (DAC). The manifest points to the application executable that the AppX will run.
 
-![The Great Whale Road in the Steam store]({{ site.baseurl }}/images/WhaleRoad/steam.PNG)
+<img alt="The Great Whale Road in the Steam store" src="{{ site.baseurl }}/images/WhaleRoad/steam.PNG" width="700">
 
 <br/>
 
-![The Great Whale Road in the Windows Store]({{ site.baseurl }}/images/WhaleRoad/win-store.PNG)
+<img alt="The Great Whale Road in the Windows Store" src="{{ site.baseurl }}/images/WhaleRoad/win-store.PNG" width="700">
+
 
 Once this has been done, an AppX file is created. The developer signs the AppX so it can be sideloaded for testing, or deployed directly into the Windows Store. Signing is not required to simply publish to the Windows Store because the store signs it for you.
 
@@ -69,11 +70,11 @@ The initial conversion used the DAC to build the original registry and virtual f
 
 ## Conclusion ##
 
-![The Great Whale Road as a UWP App]({{ site.baseurl }}/images/WhaleRoad/start-screen.png)
+<img alt="The Great Whale Road as a UWP App" src="{{ site.baseurl }}/images/WhaleRoad/start-screen.png" width="700">
 
 <br/>
 
-![The Great Whale Road as a UWP App]({{ site.baseurl }}/images/WhaleRoad/gameplay.png)
+<img alt="The Great Whale Road as a UWP App" src="{{ site.baseurl }}/images/WhaleRoad/gameplay.png" width="700">
 
 
 >"We were pleasantly surprised with the straightforward conversion process and how few code changes were required to get 'The Great Whale Road' published into the Windows Store. We are excited to introduce our game to Windows 10 users."
