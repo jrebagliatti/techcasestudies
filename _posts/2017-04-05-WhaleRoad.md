@@ -57,11 +57,11 @@ Sunburned Games worked with Microsoft through the conversion process of *The Gre
 
 When performing manual conversion, the files need to be packaged into a Windows Store format called an AppX. Without touching the original codebase, developers used `MakeAppx.exe` provided in the Windows 10 SDK. This required putting the program's associated files and assets into a single directory and creating an `AppxManifest.xml` describing their relationships, or use the one built by the Desktop App Converter (DAC). The manifest points to the application executable that the AppX will run.
 
-<img alt="The Great Whale Road in the Steam store" src="{{ site.baseurl }}/images/WhaleRoad/steam.PNG" width="700">
+<img alt="The Great Whale Road in the Steam store" src="{{ site.baseurl }}/images/WhaleRoad/steam.PNG" width="900">
 
 <br/>
 
-<img alt="The Great Whale Road in the Windows Store" src="{{ site.baseurl }}/images/WhaleRoad/win-store.PNG" width="700">
+<img alt="The Great Whale Road in the Windows Store" src="{{ site.baseurl }}/images/WhaleRoad/win-store.PNG" width="900">
 
 
 Once this has been done, an AppX file is created. The developer signs the AppX so it can be sideloaded for testing, or deployed directly into the Windows Store. Signing is not required to simply publish to the Windows Store because the store signs it for you.
