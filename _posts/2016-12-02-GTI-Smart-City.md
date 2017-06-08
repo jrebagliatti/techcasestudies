@@ -7,10 +7,11 @@ author-link: "#"
 date: 2017-02-04
 categories: IoT
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/GTISmartCity/GTI_033.JPG"
 excerpt: Microsoft teamed up with GTI, a leading IoT platform and service provider headquartered in Beijing, to develop the "big data" platform used in its Smart City solution, which enables data-driven city operation. 
 language: English
 verticals: Smart Cities
+sticky: true
 ---
 
 Microsoft teamed up with GTI, an Internet of Things (IoT) platform and service provider headquartered in Beijing, to develop the "big data" platform used in its Smart City solution, which enables data-driven city operation. 

@@ -7,7 +7,7 @@ author-link: "# Include twitter link here"
 date: 2017-03-17
 categories: [IoT]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/2017-01-31-takasolutions/snip_20170131134642.png"
 excerpt: Taka Solutions implemented a building energy-management IoT solution that uses Azure IoT Hub and Stream Analytics to centralize telemetry from multiple buildings for visualization and analytics. Its ultimate goal is to reduce the world's energy consumption.
 language: [English]
 verticals: [Power & Utilities]

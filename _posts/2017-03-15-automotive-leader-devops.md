@@ -7,7 +7,7 @@ author-link: "https://twitter.com/jcorioland"
 date: 2017-05-09
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/2017-03-15-automotive-leader-devops/vsm_part1.jpg"
 excerpt: Microsoft partnered with a leader in the automotive industry to work on improving the way they are releasing their Master Data Management application by using Visual Studio Team Services and Jenkins through a DevOps practice implementation.
 language: [English]
 verticals: [Discrete Manufacturing]

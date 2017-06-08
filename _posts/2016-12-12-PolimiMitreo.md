@@ -7,10 +7,11 @@ author-link: "#"
 date:   2016-12-21
 categories: [IoT]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/PolimiMitreo/mitreoCircusMaximum.jpg"
 excerpt: Researchers at Politecnico di Milano worked with Microsoft to develop a way to remotely monitor conditions at the Mitreo archaeological site in Rome. 
 language: [English]
 verticals: [Cultural Heritage, Public Sector, Smart Cities, Environmental]
+sticky: true
 ---
 
 

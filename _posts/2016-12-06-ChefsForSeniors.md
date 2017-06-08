@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-01-27
 categories: [Mobile Application Development with Xamarin]
 color: "blue"
-#image: "{{ site.baseurl }}/images/ChefsForSeniors/HackTeamSmall.png" #should be ~350px tall
+image: "images/ChefsForSeniors/HackTeam.png"
 excerpt: Microsoft and Chefs For Seniors teamed up to build a Xamarin app and website that would facilitate chef operations. The Xamarin app shows chefs the menus they need to prepare for their clients and provides them grocery lists with the ability to mark items as purchased. 
 verticals: [Professional Services]
 language: [English]

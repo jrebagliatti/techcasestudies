@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-12-23
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/Millennium/2Brainstorming.jpg"
 excerpt: In this DevOps hackfest, Microsoft worked with Millennium to integrate an Azure Resource Manager model into an existing custom Azure services provisioning system that was based on an Azure Service Management model. 
 language: [English]
 verticals: [Professional Services]

@@ -7,7 +7,7 @@ author-link: "https://twitter.com/benjiiim"
 date: 2017-05-08
 categories: [Azure App Service]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/2017-03-15-contentavenue/screenshot.jpg"
 excerpt: Content Avenue partnered with Microsoft to work on a modern cloud architecture for their collaborative content platform, thanks to open-source technologies and managed application services on Microsoft Azure.
 language: [English]
 verticals: [Retail & Consumer Goods]

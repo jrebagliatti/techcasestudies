@@ -12,6 +12,7 @@
         "verticals": {{ post.verticals | jsonify }},
         "language": {{ post.language | jsonify }},
         "geolocation": {{ post.geolocation | jsonify }},
+        "sticky": {{ post.sticky | jsonify }},
         "content": {{ post.content | strip_html | jsonify }}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}

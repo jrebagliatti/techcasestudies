@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-05-12
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/somersetcc/roamss.png"
 excerpt: "Somerset County Council wanted to migrate their on-premises mapping solution to Azure. We did this by using Azure Database for PostgreSQL, Visual Studio Team Services, Azure App Service, and Docker."
 language: [English]
 verticals: [Government]

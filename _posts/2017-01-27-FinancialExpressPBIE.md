@@ -7,6 +7,7 @@ author: "Bianca Furtuna and David Gristwood"
 date: 2017-04-25
 categories: [Power BI Embedded]
 color: "blue"
+image: "images/2017-01-27-FinancialExpressPBIE/architecture1.png"
 excerpt: Microsoft teamed up with ISV Financial Express to help them use Power BI Embedded to encourage customers to explore large volumes of financial information quickly and easily.
 language: [English]
 verticals: [Professional Services]

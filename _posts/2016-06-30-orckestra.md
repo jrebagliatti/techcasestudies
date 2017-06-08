@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-06-30
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/orckestra2.jpg"
 excerpt: This article is aimed at sharing the learnings from the DevOps Hackfest with Orckestra.
 verticals: [Retail & Consumer Goods]
 language: [English]
