@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-11-21
 categories: [Azure App Service, Azure Functions]
 color: "blue"
-#image: "{{ site.baseurl }}/images/IllinoisTech/IllinoisTech.png"
+image: "images/IllinoisTech/2.JPG"
 excerpt: This article provides an overview and learnings from the Illinois Tech hackfest using Azure Functions, WPF, ClickOnce, and Azure Web Apps to build an RFID-reading student attendance app.
 language: [English]
 verticals: [Education]

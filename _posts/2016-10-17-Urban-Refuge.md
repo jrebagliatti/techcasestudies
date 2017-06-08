@@ -7,12 +7,13 @@ author-link: "#"
 date: 2016-12-12
 categories: [Mobile Application Development with Xamarin, Mobile DevOps, Azure App Service]
 color: "blue"
-#image: "{{ site.baseurl }}/images/urbanrefuge/urbanrefuge.png" #should be ~350px tall
+image: "images/urbanrefuge/Working.PNG"
 excerpt: Microsoft teamed up with Urban Refuge to give urban refugees in Amman, Jordan, access to local assistance opportunities via a Xamarin cross-platform mobile application.
 language: [English]
 verticals: [Public Safety, Logistics]
 geolocation: [North America]
 #permalink: /<page-title>.html
+sticky: true
 ---
 
 *This report was updated with additional resource URLs on February 27, 2017.*

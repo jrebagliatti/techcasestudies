@@ -7,7 +7,7 @@ author: "Tom Lee"
 date: 2017-04-25
 categories: [Azure Functions]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/2017-03-04-DSC-Digiwin/DSC-hackathon.JPG"
 excerpt: Scalability and availability are important in cloud services, but so is affordability. By using Azure Functions, Data Systems Consulting lowered the cost of provisioning new customers.
 language: [English]
 verticals: [Data Management]

@@ -7,9 +7,11 @@ author-link: "https://twitter.com/Marcello_twit"
 date: 2017-03-23
 categories: [Desktop Bridge]
 color: "blue"
+image: "images/MusiXmatch/image01.png"
 excerpt: Musixmatch, one of the most popular lyrics apps worldwide, leveraged Desktop Bridge to bring their Win32 application to the Windows Store. The app was developed with Electron; read on for an explanation of the conversion process.
 language: English
 verticals: [Entertainment]
+sticky: true
 ---
 
 Today, Windows 10 runs on more than 400 million PCs around the world, and it aims to reach 1 billion in 2018. This is a huge user base, and the good news is that there is a simple and powerful way to reach these users in a fast and reliably way: the Windows Store.

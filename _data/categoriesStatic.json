@@ -12,7 +12,7 @@
     },
     {
         "name":"verticals",
-        "showAs":"Industry associated with solution",
+        "showAs":"Industry Associated with Solution",
         "metadataField":"verticals",
         "values":[
                 "Energy",
@@ -46,7 +46,7 @@
     },
     {
         "name":"geolocation",
-        "showAs":"Geolocation",
+        "showAs":"Region",
         "metadataField":"geolocation",
         "values":[
                 "TODO: Complete static list"

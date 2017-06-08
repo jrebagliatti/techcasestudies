@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-05-24
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/karadamedica1.jpg"
 excerpt: Microsoft teamed up with Karadamedica to hack integrated Microsoft DevOps technologies on Azure.
 verticals: [Health]
 language: [English]

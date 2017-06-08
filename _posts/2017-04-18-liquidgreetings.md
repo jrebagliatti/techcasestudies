@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-04-19
 categories: [Mobile Application Development with Xamarin]
 color: "blue"
-#image: "{{ site.baseurl }}/images/authors/davidgiard.jpg" #should be ~350px tall
+image: "images/liquidgreetings/lgteam.jpg"
 excerpt: Liquid Greetings and Microsoft built a mobile app using Xamarin and Azure that will allow subscribers to treat their friends to their favorite beverages.
 language: [English]
 verticals: [Retail & Consumer Goods, Media & Cable]

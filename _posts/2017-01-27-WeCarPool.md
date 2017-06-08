@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-03-20
 categories: [Azure App Service]
 color: "blue"
-#image: "{{ site.baseurl }}/images/WeCarPool/IntuPower-Profile.PNG" #should be ~350px tall
+image: "images/WeCarPool/WeCarPoolWebsite.PNG"
 excerpt:   When We Carpool wanted to migrate its platform PHP back end to Azure, Microsoft helped with the solution. The platform now has continuous delivery from Visual Studio Team Services to Azure.
 language: [English]
 verticals: [Retail & Consumer Goods]

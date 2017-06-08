@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-03-14 
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/goodbyeworldgames/vsm1.png"
 excerpt: With help from Microsoft, GoodbyeWorld Games implemented a DevOps solution that automated its build process, speeding up and improving its development pipeline. 
 verticals: [Retail & Consumer Goods]
 language: [English]

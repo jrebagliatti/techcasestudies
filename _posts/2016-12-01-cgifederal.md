@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-03-12 
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/cgifederal/logo.png" #should be ~350px tall
+image: "images/cgifederal/teamworking.jpg"
 excerpt: As it moves to embrace Microsoft Azure, CGI Federal seized upon the opportunity to leverage new tools and approaches to optimize the software lifecycle for its products, both in the cloud and on-premises.
 verticals: [Professional Services]
 language: [English]

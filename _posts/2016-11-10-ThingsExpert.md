@@ -6,6 +6,7 @@ author-link: "#"
 date: 2016-11-21
 categories: [IoT]
 color: "blue"
+image: "images/ThingsExpert1.png"
 excerpt: Microsoft teamed up with Things Expert to develop a car-tracking solution for use by car rental companies. This article describes the general execution and the results. 
 language: [English]
 verticals: [Telecommunications]

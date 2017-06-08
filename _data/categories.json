@@ -7,7 +7,7 @@
     },
     {
         "name":"verticals",
-        "showAs":"Industry associated with solution",
+        "showAs":"Industry Associated with Solution",
         "metadataField":"verticals",
         "sorted": true
     },
@@ -19,7 +19,7 @@
     },
     {
         "name":"geolocation",
-        "showAs":"Geolocation",
+        "showAs":"Region",
         "metadataField":"geolocation",
         "sorted": true
     }

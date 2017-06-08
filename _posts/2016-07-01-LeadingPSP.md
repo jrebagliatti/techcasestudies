@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-07-01
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/LeadingPSP_1.png"
 excerpt: In this DevOps Hackfest, Microsoft teamed up with a leading provider of professional services to improve their development processes with a focus on automated testing and release management. We describe the process and the result in this article.
 verticals: [Professional Services]
 language: [English]

@@ -309,6 +309,32 @@ a.site-title, .site-title a {
             font-size: 18px;
         }
     }
+
+    .header-link {
+        position: relative;
+        margin-left: -20px;
+        right: 0.5em;
+        opacity: 0;
+        font-size: 0.8em;
+        color: $grey-color-dark;
+
+        -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+        -moz-transition: opacity 0.2s ease-in-out 0.1s;
+        -ms-transition: opacity 0.2s ease-in-out 0.1s;
+
+    }
+
+    .header-link.always-on {
+        opacity: 1;
+    }
+
+    h2:hover .header-link,
+    h3:hover .header-link,
+    h4:hover .header-link,
+    h5:hover .header-link,
+    h6:hover .header-link {
+        opacity: 1;
+    }
 }
 
 /**
@@ -461,4 +487,8 @@ a.site-title, .site-title a {
 
 .card-action {
 	padding: 12px 20px 12px 20px !important;
+}
+
+.hide {
+    display: none !important;
 }

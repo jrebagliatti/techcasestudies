@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-02-09
 categories: [Mobile Application Development with Xamarin]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/Architecture Diagram - OpportunitySpace Platform.png"
 excerpt: This article details the implementation of a cross-platform mobile application built in Xamarin that takes vector map data from an API and renders it using Xamarin.Forms.
 language: [English]
 verticals: [Retail & Consumer Goods]

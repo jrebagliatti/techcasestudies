@@ -7,7 +7,7 @@ author-link: "https://twitter.com/fareszekri"
 date: 2017-05-11
 categories: [Azure App Service, Azure Functions]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/Cyberesa/logo_cyberesa.png"
 excerpt: Microsoft worked with Cyberesa to implement a highly available online booking solution that automatically scales to adapt to all load spikes while providing a faster, more reliable release management cycle. 
 language: [English]
 verticals: [Hospitality & Travel]

@@ -7,12 +7,13 @@ author-link: "http://github.com/joalmeid"
 date: 2017-01-05
 categories: [IoT]
 color: "blue"
-#image: "{{ site.baseurl }}/images/edp/edp02.png" #should be ~350px tall
+image: "images/geratriz/geratriz13.png"
 excerpt: Geratriz offers a platform to measure water and energy consumption at shopping malls. The company worked with Microsoft and ComOn to improve the platform's reliability and resilience while reducing operational costs. 
 language: [English]
 verticals: [Power & Utilities]
 geolocation: [Europe]
 #permalink: /<page-title>.html
+sticky: true
 ---
 
 Geratriz offers a platform to measure utility consumption at shopping malls, information that is important to facility managers. The company worked with Microsoft and ComOn to improve the platform's reliability and resilience while reducing operational costs. This in turn will help Geratriz offer a viable platform internationally.

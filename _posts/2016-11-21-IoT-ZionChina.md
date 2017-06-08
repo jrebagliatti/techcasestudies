@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-12-02
 categories: [IoT]
 color: "blue"
-#image: "{{ site.baseurl }}/images/ZionChina00_Logo.png" #should be ~350px tall
+image: "images/ZionChina09_Team01.jpg"
 excerpt: Microsoft worked with Zion China to re-architect its mobile diabetes-monitoring solution. See how they used IoT Hub and other Azure services to enhance the solution for patients and healthcare professionals. 
 verticals: [Health]
 language: [English]

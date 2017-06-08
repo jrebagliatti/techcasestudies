@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-03-15
 categories: [Azure App Service, Azure Functions]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/2017-01-30-engiepromethee/azuread-architecture.png"
 excerpt: Microsoft France and ENGIE Global Energy Markets partnered to migrate the first of its applications to Azure. Leveraging Azure App Service and Azure Functions, the hackfest team also addressed topics such as security, scheduled execution, and monitoring. 
 language: [English]
 verticals: [Professional Services]
