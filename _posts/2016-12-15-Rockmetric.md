@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-02-23
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/rockmetric/rockmetric.jpg" #should be ~350px tall
+image: "images/rockmetric/rockmetric-hackfest-2.jpeg"
 excerpt: DevOps practices help B2B startup Rockmetric reduce deployment time from days to minutes using VSTS and Packer. This report details the implementation and the business impact of establishing key DevOps practices for Rockmetric. 
 language: [English]
 verticals: [Professional Services]

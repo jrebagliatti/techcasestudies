@@ -7,7 +7,7 @@ author-link: "https://twitter.com/shezepeng"
 date: 2017-04-27
 categories: [Desktop Bridge]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/2017-03-19-YoudaoDictionary/set-exepolicy.png"
 excerpt: Microsoft teamed up with NetEase Youdao to bring the popular dictionary app, Youdao Dictionary, to the Universal Windows Platform (UWP) by using Desktop Bridge. 
 language: [English]
 verticals: [Media & Cable]

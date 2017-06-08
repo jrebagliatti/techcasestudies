@@ -7,11 +7,12 @@ author-link: "https://twitter.com/TessFerrandez"
 date: 2017-03-28
 categories: [Mobile Application Development with Xamarin, Mobile DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/LiveArena/1-Architecture.png"
 excerpt: LiveArena delivers a video recording product that makes it easy, efficient, and affordable for companies to produce their own TV channels and provide on-demand videos. Microsoft partnered with LiveArena and Triona to write mobile front ends and Xbox apps using Xamarin.  
 language: [English]
 verticals: [Media & Cable]
 geolocation: [Europe]
+sticky: true
 #permalink: /<page-title>.html
 ---
 

@@ -7,7 +7,7 @@ author-link: "http://twitter.com/jmservera"
 date: 2016-12-19
 categories: [IoT]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/fagorederlan/robotAndMold.jpg"
 excerpt: Fagor Ederlan is looking to improve its aluminum injection molding process to detect defective pieces earlier and enhance the overall quality. This project demonstrates that it's not complex to send data to the cloud using secure and reliable services, analyze the data, and build maching learning models to extract knowledge from it. 
 language: [English]
 verticals: [Discrete Manufacturing]

@@ -7,7 +7,7 @@ author-link: "http://dwcares.com"
 date: 2017-03-09
 categories: [Azure App Service]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/2017-01-19-makerskit/makerskit-techstars-team.jpg"
 excerpt: MakersKit, a do-it-yourself project kit startup, joined with Microsoft to build a custom tutorial player using Node.js and Socket.io hosted on Azure App Service and Azure Media Services.
 language: [English]
 verticals: [Media & Cable, Education, Retail & Consumer Goods]

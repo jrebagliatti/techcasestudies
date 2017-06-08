@@ -7,10 +7,11 @@ author-link: "#"
 date:   2016-10-28
 categories: IoT
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/croke01.jpg"
 excerpt: The Croke Park Smart Stadium project is a collaborative effort to boost innovation around IoT. Sensors and gateways have been strategically positioned around the Dublin stadium to enable environmental monitoring, safety, and fan experience use cases. This diverse collection of data, which is stored on the Azure cloud platform, provides stadium management with real, actionable insights.
 language: English
 verticals: [Smart Cities, Sports, Environmental, Sound]
+sticky: true
 ---
 
 

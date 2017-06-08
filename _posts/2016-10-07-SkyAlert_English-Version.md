@@ -7,12 +7,13 @@ author-link: "#"
 date: 2016-11-23
 categories: [IoT]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/dashboard.PNG"
 excerpt: The most important action for a seismic warning system is to send alerts as quickly and accurately as possible. Microsoft worked with SkyAlert to devise an IoT solution for improving and expanding their earthquake alert system.
 language: [English]
 verticals: [Public Safety]
 geolocation: [Central America and the Caribbean]
 #permalink: /<page-title>.html
+sticky: true
 ---
 
 The most important action for a seismic warning system is to alert users as quickly as possible. An added value is to be able to alert with some precision on the intensity of the coming earthquake and to withhold alerts from areas where it will not be felt. Microsoft teamed up with SkyAlert to help them improve and expand their alert system using an IoT solution. 

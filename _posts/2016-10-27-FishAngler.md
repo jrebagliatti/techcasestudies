@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-11-28
 categories: [Azure App Service, Azure Functions]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/fishangler/the-team-hackfest.jpg"
 excerpt: In this App Service hackfest, Microsoft teamed up with FishAngler to replace existing worker roles and extend functionality of their mobile app using Azure Functions. 
 language: [English]
 verticals: [Media & Cable]
