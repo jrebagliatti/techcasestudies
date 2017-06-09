@@ -7,7 +7,7 @@ author-link: "https://twitter.com/doristchen"
 date: 2017-05-17
 categories: [Azure App Service]
 color: "blue"
-image: "images/stopjetlag/team1.jpg"
+image: "images/stopjetlag/feat_team1.jpg"
 excerpt: Kinetic Software and Microsoft teamed up to build a Xamarin.Forms revision of the StopJetLag app and a back end using Azure App Service. This helped reduce the cost and management overhead of the app that creates customized StopJetLag plans for travelers.  
 verticals: [Hospitality & Travel]
 language: [English]

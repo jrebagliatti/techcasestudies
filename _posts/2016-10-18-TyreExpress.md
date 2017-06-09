@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-11-02
 categories: [IoT]
 color: "blue"
-image: "images/TyreExpress1.png"
+image: "images/feat_TyreExpress1.png"
 excerpt: In this IoT hackfest, Microsoft teamed up with Tyre Express to connect their tire monitoring solution to the Azure cloud. 
 language: [English]
 verticals: [Logistics]

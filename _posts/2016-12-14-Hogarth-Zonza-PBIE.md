@@ -7,7 +7,7 @@ author-link: "https://twitter.com/AmyKateNicho"
 date: 2017-01-11
 categories: [Power BI Embedded]
 color: "blue"
-image: "images/2016-12-14-Hogarth-Zonza-PBIE/final-outcome.png"
+image: "images/2016-12-14-Hogarth-Zonza-PBIE/feat_final-outcome.png"
 excerpt: In a joint effort with Microsoft, Hogarth built out a proof of concept with Power BI Embedded inside its Zonza digital asset management application to give customers more information about the assets they store.
 verticals: [Retail & Consumer Goods]
 language: [English]

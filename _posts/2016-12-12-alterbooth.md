@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-02-13
 categories: [DevOps]
 color: "blue"
-image: "images/alterbooth/alterbooth01.png"
+image: "images/alterbooth/feat_alterbooth01.png"
 excerpt: Microsoft and Alterbooth conducted a joint hackfest to introduce DevOps practices into Alterbooth's new sauce-ordering and customizing service.
 language: [English]
 verticals: [Professional Services]

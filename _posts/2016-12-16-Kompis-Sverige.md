@@ -7,7 +7,7 @@ author-link: "https://twitter.com/simonjaegr"
 date: 2017-01-09
 categories: [Azure App Service, Power BI Embedded]
 color: "blue"
-image: "images/bestie/dashboard.jpg"
+image: "images/bestie/feat_dashboard.jpg"
 excerpt: Learn how the Bestie app allows Kompis Sverige to accelerate and scale its work to integrate people who have found safety in Sweden. This solution is powered by components such as Azure App Service and Power BI Embedded.
 language: [English]
 verticals: [Nonprofit]

@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-12-23
 categories: [IoT]
 color: "blue"
-image: "images/BlueDynamic/ArchitectureDiscussion.jpg"
+image: "images/BlueDynamic/feat_ArchitectureDiscussion.jpg"
 excerpt: Microsoft and Blue Dynamic conducted a hackfest to create a proof of concept for a new product. The scope was to capture customer faces with a camera, do real-time counting and analysis of the faces, and provide outputs for other systems and UI.
 language: [English]
 verticals: [Retail & Consumer Goods]

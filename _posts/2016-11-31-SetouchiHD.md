@@ -7,7 +7,7 @@ author-link: "#"
 date:  2017-02-28
 categories: [DevOps]
 color: "blue"
-image: "images/2016-11-31-SetouchiHD/VSMdiscussion.jpg"
+image: "images/2016-11-31-SetouchiHD/feat_VSMdiscussion.jpg"
 excerpt: Setouchi Holdings needed to improve the scalability of their pipeline. CI&T, Creationline, and Microsoft used the Web Apps and API Apps features of Azure and Visual Studio Team Services to quickly solve pain points.
 language: [English]
 verticals: [Discrete Manufacturing, Logistics]

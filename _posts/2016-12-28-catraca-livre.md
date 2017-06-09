@@ -7,7 +7,7 @@ author-link: "https://twitter.com/Caio_garcez"
 date: 2017-02-20
 categories: [DevOps]
 color: "blue"
-image: "images/2016-12-28-catraca-livre/Figure_6_Varnish.jpg"
+image: "images/2016-12-28-catraca-livre/feat_Figure_6_Varnish.jpg"
 excerpt: Microsoft and Rivendel joined efforts to provide Brazilian news website Catraca Livre with the means to perform A/B tests for ad placement optimization using OSS technologies on Azure.
 language: [English]
 verticals: [Media & Cable]

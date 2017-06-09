@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-01-07
 categories: [Azure App Service]
 color: "blue"
-image: "images/hark/pre_hack_appservices.PNG"
+image: "images/hark/feat_pre_hack_appservices.PNG"
 excerpt: Hark is an IoT startup that moved from using traditional IaaS to Azure PaaS, enabling it to concentrate on its application rather than the infrastructure.
 verticals: [Health, Professional Services]
 geolocation: [Europe]

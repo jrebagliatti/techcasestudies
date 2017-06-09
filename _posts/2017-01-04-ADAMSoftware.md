@@ -7,7 +7,7 @@ author-link: "https://twitter.com/nicktrog"
 date: 2017-02-15
 categories: [DevOps]
 color: "blue"
-image: "images/adamsoftware/smartcontenthub-logo.jpg"
+image: "images/adamsoftware/feat_smartcontenthub-logo.jpg"
 excerpt: ADAM Software and Microsoft worked together to optimize ADAM Software's build and release pipeline. This report details the DevOps practices that were implemented for a complex Smart Content Hub marketing solution.
 language: [English]
 verticals: [Retail & Consumer Goods]
