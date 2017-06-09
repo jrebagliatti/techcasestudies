@@ -1,22 +1,23 @@
 ---
 layout: post
-title:  "Thermoplan uses Azure to manage data for its smart coffee machine"
+title: "Thermoplan uses Azure to manage data for its smart coffee machine"
 author: "Ronnie Saurenmann, Ken Casada"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-06-07
+date: 2017-06-07
 categories: [IoT]
 color: "blue"
-#image: "{{ site.baseurl }}/images/thermoplan.png" #should be ~350px tall
+image: "images/Thermoplan/team_thumb.png"
 excerpt: Thermoplan teamed up with Microsoft and bbv Software Services to enable a professional coffee machine to be managed remotely, tracked for usage, and maintained by using Azure IoT Hub, Azure Stream Analytics, and Azure Data Lake.
 language: [English]
-verticals: [Manufacturing]
+verticals: [Discrete Manufacturing]
 geolocation: [Europe]
 ---
+
 Thermoplan develops and produces professional coffee machines. The new Internet-connected models need to be remotely managed, constantly tracked for their usage, and able to implement predictive maintenance techniques. The solution consists of an Azure IoT Hub acting as a telemetry data collector of product statistics as well as an asset manager and software and configuration update system. Azure Stream Analytics is used to analyze and distribute the data in real time, including statistics about the amount and types of coffee produced, and cleaning cycles vs. recommended intervals. The solution relies on Azure Data Lake to efficiently store, filter, and analyze the huge quantity of data being produced by tens of thousands of coffee machines, up to 200 GB of telemetry data per day.
 
-
 ### Key technologies used
+
 - [Microsoft Azure Data Factory](https://azure.microsoft.com/en-us/services/data-factory/)
 - [Azure Data Lake](https://azure.microsoft.com/en-us/solutions/data-lake/)
 - [Azure Event Hubs](https://azure.microsoft.com/en-us/services/event-hubs/)
