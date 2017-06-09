@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-03-20
 categories: [Azure App Service]
 color: "blue"
-image: "images/WeCarPool/WeCarPoolWebsite.PNG"
+image: "images/WeCarPool/feat_WeCarPoolWebsite.PNG"
 excerpt:   When We Carpool wanted to migrate its platform PHP back end to Azure, Microsoft helped with the solution. The platform now has continuous delivery from Visual Studio Team Services to Azure.
 language: [English]
 verticals: [Retail & Consumer Goods]

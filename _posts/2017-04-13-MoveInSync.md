@@ -7,7 +7,7 @@ author-link: "https://github.com/rawatsudhir"
 date:   2017-06-01
 categories: [IoT]
 color: "blue"
-image: "images/moveinsync/mispic1.png"
+image: "images/moveinsync/feat_mispic1.png"
 excerpt: In this IoT hackfest, Microsoft teamed up with MoveInSync to help migrate a vehicle tracking solution to the Azure cloud platform from AWS. 
 language: [English]
 verticals:  [Transportation]

@@ -7,7 +7,7 @@ author: "Erica Barone, Daniele Antonio Maggio"
 date: 2016-12-21
 categories: [IoT]
 color: "blue"
-image: "images/PolimiMitreo/mitreoCircusMaximum.jpg"
+image: "images/PolimiMitreo/feat_mitreoCircusMaximum.jpg"
 excerpt: Researchers at Politecnico di Milano worked with Microsoft to develop a way to remotely monitor conditions at the Mitreo archaeological site in Rome. 
 language: [English]
 verticals: [Facility Management]

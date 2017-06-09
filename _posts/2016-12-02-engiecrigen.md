@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-01-06
 categories: [DevOps]
 color: "blue"
-image: "images/2016-12-02-engiecrigen/engie_crigen_vsm_final.jpg"
+image: "images/2016-12-02-engiecrigen/feat_engie_crigen_vsm_final.jpg"
 excerpt: Pour les besoins du centre de recherche ENGIE LAB CRIGEN, Microsoft les a accompagné dans la mise en place d'une plateforme d'hébergement d'application totalement automatisée et basée sur des conteneurs Docker, dans Microsoft Azure.
 language: [French]
 verticals: [Power & Utilities]

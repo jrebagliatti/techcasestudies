@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-02-17
 categories: [IoT]
 color: "blue"
-image: "images/NewhopeLiuhe/deployment3.png"
+image: "images/NewhopeLiuhe/feat_deployment3.png"
 excerpt: New Hope Liuhe, a leading Chinese agricultural company, reached out to Ye Fan Technology and Microsoft for an IoT solution that could provide automatic, real-time remote monitoring and environmental control of chicken farming facilities.  
 language: [English]
 verticals: ["Agriculture, Forestry & Fishing"]

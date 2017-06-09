@@ -7,7 +7,7 @@ author-link: "#"
 date: 2016-11-28
 categories: [Azure App Service]
 color: "blue"
-image: "images/IntuPower/IntuPower-Profile.PNG"
+image: "images/IntuPower/feat_IntuPower-Profile.PNG"
 excerpt: Microsoft teamed up with Intupower to build an Azure App Service API that is integrated with Office 365 services and Microsoft Graph API. The API will be the backbone for a PhoneGap mobile app.
 language: [English]
 verticals: [Education, Professional Services]

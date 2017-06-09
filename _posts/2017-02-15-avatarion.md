@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-04-04
 categories: [IoT]
 color: "blue"
-image: "images/avatarion/avatarkids.jpg"
+image: "images/avatarion/feat_avatarkids.jpg"
 excerpt: Avatarion Technology is running a pilot project that helps hospitalized children stay in touch with home and school through the use of robots. It needed a way to collect telemetry data from the robots and interact with them remotely. Working with Microsoft, they turned to an IoT solution using IoT Hub, Stream Analytics, and Power BI.  
 language: [English]
 verticals: [Health]

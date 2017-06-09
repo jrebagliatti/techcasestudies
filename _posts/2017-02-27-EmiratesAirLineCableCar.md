@@ -7,7 +7,7 @@ author-link: "https://twitter.com/paulfo"
 date: 2017-05-16
 categories: [IoT]
 color: "blue"
-image: "images/emiratesairline/adafruitfeatherlorawiringfix.png"
+image: "images/emiratesairline/feat_adafruitfeatherlorawiringfix.png"
 excerpt: The Emirates Air Line cable car is a 1.5-km crossing of the Thames in London, with 32 cabins bridging the North Greenwich peninsula and Royal Victoria docks. The challenge is to provide instrumentation of the cabin conditions during the crossing, and Wi-Fi across the width of the crossing and within the two stations.
 language: [English]
 verticals: [Facility Management, Transportation & Logistics, Smart Cities]

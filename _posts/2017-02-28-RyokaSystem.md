@@ -7,7 +7,7 @@ author-link: "https://twitter.com/osamum_MS"
 date: 2017-04-19
 categories: [IoT]
 color: "blue"
-image: "images/2017-02-28-RyokaSystem/meeting3.jpg"
+image: "images/2017-02-28-RyokaSystem/feat_meeting3.jpg"
 excerpt: By adding data from IoT presence sensors, Ryoka Systems enhanced their meeting-room availability solution.
 language: [English]  
 verticals: [Facility Management]

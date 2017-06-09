@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-01-06
 categories: [IoT, Azure Functions]
 color: "blue"
-image: "images/2016-12-12-BlueFrogRobotics/Buddy-Happy.png"
+image: "images/2016-12-12-BlueFrogRobotics/feat_Buddy-Happy.png"
 excerpt: As Blue Frog Robotics prepares to deploy Buddy, the companion robot, it staged a hackfest with Microsoft DX France to design and build a cloud solution that is economical while providing the optimum level of services. 
 language: [English]
 verticals: [Retail & Consumer Goods]

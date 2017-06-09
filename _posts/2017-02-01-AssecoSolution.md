@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-04-03
 categories: [Power BI Embedded]
 color: "blue"
-image: "images/AssecoSolutions/5Presentationforcustomers.jpg"
+image: "images/AssecoSolutions/feat_5Presentationforcustomers.jpg"
 excerpt: Microsoft assisted Asseco Solutions in extending a service application with modern visualization built on top of Power BI Embedded in Microsoft Azure. The complex visualizations provide a set of views on IoT data generated from machines located at customer venues.
 language: [English]
 verticals: [Professional Services]

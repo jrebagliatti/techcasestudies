@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-01-20
 categories: [Mobile Application Development with Xamarin, Mobile DevOps]
 color: "blue"
-image: "images/CCCphotos2.png"
+image: "images/feat_CCCphotos2.png"
 excerpt: Microsoft teamed up with Choice Customer Care to streamline the process of patients requesting help in hospital emergency rooms via a web-based API and a Xamarin.Forms cross-platform mobile application. This article describes the development process and the outcomes.
 verticals: [Health]
 language: [English]

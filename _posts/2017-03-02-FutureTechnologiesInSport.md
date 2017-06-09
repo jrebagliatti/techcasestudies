@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-04-17
 categories: [IoT]
 color: "blue"
-image: "images/FTIS/FTIS1.jpg"
+image: "images/FTIS/feat_FTIS1.jpg"
 excerpt: Microsoft joined Future Technologies in Sport, Inc (FTIS) to develop an IoT solution that reduces latency in gathering feedback for both technique and performance during practice sessions for sporting professionals.
 language: [English]
 verticals: [Entertainment]

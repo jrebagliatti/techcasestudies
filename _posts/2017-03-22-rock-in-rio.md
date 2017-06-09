@@ -7,7 +7,7 @@ author-link: "https://twitter.com/Caio_garcez"
 date: 2017-05-23
 categories: [DevOps]
 color: "blue"
-image: "images/2017-03-22-rock-in-rio/Figure_15_Fabricio_Catae_Sanchez.jpg"
+image: "images/2017-03-22-rock-in-rio/feat_Figure_15_Fabricio_Catae_Sanchez.jpg"
 excerpt: Rock in Rio created a mechanism to ensure new versions of their website are correctly deployed to a pool of virtual machines by using autoscaling based on virtual machine scale sets in Azure.  
 language: [English]
 verticals: [Communications/Media]

@@ -7,7 +7,7 @@ author-link: "https://www.linkedin.com/in/olavtollefsen/"
 date: 2017-05-21
 categories: [IoT]
 color: "blue"
-image: "images/2017-03-21-kongsberg/port-berth-700x406.jpg"
+image: "images/2017-03-21-kongsberg/feat_port-berth-700x406.jpg"
 excerpt: During a hackfest with Microsoft, Kongsberg tested an IoT solution that will provide their customers up-to-date data to make better, safer management decisions about loading conditions prior to a vessel's arrival and how much to load while berthed.
 language: [English]
 verticals: [Transportation & Logistics]
