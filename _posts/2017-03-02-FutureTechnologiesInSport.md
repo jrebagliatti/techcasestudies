@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Building a connected bat IoT solution with Future Technologies in Sport"
+title: "Building a connected bat IoT solution with Future Technologies in Sport"
 author: "James Sturtevant, Susan Hinton"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-04-17
+date: 2017-04-17
 categories: [IoT]
 color: "blue"
 image: "images/FTIS/FTIS1.jpg"
 excerpt: Microsoft joined Future Technologies in Sport, Inc (FTIS) to develop an IoT solution that reduces latency in gathering feedback for both technique and performance during practice sessions for sporting professionals.
-language: English
-verticals: [Sports]
+language: [English]
+verticals: [Entertainment]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
 Microsoft and Future Technologies in Sport, Inc (FTIS) jointly developed an IoT solution to gather technique and performance feedback and reduce latency during batting professionals' practice sessions.

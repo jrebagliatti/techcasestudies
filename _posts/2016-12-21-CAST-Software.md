@@ -9,8 +9,10 @@ categories: [Azure App Service]
 color: "blue"
 image: "images/CAST-Software/CastHighlight-Patterns.PNG"
 excerpt: CAST Highlight is a solution that measures the risk, complexity, and cost of application portfolios. CAST and Microsoft added rules that assess the ability of codebases to migrate to Azure—and then moved the solution itself to Azure.
-language: English
-verticals: [Analytics, Risk Management]
+language: [English]
+verticals: [Professional Services]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 [CAST Highlight](http://www.casthighlight.com/) is a recent offering from CAST Software that enables companies to quickly and objectively measure the risk, complexity, and cost of their application portfolios. The solution provides exclusive insights into application risks and opportunities before any investment, rationalization, or retirement decision is made on an IT asset.

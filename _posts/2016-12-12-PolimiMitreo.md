@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "How modern IoT technologies are being used to monitor the ancient Mitreo archaeological site"
+title: "How modern IoT technologies are being used to monitor the ancient Mitreo archaeological site"
 author: "Erica Barone, Daniele Antonio Maggio"
-author-link: "#"
+#author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2016-12-21
+date: 2016-12-21
 categories: [IoT]
 color: "blue"
 image: "images/PolimiMitreo/mitreoCircusMaximum.jpg"
 excerpt: Researchers at Politecnico di Milano worked with Microsoft to develop a way to remotely monitor conditions at the Mitreo archaeological site in Rome. 
 language: [English]
-verticals: [Cultural Heritage, Public Sector, Smart Cities, Environmental]
+verticals: [Facility Management]
+geolocation: [Europe]
 sticky: true
 ---
-
 
 This project focused on the use of IoT technologies to monitor the status of a relevant archaeological site: the Mitreo in the basement of the Circus Maximus in Rome. We worked together with Politecnico di Milano, one of the most important universities in Italy, in order to use data gathered from specific sensors installed inside the Mitreo to remotely monitor CO2, vibrations, temperature, and humidity.
 
