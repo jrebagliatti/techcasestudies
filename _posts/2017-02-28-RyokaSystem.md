@@ -11,6 +11,8 @@ image: "images/2017-02-28-RyokaSystem/meeting3.jpg"
 excerpt: By adding data from IoT presence sensors, Ryoka Systems enhanced their meeting-room availability solution.
 language: [English]  
 verticals: [Facility Management]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 This Internet of Things (IoT) solution displays the availability of the meeting room in the open area to the user. It includes automatic detection of the presence of humans.

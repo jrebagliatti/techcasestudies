@@ -9,8 +9,10 @@ categories: [IoT, Azure Functions, Power BI Embedded]
 color: "blue"
 image: "images/homebase/homebaseai-logo.png"
 excerpt: "In a joint development effort, Microsoft worked with Homebase to develop the next stage of its product roadmap, demonstrating how Homebase could leverage Azure IoT Hub and Azure Stream Analytics to store, analyze, and act on IoT data."
-verticals: [Property Management, Real Estate]
-language: English
+verticals: [Professional Services]
+language: [English]
+geolocation: [North America]
+#permalink: /<page-title>.html
 ---
 
 <img alt="Logo of Homebase" src="{{ site.baseurl }}/images/homebase/homebaseai-logo.png" width="400">

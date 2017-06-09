@@ -10,7 +10,9 @@ color: "blue"
 image: "images/2017-03-04-DSC-Digiwin/DSC-hackathon.JPG"
 excerpt: Scalability and availability are important in cloud services, but so is affordability. By using Azure Functions, Data Systems Consulting lowered the cost of provisioning new customers.
 language: [English]
-verticals: [Data Management]
+verticals: [Professional Services]
+geolocation: [Asia]
+#permalink: /<page-title>.html
 ---
 
 In February 2017, Microsoft Taiwan teamed up with the A1 development team at Data Systems Consulting Co., Ltd., for a one-day hackathon in Taichung to refactor their current application architecture. This core team leveraged Microsoft Azure Functions to improve provisioning of service workloads for new customers.
