@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  "Building a real time vehicle tracking system with MoveInSync"
+title: "Building a real time vehicle tracking system with MoveInSync"
 author: "Sudhir Rawat"
 author-link: "https://github.com/rawatsudhir"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-06-01
+date: 2017-06-01
 categories: [IoT]
 color: "blue"
 image: "images/moveinsync/feat_mispic1.png"
 excerpt: In this IoT hackfest, Microsoft teamed up with MoveInSync to help migrate a vehicle tracking solution to the Azure cloud platform from AWS. 
 language: [English]
-verticals:  [Transportation]
+verticals:  [Logistics]
+geolocation: [Asia]
 ---
 
 In this IoT hackfest, Microsoft teamed up with MoveInSync to help migrate a vehicle tracking solution to the Microsoft Azure cloud platform from Amazon Web Services (AWS) by using Azure IoT Hub and Azure Stream Analytics. This report describes the solution, the results, and the next steps.

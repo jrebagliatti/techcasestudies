@@ -10,7 +10,7 @@ color: "blue"
 image: "images/MidbossBot/MidbossBot-tile-image-440px.png"
 excerpt: MidBoss is a San Francisco-based indie game company. Microsoft built a bot using the Microsoft Bot Framework and LUIS to help increase excitement and exposure for their latest game, 2064 - Read Only Memories. 
 language: [English]
-verticals: ["Retail, Consumer Products & Services"]
+verticals: [Retail & Consumer Goods]
 geolocation: [North America]
 ---
 

@@ -10,9 +10,8 @@ color: "blue"
 image: "images/2017-03-21-kongsberg/feat_port-berth-700x406.jpg"
 excerpt: During a hackfest with Microsoft, Kongsberg tested an IoT solution that will provide their customers up-to-date data to make better, safer management decisions about loading conditions prior to a vessel's arrival and how much to load while berthed.
 language: [English]
-verticals: [Transportation & Logistics]
+verticals: [Logistics]
 geolocation: [Europe]
-#permalink: /<page-title>.html
 ---
 
 Ports are subject to natural and man-caused conditions that affect the depth of berths and the channel. As a result, the harbor bottom is continually changing, and it changes randomly. Knowing the depth is essential for safe port entry and docking, and to avoid underloading vessels in berths that are actually deeper than believed. Considering that each centimeter of additional draft equates to 150 tons of additional product loaded on board, it is clear to see that accurate, up-to-the minute berth depth data can have significant revenue benefits for both the operating company and the port facility—not to mention the safety and environmental benefits of mitigating the risk of vessel groundings.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building a 'big data' platform for a Smart City solution"
+title: "Building a 'big data' platform for the GTI Smart City solution"
 author: "Tory Xu"
 #author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"

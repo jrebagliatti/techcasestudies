@@ -10,10 +10,9 @@ color: "blue"
 image: "images/DroneWorks/feat_drone.JPG"
 excerpt: DroneWorks Inc. worked with Microsoft to build a cloud-based Safety Flight Platform for industrial drones by utilizing Azure IoT Hub, Azure IoT Gateway SDK, Azure Stream Analytics, and other Azure services.
 language: [English]
-verticals: [Other]
-geolocation: [Japan]
+verticals: [Discrete Manufacturing]
+geolocation: [Asia]
 sticky: true
-#permalink: /<page-title>.html
 ---
 
 The drone industry is attracting the attention of many people who have innovative ideas for how to use them, and many companies are focusing on building new applications for drones. Therefore, the market is becoming chaotic because many customized flight controllers have no warranties. As a result, DroneWorks is building alliances with stakeholders to standardize manufactured drones and build an industrial drone flight controller and management system. 

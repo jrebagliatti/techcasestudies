@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Helping Rock in Rio integrate their website build cycle with autoscaling virtual machines"
+title: "Helping Rock in Rio integrate their website build cycle with autoscaling virtual machines"
 author: "Caio Chaves Garcez"
 author-link: "https://twitter.com/Caio_garcez"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -10,12 +10,11 @@ color: "blue"
 image: "images/2017-03-22-rock-in-rio/feat_Figure_15_Fabricio_Catae_Sanchez.jpg"
 excerpt: Rock in Rio created a mechanism to ensure new versions of their website are correctly deployed to a pool of virtual machines by using autoscaling based on virtual machine scale sets in Azure.  
 language: [English]
-verticals: [Communications/Media]
+verticals: [Entertainment]
+geolocation: [South America]
 ---
 
-   ![Figure 0 - Rock in Rio Logo]({{ site.baseurl }}/images/2017-03-22-rock-in-rio/Figure_0_Rock_in_Rio_Logo.png)
-
-<br/>
+![Figure 0 - Rock in Rio logo]({{ site.baseurl }}/images/2017-03-22-rock-in-rio/Figure_0_Rock_in_Rio_Logo.png)
 
 In the months preceding a new event, Rock in Rio's website is constantly being updated as new artists are confirmed, new tickets and bundles are put on sale, marketing strategies are adjusted, and event logistics change. This means that designers and developers are working at a rapid pace, sometimes on urgent demands that just became critical to the business at that very moment.
 
