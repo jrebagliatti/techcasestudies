@@ -7,7 +7,7 @@ author-link: "http://github.com/joalmeid"
 date: 2017-01-05
 categories: [IoT]
 color: "blue"
-image: "images/geratriz/geratriz13.png"
+image: "images/geratriz/feat_geratriz13.png"
 excerpt: Geratriz offers a platform to measure water and energy consumption at shopping malls. The company worked with Microsoft and ComOn to improve the platform's reliability and resilience while reducing operational costs. 
 language: [English]
 verticals: [Power & Utilities]

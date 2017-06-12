@@ -1,32 +1,32 @@
 ---
 layout: post
-title:  "Building a cross-platform bot app with Xamarin and Cognitive Services"
+title: "Building a cross-platform bot app for Powerupcloud with Xamarin and Cognitive Services"
 author: "Alyssa Ong, James Lee, and Ujjwal Kumar"
-author-link: "#"
+#author-link: "#"
 #author-image: "{{site.baseurl}}/images/authors/Ujjwal.jpg"
 date: 2017-05-24
 categories: [Mobile Application Development with Xamarin]
 color: "blue"
-image: "images/Powerupcloud_Xamarin/XamarinReceptionist.png" 
+image: "images/Powerupcloud_Xamarin/feat_XamarinReceptionist.png" 
 excerpt: This article and project is about building a Xamarin-based cross-platform app and integrating it with Cognitive Services and a bot developed by using the Direct Line API from the Microsoft Bot Framework.
 language: [English]
-verticals: [Public Sector, Retail & Consumer Goods, Smart Cities]
+verticals: [Facility Management]
+geolocation: [Asia]
 ---
 
 In this solution we focused on building a Xamarin-based Universal Windows Platform (UWP) receptionist bot for identity, authentication, and response by using the Microsoft Bot Framework, custom NLP (IRA.AI), and Cognitive Services Computer Vision API. This article showcases the creation and integration of this solution with an existing bot.
 
 The receptionist bot can do the following:
+
 - Chat with visitors and guide them to the respective office floor or help them with directions to a nearby train, bus, or taxi. 
 - Verify visitors using facial recognition, check the calendar for an invite, and print a visitor pass.
 - Register new users with facial recognition and ID proof.
 - Talk to visitors by using Cognitive Services Speech if they don't prefer typing.
 
-
 ![Receptionist Xamarin app use case scenario diagram]({{site.baseurl}}/images/Powerupcloud_Xamarin/XamarinReceptionist.png)
 
-<br/>
-
 ### Key technologies used
+
 - [Web Apps feature of Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/web/)
 - [Xamarin for UWP app](https://msdn.microsoft.com/en-us/magazine/mt790185.aspx)
 - [Cognitive Services: Computer Vision API](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/)
@@ -36,6 +36,7 @@ The receptionist bot can do the following:
 - Azure virtual machine to host IRA.AI 
  
 ### Core team
+
 - Arun Britto – Head of Business, APAC, Powerupcloud
 - Ram Kumar – CTO, Powerupcloud
 - Ranjeeth Kruppala – Developer, Powerupcloud

@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-03-08
 categories: [IoT]
 color: "blue"
-image: "images/tajfun-rca.jpg"
+image: "images/feat_tajfun-rca.jpg"
 excerpt: Microsoft worked with Tajfun in Slovenia to develop a multitenant Azure-based solution for its machines that can help lumberjacks and forest owners increase productivity and returns while reducing maintenance and operations costs.  
 verticals: ["Agriculture, Forestry & Fishing"]
 language: [English]

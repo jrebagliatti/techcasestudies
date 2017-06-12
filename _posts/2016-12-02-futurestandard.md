@@ -7,7 +7,7 @@ author-link: "https://twitter.com/masota0517"
 date: 2017-02-04
 categories: [IoT]
 color: "blue"
-image: "images/futurestandard/scorer.png"
+image: "images/futurestandard/feat_scorer.png"
 excerpt: Future Standard offers a one-stop IoT solution for collecting, analyzing, viewing, and acting on data with ease. To offer customers an Azure-based solution, Future Standard and Microsoft created a prototype during a two-day hackfest.
 language: [English]
 verticals: [Discrete Manufacturing]

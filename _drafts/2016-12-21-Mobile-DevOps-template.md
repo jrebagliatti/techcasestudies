@@ -10,7 +10,7 @@ color: "blue"
 #image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
 excerpt: Add a short description of what this article is about, helping fellow developers understand why they would want to read it. What value will they get out of reading it? Focus on the problem or technologies and let that be the guiding light.
 language: The language of the article; e.g., [English]
-verticals: The industry on which this article focuses; choose from the following: ["Agriculture, Forestry & Fishing"], [Banking & Capital Markets], [Discrete Manufacturing], [Education], [Government], [Health], [Hospitality & Travel], [Insurance], [Logistics], [Media & Cable], [Nonprofit], [Power & Utilities], [Process Mfg & Resources], [Professional Services], [Public Safety], [Retail & Consumer Goods], [Telecommunications]
+verticals: The industry on which this article focuses; choose from the following: ["Agriculture, Forestry & Fishing"], [Banking & Capital Markets], [Discrete Manufacturing], [Education], [Entertainment], [Facility Management], [Government], [Health], [Hospitality & Travel], [Insurance], [Logistics], [Media & Cable], [Nonprofit], [Power & Utilities], [Process Mfg & Resources], [Professional Services], [Public Safety], [Retail & Consumer Goods], [Security], [Telecommunications]
 geolocation: The geolocation of the article; choose one of the following: [Africa], [Asia], [Central America and the Caribbean], [Europe], [Middle East], [North America], [Oceania], [South America]
 ---
 

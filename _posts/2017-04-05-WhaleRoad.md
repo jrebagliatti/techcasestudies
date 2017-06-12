@@ -7,9 +7,9 @@ author-link: "https://twitter.com/ItsJamesIRL"
 date: 2017-06-06
 categories: [Desktop Bridge]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/WhaleRoad/video_thumb.png"
 excerpt: Using Desktop Bridge made it easy for this small studio to avoid inconvenient upgrades and deploy 'The Great Whale Road' to the Windows Store, greatly increasing its potential audience.
-language: English
+language: [English]
 verticals: [Entertainment]
 geolocation: [Europe]
 ---

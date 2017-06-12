@@ -7,7 +7,7 @@ author: "Valery Jacobs, Sander van den Hoven, and Eric Maino"
 date: 2017-03-24
 categories: [IoT, Azure Functions]
 color: "blue"
-image: "images/Beijer/BCC-schematic-V3small1.jpg"
+image: "images/Beijer/feat_BCC-schematic-V3small1.jpg"
 excerpt: Beijer Automotive and Microsoft conducted a hackfest to determine whether it is possible to send very large amounts of data to Azure and to receive and process that data. Beijer needed a solution for ingesting car-sensor data into Azure in order to turn the data into useful information and alerts.
 language: [English]
 verticals: [Logistics]

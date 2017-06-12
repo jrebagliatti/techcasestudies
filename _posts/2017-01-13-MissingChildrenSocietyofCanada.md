@@ -7,7 +7,7 @@ author-link: "https://twitter.com/WirelessLife"
 date: 2017-01-31
 categories: [DevOps, Azure App Service, Mobile Application Development with Xamarin]
 color: "blue"
-image: "images/MissingChildrenSocietyofCanada/image1.png"
+image: "images/MissingChildrenSocietyofCanada/feat_image1.png"
 excerpt: Alongside members of the City of Calgary and Calgary Police, Missing Children Society of Canada partnered with Microsoft in an innovation workshop to understand how Azure Functions, Xamarin, and DevOps best practices can better address their need to quickly provide police with information about children who are reported missing. 
 language: [English]
 verticals: [Public Safety]

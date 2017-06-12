@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-05-02
 categories: [Power BI Embedded]
 color: "blue"
-image: "images/snapbizzpbie/snapbizzpbie7.png"
+image: "images/snapbizzpbie/feat_snapbizzpbie7.png"
 excerpt: Microsoft worked with SnapBizz to design, deploy, and render Power BI Embedded reports, reducing management time and enabling future cross-platform integration. 
 language: [English]
 verticals:  [Retail & Consumer Goods]

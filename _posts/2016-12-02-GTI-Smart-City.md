@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Building a 'big data' platform for a Smart City solution"
+title: "Building a 'big data' platform for the GTI Smart City solution"
 author: "Tory Xu"
-author-link: "#"
+#author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date: 2017-02-04
-categories: IoT
+categories: [IoT]
 color: "blue"
-image: "images/GTISmartCity/GTI_033.JPG"
+image: "images/GTISmartCity/feat_GTI_033.JPG"
 excerpt: Microsoft teamed up with GTI, a leading IoT platform and service provider headquartered in Beijing, to develop the "big data" platform used in its Smart City solution, which enables data-driven city operation. 
-language: English
-verticals: Smart Cities
+language: [English]
+verticals: [Facility Management, Security]
+geolocation: [Asia]
 sticky: true
 ---
 

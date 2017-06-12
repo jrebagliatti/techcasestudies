@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-01-23
 categories: [IoT]
 color: "blue"
-image: "images/Proxfinity/ProxfinityLogo.png"
+image: "images/Proxfinity/feat_ProxfinityLogo.png"
 excerpt: In a joint development effort, Microsoft worked with Proxfinity to develop a proof of concept that demonstrates how Proxfinity can leverage Azure IoT Hub and Azure Stream Analytics to support its migration from Parse.
 verticals: [Retail & Consumer Goods]
 language: [English]

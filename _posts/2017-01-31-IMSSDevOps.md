@@ -7,7 +7,7 @@ author-link: "http://www.superneurona.com"
 date: 2017-03-27
 categories: [DevOps]
 color: "blue"
-image: "images/IMSSDevOps/20170110_161917.jpg"
+image: "images/IMSSDevOps/feat_20170110_161917.jpg"
 excerpt: Mexico's IMSS agency is implementing processes to manage its complex systems and comply with government requirements. In this project, Microsoft worked with an IMSS team to adopt DevOps practices for Java projects.
 language: [English]
 verticals: [Health]

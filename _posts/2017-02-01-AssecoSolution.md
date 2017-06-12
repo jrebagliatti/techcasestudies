@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "Using Power BI Embedded, Asseco can modernize visualization for effective service processes"
+title: "Using Power BI Embedded, Asseco can modernize visualization for effective service processes"
 author: "Miroslav Kubovcik, Lubomir Goryl, and Stanislav Harvan"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date:   2017-04-03
+date: 2017-04-03
 categories: [Power BI Embedded]
 color: "blue"
-image: "images/AssecoSolutions/5Presentationforcustomers.jpg"
+image: "images/AssecoSolutions/feat_5Presentationforcustomers.jpg"
 excerpt: Microsoft assisted Asseco Solutions in extending a service application with modern visualization built on top of Power BI Embedded in Microsoft Azure. The complex visualizations provide a set of views on IoT data generated from machines located at customer venues.
-language: English
-verticals: Technology
+language: [English]
+verticals: [Professional Services]
+geolocation: [Europe]
+#permalink: /<page-title>.html
 ---
 
 Asseco Solutions, working with Microsoft, extended its existing Smart Connected Solutions (SCS) application that provides a service system for its customers with all relevant machine data and information, including scheduling of next service date. The service app dashboard and reporting were refreshed with modern visualization built on top of Power BI Embedded in Microsoft Azure. The complex visualizations provide a set of views on IoT data generated from machines located at customer sites, which simplifies the overall complexity of the maintenance cycle. 

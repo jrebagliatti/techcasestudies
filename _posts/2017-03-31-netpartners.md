@@ -7,7 +7,7 @@ author-link: "https://twitter.com/Caio_garcez"
 date: 2017-04-19
 categories: [Power BI Embedded]
 color: "blue"
-image: "images/2017-03-31-netpartners/Figure_1_Excel_Report.png"
+image: "images/2017-03-31-netpartners/feat_Figure_1_Excel_Report.png"
 excerpt: Netpartners leveraged Power BI Embedded for its new Sales Assistant solution, which will deliver customized sales reports to hundreds of customers.
 language: [English]
 verticals: [Telecommunications, Discrete Manufacturing, Process Mfg & Resources]

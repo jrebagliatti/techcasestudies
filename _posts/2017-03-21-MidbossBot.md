@@ -7,18 +7,16 @@ author-link: "https://twitter.com/FeyTechnologist"
 date: 2017-06-08
 categories: [Bot Framework]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/MidbossBot/MidbossBot-tile-image-440px.png"
 excerpt: MidBoss is a San Francisco-based indie game company. Microsoft built a bot using the Microsoft Bot Framework and LUIS to help increase excitement and exposure for their latest game, 2064 - Read Only Memories. 
 language: [English]
-verticals: ["Retail, Consumer Products & Services"]
+verticals: [Retail & Consumer Goods]
 geolocation: [North America]
-
 ---
 
 MidBoss is a San Francisco-based indie game company that faced the challenge of how to increase exposure and discoverability of their video games in an already over-saturated market. To garner excitement for their recently re-released game, *2064: Read Only Memories*, we brought the main character [Turing](http://readonlymemories.wikia.com/wiki/Turing) to life by using the Microsoft Bot Framework. While the TuringBot by no means passed the [sapience test](https://en.wikipedia.org/wiki/Turing_test), it did implement basic UUID-based authentication, was able to have meaningful conversations through complex dialogs, and incorporated natural language processing through LUIS. We created a great promotional tool that not only functioned for the current game edition, but is updatable for future products.
-
  
-### Key  technologies used
+### Key technologies used
 
 - [Microsoft Bot Framework (Node.js)](https://dev.botframework.com/)
 - [LUIS](https://www.luis.ai/)
@@ -41,7 +39,7 @@ MidBoss is a San Francisco-based indie game company that faced the challenge of 
 
 *2064: Read Only Memories* is a retro futuristic take on the point-and-click adventure genre that stars "Turing," a character named after Alan Turing. The game features a rich mature narrative and unique gameplay challenges hidden within the beautiful interactive pixel scenes. Released for PlayStation 4 on January 17, 2017, MidBoss still has a long way to go in reaching their potential audience. With this project, we hope MidBoss's existing and future audience will experience the TuringBot and be able to interact with this character from the game. Following is a screenshot from *2064*.
 
-![2064 screenshot](http://midboss.com/img/2064_turingHospital.gif)
+![2064 screenshot]({{ site.baseurl }}/images/MidbossBot/2064_turingHospital.gif)
 
 <br/>
 

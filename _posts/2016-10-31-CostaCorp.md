@@ -6,7 +6,7 @@ author-link: "#"
 date: 2016-11-03
 categories: [IoT]
 color: "blue"
-image: "images/CostaTablestech.png"
+image: "images/feat_CostaTablestech.png"
 excerpt: This article showcases IoT setup for Costa Farms using the Atlas Scientific pH Sensor and Adafruit Feather M0 Wifi with the Arduino IDE, sending pH messages to Microsoft Azure.
 language: [English]
 verticals: ["Agriculture, Forestry & Fishing"]
