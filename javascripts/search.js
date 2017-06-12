@@ -237,7 +237,7 @@ var customSearch = (function($){
     $(document).ready(function() {
 
         // Added logic to re-apply filters when page is reloaded
-        window.onpopstate = function(event) {
+        window.onhashchange = function(event) {
             reApplyFilters();
         };
 
@@ -488,3 +488,9 @@ var customSearch = (function($){
     }
 
 }(jQuery));
+
+if(!String.prototype.startsWith){
+    String.prototype.startsWith = function (str) {
+        return !this.indexOf(str);
+    }
+}
