@@ -7,7 +7,7 @@ author-link: "https://twitter.com/jakkaj"
 date: 2017-06-13
 categories: [Bot Framework, Cognitive Services]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "{{ site.baseurl }}/images/2017-04-20-TechnologyOne/UniBot.PNG"
 excerpt: TechnologyOne teamed up with Microsoft to create a universal language bot to make university enrollment and daily university life easier for international students.  
 language: [English]
 verticals: [Education, Hospitality & Travel]
