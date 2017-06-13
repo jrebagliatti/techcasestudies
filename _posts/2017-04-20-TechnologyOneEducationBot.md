@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "TechnologyOne teamed up with Microsoft to create a universal language bot to make university enrollment and daily university life easier for international students"
+title:  "How TechnologyOne built a bot translation system to help international students talk to universities"
 author: "Jordan Knight"
 author-link: "https://twitter.com/jakkaj"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date: 2017-06-13
 categories: [Bot Framework, Cognitive Services]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
-excerpt: This article is an overview of how we built a bot translation system to help international students talk to universities.  
+image: "images/2017-04-20-TechnologyOne/UniBot.PNG"
+excerpt: TechnologyOne teamed up with Microsoft to create a universal language bot to make university enrollment and daily university life easier for international students.  
 language: [English]
 verticals: [Education, Hospitality & Travel]
 geolocation: [Oceania]
@@ -78,7 +78,7 @@ This in-depth video demonstration runs through some of the main features of UniB
 
 ## Customer profile
 
-TechnologyOne, one of Australia's largest publicly listed software companies (listed 1999), is based in Fortitude Valley, Brisbane. 
+[TechnologyOne](https://www.technologyonecorp.com/home), one of Australia's largest publicly listed software companies (listed 1999), is based in Fortitude Valley, Brisbane. 
 
 TechnologyOne is an independent software vendor who creates a range of enterprise management software packages for a number of verticals including local government, financial services, health, education, and corporate. They have a large in-house development team that is continuously building and improving their products. They have specialized products for education, which is where this bot will be integrated initially. 
 
@@ -211,6 +211,8 @@ Getting started is simple. Follow these steps to set up a basic bot project.
 
 > **Special note about Node.js** –
 >  Even though we're dealing with C#-based bots in this document, for Node you can install the Bot Builder npm package to get started,  although this language translation system will not work without being ported. For more information, see the [full Node.js Bot Builder documentation](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-quickstart).
+
+<br/>
 
 ### Getting started with translation
 
@@ -482,6 +484,8 @@ If you get stuck, you can always follow along with these [Bot Translator samples
 
 > **Note** – This will only work on projects that use the full .NET Framework; that is, this will not work on a .NET Core-based project due to it using older SOAP style services that are not supported on newer project types. 
 
+<br/>
+
 #### Authentication
 
 Before you can use the Cognitive Services Translator Speech API, you must convert your subscription key into a bearer token. This token will have a lifespan of under ten minutes. You will want to cache the bearer token result so the app is not constantly requesting bearer tokens when it doesn't have to. 
@@ -589,7 +593,6 @@ We played around with translating dialog buttons. For example, "please select a 
 - [Simple Ignite Bot sample code - MessagesController.cs](https://github.com/MSFTAuDX/SimpleBot/blob/master/SimpleIgniteBot/SimpleIgniteBot/Controllers/MessagesController.cs)
 - [Simple Ignite Bot sample code](https://github.com/MSFTAuDX/SimpleBot)
 - [Simple LUIS bot examples in the Bot Framework documentation](https://docs.botframework.com/en-us/bot-intelligence/language/)
-- [TechnologyOne Education Products](https://www.technologyonecorp.com/education)
 
 ### Videos
 
