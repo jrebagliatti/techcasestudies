@@ -12,7 +12,6 @@ excerpt: The most important action for a seismic warning system is to send alert
 language: [English]
 verticals: [Public Safety]
 geolocation: [Central America and the Caribbean]
-#permalink: /<page-title>.html
 sticky: true
 ---
 
@@ -246,6 +245,14 @@ It can also offer more complete civil protection solutions for buildings, indust
 This seismic warning system is one of only four such systems that exist worldwide, alongside those belonging to the Japanese, Mexican, and Israeli governments. The solution, which can sound an alarm of up to 2 minutes in advance of an earthquake, offers users not only real-time information regarding existing risk levels, but also affords the opportunity to interact with other individuals and create a community of contacts through which help can be requested or provided in emergency situations. 
 
 SkyAlert's solution will cover 100 percent of the areas under seismic risk in Mexico while providing alert services to more than 50 million Mexicans.
+
+## Additional resources
+
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources (novice to expert): [Microsoft/TechnicalCommunityContent](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)
 
 <!-- Contents -->
 [architecture]: /images/Architecture.png "Architecture"

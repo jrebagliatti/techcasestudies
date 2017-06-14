@@ -19,9 +19,9 @@ This project focused on the use of IoT technologies to monitor the status of a r
 
 The Mitreo is a sanctuary discovered in the 1930s in good condition during structural work for the Teatro Nazionale dell’Opera. Probably built in the second century AD, the large building was modified many times, and in the third century AD, its ground floor became a Mitreo. 
 
-*Mitreo at Circus Maximus - Rome*
+*Mitreo at Circus Maximus in Rome*
 
-![DataVisualization]({{ site.baseurl }}/images/PolimiMitreo/mitreoCircusMaximum.jpg)
+![Photo of interior]({{ site.baseurl }}/images/PolimiMitreo/mitreoCircusMaximum.jpg)
 
 
 IoT technologies used:
@@ -236,25 +236,21 @@ Moreover, PoliMi has built strong skills for Azure platforms and can easily recr
 
 Customer quote:
 
->*Collaborating with Microsoft Italy proved to be an asset in the development of our IoT-based monitoring system at Circus Maximus, and represents a stepping stone for possibly replicating the same design in other upcoming projects.*
+>Collaborating with Microsoft Italy proved to be an asset in the development of our IoT-based monitoring system at Circus Maximus, and represents a stepping stone for possibly replicating the same design in other upcoming projects.
 
 
 ## Additional resources ##
 
 - Github repository for the C# console application running on the field gateway:
 [https://github.com/erryB/Polimi-Mitreo-Console-Application](https://github.com/erryB/Polimi-Mitreo-Console-Application "GitHub repository for the C# console application")
-
 - Information about the Mitreo at Circus Maximus, from Sovrintendenza Capitolina website:
 [http://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/mitreo_del_circo_massimo](http://www.sovraintendenzaroma.it/i_luoghi/roma_antica/monumenti/mitreo_del_circo_massimo)
-
 - Sacrum Facere convention, the archaeological convention organized in Trieste last November where the project was presented by Luca Mottola and Koustabh Dolui:
 
-*Sacrum Facere convention*
+  ![Convention program]({{ site.baseurl }}/images/PolimiMitreo/sacrumFacere.png)
 
-![DataVisualization]({{ site.baseurl }}/images/PolimiMitreo/sacrumFacere.png)
-
-
-
-
-
-
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources (novice to expert): [Microsoft/TechnicalCommunityContent](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)

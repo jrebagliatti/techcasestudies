@@ -12,12 +12,11 @@ excerpt: Beijer Automotive and Microsoft conducted a hackfest to determine wheth
 language: [English]
 verticals: [Logistics]
 geolocation: [Europe]
-#permalink: /<page-title>.html
 ---
 
 Beijer Automotive and Microsoft conducted a hackfest to determine whether it is possible to send very large amounts of data to Azure and to receive and process that data. Beijer needed a technically and economically feasible solution for ingesting car-sensor data into Azure in order to turn the data into useful information and alerts. This report outlines the numbers that the project team was aiming for and how the team calculated other metrics and performance targets.
 
-**Key technologies used:**
+**Key technologies used**
 
 - Azure Functions
 - Azure Service Fabric
@@ -25,12 +24,12 @@ Beijer Automotive and Microsoft conducted a hackfest to determine whether it is 
 
 **The core team**
 
-- Beijer and Sioux:	
+- Beijer and Sioux
   - Daan Gerrits
   - Matthijs van Bemmelen
   - Erwin de Jong	
 
-- Microsoft:
+- Microsoft
   - Eric Maino
   - Valery Jacobs
   - Sander van den Hoven
@@ -1034,13 +1033,16 @@ The hackfest proved that it is possible to send very large amounts of data to Az
 
 > “The hackfest made it possible for us to work with specialists from Microsoft and to think of more efficient and scalable solutions and designs on Azure.”
 >
->— Ronald Beijer, founder of Beijer Automotive
+>—Ronald Beijer, founder of Beijer Automotive
 
 Additional resources
 --------------------
 
-- [Beijer Automotive home page](http://www.beijer.com/)
-
-- [GitHub repo](https://github.com/DXNL/BeijerHackFest). This repo contains all the code in Sources folder.
-
-- [Azure Vehicle Telemetry Analytics](https://gallery.cortanaintelligence.com/Solution/Vehicle-Telemetry-Analytics-9)
+- [Beijer Automotive BV](https://www.beijer.com/) home page
+- GitHub repo: [DXNL/BeijerHackFest](https://github.com/DXNL/BeijerHackFest) (all code located in Sources folder)
+- Vehicle [Telemetry Analytics](https://gallery.cortanaintelligence.com/Solution/Vehicle-Telemetry-Analytics-9)
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources (novice to expert): [Microsoft/TechnicalCommunityContent](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)
