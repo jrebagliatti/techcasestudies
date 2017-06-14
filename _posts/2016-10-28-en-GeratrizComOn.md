@@ -12,7 +12,6 @@ excerpt: Geratriz offers a platform to measure water and energy consumption at s
 language: [English]
 verticals: [Power & Utilities]
 geolocation: [Europe]
-#permalink: /<page-title>.html
 sticky: true
 ---
 
@@ -323,3 +322,11 @@ Taking into account the project's results, Geratriz determined an action plan ba
 - We identified the need to create a WeMeter back office run and managed by Geratriz. This back office will facilitate and guide the deployment and operational tasks at a given facility. It will give Geratriz operators the ability to obtain device information and perform remote tasks such as configuration changes, device rebooting, and bulk provisioning.
 
 - Geratriz has been working with an international partner, [*SenseWaves*](http://www.sensewaves.io/). This partner's product, Adaptix, automates key aspects of building energy management, extracting building intelligence from regular electricity, water, and gas meters. This product makes available real-time forecasting, anomaly detection, and pattern analysis to detect irregularities within milliseconds. Geratriz is set to integrate Adaptix with WeMeter. From initial briefings, we understood that SenseWaves' technical architecture for Adaptix is implemented with Docker containers and Kubernetes. Azure supports Kubernetes 1.4 and has recently released a preview for native support: [*Kubernetes on Azure Container Service (preview)*](https://azure.microsoft.com/en-us/blog/azure-container-service-the-cloud-s-most-open-option-for-containers/). This will ease integration efforts with Azure and WeMeter.
+
+## Additional resources
+
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources (novice to expert): [Microsoft/TechnicalCommunityContent](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)

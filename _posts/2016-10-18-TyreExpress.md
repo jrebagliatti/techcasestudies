@@ -4,7 +4,7 @@ title: "Building a tire monitoring solution with Tyre Express"
 author: "Gandhali Samant"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date: 2016-11-02
+date: 2017-06-14
 categories: [IoT]
 color: "blue"
 image: "images/feat_TyreExpress1.png"
@@ -12,9 +12,11 @@ excerpt: In this IoT hackfest, Microsoft teamed up with Tyre Express to connect 
 language: [English]
 verticals: [Logistics]
 geolocation: [Asia]
-#permalink: /<page-title>.html
+permalink: /iot/2016/11/02/TyreExpress.html
 sticky: true
 ---
+
+*Updated with additional resources*
 
 Tyre Express is a startup that is pioneering tire lifecycle management for fleet operators. Its IoT platform enables fleet operators to track tires and monitor their performance (pressure, temperature, and so on) on a real-time basis. This will enable them to carry out preventive maintenance and detect any abnormalities in the system. This will also enable fleet operators to control their tire inventory and build operational efficiency by reducing tire wear and increasing mileage. Tyre Express has interest from several clients and prominent fleet operators in the logistics space to test this solution.
 
@@ -36,7 +38,7 @@ The project team included the following:
 - Surbhi Jain – Microsoft, Audience Marketing, DX India
 - Shweta Gupta – Microsoft, Senior SDE
 - Dinesh Wakale – Tyre Express, Founding Team
-- Brijesh Shukla –  Tyre Express, Founding Team
+- Brijesh Shukla – Tyre Express, Founding Team
 - Vinit Palkar – Tyre Express, Founding Team
 - Anand Balagopal – Tyre Express, Development Team
 - Rakesh Barai – Tyre Express, Development Team
@@ -248,9 +250,10 @@ Here is a quote from the customer:
 
 > “We are delighted to partner with Microsoft for the Azure services cloud platform which helps us to deliver an enhanced customer experience. Tires are one of the largest consumable for the fleet operators after fuel. Our IoT platform helps customers monitor tire performance in real time as well as track inventory. Azure enables us to create a superior customer experience by allowing us to seamlessly integrate our devices with the cloud, store and analyze the data, and visualize the same in the form of easy-to-understand dashboards. We can help customers take suitable action based on such inputs to improve operational efficiency, reduce costs, and improve profitability.” 
 
+## Additional resources ##
 
-
-
-
-
-
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources (novice to expert): [Microsoft/TechnicalCommunityContent](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)
