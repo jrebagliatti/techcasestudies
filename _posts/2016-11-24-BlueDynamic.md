@@ -4,7 +4,7 @@ title: "An IoT solution for Blue Dynamic to gauge customer visits to brick-and-m
 author: "Filip Rehorik, Martin Simecek, and Jan Pospisil"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date: 2016-12-23
+date: 2017-06-14
 categories: [IoT]
 color: "blue"
 image: "images/BlueDynamic/feat_ArchitectureDiscussion.jpg"
@@ -12,9 +12,11 @@ excerpt: Microsoft and Blue Dynamic conducted a hackfest to create a proof of co
 language: [English]
 verticals: [Retail & Consumer Goods]
 geolocation: [Europe]
-#permalink: /<page-title>.html
+permalink: /iot/2016/12/23/BlueDynamic.html
 sticky: true
 ---
+
+*Updated with additional resources*
 
 Microsoft and Blue Dynamic joined forces at a hackfest to create a proof of concept for a new product. The scope was to capture customer faces from a camera, do real-time counting and advanced analysis of the captured faces, and provide outputs for other systems and UI.
 
@@ -432,11 +434,14 @@ It was a pleasure to work with the Blue Dynamic team on a real project demanded 
 
 >“Cloud is a big buzz word and everybody can imagine something different. From my perspective, the key component which enabled us to solve our pain points is Azure IoT Hub. Using IoT Hub and related services, we were able to implement an enterprise-grade infrastructure in a very short timeframe. This makes our solution very efficient while robust and prepared for growing usage in the future.”
 
->*—Jiri Hosenseidl, consultant and analyst* 
-
+>—Jiri Hosenseidl, consultant and analyst
 
 ## Additional resources ##
 
-- [GitHub repository](https://github.com/pospanet/TechCaseStudy_BlueDynamic) 
-- [Related technical article published on a local (Czech) blog](https://blogs.msdn.microsoft.com/vyvojari/2016/10/21/azure-resource-manager-a-sablony-prakticky/)
-
+- GitHub repository: [pospanet/TechCaseStudy_BlueDynamic](https://github.com/pospanet/TechCaseStudy_BlueDynamic) 
+- Related technical article published on a local (Czech) blog: [Azure Resource Manager a šablony prakticky](https://blogs.msdn.microsoft.com/vyvojari/2016/10/21/azure-resource-manager-a-sablony-prakticky/)
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources (novice to expert): [Microsoft/TechnicalCommunityContent](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)

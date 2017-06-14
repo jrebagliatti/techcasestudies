@@ -4,7 +4,7 @@ title: "Croke Park: Sound and weather data monitoring within a smart stadium"
 author: "Niall Moran"
 #author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date: 2017-03-01
+date: 2017-06-14
 categories: [IoT]
 color: "blue"
 image: "images/feat_croke01.jpg"
@@ -16,7 +16,7 @@ permalink: /iot/2016/10/28/CrokePark.html
 sticky: true
 ---
 
-*This report was updated on March 1, 2017, to add a section on security.*
+*Updated with a section on security and additional resources*
 
 Boasting a capacity for 82,300 people, Ireland's Croke Park stadium is one of the largest stadiums in Europe. As the national home to the Gaelic games and headquarters of the Gaelic Athletic Association (GAA), it hosts numerous high-profile international sporting, cultural, and music events. And now, within this urban test-bed infrastructure, lies the perfect Internet of Things (IoT) microcosm: a true “smart stadium.” 
 
@@ -265,3 +265,11 @@ The purpose of this project was primarily research and some decisions made were 
   “Black out” periods were also experienced at the half-time break, where the Azure platform received no data from the sound monitoring system. In addition to the causes discussed above, we have theorized that people initiating connections with their mobile devices to the Croke Park free Wi-Fi network at the start of half-time generate a huge network traffic at the half time break (as seen in the graph above). This may jam the data transmission between the gateway and Azure, which further increases the data lost. A solution to this will also be tested in the project under way as described above.
     
 - **Payload frequency.** The edge microphones aggregated data and sent pay loads to the gateways every minute. This frequency was perfectly fine for the sound pollution use case when data is aggregated over 15-minute periods; however, this could mean missing a spike at a match. As this solution proved very successful for fan engagement, the team will be investigating opportunities to increase the data frequency.
+
+## Additional resources ##
+
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources (novice to expert): [Microsoft/TechnicalCommunityContent](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)
