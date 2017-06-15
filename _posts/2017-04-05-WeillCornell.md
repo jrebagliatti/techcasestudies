@@ -7,7 +7,7 @@ author-link: "#"
 date: 2017-06-15
 categories: [Bot Framework]
 color: "blue"
-image: "/images/WeillCornell/weill_show_examples_tile.png"
+image: "images/WeillCornell/weill_show_examples_tile.png"
 excerpt: A team from Weill Cornell Medicine and Microsoft built a chatbot to support the medical school's knowledge base, making searches for specific gene and cancer variations more efficient and reliable. 
 language: English
 verticals: [Health]
