@@ -17,6 +17,8 @@ geolocation: [North America]
 
 <img alt="IPM Logo" src="{{ site.baseurl }}/images/WeillCornell/logo.jpg" width="500">
 
+<br/>
+
 Microsoft joined the [Englander Institute of Precision Medicine](http://ipm.weill.cornell.edu/) (IPM) at Weill Cornell Medicine for a weeklong hackfest to develop a chatbot that supports both text and voice interactions with the [Precision Medicine Knowledgebase](https://pmkb.weill.cornell.edu) (PMKB) for clinical cancer variants and interpretations.
 
 The knowledge base currently supports 163 genes and 518 variants with 404 clinical interpretations. Pathologists and researchers are tasked with accessing this information by clicking through the given portal; however, in an attempt to make the knowledge base more mobile, we created a bot using the Microsoft Bot Framework that connects to several channels including Microsoft Teams, Skype, Slack, and WebChat. As a result, clinicians can access this data in many different ways and make life-changing clinical decisions at a faster rate. Through the use of natural language processing (NLP) within LUIS, we were able access this data and display it for the user more quickly.
@@ -304,6 +306,7 @@ Below is an example conversation using the recording option.
 
 ![Speech Recording Example]({{ site.baseurl }}/images/WeillCornell/record_example.png)
 
+<br/>
 
 This solution only works locally due to client-side restrictions, but by adding functionality to their current PMKB website, clients can have site microphone access and record the user.
 
