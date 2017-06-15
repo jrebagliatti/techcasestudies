@@ -2,7 +2,7 @@
 layout: post
 title:  "Bot gives Weill Cornell clinicians fast access to medical data"
 author: "Heather Shapiro, Gavin Bauman, and Andrew Reitano"
-author-link: "https://twitter.com/microheather, https://twitter.com/gavination2, https://twitter.com/batslyadams"
+author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date: 2017-06-15
 categories: [Bot Framework]
