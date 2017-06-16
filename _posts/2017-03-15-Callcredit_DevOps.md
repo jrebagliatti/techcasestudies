@@ -145,11 +145,11 @@ The application needs to be deployed multiple times, both through the developmen
 
 As a result of the value stream mapping, we decided to focus on the following areas during the hackfest.
 
-#### Migration of build and release processes to Visual Studio Team Services
+#### Migrate build and release processes to Visual Studio Team Services
 
 A discussion was had regarding taking the builds from Jenkins and using Visual Studios Team Services release management. Callcredit currently uses Team Foundation Server and was keen to evaluate Visual Studio Team Services, which also provides a single location for source code, build, release, and package management, enabling continuous integration and continuous delivery. These features significantly reduce the complexity of Numéro's existing development infrastructure. The overwhelming preference from both Numéro and Callcredit was to use Team Services for the hackfest. 
 
-#### Deploy Numéro Interactive using containers
+#### Deploy Numéro Interactive by using containers
 
 Callcredit defined the following requirements for moving forward with Numéro:
 
@@ -197,7 +197,7 @@ The first step was to fork the existing repository. I could have created a new r
   
   <br/>
 
-- **Docker artifact**
+- **Enable Docker artifact**
 
   The first artifact I built was to enable Docker on Windows Server. There is a base "Windows Server 2016 with Containers" image on Azure, but we wanted to use a base image with Visual Studio, so we'd need to install Docker.
 
@@ -403,6 +403,8 @@ For the base images, the build pipeline is extremely straightforward because the
 
   The **Qualify Image Name** check box is selected, which prefixes the image name with the registry name, as specified in the **Docker Registry Connection** field. This means that when we push the image, it goes to the appropriate registry without any additional tags.
   
+  <br/>
+  
   ![Build task]({{ site.baseurl }}/images/callcreditdevops/build_common.png)
 
   <br/>
@@ -410,6 +412,8 @@ For the base images, the build pipeline is extremely straightforward because the
 - **Push task**
   
   The push task simply pushes the image up to the Azure Container Registry. The base images are also tagged **Latest**, which meant we didn't have to worry about image versions when building images relying on the base images. In a production environment, this would not be recommended because some control is lost as to what changes are made into images built from the base images.
+  
+  <br/>
   
   ![Push task]({{ site.baseurl }}/images/callcreditdevops/build_common.png)
   
