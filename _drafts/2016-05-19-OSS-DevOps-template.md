@@ -3,11 +3,10 @@ layout: post
 title: "Add title with customer name here"
 author: "Add author name here"
 author-link: "Add URL for author's Twitter account here"
-#author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date: 2016-05-19
 categories: [DevOps]
 color: "blue"
-#image: "{{ site.baseurl }}/images/imagename.png" #should be ~350px tall
+image: "images/projectname/feat_image.png" #must be 440px wide
 excerpt: Add a short description of what this article is about, helping fellow developers understand why they would want to read it. What value will they get out of reading it? Focus on the problem or technologies and let that be the guiding light.
 language: The language of the article; e.g., [English]
 verticals: The industry on which this article focuses; choose from the following: ["Agriculture, Forestry & Fishing"], [Banking & Capital Markets], [Discrete Manufacturing], [Education], [Entertainment], [Facility Management], [Government], [Health], [Hospitality & Travel], [Insurance], [Logistics], [Media & Cable], [Nonprofit], [Power & Utilities], [Process Mfg & Resources], [Professional Services], [Public Safety], [Retail & Consumer Goods], [Security], [Telecommunications]
