@@ -225,3 +225,10 @@ Natividad Herrasti (ETIC):
 
 > Azure IoT Suite is the basic and powerful tool for the development of IoT solutions by capturing data from sensors and machines, by storing it in the cloud, by processing and extracting insights and knowledge from all data and by presenting these insights in powerful interactive dashboards. After the hackfest, ETIC has the expertise for creating and developing many new IoT solutions.
 
+## Additional resources
+
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources: [Microsoft Technical Community Content](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)

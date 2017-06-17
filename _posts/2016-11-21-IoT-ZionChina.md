@@ -379,3 +379,10 @@ Zion China and Microsoft DX China worked together to determine how to integrate 
 
 With Azure IoT Hub, Machine Learning, SQL Database, and Stream Analytics, Zion China has evolved its solution to the next level. With the availability of these new technologies, industry experts can work together to bring a better life to more patients. 
 
+## Additional resources
+
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources: [Microsoft Technical Community Content](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)

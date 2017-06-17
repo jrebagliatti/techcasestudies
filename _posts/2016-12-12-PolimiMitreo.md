@@ -3,7 +3,6 @@ layout: post
 title: "How modern IoT technologies are being used to monitor the ancient Mitreo archaeological site"
 author: "Erica Barone, Daniele Antonio Maggio"
 #author-link: "#"
-#author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date: 2016-12-21
 categories: [IoT]
 color: "blue"
@@ -252,5 +251,5 @@ Customer quote:
 - Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
 - Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
 - Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
-- Check out a curated collection of IoT learning resources (novice to expert): [Microsoft/TechnicalCommunityContent](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Check out a curated collection of IoT learning resources: [Microsoft Technical Community Content](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
 - Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)
