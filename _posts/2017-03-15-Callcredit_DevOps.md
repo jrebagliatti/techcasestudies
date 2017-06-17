@@ -12,6 +12,7 @@ excerpt: Microsoft teamed up with Callcredit and Numéro to streamline the devel
 language: [English]
 verticals: [Financial Services]
 geolocation: [Europe]
+published: false
 ---
 
 Our customer, Numéro, has a marketing application used in retailer call centers called Numéro Interactive. This product is partially installed on-premises and partially hosted on virtualized servers in a hosting provider. Each customer that uses Numéro Interactive has their own version of the software with different configurations. Automated testing is carried out during the development process followed by manual tests. Environments must be created to build and test every specific version of the base software and its respective configuration. Numéro has access to some deployments to carry out updates, whereas others are managed by the end customer. After the build process is complete, it creates a package that is then deployed manually to all customer sites. These current processes are time-consuming and error-prone.
