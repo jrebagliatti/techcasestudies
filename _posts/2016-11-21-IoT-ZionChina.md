@@ -2,7 +2,6 @@
 layout: post
 title: "Zion China uses IoT and Machine Learning to evolve its Intelligent Diabetes Management solution"
 author: "Xi Wang"
-author-link: "#"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
 date: 2016-12-02
 categories: [IoT]
@@ -12,7 +11,6 @@ excerpt: Microsoft worked with Zion China to re-architect its mobile diabetes-mo
 verticals: [Health]
 language: [English]
 geolocation: [Asia]
-#permalink: /<page-title>.html
 ---
 
 Zion China has developed a diabetes management mobile app designed to help patients live healthier lives by having on-the-go access to advice and information from health specialists. This E-Followup solution uses a device that continuously monitors users' glucose levels to collect health data such as blood sugar, diet, exercise, and medication. It provides personalized advice to help patients manage their health. 
@@ -381,8 +379,8 @@ With Azure IoT Hub, Machine Learning, SQL Database, and Stream Analytics, Zion C
 
 ## Additional resources
 
-- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
-- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
-- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
-- Check out a curated collection of IoT learning resources: [Microsoft Technical Community Content](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
-- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/)
+- Check out a curated collection of IoT learning resources: [Microsoft Technical Community Content](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured) (like this one)

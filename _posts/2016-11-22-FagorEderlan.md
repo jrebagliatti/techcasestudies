@@ -12,7 +12,6 @@ excerpt: Fagor Ederlan is looking to improve its aluminum injection molding proc
 language: [English]
 verticals: [Discrete Manufacturing]
 geolocation: [Europe]
-#permalink: /<page-title>.html
 ---
 
 In the third wave of industrial evolution, we had automation that produced large amounts of data. This data had high potential for analytic applications, but it was not easy to analyze because it was siloed in the machines where it was generated. With this project, we demonstrate that it's not complex to send the data to the cloud using secure and reliable services that allow us to analyze the data in near-real time and build maching learning models to extract knowledge from it. 
@@ -227,8 +226,8 @@ Natividad Herrasti (ETIC):
 
 ## Additional resources
 
-- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/?wt.mc_id=dx_883174)
-- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
-- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
-- Check out a curated collection of IoT learning resources: [Microsoft Technical Community Content](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
-- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)
+- Explore [Azure IoT Hub documentation](https://docs.microsoft.com/en-us/azure/iot-hub/)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/)
+- Check out a curated collection of IoT learning resources: [Microsoft Technical Community Content](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured) (like this one)
