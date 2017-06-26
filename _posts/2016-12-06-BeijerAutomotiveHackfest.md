@@ -58,7 +58,7 @@ The potential value of the data depends on many factors such as data quality, fr
 An additional challenge was that Beijer doesn’t know yet the treasures the data might contain and how the customers, who pay for the data, will be using it because they probably also have to validate its value. This called for an exploratory mindset that states that initially the amount of data and the number of measurements in that data should be as extensive as possible. This approach offers the opportunity to take a broad overview of what information the data could unlock and then narrow it down to the cases that have these
 characteristics:
 
-- The data has a business value without intense processing (for examplke, GPS positioning that offers direct insights on traffic congestion by simply plotting it on a map).
+- The data has a business value without intense processing (for example, GPS positioning that offers direct insights on traffic congestion by simply plotting it on a map).
 - The data interchange frequency is at the right level to have an adequate level of accuracy but should also not be too high because this has direct consequences on costs and performance (for example, the frequency with which vehicle speed is sensed determines the scenarios that this data can be used for).
 - The payload is optimized for use in a high-throughput architecture. Carefully choosing the payload format is an important step in the process of minimizing the byte streams that need to pass the system.
 
