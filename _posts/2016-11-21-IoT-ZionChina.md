@@ -3,7 +3,7 @@ layout: post
 title: "Zion China uses IoT and Machine Learning to evolve its Intelligent Diabetes Management solution"
 author: "Xi Wang"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
-date: 2016-12-02
+date: 2017-06-26
 categories: [IoT]
 color: "blue"
 image: "images/feat_ZionChina09_Team01.jpg"
@@ -11,7 +11,11 @@ excerpt: Microsoft worked with Zion China to re-architect its mobile diabetes-mo
 verticals: [Health]
 language: [English]
 geolocation: [Asia]
+permalink: /iot/2016/12/02/IoT-ZionChina.html
+sticky: true
 ---
+
+*Updated with additional resources*
 
 Zion China has developed a diabetes management mobile app designed to help patients live healthier lives by having on-the-go access to advice and information from health specialists. This E-Followup solution uses a device that continuously monitors users' glucose levels to collect health data such as blood sugar, diet, exercise, and medication. It provides personalized advice to help patients manage their health. 
 

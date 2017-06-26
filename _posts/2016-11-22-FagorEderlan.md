@@ -4,7 +4,7 @@ title: "Enhancing a molding process using IoT solutions with Fagor Ederlan"
 author: "Juan Manuel Servera"
 author-link: "http://twitter.com/jmservera"
 #author-image: "{{ site.baseurl }}/images/authors/jmservera.jpg"
-date: 2016-12-19
+date: 2017-06-26
 categories: [IoT]
 color: "blue"
 image: "images/fagorederlan/feat_robotAndMold.jpg"
@@ -12,7 +12,11 @@ excerpt: Fagor Ederlan is looking to improve its aluminum injection molding proc
 language: [English]
 verticals: [Discrete Manufacturing]
 geolocation: [Europe]
+permalink: /iot/2016/12/19/FagorEderlan.html
+sticky: true
 ---
+
+*Updated with additional resources*
 
 In the third wave of industrial evolution, we had automation that produced large amounts of data. This data had high potential for analytic applications, but it was not easy to analyze because it was siloed in the machines where it was generated. With this project, we demonstrate that it's not complex to send the data to the cloud using secure and reliable services that allow us to analyze the data in near-real time and build maching learning models to extract knowledge from it. 
 
