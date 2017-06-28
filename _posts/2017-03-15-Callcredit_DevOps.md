@@ -12,10 +12,9 @@ excerpt: Microsoft teamed up with Callcredit and Numéro to streamline the devel
 language: [English]
 verticals: [Financial Services]
 geolocation: [Europe]
-published: false
 ---
 
-Our customer, Numéro, has a marketing application used in retailer call centers called Numéro Interactive. This product is partially installed on-premises and partially hosted on virtualized servers in a hosting provider. Each customer that uses Numéro Interactive has their own version of the software with different configurations. Automated testing is carried out during the development process followed by manual tests. Environments must be created to build and test every specific version of the base software and its respective configuration. Numéro has access to some deployments to carry out updates, whereas others are managed by the end customer. After the build process is complete, it creates a package that is then deployed manually to all customer sites. These current processes are time-consuming and error-prone.
+Our customer, Callcredit, has a marketing application used in retailer call centers called Numéro Interactive. This product is installed on-premises for some customers and hosted on virtualized servers in a hosting provider for others. Each customer that uses Numéro Interactive has their own version of the software with different configurations. Automated testing is carried out during the development process followed by manual tests. Environments must be created to build and test every specific version of the base software and its respective configuration. Numéro has access to some deployments to carry out updates, whereas others are managed by the end customer. After the build process is complete, it creates a package that is then deployed manually to all customer sites. These current processes are time-consuming and error-prone.
 
 The solution hopes to expand Numéro’s user base and streamline the deployment process by creating a continuous delivery pipeline using Visual Studio Team Services and Azure.
 
@@ -130,6 +129,8 @@ The application needs to be deployed multiple times, both through the developmen
 - **Reduce the number of supported versions**. At present, each time the application is deployed to a customer environment, the deployment methodology is different. This is due to the fact that different customers are on different versions of the software. If the number of supported versions was reduced, ideally if everyone was on the same version, the application deployment methodology would be a lot more consistent.
 
 - **Amend the application to enable efficient deployment**. We discussed methods that could be used to make deployment of the application more efficient. This would be beneficial not only when deploying applications to customer production environments but also when deploying applications to carry out automated or manual testing as part of the development process. The options we discussed, along with the pros/cons with relation to Numéro and Callcredit, are shown in the following table.
+
+<br/>
 
 | Technology  |  Pros | Cons  |
 |-------------|----------------------|-------|
@@ -556,11 +557,15 @@ As always it would have been great to achieve even more. At the end of the hackf
   - [Azure Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/)
 - Recreate the solution outside of the hackfest environment.
 
+<br/>
+
 #### Within a year
 
 - Prove portability, both on-premises and with other cloud providers.
 - Add customer configuration to the application.
 - Deploy a fully functional, live customer solution running in containers.
 - Begin containerization of the next software product.
+
+<br/>
 
 > "In just three days we created builds in Visual Studio Team Services with continuous integration and delivery pipelines into our Azure environments. Since the hackfest, we have continued our work to containerise the rest of the Numéro components and we will continue to create a fully configured, fully production-ready solution. There is so much still to learn, but the hackfest gave us a real head start, with a grounding in the methods and the confidence to make it all work." —Alex Carter, System Build Engineer Dev Ops Consumer Team, Callcredit
