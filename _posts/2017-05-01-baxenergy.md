@@ -14,6 +14,7 @@ verticals: [Power & Utilities]
 geolocation: [Europe]
 ---
 
+
 ![Header]({{ site.baseurl }}/images/2017-05-01-baxenergy/windgenerator-medium.png)
 
 <br/>
