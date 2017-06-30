@@ -12,7 +12,7 @@ excerpt: BaxEnergy teamed up with Microsoft to build a Lambda architecture that 
 language: [English]
 verticals: [Power & Utilities]
 geolocation: [Europe]
-published: false
+
 ---
 
 
