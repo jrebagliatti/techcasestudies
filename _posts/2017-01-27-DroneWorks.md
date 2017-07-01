@@ -556,3 +556,10 @@ Resources
 GitHub repos
 - [Azure IoT Hands-On (Japanese)](http://ms-iotkithol-jp.github.io/)
 - [DroneWorks Git repository](https://github.com/drone-works)
+
+IoT
+- Get hands-on with [Azure IoT Hub tutorials](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-get-started)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources: [Microsoft Technical Community Content](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)

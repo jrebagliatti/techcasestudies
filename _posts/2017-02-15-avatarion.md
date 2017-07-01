@@ -419,3 +419,11 @@ Here is a first example of a call to QnA Maker:
 ```
 
 This is just the beginning. Using Language Understanding Intelligent Service (LUIS) would make it possible to improve the dialog functionality of the robot even more. Additionally, features such as speaker recognition, sentiment analysis, facial recognition, and emotion detection could take the robots' capabilities to the next level.
+
+## Additional resources
+
+- Get hands-on with [Azure IoT Hub tutorials](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-get-started)
+- Find IoT devices and starter kits: [Azure IoT device catalog](https://catalog.azureiotsuite.com/kits?wt.mc_id=dx_883177)
+- Try any Azure services for free: [Create your free Azure account today](https://azure.microsoft.com/en-us/free/?wt.mc_id=dx_883176)
+- Check out a curated collection of IoT learning resources: [Microsoft Technical Community Content](https://github.com/Microsoft/TechnicalCommunityContent/tree/master/IoT?wt.mc_id=dx_883175) on GitHub
+- Read more IoT-focused [technical case studies](https://microsoft.github.io/techcasestudies/#technology=IoT&sortBy=featured?wt.mc_id=dx_883178) (like this one)
