@@ -7,14 +7,12 @@ author-link: "http://Strefa.MS"
 date: 2017-05-19
 categories: [DevOps]
 color: "blue"
-image: "{{site.baseurl}}/images/2017-05-19-wealtharc/feat-wealtharc-logo.jpg"
+image: "images/2017-05-19-wealtharc/feat-wealtharc-logo.jpg"
 excerpt: WealthArc chciał uprościć proces tworzenia i wydawania oprogramowania, skonsolidować i ujednolicić narzędzia dla każdego zespołu oraz podjąć pierwsze kroki w kierunku automatyzacji w chmurze. Microsoft na warsztacie zorientowanym na DevOps pomógł firmie WealthArc w kilku obszarach opartych na praktykach DevOps, aby zwiększyć efektywność procesu związanego z rozwojem oprogramowania.
 language: [Polish]
 verticals: [Banking & Capital Markets]
 geolocation: [Europe]
 ---
-
-# WealthArc poprawia wydajność i jakość pracy zespołów rozwojowych dzięki wykorzystaniu praktyk DevOps
 
 W tym artykule opisano, w jaki sposób firma Microsoft pomogła firmie WealthArc w zwiększaniu efektywności procesu wytwarzania oprogramowania, koncentrując się przede wszystkim na planowaniu pracy, ujednoliceniu narzędzi i procesów w zespołach, przy zachowaniu wysokiej jakości kodu oraz automatyzacji chmury Microsoft Azure w środowiskach rozwojowych.
 
