@@ -3,7 +3,7 @@ layout: post
 title:  "Istobal: Cleaning and caring for vehicles using Azure IoT"
 author: "Gorka Madariaga"
 author-link: "http://twitter.com/gk_8"
-author-image: "{{ site.baseurl }}/images/authors/gorkma.jpg"
+#author-image: "{{ site.baseurl }}/images/authors/gorkma.jpg"
 date:   2017-07-06
 categories: IoT
 color: "blue"
@@ -430,6 +430,8 @@ Many of the lessons learned during the hackfest will be applied to several other
 ## Conclusion
 
 Overall, it was a **very successful hackfest**. Istobal managed to not only get a solid understanding of how to architect and implement their solution, but they are already looking into several other projects to implement the same kind of technology. We had time to cover a lot of content from our Azure offering and were able to go through all of the goals established before the hackfest during our week in Madrid. 
+
+<br/>
 
 >“Very productive week for us and for our projects during the hackfest, as we were able to get the whole picture of the main services on Azure for IoT, as well as other areas of Microsoft technologies. Multi-team working environment and meetings with product group people were very interesting for us as well.”
 >
