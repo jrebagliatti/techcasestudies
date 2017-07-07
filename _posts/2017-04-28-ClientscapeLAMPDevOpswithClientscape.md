@@ -112,7 +112,7 @@ We had to automatize build, versioning, and back tracing to work items, so we st
 
 Each of these projects would have their own build process and definition. This also allowed us to start discussing a test strategy. Implementing unit tests and running them as part of the build would be done per module. The concept of versioning each module was also something new that helped create a tracking process for what's tested and deployed.
 
-In their build definitions, we had to work with package managers ([Yarn](https://yarnpkg.com/en/), PHP Composer, run unit testing ([PHPUnit](https://phpunit.de/)), and if all were successful, build a new Docker image (details follow). 
+In their build definitions, we had to work with package managers ([Yarn](https://yarnpkg.com/en/), PHP Composer), run unit testing ([PHPUnit](https://phpunit.de/)), and if all were successful, build a new Docker image (details follow). 
 
 ![Clientscape pre-sales phase]({{ site.baseurl }}/images/CLIENTSCAPE/cs_presales_vsm.png)
 
