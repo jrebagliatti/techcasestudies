@@ -30,6 +30,8 @@ This article describes how Microsoft helped WealthArc increase the efficiency of
 - Radosław Pawłowski – Software Developer, WealthArc
 - Michał Kadłubowski – Software Developer, WealthArc
 
+<br/>  
+
 *Figure 1. Hackfest members*
 
 ![Hackfest members]({{ site.baseurl }}/images/2017-05-19-wealtharc/hackfest-members.jpg)  
@@ -89,6 +91,8 @@ Based on the VSM exercise, we implemented the following DevOps practices:
 - **Configuration management (CM)** for defining different configurations for each stage or environment, such as different connection strings to a SQL database for dev-test and production environments.
 - **Continuous deployment (CD)** for building, configuring, and deploying from a build to a production environment.
 
+<br/>  
+
 *Figure 3. Value stream mapping*
 
 ![Value stream mapping]({{ site.baseurl }}/images/2017-05-19-wealtharc/vsm.jpg)
@@ -136,11 +140,14 @@ WealthArc was already using a Visual Studio Team Services private Git repository
 3. Keep a high quality, up-to-date master branch.
 
 New structure for branches:
+
 - **master** branch – merged code coming from different features, and bugfixes
 - **bugfix** – a folder that has a branch for each bugfix that is not part of a stable release
 - **feature** – a folder that has a branch for each product feature
 - **hotfix** – a folder that has a branch for each hotfix that is part of a stable release
 - **release** – a folder that has a branch for every stable product sent to QA
+
+<br/>  
 
 >If you are thinking about your Git branch strategy, you should keep it simple and read [Adopt a Git branching strategy](https://www.visualstudio.com/en-us/articles/git-branching-guidance).
 
@@ -173,6 +180,8 @@ Several branch policies have been enabled on the master branch to protect branch
      - **NuGet restore**. Install or restore missing NuGet packages.
      - **Build solution**. Build with MSBuild and set the Visual Studio version property.
      - **Test assemblies**. Run tests with Visual Studio test runner.
+    
+     <br/>  
 
      *Figure 11. Visual Studio Team Services build definition for pull request*
 
@@ -244,6 +253,8 @@ The release process is automatically triggered by a successful build creation (c
 - **Staging** – staging slot waiting for a new release
 - **Production** – production slot
 
+<br/>  
+
 **Variables**
 
 A release definition uses several variables defined for all environments, and for each environment as well. A few dedicated variables per environment are used to replace tokens in config files; for example, connection strings to different databases.
@@ -275,8 +286,8 @@ Following are the steps used in the pipeline:
 1. Create or update a resource group based on ARM templates (Infrastructure as Code).
 
       ```
-        Title: Create or Update Azure Resources
-        Task: Azure Resource Group deployment
+        Title: Create or update Azure resources
+        Task: Azure resource group deployment
         Action: Create or update resource group
         Resource group: $(resourceGroup)
         Location: $(location)
@@ -406,16 +417,22 @@ We gave WealthArc some recommendations and ideas to consider for the future:
 - Design CI/CD for the second part of the solution, the ETL application.
 - Design release management for ad-hoc dev-test environment delivery based on existing ARM template.
 
+<br/>  
+
 Following are a few interesting facts and improvements after the hackfest:
 
 - We reduced the time for ad-hoc dev-test environment delivery (manual work + wait time) from about 6 hours to 15 minutes (automatic process on request).
 - We automated the process for new pull request validation, which reduced the overall time (manual work + wait time) from about 2-4 hours to 15 minutes.
 - We eliminated the "ups factor" from the development process by tokenizing XML files. Now developers are not responsible for configuration setup during dev-test deployment. It reduced the management effort and preparation time from about 30 minutes to zero.
 
+<br/>  
+
 ### WealthArc testimonial about project
 > "Dariusz is the true-born evangelist! During the hackfest we have significantly improved our development process and received constructive advice on future enhancements. Microsoft proved it not only provides a fantastic cloud platform but is also eager to share knowledge and educate Azure customers."
 > 
 > —Radomir Mastalerz, CTO, WealthArc
+
+<br/>  
 
 ## Additional resources
 
