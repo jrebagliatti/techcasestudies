@@ -10,7 +10,7 @@ color: "blue"
 image: "images/callcreditdevops/VSM-small.jpg"
 excerpt: Microsoft teamed up with Callcredit and Numéro to streamline the development and deployment of their marketing application by using Visual Studio Team Services and Azure. 
 language: [English]
-verticals: [Financial Services]
+verticals: [Banking & Capital Markets]
 geolocation: [Europe]
 ---
 
