@@ -407,7 +407,7 @@ For the base images, the build pipeline is extremely straightforward because the
   
   <br/>
   
-  ![Build task]({{ site.baseurl }}/images/callcreditdevops/build_common.png)
+  ![Build task]({{ site.baseurl }}/images/callcreditdevops/build-common-2.png)
 
   <br/>
 
@@ -417,7 +417,7 @@ For the base images, the build pipeline is extremely straightforward because the
   
   <br/>
   
-  ![Push task]({{ site.baseurl }}/images/callcreditdevops/build_common.png)
+  ![Push task]({{ site.baseurl }}/images/callcreditdevops/push-common-2.png)
   
   <br/>
 
@@ -489,7 +489,7 @@ To enable the appropriate version of a container image to be pulled from Azure, 
 
 <br/>
 
-![Release]({{ site.baseurl }}/images/callcreditdevops/release.jpg)
+![Release]({{ site.baseurl }}/images/callcreditdevops/release-2.jpg)
 
 <br/>
 
