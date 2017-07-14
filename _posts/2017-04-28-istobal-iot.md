@@ -12,7 +12,7 @@ excerpt: With the power of Azure IoT, Istobal can implement a solution to monito
 language: English
 verticals: [Professional Services]
 geolocation: [Europe]
-Published: false
+published: false
 ---
 
 
