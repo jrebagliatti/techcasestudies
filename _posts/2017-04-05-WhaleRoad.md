@@ -12,6 +12,7 @@ excerpt: Using Desktop Bridge made it easy for this small studio to avoid inconv
 language: [English]
 verticals: [Entertainment]
 geolocation: [Europe]
+sticky: true
 ---
 
 Through the Windows Store, developers have access to an array of integrated Windows features they can leverage within their application. The creators at Sunburned Games are positioning themselves to take advantage of these features by putting their role-playing game *The Great Whale Road* into the Windows Store. In this way, they benefit from the increased user outreach, with more than 400 million PCs running Windows 10 globally, as well as the ability to update their application easily through the store.
