@@ -12,6 +12,7 @@ excerpt: MidBoss is a San Francisco-based indie game company. Microsoft built a 
 language: [English]
 verticals: [Retail & Consumer Goods]
 geolocation: [North America]
+sticky: true
 ---
 
 MidBoss is a San Francisco-based indie game company that faced the challenge of how to increase exposure and discoverability of their video games in an already over-saturated market. To garner excitement for their recently re-released game, *2064: Read Only Memories*, we brought the main character [Turing](http://readonlymemories.wikia.com/wiki/Turing) to life by using the Microsoft Bot Framework. While the TuringBot by no means passed the [sapience test](https://en.wikipedia.org/wiki/Turing_test), it did implement basic UUID-based authentication, was able to have meaningful conversations through complex dialogs, and incorporated natural language processing through LUIS. We created a great promotional tool that not only functioned for the current game edition, but is updatable for future products.
