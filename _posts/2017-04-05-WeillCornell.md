@@ -12,6 +12,7 @@ excerpt: A team from Weill Cornell Medicine and Microsoft built a chatbot to sup
 language: English
 verticals: [Health]
 geolocation: [North America]
+sticky: true
 ---
 
 
