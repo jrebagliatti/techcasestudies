@@ -13,7 +13,7 @@ language: [English]
 verticals: [Public Safety, Logistics]
 geolocation: [North America]
 #permalink: /<page-title>.html
-sticky: true
+sticky: false
 ---
 
 *This report was updated with additional resource URLs on February 27, 2017.*
