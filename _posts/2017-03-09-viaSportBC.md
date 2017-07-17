@@ -13,7 +13,7 @@ language: [English]
 verticals: [Nonprofit]
 geolocation: [North America]
 #permalink: /<page-title>.html
-sticky: true
+sticky: false
 ---
 
 In the relatively new space of the Bot Framework, many organizations have begun to incorporate chat bots as tools to drive sales and manage customer relations. In February 2017, viaSport British Columbia, a Vancouver-based not-for-profit with a mission to promote inclusive sport, partnered with Microsoft to build a proof-of-concept conversational interface and analytics dashboard for their newest inclusive sport initiative, the viaSport Inclusion ChatBot.
