@@ -12,6 +12,7 @@ excerpt: TechnologyOne teamed up with Microsoft to create a universal language b
 language: [English]
 verticals: [Education, Hospitality & Travel]
 geolocation: [Oceania]
+sticky: true
 ---
 
 In this article we talk through how TechnologyOne and Microsoft collaborated to build a university bot that allows people to converse in their native language by using terminology they are comfortable with to help make enrollment and university life better. The bot achieves this by using modern conversational platforms coupled with intelligent systems. 
