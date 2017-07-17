@@ -11,6 +11,7 @@ excerpt: Leveraging Microsoft's platform and intelligent services, a high-end lu
 language: [English]
 verticals: [Retail & Consumer Goods]
 geolocation: [Asia]
+sticky: true
 ---
 
 Nowadays physical malls and stores are facing unprecedented competition from e-commerce. Providing a differentiated in-store experience, knowing their customers better, and increasing customer stickiness are the topmost challenges for mall operators. Super Brand Mall, one of the high-end luxury shopping malls in Shanghai, partnered with Microsoft and built a chat bot for its [WeChat](https://en.wikipedia.org/wiki/WeChat) official account. As a result, Super Brand Mall customers could get information about mall services through a conversational experience, making the bot a key component for this retail giant in remolding its customer experience.
