@@ -12,7 +12,7 @@ excerpt: LiveArena delivers a video recording product that makes it easy, effici
 language: [English]
 verticals: [Media & Cable]
 geolocation: [Europe]
-sticky: true
+sticky: false
 #permalink: /<page-title>.html
 ---
 
