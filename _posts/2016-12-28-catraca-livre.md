@@ -13,7 +13,7 @@ language: [English]
 verticals: [Media & Cable]
 geolocation: [South America]
 #permalink: /<page-title>.html
-sticky: true
+sticky: false
 ---
 
 ![Figure 0 – Catraca Livre Logo]({{ site.baseurl }}/images/2016-12-28-catraca-livre/Figure_0_Catraca_Livre_Logo.png)
