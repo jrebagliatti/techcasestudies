@@ -12,7 +12,7 @@ excerpt: Musixmatch, one of the most popular lyrics apps worldwide, leveraged De
 language: [English]
 verticals: [Entertainment]
 geolocation: [Europe]
-sticky: true
+sticky: false
 ---
 
 Today, Windows 10 runs on more than 400 million PCs around the world, and it aims to reach 1 billion in 2018. This is a huge user base, and the good news is that there is a simple and powerful way to reach these users in a fast and reliably way: the Windows Store.
