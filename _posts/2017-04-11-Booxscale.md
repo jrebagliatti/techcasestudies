@@ -11,6 +11,7 @@ excerpt: This article discusses the Booxscale Taxicode Bot that allows customers
 language: [English]
 verticals: [Retail & Consumer Goods, Hospitality & Travel]
 geolocation: [Europe]
+sticky: true
 ---
 
 Booxscale is "The Marketplace of Marketplaces" creating a transaction platform for on-demand businesses to surface their websites, apps, and technologies for their users.  
