@@ -28,6 +28,8 @@ The core team:
 - Nad Wu – App Engineer, Study123
 - Ching Chen – Technical Evangelist, Microsoft Taiwan
 
+<br/>
+
 <img alt="whiteboard" src="{{ site.baseurl }}/images/Study123/IMAG1326.jpg" width="900">
 
 <img alt="group photo" src="{{ site.baseurl }}/images/Study123/IMAG1329.jpg" width="900">
@@ -65,10 +67,13 @@ These are the different components involved in the development:
 2. Use Azure Functions to check the video process status.
 3. Use Azure Functions for content management (including deletion of updated video assets and logging of the latest video stream locator).
 
+<br/>
+
 <img alt="Architecture Diagram" src="{{ site.baseurl }}/images/Study123/architecture.png" width="900">
 
+<br/>
 
-#### Use Azure Functions as a webhook for Azure Media Services notification endpoint ####
+### Use Azure Functions as a webhook for Azure Media Services notification endpoint ###
 
 The Azure Media Services API provides the capability for content management. By adding an Azure Media Services notification endpoint, the webhook will be triggered when job or task status changes (can be final states only or all states changed).
 
@@ -106,15 +111,17 @@ Add the webhook notification while submitting the job. The webhook will be trigg
 
 <br/>
 
-#### Use Azure Functions to check the video process status ####
+### Use Azure Functions to check the video process status ###
 
 In the hackfest, we used the latest Visual Studio 2017 tools for Azure Functions for a better debugging experience. (Azure Functions was updated to the new template for a better debugging experience after the Build 2017 event.)
 
 The following code shows checking of the Media Services security header and job status for the next step (adding security policy, publishing the content) and a call for another Azure Function for content management.
 
-Debugging Azure Functions locally in Visual Studio 2017:
+**Debugging Azure Functions locally in Visual Studio 2017:**
 
 <img alt="VS2017AzureFunction" src="{{ site.baseurl }}/images/Study123/VS2017AzureFunction.png" width="900">
+
+<br/>
 
  ```csharp
 //HttpTrigger Function
@@ -153,13 +160,17 @@ Debugging Azure Functions locally in Visual Studio 2017:
 
 <br/>
 
+<br/>
+
 <img alt="JobMonitorLog.png" src="{{ site.baseurl }}/images/Study123/JobMonitorLog.png" width="900">
 
 <br/>
 
-#### Use Azure Functions to delete duplicated updated media content ####
+### Use Azure Functions to delete duplicated updated media content ###
 
-Once the uploaded video has been encoded, dynamic encryption and publication take place. This triggers the function to check whether this is an update of the original video. If yes, the video locator needs to be updated and the original video asset needs to be removed. 
+Once the uploaded video has been encoded, dynamic encryption and publication take place. This triggers the function to check whether this is an update of the original video. If yes, the video locator needs to be updated and the original video asset needs to be removed.
+
+<br/>
 
   ```csharp
  public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")]HttpRequestMessage req, TraceWriter log)
