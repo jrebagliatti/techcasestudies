@@ -237,7 +237,7 @@ Here is reference documentation about offline syncing and push notifications:
 - [Monitor Job Progress using .NET](https://docs.microsoft.com/en-us/azure/media-services/media-services-check-job-progress)
 - [Visual Studio 2017 Tools for Azure Functions](https://blogs.msdn.microsoft.com/webdev/2017/05/10/azure-function-tools-for-visual-studio-2017/)
 
-**Reference sample code:**
+Reference sample code:
 
 [Sample Azure Functions for use with Azure Media Services](https://github.com/Azure-Samples/media-services-dotnet-functions-integration)
 
