@@ -12,6 +12,7 @@ excerpt: Johnson & Johnson, a Fortune 500 company working in tandem with Microso
 language: [English]
 verticals: [Retail & Consumer Goods]
 geolocation: [North America]
+published: false
 ---
 
 A team from Microsoft and Johnson & Johnson set out to migrate the first of many internal applications written in Java to Microsoft Azure App Service and host them on an Apache Tomcat server.
