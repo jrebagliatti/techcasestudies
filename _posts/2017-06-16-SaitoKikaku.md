@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Desktop Bridge, Saito Kikaku converts Hidemaru Editor to UWP app"
+title: "Using the Desktop Bridge, Saito Kikaku converts Hidemaru Editor to UWP app"
 author: "Shozo Arai"
 author-link: "https://blogs.msdn.microsoft.com/shozoa/"
 #author-image: "{{ site.baseurl }}/images/authors/photo.jpg"
@@ -38,6 +38,7 @@ Microsoft worked with a team of Hidemaru Editor developers to convert their app 
 
 <img alt="Saito Kikaku team" src="{{ site.baseurl }}/images/SaitoKikakuHidemaru/Yamamoto2-crop.jpg" width="300">
 
+<br/>
 
 *The Microsoft team: Shozo Arai (left) and Kazuki Tsuguma*
 
@@ -55,6 +56,7 @@ Microsoft worked with a team of Hidemaru Editor developers to convert their app 
 
 <img alt="Sabae 1, Fukui" src="{{ site.baseurl }}/images/SaitoKikakuHidemaru/SaitoKikaku1.JPG" width="320">
 
+<br/>
 
 **Hidemaru Editor short history:**
 
@@ -70,8 +72,6 @@ Microsoft worked with a team of Hidemaru Editor developers to convert their app 
 - 2007: Hidemaru Editor 7.0 released.
 - 2010: Hidemaru Editor 8.0 released. Added 64-bit support. 
 - 2017: Latest version is 8.7.1. 
-
-<br/>
 
 *The offices where Hidemaru Editor was first developed*
 
