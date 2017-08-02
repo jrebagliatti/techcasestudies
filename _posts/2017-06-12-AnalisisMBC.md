@@ -207,7 +207,7 @@ Also during this testing, we found some issues to fix:
     makepri new /pr D:\pineapple\PackageFiles /cf D:\pineapple\PackageFiles\priconfig.xml
     ```
     
-### Step 4: Using Embarcadero RAD Studio ###
+### Step 4: Using Embarcadero RAD Studio 
 
 During the process of conversion, we found out that Embarcadero RAD Studio had integrated support to generate UWP packages directly from the IDE. Because the Analisis team uses this IDE to develop and maintain their legacy apps in Delphi, we decided to undergo the same conversion process directly from the IDE. We used the following steps to generate the conversion from the IDE:
 
