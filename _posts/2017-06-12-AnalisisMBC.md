@@ -71,11 +71,10 @@ To set up the Desktop App Converter, we followed these steps:
 1. Download the [Desktop App Converter](http://aka.ms/converter) from the Windows Store.
 2. Depending on the Windows build version from the PC used for the conversion, download the appropriate WIM image for packaging the apps. For this, visit [aka.ms/converterimages](http://aka.ms/converterimages) and download the matching OSBuild WIM. 
 3. Once the WIM image is downloaded, run the Desktop App Converter as an administrator. You could also run the DesktopAppConverter.exe from a CMD in Admin mode.
- 
-   ![Desktop Bridge architecture diagram]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/cmd1.png)
-
-<br/>
-
+    
+    ![Desktop Bridge architecture diagram]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/cmd1.png)
+    
+    
 4. In the first run, you need to configure the Desktop App Converter by running the following command:
 
     ```
@@ -115,22 +114,23 @@ We proceeded to install the generated app on the machine. But first we needed to
 2. Select **Install Certificate...**
 
     ![Desktop Bridge architecture diagram]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/cert2.png)
-  
-
-3. Select **Local Machine** as the store location for the certificate.
-
-    ![Desktop Bridge architecture diagram]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/cert3.png)
-    
-
-4. Select the certificate store to be **Trusted People**.
-
-    ![Desktop Bridge architecture diagram]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/cert4.png)
     
     <br/>
     
+3. Select **Local Machine** as the store location for the certificate.
+    
+    ![Desktop Bridge architecture diagram]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/cert3.png)
+    
+    <br/>
+    
+4. Select the certificate store to be **Trusted People**.
+    
+    ![Desktop Bridge architecture diagram]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/cert4.png)
+    
     ![Desktop Bridge architecture diagram]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/cert5.png)
     
-
+    <br/>
+        
 5. Install the certificate.
 
 Once the certificate is installed, you will be able to install your UWP converted app. If you skip the certificate installation, you will receive errors. Also, remember to include the `-Sign` command during the conversion so the certificate is generated automatically.
@@ -179,20 +179,20 @@ Also during this testing, we found some issues to fix:
 
   Then we followed these next steps:
 
-  1. In the converted app directory is a folder named PackageFiles\Assets. Inside are all the images the converter generated automatically. Replace all of them with the new generated images from the UWP Tile Generator.
-  2. Next, regenerate all the resource files that contain a reference to the updated images. There should be some .pri extension files in the PackageFiles folder—delete them also.
-  3. The UWP Tile Generator tool generates files with a naming convention that could differ from the one used by DAC. Be sure to check the nodes including:
-
-      ```XML
-        <Logo> 
- 
+    1. In the converted app directory is a folder named PackageFiles\Assets. Inside are all the images the converter generated automatically. Replace all of them with the new generated images from the UWP Tile Generator.
+    2. Next, regenerate all the resource files that contain a reference to the updated images. There should be some .pri extension files in the PackageFiles folder—delete them also.
+    3. The UWP Tile Generator tool generates files with a naming convention that could differ from the one used by DAC. Be sure to check the nodes including:
+    
+    ```XML
+      <Logo> 
+      
        <uap:VisualElements>
 
        <uap:DefaultTile>
-      ```
-
-  4. After checking the file names and copying the new ones to the folder, we regenerated the assets by running the following commands:
-
+    ```
+        
+    4. After checking the file names and copying the new ones to the folder, we regenerated the assets by running the following commands:
+    
       ```
       makepri createconfig /cf D:\pineapple\PackageFiles\priconfig.xml /dq en-US
       ```
@@ -208,36 +208,41 @@ During the process of conversion, we found out that Embarcadero RAD Studio had i
 1. First, enable the Windows 10 SDK in the RAD Studio. For this you can go to Tools > Options > Environment Options > SDK Manager. There you need to add Windows 10 SDK.
 
     ![Rad Studio W10 SDK Configuration]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/rad1.png)
-
+    
+    <br/>
+    
     ![Rad Studio W10 SDK Configuration]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/rad2.png)
-  
-  <br/>
-
+      
+    <br/>
+    
 2. Select the deployment mode. In this case, because we are doing an internal LOB app deployment, we configured the AdHoc mode, but you can also select Windows Store in case you are publishing your app to the store. For this you can go to Tools > Options > Environment Options > Provisioning. 
-
+    
     ![Rad Studio W10 SDK Configuration]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/rad22.png)
     
-
+    <br/>
+    
 3. In case you are doing an ad-hoc distribution, you will need to generate a certificate to sign the app as we did with the DAC. For this you can click **Create self-signed certificate** and follow the steps to generate your certificate.
-
+    
     ![Rad Studio W10 SDK Configuration]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/rad3.png)
     
     <br/>
-
+    
     ![Rad Studio W10 SDK Configuration]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/rad4.png)
-  
+    
     <br/>
-
+    
 4. Once you have configured the environment, you can activate the target in the project by selecting **Application Store** in the target platform in the Project Manager window, and right-click **Activate**.
-
+    
     ![Rad Studio W10 SDK Configuration]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/rad6.png)
     
-
+    <br/>
+    
 5. RAD Studio can automatically generate the AppManifest.xml and the tiles. If you want to modify them, go to Project > Options > Application and make the changes.
-
+    
     ![Rad Studio W10 SDK Configuration]({{ site.baseurl }}/images/2017-06-12-AnalisisMBC/rad8.png)
     
-
+    <br/>
+    
 6. Once you have modified the tiles and the AppManifest.xml, you are ready to build the app. For this you just need to build the app in release mode and then deploy it. This will generate a ready-to-install .appx file. 
 
 ### Step 5: Deployment ###
@@ -317,6 +322,8 @@ Analisis MBC is planning to modernize the rest of their Delphi LOB apps now that
 
 Also, Analisis is now considering developing future versions of their desktop solutions completely in UWP (.NET), because they are now developing some of their new solutions in .NET and Xamarin. 
 
+<br/>
+
 >"The Desktop Bridge is an excellent tool that lets us revamp our old legacy apps created in non-Microsoft frameworks and take advantage of UWP development. It helped us move our apps to a newer platform and take advantage of the deployment options such as Intune for sideloading apps."
 >
 >— Thomas Bertsch, Project Manager, Analisis MBC
@@ -326,6 +333,8 @@ Also, Analisis is now considering developing future versions of their desktop so
 >"Desktop Bridge integration with RAD Studio for Delphi development and directly deploying to UWP provided us an easier process for converting our actual apps to UWP. It provides us with the tools for future enhancement features from UWP such as background process and live tiles."
 >
 >— Andres Oreamuno, Technical Lead for Pineapple, Analisis MBC
+
+<br/>
 
 Here is the final converted app deployed through Intune in a test client:
 
