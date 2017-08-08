@@ -54,7 +54,7 @@ With the goal of getting Dex to the Windows Store in mind, we started the projec
 
 <br/>
 
-Details of each step are described further in this report.
+Details of each step are described in this report.
 
 ### Generating an app package
 
@@ -78,13 +78,14 @@ Advanced Installer provides a manifest interface that does not differ much from 
 
 ![Advanced Installer - Capabilities]({{ site.baseurl }}/images/Dreadlocks/AI-4-capabilities.jpg)
 
+<br/>
+
 ### Signing
 
 For store distribution, the app package doesn't have to be signed before uploading to the Dev Center portal because the publishing process handles it for developers. To test the package locally, though, it needs to be signed with a trusted certificate. When it isn't, Windows doesn't allow installation:
 
 ![Untrusted Certificate]({{ site.baseurl }}/images/Dreadlocks/untrusted-cert.png)
 
-<br/>
 
 **This message basically states that a trusted certificate is missing for this package. Specifically, the root cert is not trusted.**
 
@@ -320,7 +321,7 @@ Image reference "Assets\Square71x71Logo.png": The image "c:\program files\window
 
 This was a strange error, given that all assets were set and generated from the Advanced Installer. After a closer investigation, we found out that all images marked as incorrect are **exactly 1 pixel off** the required size.
 
-**Eventually we found out that this is a known issue of WACK and is safe to ignore.**
+Eventually we found out that **this is a known issue of WACK** and is safe to ignore.
 
 <br/>
 
@@ -371,9 +372,10 @@ The game had to be tested before going public on the Windows Store, so Dreadlock
 
 <img alt="Hide in Store" src="{{ site.baseurl }}/images/Dreadlocks/hide-in-store.png" width="700">
 
-<br/>
 
 The last option says: *Hide this app and prevent acquisition. Customers with a direct link can see the app's listing, but can only download the app if they have a promotional code and are using a Windows 10 device.*
+
+<br/>
 
 Then we generated **Promo codes** from the **Attract** section of Developer Dashboard.
 
