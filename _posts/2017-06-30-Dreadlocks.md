@@ -62,6 +62,8 @@ The most important part of this solution—packing the game into an app (.appx) 
 
 Advanced Installer provides a manifest interface that does not differ much from what Visual Studio offers:
 
+<br/>
+
 ![Advanced Installer - Package Information]({{ site.baseurl }}/images/Dreadlocks/AI-1-package-information.jpg)
 
 <br/>
@@ -82,8 +84,11 @@ For store distribution, the app package doesn't have to be signed before uploadi
 
 ![Untrusted Certificate]({{ site.baseurl }}/images/Dreadlocks/untrusted-cert.png)
 
+<br/>
 
->This message basically states that a trusted certificate is missing for this package. Specifically, the root cert is not trusted.
+**This message basically states that a trusted certificate is missing for this package. Specifically, the root cert is not trusted.**
+
+<br/>
 
 We wanted to verify that the generated .appx file worked before enhancing it and submitting it to the store. Because Advanced Installer wasn't able to sign the package for us, we did it manually.
 
@@ -111,7 +116,7 @@ signtool sign /a /v /fd SHA256 /p pass /f "dex.pfx" "BuildUwpAppXSetupFiles/Dex.
 
 <br/>
 
->All of the tools are part of Windows SDK and can be found at `C:\Program Files (x86)\Windows Kits\10\bin\x64\`.
+All of the tools are part of Windows SDK and can be found at `C:\Program Files (x86)\Windows Kits\10\bin\x64\`.
 
 <br/>
 
@@ -209,7 +214,7 @@ The most important piece is the `TileUpdate` element:
 
 This line specifies that Windows will check every half hour for new tile content and change it accordingly. If the URL is not reachable at the time, Windows will skip this occurrence and try again in 30 minutes.
 
->What's very important—and where we spent some time debugging and comparing two manifest files side by side—is that even though we were using the *runFullTrust* capability, we also needed to explicitly declare the **internetClient** capability. Otherwise, notifications didn't work.
+What's very important—and where we spent some time debugging and comparing two manifest files side by side—is that even though we were using the *runFullTrust* capability, we also needed to explicitly declare the **internetClient** capability. Otherwise, notifications didn't work.
 
 The *livetile.xml* file is very simple:
 
@@ -274,7 +279,7 @@ Before even starting a submission, we needed to request permission to submit app
 
 As the message states, we had to go to [https://aka.ms/desktopbridgeforwindowsstore](https://aka.ms/desktopbridgeforwindowsstore), fill in the form with information about the publisher and the app, and submit. Keep in mind that this request should be submitted by the owner of the developer account.
 
->We recommend requesting the permissions before taking any other steps in the conversion process, because the validation can take a few days or even weeks.
+We recommend requesting the permissions before taking any other steps in the conversion process, because the validation can take a few days or even weeks.
 
 Another thing we did before submitting the package was to run the [Windows App Certification Kit](https://developer.microsoft.com/en-us/windows/develop/app-certification-kit) (WACK) to catch and fix any errors before starting the validation process.
 
@@ -304,6 +309,8 @@ And finally we checked all the certification tests that were available. The test
 
 The first run of WACK showed that the package did not pass. Looking into the report, we divided the issues into three categories.
 
+<br/>
+
 ```
 Image reference "Assets\Square50x50.png": The image "c:\program files\windowsapps\com.dreadlocks.dex_5.3.0.0_x86__szcjea503wd5t\Assets\Square50x50.scale-125.png" failed the size restrictions of 62 X 62.
 Image reference "Assets\Square50x50.png": The image "c:\program files\windowsapps\com.dreadlocks.dex_5.3.0.0_x86__szcjea503wd5t\Assets\Square50x50.scale-400.png" failed the size restrictions of 200 X 200.
@@ -313,7 +320,7 @@ Image reference "Assets\Square71x71Logo.png": The image "c:\program files\window
 
 This was a strange error, given that all assets were set and generated from the Advanced Installer. After a closer investigation, we found out that all images marked as incorrect are **exactly 1 pixel off** the required size.
 
->**Eventually we found out that this is a known issue of WACK and is safe to ignore.**
+**Eventually we found out that this is a known issue of WACK and is safe to ignore.**
 
 <br/>
 
@@ -346,7 +353,7 @@ The binary Assembly-UnityScript.dll is built in debug mode.
 
 This was another issue to **ignore**, even though our submission got rejected initially. The problem here was that Dex references Unity 3D libraries, which were built in the Debug mode. Fortunately, WACK and the [Windows Store documentation](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/windows-desktop-bridge-app-tests) state that this test is optional.
 
->The overall pass/fail criteria for store onboarding is determined by the required tests and not by these optional tests.
+The overall pass/fail criteria for store onboarding is determined by the required tests and not by these optional tests.
 
 We needed Windows Store support to assist with this and waive the restriction.
 
@@ -360,11 +367,13 @@ The rest of the submission process is similar to any other UWP app and is well d
 
 The game had to be tested before going public on the Windows Store, so Dreadlocks decided to hide it initially and make it available with a promo code only. This setting is part of the submission process—section **Pricing and availability** > **Distribution and visibility**.
 
+<br/>
+
 <img alt="Hide in Store" src="{{ site.baseurl }}/images/Dreadlocks/hide-in-store.png" width="700">
 
 <br/>
 
->The last option says: *Hide this app and prevent acquisition. Customers with a direct link can see the app's listing, but can only download the app if they have a promotional code and are using a Windows 10 device.*
+The last option says: *Hide this app and prevent acquisition. Customers with a direct link can see the app's listing, but can only download the app if they have a promotional code and are using a Windows 10 device.*
 
 Then we generated **Promo codes** from the **Attract** section of Developer Dashboard.
 
