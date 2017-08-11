@@ -7,7 +7,7 @@ author-link: "https://twitter.com/ikivanc"
 date:   2017-08-11
 categories: [Mobile Application Development with Xamarin]
 color: "blue"
-image: "images/burgan/fab-menu-screen-tile.gif" 
+image: "images/burgan/uiux-tile.png" 
 excerpt: Burgan Bank, together with Microsoft, used Xamarin to develop a fully functional consumer mobile banking application.
 language: [English]
 verticals: [Banking & Capital Markets]
@@ -26,6 +26,8 @@ The first considerations for cross-platform development technologies are user ex
 >“In alignment with Burgan Bank digital banking strategy, we investigated several solutions to enable our mobile banking platform. Microsoft offers us a strong, reliable, and ease-of-use platform in order for mobile banking to develop our new-generation product. Xamarin provides us with a unique code opportunity to meet multiplatform release instead of native development.”
 >
 >— Murat Çetin Sav, CIO, Burgan Bank
+
+<br/>
 
 **Key technologies used:**
 
@@ -131,6 +133,8 @@ Burgan Bank created an account on GitHub to share their learnings. They also wan
 ### User interface (UI) and user experience (UX)
 
 Burgan Bank used the same customized look and feel for both platforms. To implement these kinds of modifications, they dived deep into XAML code. XAML is a markup language for Xamarin.Forms projects.
+
+<br/>
 
 >"We're proud of sharing our Xamarin learnings with other developers. [BurganBankUIKit GitHub Project](https://github.com/BurganBankMobile/BurganBankXamarinUIKit) is available on GitHub for all developers."
 >
@@ -321,11 +325,15 @@ The team configured Azure Notification Hubs for Android and iOS with the help of
 - [Get started with Notification Hubs with Xamarin for Android](https://docs.microsoft.com/en-us/azure/notification-hubs/xamarin-notification-hubs-push-notifications-android-gcm)
 - [iOS Push Notifications with Notification Hubs for Xamarin apps](https://docs.microsoft.com/en-us/azure/notification-hubs/xamarin-notification-hubs-ios-push-notification-apns-get-started)
 
+<br/>
+
 <img src="{{ site.baseurl }}/images/burgan/notificationhub.png" alt="Burgan Bank Azure Notification Hub">
 
 <br/>
 
 From the Burgan Azure Notification Hubs settings, the team entered a project ID for Android and uploaded a .p12 certificate for iOS. Then the team took the connection strings to register the app to both receive and send push notifications.
+
+<br/>
 
 <img src="{{ site.baseurl }}/images/burgan/notificationhub1.png" alt="Burgan Bank Azure Notification Hub">
 
