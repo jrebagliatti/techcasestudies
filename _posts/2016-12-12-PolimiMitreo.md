@@ -11,7 +11,7 @@ excerpt: Researchers at Politecnico di Milano worked with Microsoft to develop a
 language: [English]
 verticals: [Facility Management]
 geolocation: [Europe]
-sticky: true
+sticky: false
 ---
 
 This project focused on the use of IoT technologies to monitor the status of a relevant archaeological site: the Mitreo in the basement of the Circus Maximus in Rome. We worked together with Politecnico di Milano, one of the most important universities in Italy, in order to use data gathered from specific sensors installed inside the Mitreo to remotely monitor CO2, vibrations, temperature, and humidity.
