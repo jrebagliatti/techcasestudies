@@ -12,6 +12,7 @@ excerpt: Microsoft helped DroneGrid redesign their IoT solution and switch the b
 language: [English]
 verticals: ["Agriculture, Forestry & Fishing", Power & Utilities, Retail & Consumer Goods, Hospitality & Travel]
 geolocation: [Europe]
+sticky: true
 ---
 
 Microsoft helped DroneGrid redesign their IoT solution and switch the back-end and front-end services to Azure PaaS services to give DroneGrid customers a better experience when using their software.
