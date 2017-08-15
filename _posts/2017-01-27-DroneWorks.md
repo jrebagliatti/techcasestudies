@@ -12,7 +12,7 @@ excerpt: DroneWorks Inc. worked with Microsoft to build a cloud-based Safety Fli
 language: [English]
 verticals: [Discrete Manufacturing]
 geolocation: [Asia]
-sticky: true
+sticky: false
 ---
 
 The drone industry is attracting the attention of many people who have innovative ideas for how to use them, and many companies are focusing on building new applications for drones. Therefore, the market is becoming chaotic because many customized flight controllers have no warranties. As a result, DroneWorks is building alliances with stakeholders to standardize manufactured drones and build an industrial drone flight controller and management system. 
