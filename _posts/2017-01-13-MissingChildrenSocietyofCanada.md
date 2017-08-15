@@ -13,7 +13,7 @@ language: [English]
 verticals: [Public Safety]
 geolocation: [North America]
 #permalink: /<page-title>.html
-sticky: true
+sticky: false
 ---
 
 Children today are technology natives, harnessing technology to play, share, and learn. With this empowerment comes responsibility, both  of parents and of the children themselves. Who kids chat with online and what they share can come at a price should it fall into the wrong hands.  This challenge is something that keep CEO Amanda Pick and the team at Missing Children Society of Canada (MCSC) up at night as more and more predators are using online sources to lure children.
