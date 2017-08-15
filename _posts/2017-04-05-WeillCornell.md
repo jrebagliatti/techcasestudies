@@ -399,7 +399,7 @@ We plan to add final touches to the GitHub project to help the community build t
 - [Web Apps feature of Azure App Service](https://azure.microsoft.com/en-us/services/app-service/web/?b=17.09)
 - [Language Understanding Intelligent Service (LUIS)](https://www.luis.ai/)
 - [Bing Speech API](https://www.microsoft.com/cognitive-services/en-us/speech-api)
-- [Docker Linux Containers on Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/dockerextension)
+- [Create a Docker environment in Azure using the Docker VM extension](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/dockerextension)
 - [Visual Studio](https://www.visualstudio.com/) 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Cognitive Services keys](https://www.microsoft.com/cognitive-services/en-us/sign-up)
