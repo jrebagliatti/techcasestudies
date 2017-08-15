@@ -12,7 +12,7 @@ verticals: [Health]
 language: [English]
 geolocation: [Asia]
 permalink: /iot/2016/12/02/IoT-ZionChina.html
-sticky: true
+sticky: false
 ---
 
 *Updated with additional resources*
