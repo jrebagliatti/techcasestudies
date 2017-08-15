@@ -12,7 +12,7 @@ language: [English]
 verticals: [Professional Services, Security]
 geolocation: [Europe]
 permalink: /iot/2016/10/28/CrokePark.html
-sticky: true
+sticky: false
 ---
 
 *Updated with a section on security and additional resources*
