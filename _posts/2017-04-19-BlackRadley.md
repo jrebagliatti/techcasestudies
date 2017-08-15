@@ -11,6 +11,7 @@ excerpt: "Black Radley teamed up with Microsoft to use Cognitive Services to mak
 language: [English]
 verticals: [Education, Entertainment, Government]
 geolocation: [Europe]
+sticky: true
 ---
 
 Microsoft teamed up with Black Radley and the Shrewsbury Museum & Art Gallery to create a solution that would react to museum patrons as they interact with exhibits based upon their approximate age, gender, and emotional state. Additionally, the solution would provide detailed insight on how patrons traverse the museum, which exhibits they linger at, and for how long.
