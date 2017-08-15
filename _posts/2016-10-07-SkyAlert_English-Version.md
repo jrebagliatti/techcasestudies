@@ -11,7 +11,7 @@ excerpt: The most important action for a seismic warning system is to send alert
 language: [English]
 verticals: [Public Safety]
 geolocation: [Central America and the Caribbean]
-sticky: true
+sticky: false
 ---
 
 The most important action for a seismic warning system is to alert users as quickly as possible. An added value is to be able to alert with some precision on the intensity of the coming earthquake and to withhold alerts from areas where it will not be felt. Microsoft teamed up with SkyAlert to help them improve and expand their alert system using an IoT solution. 
