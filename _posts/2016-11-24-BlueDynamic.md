@@ -12,7 +12,7 @@ language: [English]
 verticals: [Retail & Consumer Goods]
 geolocation: [Europe]
 permalink: /iot/2016/12/23/BlueDynamic.html
-sticky: true
+sticky: false
 ---
 
 *Updated with additional resources*
