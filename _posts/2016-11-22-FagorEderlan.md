@@ -13,7 +13,7 @@ language: [English]
 verticals: [Discrete Manufacturing]
 geolocation: [Europe]
 permalink: /iot/2016/12/19/FagorEderlan.html
-sticky: true
+sticky: false
 ---
 
 *Updated with additional resources*
