@@ -12,7 +12,7 @@ language: [English]
 verticals: [Logistics]
 geolocation: [Asia]
 permalink: /iot/2016/11/02/TyreExpress.html
-sticky: true
+sticky: false
 ---
 
 *Updated with additional resources*
