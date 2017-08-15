@@ -11,7 +11,7 @@ excerpt: Microsoft teamed up with GTI, a leading IoT platform and service provid
 language: [English]
 verticals: [Facility Management, Security]
 geolocation: [Asia]
-sticky: true
+sticky: false
 ---
 
 Microsoft teamed up with GTI, an Internet of Things (IoT) platform and service provider headquartered in Beijing, to develop the "big data" platform used in its Smart City solution, which enables data-driven city operation. 
