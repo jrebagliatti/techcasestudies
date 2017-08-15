@@ -12,7 +12,7 @@ excerpt: Geratriz offers a platform to measure water and energy consumption at s
 language: [English]
 verticals: [Power & Utilities]
 geolocation: [Europe]
-sticky: true
+sticky: false
 ---
 
 Geratriz offers a platform to measure utility consumption at shopping malls, information that is important to facility managers. The company worked with Microsoft and ComOn to improve the platform's reliability and resilience while reducing operational costs. This in turn will help Geratriz offer a viable platform internationally.
