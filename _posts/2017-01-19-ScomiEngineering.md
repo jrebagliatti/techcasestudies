@@ -12,6 +12,7 @@ excerpt: Scomi Engineering worked with Microsoft to move their monorail monitori
 language: [English]
 verticals: [Hospitality & Travel]
 geolocation: [Asia]
+sticky: true
 ---
 
 Microsoft worked together with Scomi Engineering Bhd, a monorail manufacturer based in Malaysia, to develop a proof of concept (PoC) for their monorail monitoring solution by using Azure IoT services. This work would enable their customers to view the telemetry of the trains, including faults, so that issues could be rectified quickly and data could be acquired for future predictive maintenance by using Azure Machine Learning.
